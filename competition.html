@@ -32,6 +32,34 @@
     </nav>
   </div>
 </header>
-
+<main class="group-content">
+  <div class="content-page-title">
+    <div class="container">
+      <h1 class="page-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+    </div>
+  </div>
+  <div class="content-registration">
+    <div class="container">
+      <div class="registration-form">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:</p>
+        <form action='/echo' method='post' id='form-registration'>
+          <fieldset class='registration-name form'>
+            <label class='text control'>Имя: *
+              <input type='text' name='enter-first-name' id='registration-first-name' value='Введите ваше имя'>
+            </label>
+            <label class='text control'>Фамилия: *
+              <input type='text' name='enter-second-name' id='registration-second-name' value='Укажите фамилию'>
+            </label>
+            <label class='text control'>Отчество:
+              <input type='text' name='enter-patronymic-name' id='registration-patronymic-name' value='Ну и отчество тоже'>
+            </label>
+          </fieldset>
+          <input class='btn' type='submit' value='Отправить форму'>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>
