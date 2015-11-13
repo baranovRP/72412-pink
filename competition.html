@@ -43,6 +43,7 @@
       <div class="registration-form">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже:</p>
+
         <form action='/echo' method='post' id='form-registration'>
           <fieldset class='registration-name form'>
             <label class='text control'>Имя: *
@@ -52,11 +53,12 @@
               <input type='text' name='enter-second-name' id='registration-second-name' value='Укажите фамилию'>
             </label>
             <label class='text control'>Отчество:
-              <input type='text' name='enter-patronymic-name' id='registration-patronymic-name' value='Ну и отчество тоже'>
+              <input type='text' name='enter-patronymic-name' id='registration-patronymic-name'
+                     value='Ну и отчество тоже'>
             </label>
           </fieldset>
           <fieldset class='registration-apps form'>
-            <legend class='filter-grid-title'>С каким приложением путешествовали? *</legend>
+            <legend class='registration-apps-title'>С каким приложением путешествовали? *</legend>
             <label class='control radio'>
               <input type='radio' checked name='choose-apps' value='os-ios' id='radio-ios'>Pink для iOS
               <span class='control-indicator'></span>
