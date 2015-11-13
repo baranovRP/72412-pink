@@ -44,46 +44,96 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           Пожалуйста, заполните форму ниже:</p>
 
-        <form action='/echo' method='post' id='form-registration'>
-          <fieldset class='registration-name form'>
-            <label class='control text'>Имя: *
-              <input type='text' name='enter-first-name' id='text-first-name' value='Введите ваше имя'>
+        <form action="/echo" method="post" id="form-registration">
+          <fieldset class="registration-name form">
+            <label class="control text">Имя: *
+              <input type="text" name="enter-first-name" id="text-first-name" value="Введите ваше имя">
             </label>
-            <label class='control text'>Фамилия: *
-              <input type='text' name='enter-second-name' id='text-second-name' value='Укажите фамилию'>
+            <label class="control text">Фамилия: *
+              <input type="text" name="enter-second-name" id="text-second-name" value="Укажите фамилию">
             </label>
-            <label class='control text'>Отчество:
-              <input type='text' name='enter-patronymic-name' id='text-patronymic-name' value='Ну и отчество тоже'>
+            <label class="control text">Отчество:
+              <input type="text" name="enter-patronymic-name" id="text-patronymic-name" value="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class='registration-apps form'>
-            <legend class='registration-apps-title'>С каким приложением путешествовали? *</legend>
-            <label class='control radio'>
-              <input type='radio' checked name='choose-apps' value='os-ios' id='radio-ios'>Pink для iOS
-              <span class='control-indicator'></span>
+          <fieldset class="registration-apps form">
+            <legend class="registration-apps-title">С каким приложением путешествовали? *</legend>
+            <label class="control radio">
+              <input type="radio" checked name="choose-apps" value="os-ios" id="radio-ios">Pink для iOS
+              <span class="control-indicator"></span>
             </label>
-            <label class='control radio'>
-              <input type='radio' name='choose-apps' value='os-android' id='radio-android'>Pink на Android
-              <span class='control-indicator'></span>
+            <label class="control radio">
+              <input type="radio" name="choose-apps" value="os-android" id="radio-android">Pink на Android
+              <span class="control-indicator"></span>
             </label>
-            <label class='control radio'>
-              <input type='radio' name='choose-apps' value='os-windows-phone' id='radio-windows-phone'>Windows Phone
-              <span class='control-indicator'></span>
+            <label class="control radio">
+              <input type="radio" name="choose-apps" value="os-windows-phone" id="radio-windows-phone">Windows Phone
+              <span class="control-indicator"></span>
             </label>
           </fieldset>
           <fieldset class="registration-travel">
             <legend class="registration-travel-title">Когда вы путешествовали? *</legend>
             <label class="control text">
-              <input type="text" name="enter-start-date" id="text-start-date">дата выезда
+              <input type="text" name="enter-start-date" id="text-start-date" value="1 апреля 2015">Дата выезда
             </label>
             <label class="control text">
-              <input type="text" name="enter-duration" id="text-duration">Продолжительность
+              <input type="text" name="enter-duration" id="text-duration" value="1 апреля 2015">Продолжительность
             </label>
             <label class="control text">
-              <input type="text" name="enter-end-date" id="text-end-date">Дата Возвращения
+              <input type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">Дата Возвращения
             </label>
           </fieldset>
-          <input class='btn' type='submit' value='Отправить форму'>
+          <fieldset class="registration-travelers">
+            <label class="control text">Количество попутчиков *
+              <input type="text" name="enter-quantity-travelers" id="text-quantity" value="2 чел">
+            </label>
+            <fieldset class="traveler traveler-1">
+              <legend class="traveler-title">№</legend>
+              <label class="control text">Имя: *
+                <input type="text" name="enter-name" id="text-name-1" value="Введите ваше имя">
+              </label>
+              <label class="control text">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-1" value="Ну как же без этого!">
+              </label>
+            </fieldset>
+            <fieldset class="traveler traveler-2">
+              <legend class="traveler-title">№</legend>
+              <label class="control text">Имя: *
+                <input type="text" name="enter-name" id="text-name-2" value="Введите ваше имя">
+              </label>
+              <label class="control text">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-2" value="Ну как же без этого!">
+              </label>
+            </fieldset>
+          </fieldset>
+          <fieldset class="registration-achievements">
+            <legend class="registration-achievements-title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-selfi" id="checkbox-achievement-01">Сделал селфи с акулой
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-burn-on-beach" id="checkbox-achievement-02">Обгорел на пляже
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-saw-chuck" id="checkbox-achievement-03">Видел Чака Норриса
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-souvenirs" id="checkbox-achievement-04">Накупил сувениров
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-keep-tower" id="checkbox-achievement-05">Удержал башню
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-destroy-hotel" id="checkbox-achievement-06">Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="registration-photos">
+            <legend class="registration-photos-title">Ваши фотографии из поездки *</legend>
+            <label class="control text">Прозвище:
+              <input type="text" name="enter-path-to-photo" id="text-path-to-photo" value="Загрузить фото">
+            </label>
+          </fieldset>
+          <input class="btn" type="submit" value="Отправить форму">
         </form>
       </div>
     </div>
