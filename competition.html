@@ -73,15 +73,25 @@
           </fieldset>
           <fieldset class="registration-travel">
             <legend class="registration-travel-title">Когда вы путешествовали? *</legend>
-            <label class="control text">
-              <input type="text" name="enter-start-date" id="text-start-date" value="1 апреля 2015">Дата выезда
-            </label>
+            <fieldset class="date-picker departure-date">
+              <legend class="date-picker-title">Дата выезда</legend>
+              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <label class="control text">
+                <input type="text" name="enter-start-date" id="text-start-date" value="1 апреля 2015">
+              </label>
+              <a class="btn-sign btn-sign-plus" href="#">+</a>
+            </fieldset>
             <label class="control text">
               <input type="text" name="enter-duration" id="text-duration" value="1 апреля 2015">Продолжительность
             </label>
-            <label class="control text">
-              <input type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">Дата Возвращения
-            </label>
+            <fieldset class="date-picker arrival-date">
+              <legend class="date-picker-title">Дата возвращения</legend>
+              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <label class="control text">
+                <input type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">
+              </label>
+              <a class="btn-sign btn-sign-plus" href="#">+</a>
+            </fieldset>
           </fieldset>
           <fieldset class="registration-travelers">
             <label class="control text">Количество попутчиков *
