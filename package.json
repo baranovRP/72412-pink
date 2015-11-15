@@ -16,7 +16,8 @@
     "eclint": "1.1.x",
     "fs-extra": "0.26.x",
     "gulp": "3.9.x",
-    "gulp-plumber": "1.0.x"
+    "gulp-plumber": "1.0.x",
+    "gulp-webserver": "0.9.x"
   },
   "scripts": {
     "pregosha": "npm install > /dev/null",
