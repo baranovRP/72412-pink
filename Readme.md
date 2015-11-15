@@ -50,7 +50,7 @@ _`.gosha`, `.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 
 Репозиторий создан для обучения на интенсивном онлайн-курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/advanced_intensive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/baranovRP/72412-pink.svg?branch=master
+[travis-image]: https://travis-ci.org/baranovRP/72412-pink.svg?branch=trunk
 [travis-url]: https://travis-ci.org/baranovRP/72412-pink
 [dependency-image]: https://david-dm.org/baranovRP/72412-pink.svg?style=flat-square
 [dependency-url]: https://david-dm.org/baranovRP/72412-pink
