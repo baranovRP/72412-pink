@@ -7,3 +7,5 @@ Thumbs.db
 *.sublime*
 *.log
 css/*.css
+/scratch
+/pink-mobile
