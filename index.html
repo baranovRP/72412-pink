@@ -1,12 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&subset=latin,cyrillic">
+</head>
+<body>
+<header class="main-header">
+  <div class="container">
+    <div class="main-top">
+      <span class="logo">Pink</span>
+      <a class="btn-menu btn-menu-open active " href="#">Отрыть</a>
+      <a class="btn-menu btn-menu-close hidden" href="#">Закрыть</a>
+    </div>
+    <nav class="main-navigation hidden">
+      <ul>
+        <li>
+          <a class="btn-nav" href="index.html">Информация</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="blog.html">Блог</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="reviews.html">Отзывы</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="competition.html">Конкурс</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="main-rubric">
+  <div class="container">
+    <h1 class="rubric-title">Взгляните на жизнь иначе!</h1>
+    <img src="http://placehold.it/320x313" width="320" height="313" alt="">
+  </div>
+</div>
+<main class="group-content">
+  <div class="content-apps">
+    <div class="container">
+      <div class="apps">
+        <a class="btn btn-download" download="file-name" href="#">Скачать приложение</a>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+        <div class="apps-os">
+          <a class="os-btn os-btn-apple" href="#">
+            <img src="http://placehold.it/46x57" width="46" height="57" alt="">apple</a>
+          <a class="os-btn os-btn-android" href="#">
+            <img src="http://placehold.it/42x47" width="42" height="47" alt="">android</a>
+          <a class="os-btn os-btn-microsoft" href="#">
+            <img src="http://placehold.it/44x42" width="44" height="42" alt="">windows</a>
+        </div>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-info">
+    <div class="container">
+      <article class="info">
+        <h2 class="info-title">
+          <span class="info-title-text">Устали от серости мегаполиса?</span>
+          <span class="info-title-text">Нам есть, что вам предложить!</span>
+        </h2>
+        <section class="info-block">
+          <h3 class="block-title">Поднимает настроение</h3>
 
-  </body>
+          <p class="block-content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько
+            кликов!</p>
+        </section>
+        <section class="info-block">
+          <h3 class="block-title">Меняет мир вокруг</h3>
+
+          <p class="block-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </section>
+        <section class="info-block">
+          <h3 class="block-title">Заводит новых друзей</h3>
+
+          <p class="block-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </section>
+        <figure class="info-img">
+          <img src="http://placehold.it/157x278" width="157" height="278" alt="Мобильное приложение">
+        </figure>
+      </article>
+    </div>
+  </div>
+  <div class="content-review">
+    <div class="container">
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle-review" checked>
+        <input type="radio" id="btn-2" name="toggle-review">
+        <input type="radio" id="btn-3" name="toggle-review">
+
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slide">
+            <article class="review active">
+              <h3 class="review-title">Николай Петров</h3>
+
+              <p class="review-content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </article>
+          </div>
+          <div class="slide">
+            <article class="review hidden">
+              <h3 class="review-title"></h3>
+
+              <p class="review-content"></p>
+            </article>
+          </div>
+          <div class="slide">
+            <article class="review hidden">
+              <h3 class="review-title"></h3>
+
+              <p class="review-content"></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-price">
+    <div class="container">
+      <div class="price">
+        <div class="slider">
+          <input type="radio" id="btn-4" name="toggle-price">
+          <input type="radio" id="btn-5" name="toggle-price" checked>
+          <input type="radio" id="btn-6" name="toggle-price">
+
+          <div class="slider-controls">
+            <label for="btn-4"></label>
+            <label for="btn-5"></label>
+            <label for="btn-6"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slide">
+              <table class="table-price">
+                <tr class="row row-header">
+                  <th class="cell cell-header hit">
+                    <span class="th-name">База</span>
+                    <span class="th-price">1,99 USD</span>
+                  </th>
+                  <th class="cell cell-header">
+                    <span class="th-name">Стандарт</span>
+                    <span class="th-price">3,99 USD</span>
+                  </th>
+                  <th class="cell cell-header">
+                    <span class="th-name">Анлим</span>
+                    <span class="th-price">9,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="row row-1">
+                  <td class="cell yes">
+                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                  <td class="cell yes">
+                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                  <td class="cell yes">
+                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                </tr>
+                <tr class="row row2-">
+                  <td class="cell no">
+                    Смайлики<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                  </td>
+                  <td class="cell yes">
+                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                  <td class="cell yes">
+                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                </tr>
+                <tr class="row row-3">
+                  <td class="cell no">
+                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                  </td>
+                  <td class="cell no">
+                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                  </td>
+                  <td class="cell yes">
+                    Комментарии<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="address-footer">
+  <div class="container">
+    <div class="contacts-block">
+      <div class="contacts-title">Остались вопросы?<br>
+        Свяжитесь с нами!
+      </div>
+      <address class='contacts-address contacts'>
+        <label>Звоните:
+          <a class='contacts-phone contacts' href='tel:+7 (812) 555-66-66'>+7 (812) 555-66-66</a>
+        </label>
+        <label>Пишите:
+          <a href='mailto:mail@htmlacademy.ru?Subject=Hello'>mail@htmlacademy.ru</a>
+        </label>
+        <label>Приезжайте в гости:
+          <span class="contacts-addr contacts">ул. Большая Конюшенная, 19/8</span>
+        </label>
+      </address>
+    </div>
+  </div>
+</footer>
+<div class="map">
+  <iframe class="map-layer"
+          width="100%"
+          height="320"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.938794,30.323083&maptype=roadmap&zoom=17&language=ru"
+          allowfullscreen>
+  </iframe>
+  <div class="container"></div>
+</div>
+</body>
 </html>

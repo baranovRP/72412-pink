@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк - Конкурс</title>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&subset=latin,cyrillic">
+</head>
+<body>
+<header class="main-header">
+  <div class="container">
+    <div class="main-top">
+      <span class="logo">Pink</span>
+      <a class="btn-menu btn-menu-open active " href="#">Отрыть</a>
+      <a class="btn-menu btn-menu-close hidden" href="#">Закрыть</a>
+    </div>
+    <nav class="main-navigation hidden">
+      <ul>
+        <li>
+          <a class="btn-nav" href="index.html">Информация</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="blog.html">Блог</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="reviews.html">Отзывы</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="competition.html">Конкурс</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="main-rubric">
+  <div class="container">
+    <h1 class="rubric-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+  </div>
+</div>
+<main class="group-content">
+  <div class="content-registration">
+    <div class="container">
+      <div class="registration-form">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:</p>
+
+        <form action="/echo" method="post" id="form-registration">
+          <fieldset class="registration-name form">
+            <label class="control text">Имя: *
+              <input type="text" name="enter-first-name" id="text-first-name" value="Введите ваше имя">
+            </label>
+            <label class="control text">Фамилия: *
+              <input type="text" name="enter-second-name" id="text-second-name" value="Укажите фамилию">
+            </label>
+            <label class="control text">Отчество:
+              <input type="text" name="enter-patronymic-name" id="text-patronymic-name" value="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="registration-apps form">
+            <legend class="registration-apps-title">С каким приложением путешествовали? *</legend>
+            <label class="control radio">
+              <input type="radio" checked name="choose-apps" value="os-ios" id="radio-ios">Pink для iOS
+              <span class="control-indicator"></span>
+            </label>
+            <label class="control radio">
+              <input type="radio" name="choose-apps" value="os-android" id="radio-android">Pink на Android
+              <span class="control-indicator"></span>
+            </label>
+            <label class="control radio">
+              <input type="radio" name="choose-apps" value="os-windows-phone" id="radio-windows-phone">Windows Phone
+              <span class="control-indicator"></span>
+            </label>
+          </fieldset>
+          <fieldset class="registration-travel">
+            <legend class="registration-travel-title">Когда вы путешествовали? *</legend>
+            <fieldset class="date-picker departure-date">
+              <legend class="date-picker-title">Дата выезда</legend>
+              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <label class="control text">
+                <input type="text" name="enter-start-date" id="text-start-date" value="1 апреля 2015">
+              </label>
+              <a class="btn-sign btn-sign-plus" href="#">+</a>
+            </fieldset>
+            <label class="control text">
+              <input type="text" name="enter-duration" id="text-duration" value="1 апреля 2015">Продолжительность
+            </label>
+            <fieldset class="date-picker arrival-date">
+              <legend class="date-picker-title">Дата возвращения</legend>
+              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <label class="control text">
+                <input type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">
+              </label>
+              <a class="btn-sign btn-sign-plus" href="#">+</a>
+            </fieldset>
+          </fieldset>
+          <fieldset class="registration-travelers">
+            <fieldset class="add-travelers">
+              <legend class="add-travelers-title">Количество попутчиков *</legend>
+              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <label class="control text">
+                <input type="text" name="enter-quantity-travelers" id="text-quantity" value="2 чел">
+                <a class="btn-sign btn-sign-plus" href="#">+</a>
+              </label>
+            </fieldset>
+            <fieldset class="traveler traveler-1">
+              <legend class="traveler-title">№</legend>
+              <label class="control text">Имя: *
+                <input type="text" name="enter-name" id="text-name-1" value="Введите ваше имя">
+              </label>
+              <label class="control text">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-1" value="Ну как же без этого!">
+              </label>
+            </fieldset>
+            <fieldset class="traveler traveler-2">
+              <legend class="traveler-title">№</legend>
+              <label class="control text">Имя: *
+                <input type="text" name="enter-name" id="text-name-2" value="Введите ваше имя">
+              </label>
+              <label class="control text">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-2" value="Ну как же без этого!">
+              </label>
+            </fieldset>
+          </fieldset>
+          <fieldset class="registration-achievements">
+            <legend class="registration-achievements-title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-selfi" id="checkbox-achievement-01">Сделал селфи с акулой
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-burn-on-beach" id="checkbox-achievement-02">Обгорел на пляже
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" name="tick-saw-chuck" id="checkbox-achievement-03">Видел Чака Норриса
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" name="tick-souvenirs" id="checkbox-achievement-04">Накупил сувениров
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" checked name="tick-keep-tower" id="checkbox-achievement-05">Удержал башню
+            </label>
+            <label class="control checkbox">
+              <input type="checkbox" name="tick-destroy-hotel" id="checkbox-achievement-06">Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="registration-photos">
+            <legend class="registration-photos-title">Ваши фотографии из поездки *</legend>
+            <label class="control text">
+              <input type="text" name="enter-path-to-photo" id="text-path-to-photo" value="Загрузить фото">
+            </label>
+
+            <div class="travels-photo-gallery">
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a class="btn" href="#">
+                  <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                </a>
+              </div>
+            </div>
+          </fieldset>
+          <input class="btn" type="submit" value="Отправить форму">
+        </form>
+        * — обязательные поля
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-logo">
+      <a class="btn" href="#">
+        <img src="http://placehold.it/59x40" width="59" height="40" alt="">Pink
+      </a>
+    </div>
+    <div class="footer-social">
+      <a class="social-btn social-btn-twitter" href="#">
+        <img src="http://placehold.it/19x15" width="19" height="15" alt="">Twitter</a>
+      <a class="social-btn social-btn-facebook" href="#">
+        <img src="http://placehold.it/9x19" width="9" height="19" alt="">Facebook</a>
+      <a class="social-btn social-btn-play" href="#">
+        <img src="http://placehold.it/15x14" width="15" height="14" alt="">Play</a>
+    </div>
+    <div class="footer-copyright">
+      <a class="copyright" href="#">Разработано<img src="http://placehold.it/27x34" width="27" height="34" alt=""></a>
+    </div>
+  </div>
+</footer>
+<div class="modal-content modal-success hidden">
+  <div class="content">
+    <section class="success-popup">
+      <h2 class="popup-title">Ваша заявка отправлена</h2>
+
+      <p class="popup-content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+        ее и оповестим вас.</p>
+      <a class="btn btn-close" href="#">Закрыть окно</a>
+    </section>
+  </div>
+</div>
+<div class="modal-content modal-failure hidden">
+  <div class="content">
+    <section class="failure-popup">
+      <h2 class="popup-title">Что-то пошло не так!</h2>
+
+      <p class="popup-content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <a class="btn btn-ok" href="#">ОК</a>
+    </section>
+  </div>
+</div>
+</body>
+</html>
