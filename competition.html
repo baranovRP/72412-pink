@@ -46,18 +46,18 @@
 
         <form action="/echo" method="post" id="form-registration">
           <fieldset class="registration-name form">
-            <label class="control text">Имя: *
-              <input type="text" name="enter-first-name" id="text-first-name" value="Введите ваше имя">
+            <label class="control text color-red">Имя: *
+              <input type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
             </label>
-            <label class="control text">Фамилия: *
-              <input type="text" name="enter-second-name" id="text-second-name" value="Укажите фамилию">
+            <label class="control text color-red">Фамилия: *
+              <input type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
             </label>
-            <label class="control text">Отчество:
-              <input type="text" name="enter-patronymic-name" id="text-patronymic-name" value="Ну и отчество тоже">
+            <label class="control text color-red">Отчество:
+              <input type="text" name="enter-patronymic-name" id="text-patronymic-name" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
           <fieldset class="registration-apps form">
-            <legend class="registration-apps-title">С каким приложением путешествовали? *</legend>
+            <legend class="registration-apps-title color-red">С каким приложением путешествовали? *</legend>
             <label class="control radio">
               <input type="radio" checked name="choose-apps" value="os-ios" id="radio-ios">Pink для iOS
               <span class="control-indicator"></span>
@@ -72,57 +72,57 @@
             </label>
           </fieldset>
           <fieldset class="registration-travel">
-            <legend class="registration-travel-title">Когда вы путешествовали? *</legend>
+            <legend class="registration-travel-title color-red">Когда вы путешествовали? *</legend>
             <fieldset class="date-picker departure-date">
-              <legend class="date-picker-title">Дата выезда</legend>
-              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <legend class="date-picker-title color-red">Дата выезда</legend>
+              <button class="btn-sign btn-sign-minus">-</button>
               <label class="control text">
-                <input type="text" name="enter-start-date" id="text-start-date" value="1 апреля 2015">
+                <input type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
               </label>
-              <a class="btn-sign btn-sign-plus" href="#">+</a>
+              <button class="btn-sign btn-sign-plus">+</button>
             </fieldset>
-            <label class="control text">
-              <input type="text" name="enter-duration" id="text-duration" value="1 апреля 2015">Продолжительность
+            <label class="control text color-red">
+              <input type="text" name="enter-duration" id="text-duration" placeholder="10 дней">Продолжительность
             </label>
             <fieldset class="date-picker arrival-date">
-              <legend class="date-picker-title">Дата возвращения</legend>
-              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <legend class="date-picker-title color-red">Дата возвращения</legend>
+              <button class="btn-sign btn-sign-minus">-</button>
               <label class="control text">
-                <input type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">
+                <input type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
               </label>
-              <a class="btn-sign btn-sign-plus" href="#">+</a>
+              <button class="btn-sign btn-sign-plus">+</button>
             </fieldset>
           </fieldset>
           <fieldset class="registration-travelers">
             <fieldset class="add-travelers">
-              <legend class="add-travelers-title">Количество попутчиков *</legend>
-              <a class="btn-sign btn-sign-minus" href="#">-</a>
+              <legend class="add-travelers-title color-red">Количество попутчиков *</legend>
+              <button class="btn-sign btn-sign-minus">-</button>
               <label class="control text">
-                <input type="text" name="enter-quantity-travelers" id="text-quantity" value="2 чел">
-                <a class="btn-sign btn-sign-plus" href="#">+</a>
+                <input type="text" name="enter-quantity-travelers" id="text-quantity" placeholder="2 чел">
+                <button class="btn-sign btn-sign-plus">+</button>
               </label>
             </fieldset>
             <fieldset class="traveler traveler-1">
-              <legend class="traveler-title">№</legend>
-              <label class="control text">Имя: *
-                <input type="text" name="enter-name" id="text-name-1" value="Введите ваше имя">
+              <legend class="traveler-title color-red">№</legend>
+              <label class="control text color-red">Имя: *
+                <input type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
               </label>
-              <label class="control text">Прозвище:
-                <input type="text" name="enter-nickname" id="text-nickname-1" value="Ну как же без этого!">
+              <label class="control text color-red">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-1" placeholder="Ну как же без этого!">
               </label>
             </fieldset>
             <fieldset class="traveler traveler-2">
-              <legend class="traveler-title">№</legend>
-              <label class="control text">Имя: *
-                <input type="text" name="enter-name" id="text-name-2" value="Введите ваше имя">
+              <legend class="traveler-title color-red">№</legend>
+              <label class="control text color-red">Имя: *
+                <input type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
               </label>
-              <label class="control text">Прозвище:
-                <input type="text" name="enter-nickname" id="text-nickname-2" value="Ну как же без этого!">
+              <label class="control text color-red">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-2" placeholder="Ну как же без этого!">
               </label>
             </fieldset>
           </fieldset>
           <fieldset class="registration-achievements">
-            <legend class="registration-achievements-title">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="registration-achievements-title color-red">Ваши безбашенные достижения в путешествии</legend>
             <label class="control checkbox">
               <input type="checkbox" checked name="tick-selfi" id="checkbox-achievement-01">Сделал селфи с акулой
             </label>
@@ -143,9 +143,9 @@
             </label>
           </fieldset>
           <fieldset class="registration-photos">
-            <legend class="registration-photos-title">Ваши фотографии из поездки *</legend>
+            <legend class="registration-photos-title color-red">Ваши фотографии из поездки *</legend>
             <label class="control text">
-              <input type="text" name="enter-path-to-photo" id="text-path-to-photo" value="Загрузить фото">
+              <input type="text" name="enter-path-to-photo" id="text-path-to-photo" placeholder="Загрузить фото">
             </label>
 
             <div class="travels-photo-gallery">
@@ -191,9 +191,9 @@
               </div>
             </div>
           </fieldset>
-          <input class="btn" type="submit" value="Отправить форму">
+          <input class="btn" type="submit" placeholder="Отправить форму">
         </form>
-        * — обязательные поля
+        <span class="asterisk color-red">*</span> — обязательные поля
       </div>
     </div>
   </div>
