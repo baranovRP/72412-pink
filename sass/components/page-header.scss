@@ -3,6 +3,7 @@
 @import "../variables";
 @import "../mixins/font-family-general";
 @import "../mixins/hidden";
+@import "../mixins/background-image";
 
 .page-header {
   width: 100%;
@@ -21,13 +22,17 @@
     margin: 0 auto;
     padding: 0;
 
-    background: #1d2631 url("../img/bg-header.jpg") no-repeat 0 0;
+    background: #1d2631 no-repeat 0 0;
+
+    @include background-image("bg-header.jpg");
   }
 
   &--index &__container {
     min-height: 458px;
 
-    background: #1d2631 url("../img/bg-header--index.jpg") no-repeat 0 0;
+    background: #1d2631 no-repeat 0 0;
+
+    @include background-image("bg-header--index.jpg");
   }
 
   &__inner {
