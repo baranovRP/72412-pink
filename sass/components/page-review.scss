@@ -1,0 +1,14 @@
+@import "../mixins/container";
+
+.page-review {
+  width: 100%;
+  min-height: 290px;
+  padding-top: 45px;
+  overflow: hidden;
+
+  background-color: #ffffff;
+
+  &__container {
+    @include container;
+  }
+}

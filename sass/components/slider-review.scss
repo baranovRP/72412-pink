@@ -1,0 +1,64 @@
+.slider-review {
+  position: relative;
+
+  min-height: 290px;
+  padding-top: 5px;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__inner {
+    min-height: 290px;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    width: 300%;
+
+    transition: transform 300ms ease;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 25px;
+    left: 120px;
+    z-index: 95;
+
+    width: 100%;
+  }
+
+  &__controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+
+    vertical-align: top;
+
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+  }
+
+  #btn-1:checked ~ &__controls label[for="btn-1"],
+  #btn-2:checked ~ &__controls label[for="btn-2"],
+  #btn-3:checked ~ &__controls label[for="btn-3"] {
+    background-color: #666666;
+  }
+
+  #btn-1:checked ~ &__inner &__wrap {
+    transform: translate(0);
+  }
+
+  #btn-2:checked ~ &__inner &__wrap {
+    transform: translate(-300px);
+  }
+
+  #btn-3:checked ~ &__inner &__wrap {
+    transform: translate(-600px);
+  }
+}
