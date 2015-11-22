@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins/font-family-general";
+@import "../mixins/background-image";
+
+.promo {
+  max-width: 300px;
+  min-height: 1002px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  &__title {
+    position: relative;
+
+    max-width: 205px;
+    min-height: 185px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #283645;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__title span {
+    display: inline-block;
+    padding: 20px 0;
+  }
+
+  &__title span:first-child {
+    padding-top: 46px;
+  }
+
+  &__img {
+    margin: 0;
+    padding: 0;
+  }
+}

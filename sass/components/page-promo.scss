@@ -1,0 +1,29 @@
+@import "../mixins/container";
+
+.page-promo {
+  position: relative;
+
+  width: 100%;
+  min-height: 1002px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -229%;
+    left: -50%;
+    z-index: -1;
+
+    width: 200%;
+    height: 500%;
+
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 50%, #f2f2f2 50%);
+    background-repeat: no-repeat;
+    transform: rotate(-5deg);
+  }
+
+  &__container {
+    min-height: 1002px;
+
+    @include container;
+  }
+}
