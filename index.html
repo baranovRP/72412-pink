@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--index">
   <div class="page-header__container">
-    <a class="page-header__logo-link" href="">Pink</a>
-
-    <div class="page-header__nav-wrap">
-      <nav class="main-nav  main-nav--hidden">
+    <div class="page-header__inner">
+      <a class="page-header__logo-link" href="index.html">
+        <img src="img/logo.png" width="74" height="23" alt="Pink">
+      </a>
+      <a class="page-header__toggle  page-header__toggle--close"></a>
+    </div>
+    <div class="page-header__nav-wrap  page-header__nav-wrap--hidden">
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Информация</a>
@@ -28,17 +30,15 @@
             <a class="main-nav__link" href="competition.html">Конкурс</a>
           </li>
         </ul>
-        <a class="mani-nav__toggle  main-nav__toggle--close" href="#"></a>
       </nav>
+    </div>
+    <div class="page-rubric">
+      <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
     </div>
   </div>
 </header>
-<div class="page-rubric  page-rubric--big">
-  <div class="page-rubric__container">
-    <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
-    <img src="http://placehold.it/320x313" width="320" height="313" alt="">
-  </div>
-</div>
+
+
 <main class="page-group-content">
   <div class="page-apps">
     <div class="page-apps__container">
@@ -47,11 +47,14 @@
 
         <div class="apps-os">
           <a class="apps-os__item-apple" href="#">
-            <img src="http://placehold.it/46x57" width="46" height="57" alt="">apple</a>
+            <!--<img src="http://placehold.it/46x57" width="46" height="57" alt="">apple-->
+          </a>
           <a class="apps-os__item-android" href="#">
-            <img src="http://placehold.it/42x47" width="42" height="47" alt="">android</a>
+            <!--<img src="http://placehold.it/42x47" width="42" height="47" alt="">android-->
+          </a>
           <a class="apps-os__item-microsoft" href="#">
-            <img src="http://placehold.it/44x42" width="44" height="42" alt="">windows</a>
+            <!--<img src="http://placehold.it/44x42" width="44" height="42" alt="">windows-->
+          </a>
         </div>
         <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -159,35 +162,44 @@
                 </tr>
                 <tr class="tariff__row">
                   <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Розовый фильтр
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                   <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Розовый фильтр
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                   <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Розовый фильтр
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                 </tr>
                 <tr class="tariff__row">
                   <td class="tariff__feature-emotion  tariff__feature-emotion--no">
-                    Смайлики<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                    Смайлики
+                    <img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
                   </td>
                   <td class="tariff__feature-emotion  tariff__feature-emotion--no">
-                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Смайлики
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                   <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
-                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Смайлики
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                 </tr>
                 <tr class="tariff__row">
                   <td class="tariff__feature-comment  tariff__feature-comment--no">
-                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                    Комментарии
+                    <img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
                   </td>
                   <td class="tariff__feature-comment  tariff__feature-comment--no">
-                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
+                    Комментарии
+                    <img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
                   </td>
                   <td class="tariff__feature-comment  tariff__feature-comment--yes">
-                    Комментарии<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
+                    Комментарии
+                    <img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
                   </td>
                 </tr>
               </table>

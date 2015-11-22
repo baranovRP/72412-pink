@@ -1,0 +1,118 @@
+@import "../mixins/container";
+@import "../mixins/clearfix";
+@import "../variables";
+@import "../mixins/font-family-general";
+@import "../mixins/hidden";
+
+.page-header {
+  width: 100%;
+  min-height: 197px;
+
+  background-color: #1d2631;
+
+  &__container {
+    @include clearfix;
+  }
+
+  &__container {
+    width: 320px;
+    min-height: 197px;
+    margin: 0 auto;
+    padding: 0;
+
+    background: #1d2631 url("../img/header-bg.jpg") no-repeat 0 0;
+  }
+
+  &--index &__container {
+    min-height: 458px;
+
+    background: #1d2631 url("../img/header-bg--index.jpg") no-repeat 0 0;
+  }
+
+  &__inner {
+    position: relative;
+
+    min-height: 25px;
+    padding: 22px 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__inner--open {
+    margin-bottom: 1px;
+
+    background-color: #283645;
+    box-shadow: 0 1px 0 #000000;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+  }
+
+  &__logo-link img {
+    width: 74px;
+    height: 23px;
+
+    vertical-align: bottom;
+  }
+
+  &__toggle {
+    display: inline-block;
+
+    vertical-align: top;
+
+    outline: 1px dotted red;
+    cursor: pointer;
+  }
+
+  &__toggle--close::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 20px;
+
+    width: 50px;
+    height: 5px;
+
+    border-top: 15px double #ffffff;
+    border-bottom: 5px solid #ffffff;
+    outline: 1px dotted red;
+  }
+
+  &__toggle--open {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 20px;
+
+    width: 23px;
+    height: 23px;
+  }
+
+  &__toggle--open::before,
+  &__toggle--open::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 10px;
+
+    width: 4px;
+    height: 30px;
+
+    background-color: #ffffff;
+  }
+
+  &__toggle--open::before {
+    transform: rotate(45deg);
+  }
+
+  &__toggle--open::after {
+    transform: rotate(-45deg);
+  }
+
+  &__nav-wrap--hidden {
+    @include hidden;
+  }
+}

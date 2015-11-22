@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../mixins/font-family-general";
+
+.main-nav {
+  width: 320px;
+  min-height: 250px;
+
+  background-color: #283645;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 320px;
+    margin-bottom: 1px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    vertical-align: bottom;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #283645;
+    box-shadow: 0 1px 0 #000000,
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__link {
+    display: block;
+    padding: 15px 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    vertical-align: bottom;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
