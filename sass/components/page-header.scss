@@ -7,6 +7,7 @@
 .page-header {
   width: 100%;
   min-height: 197px;
+  padding-bottom: 20px;
 
   background-color: #1d2631;
 
@@ -20,13 +21,13 @@
     margin: 0 auto;
     padding: 0;
 
-    background: #1d2631 url("../img/header-bg.jpg") no-repeat 0 0;
+    background: #1d2631 url("../img/bg-header.jpg") no-repeat 0 0;
   }
 
   &--index &__container {
     min-height: 458px;
 
-    background: #1d2631 url("../img/header-bg--index.jpg") no-repeat 0 0;
+    background: #1d2631 url("../img/bg-header--index.jpg") no-repeat 0 0;
   }
 
   &__inner {

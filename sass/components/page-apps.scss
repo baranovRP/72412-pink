@@ -1,0 +1,17 @@
+@import "../mixins/container";
+@import "../mixins/clearfix";
+@import "../mixins/font-family-general";
+
+.page-apps {
+  width: 100%;
+  max-height: 271px;
+  padding-top: 8px;
+
+  background-color: #1d2631;
+
+  &__container {
+    max-height: 271px;
+
+    @include container;
+  }
+}
