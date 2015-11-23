@@ -1,0 +1,17 @@
+@import "../mixins/container";
+
+.page-price {
+  width: 100%;
+  min-height: 372px;
+  padding-top: 100px;
+
+  background-color: #f2f2f2;
+
+  &__container {
+    width: 320px;
+    min-height: 250px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}

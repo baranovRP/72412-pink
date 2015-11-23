@@ -1,0 +1,155 @@
+@import "../variables";
+@import "../mixins/font-family-general";
+
+.tariff {
+  width: 828px;
+  min-height: 250px;
+  margin: 0;
+  margin-left: 22px;
+  padding: 0;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  &__title {
+    position: relative;
+
+    max-width: 272px;
+    min-height: 90px;
+
+    background-color: #283645;
+    border-top: 2px solid #283645;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #283645;
+    border-left: 2px solid #e5e5e5;;
+  }
+
+  &__title span {
+    display: block;
+  }
+
+  &__ribbon {
+    position: absolute;
+    top: -13px;
+    left: -2px;
+    z-index: 1;
+
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+
+    text-align: right;
+  }
+
+  &__ribbon > span {
+    position: absolute;
+    top: 20px;
+    left: -31px;
+
+    display: block;
+    width: 100px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #d22856;
+    transform: rotate(-45deg);
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__name {
+    padding-top: 21px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__price {
+    padding-bottom: 20px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__feature-filter,
+  &__feature-emotion,
+  &__feature-comment {
+    position: relative;
+
+    max-width: 270px;
+    padding: 17px 0;
+    padding-left: 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__feature-filter--yes::before,
+  &__feature-emotion--yes::before,
+  &__feature-comment--yes::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 27px;
+
+    width: 13px;
+    height: 27px;
+
+    border-top: 0 solid transparent;
+    border-right: 2px solid #3dc644;
+    border-bottom: 2px solid #3dc644;
+    border-left: 0 solid transparent;
+    transform: rotate(45deg);
+  }
+
+  &__feature-filter--no::before,
+  &__feature-filter--no::after,
+  &__feature-emotion--no::before,
+  &__feature-emotion--no::after,
+  &__feature-comment--no::before,
+  &__feature-comment--no::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 31px;
+
+    width: 2px;
+    height: 35px;
+
+    background-color: #f25b26;
+  }
+
+  &__feature-filter--no::before,
+  &__feature-emotion--no::before,
+  &__feature-comment--no::before {
+    transform: rotate(45deg);
+  }
+
+  &__feature-filter--no::after,
+  &__feature-emotion--no::after,
+  &__feature-comment--no::after {
+    transform: rotate(-45deg);
+  }
+}

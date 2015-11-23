@@ -1,0 +1,66 @@
+.slider-price {
+  position: relative;
+
+  min-height: 250px;
+  padding-top: 5px;
+  padding-bottom: 64px;
+  overflow: hidden;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__inner {
+    min-height: 250px;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    width: 300%;
+
+    transition: transform 300ms ease;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    z-index: 95;
+
+    width: 100%;
+  }
+
+  &__controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+
+    vertical-align: top;
+
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+  }
+
+  #btn-4:checked ~ &__controls label[for="btn-4"],
+  #btn-5:checked ~ &__controls label[for="btn-5"],
+  #btn-6:checked ~ &__controls label[for="btn-6"] {
+    background-color: #666666;
+  }
+
+  #btn-4:checked ~ &__inner &__wrap {
+    transform: translate(0);
+  }
+
+  #btn-5:checked ~ &__inner &__wrap {
+    transform: translate(-276px);
+  }
+
+  #btn-6:checked ~ &__inner &__wrap {
+    transform: translate(-552px);
+  }
+}
