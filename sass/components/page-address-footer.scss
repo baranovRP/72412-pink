@@ -1,0 +1,21 @@
+@import "../mixins/background-image";
+@import "../mixins/container";
+
+.page-address-footer {
+  width: 100%;
+  min-height: 470px;
+  padding: 0;
+  padding-top: 50px;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @include background-image("bg-footer-map.png");
+
+  &__container {
+    min-height: 270px;
+
+    @include container;
+  }
+}

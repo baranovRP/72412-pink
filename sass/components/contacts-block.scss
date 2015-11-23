@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../mixins/font-family-general";
+
+.contacts-block {
+  text-align: center;
+
+  &__title {
+    position: relative;
+
+    max-width: 230px;
+    min-height: 48px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #283645;
+
+    @include font-family-general($font-face-family);
+  }
+}

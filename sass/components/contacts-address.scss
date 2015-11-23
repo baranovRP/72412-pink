@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins/font-family-general";
+
+.contacts-address {
+  max-width: 220px;
+  min-height: 270px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  &__label {
+    display: block;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #283645;
+    font-style: normal;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__text {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 28px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: none;
+    font-style: normal;
+
+    @include font-family-general($font-face-family);
+  }
+
+  &__text--red {
+    color: #d22856;
+  }
+}
