@@ -4,13 +4,13 @@
 
 .page-apps {
   width: 100%;
-  max-height: 271px;
+  min-height: 240px;
   padding-top: 8px;
 
   background-color: #1d2631;
 
   &__container {
-    min-height: 271px;
+    min-height: 240px;
 
     @include container;
   }
