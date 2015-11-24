@@ -1,0 +1,15 @@
+@mixin slider-controls--unchecked() {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+
+  vertical-align: middle;
+
+  background-color: #283645;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.3;
+
+  transition: background-color 0.2s;
+}

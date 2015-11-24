@@ -1,6 +1,5 @@
 @import "../variables";
 @import "../mixins/font-family-general";
-@import "../mixins/background-image";
 
 .promo {
   max-width: 300px;
@@ -35,7 +34,8 @@
   }
 
   &__img {
-    margin: 0;
+    width: 157px;
+    margin: 0 auto;
     padding: 0;
   }
 }

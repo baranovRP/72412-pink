@@ -1,3 +1,6 @@
+@import "../mixins/slider-controls--unchecked";
+@import "../mixins/slider-controls--checked";
+
 .slider-review {
   position: relative;
 
@@ -21,33 +24,21 @@
 
   &__controls {
     position: absolute;
-    bottom: 25px;
-    left: 120px;
+    bottom: 19px;
+    left: 114px;
     z-index: 95;
 
     width: 100%;
   }
 
   &__controls label {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 3px;
-
-    vertical-align: top;
-
-    background-color: #ffffff;
-    border: 3px solid #283645;
-    border-radius: 50%;
-    cursor: pointer;
-
-    transition: background-color 0.2s;
+    @include slider-controls--unchecked;
   }
 
   #btn-1:checked ~ &__controls label[for="btn-1"],
   #btn-2:checked ~ &__controls label[for="btn-2"],
   #btn-3:checked ~ &__controls label[for="btn-3"] {
-    background-color: #666666;
+    @include slider-control-checked;
   }
 
   #btn-1:checked ~ &__inner &__wrap {

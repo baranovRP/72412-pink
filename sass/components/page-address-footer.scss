@@ -2,10 +2,12 @@
 @import "../mixins/container";
 
 .page-address-footer {
+  position: relative;
+
   width: 100%;
   min-height: 470px;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 18px;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -14,8 +16,18 @@
   @include background-image("bg-footer-map.png");
 
   &__container {
-    min-height: 270px;
-
     @include container;
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+
+    min-height: 270px;
+    margin-left: -160px;
+
+    background-color: #ffffff;
   }
 }

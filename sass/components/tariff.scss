@@ -63,7 +63,7 @@
   }
 
   &__name {
-    padding-top: 21px;
+    padding-top: 15px;
 
     font-weight: 700;
     font-size: 18px;
@@ -92,8 +92,8 @@
     position: relative;
 
     max-width: 270px;
-    padding: 17px 0;
-    padding-left: 24px;
+    padding: 14px 0;
+    padding-left: 21px;
 
     font-weight: 400;
     font-size: 14px;
@@ -111,8 +111,8 @@
   &__feature-comment--yes::before {
     content: "";
     position: absolute;
-    top: 16px;
-    right: 27px;
+    top: 10px;
+    right: 23px;
 
     width: 13px;
     height: 27px;
@@ -132,8 +132,8 @@
   &__feature-comment--no::after {
     content: "";
     position: absolute;
-    top: 16px;
-    right: 31px;
+    top: 13px;
+    right: 29px;
 
     width: 2px;
     height: 35px;

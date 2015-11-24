@@ -8,6 +8,21 @@
 
   background-color: #f2f2f2;
 
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 0;
+  //  z-index: -1;
+  //
+  //  width: 100%;
+  //  height: 100%;
+  //  background-color: #ffffff;
+  //  background-image: linear-gradient(174deg, #ffffff, #ffffff 24%, #f2f2f2 24%);
+  //  background-repeat: no-repeat;
+  //  background-attachment:scroll;
+  //}
+
   &__container {
     width: 320px;
     min-height: 250px;
