@@ -2,33 +2,34 @@
 @import "../mixins";
 
 .page-price {
+  position: relative;
+
   width: 100%;
   min-height: 372px;
   padding-top: 100px;
   padding-bottom: 45px;
+  overflow: hidden;
 
-  background-color: #f2f2f2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -233%;
+    left: -50%;
+    z-index: -1;
 
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  bottom: 0;
-  //  left: 0;
-  //  z-index: -1;
-  //
-  //  width: 100%;
-  //  height: 100%;
-  //  background-color: #ffffff;
-  //  background-image: linear-gradient(174deg, #ffffff, #ffffff 24%, #f2f2f2 24%);
-  //  background-repeat: no-repeat;
-  //  background-attachment:scroll;
-  //}
+    width: 200%;
+    height: 479%;
+
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 50%, #f2f2f2 50%);
+    background-repeat: no-repeat;
+    transform: rotate(-5deg);
+  }
 
   &__container {
+    @include container;
+
     width: 320px;
     min-height: 250px;
-    margin: 0 auto;
-    padding: 0;
     overflow: hidden;
   }
 }
