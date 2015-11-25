@@ -9,22 +9,23 @@
   background-color: #1d2631;
 
   &__container {
+    @include clearfix;
+    @include background-image("bg-header.jpg");
+
     width: 320px;
     min-height: 197px;
     margin: 0 auto;
     padding: 0;
-    @include clearfix;
-    background: #1d2631 no-repeat 0 0;
 
-    @include background-image("bg-header.jpg");
+    background: #1d2631 no-repeat 0 0;
   }
 
   &--index &__container {
+    @include background-image("bg-header--index.jpg");
+
     min-height: 458px;
 
     background: #1d2631 no-repeat 0 0;
-
-    @include background-image("bg-header--index.jpg");
   }
 
   &__inner {

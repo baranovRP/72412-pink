@@ -42,6 +42,8 @@
   }
 
   &__ribbon > span {
+    @include font-family-general($font-face-family);
+
     position: absolute;
     top: 20px;
     left: -31px;
@@ -58,11 +60,11 @@
 
     background-color: #d22856;
     transform: rotate(-45deg);
-
-    @include font-family-general($font-face-family);
   }
 
   &__name {
+    @include font-family-general($font-face-family);
+
     padding-top: 15px;
 
     font-weight: 700;
@@ -70,11 +72,11 @@
     line-height: 30px;
     color: #ffffff;
     text-transform: uppercase;
-
-    @include font-family-general($font-face-family);
   }
 
   &__price {
+    @include font-family-general($font-face-family);
+
     padding-bottom: 20px;
 
     font-weight: 300;
@@ -82,13 +84,13 @@
     line-height: 30px;
     color: #ffffff;
     text-transform: uppercase;
-
-    @include font-family-general($font-face-family);
   }
 
   &__feature-filter,
   &__feature-emotion,
   &__feature-comment {
+    @include font-family-general($font-face-family);
+
     position: relative;
 
     max-width: 270px;
@@ -102,8 +104,6 @@
     text-transform: uppercase;
 
     border: 2px solid #e5e5e5;
-
-    @include font-family-general($font-face-family);
   }
 
   &__feature-filter--yes::before,

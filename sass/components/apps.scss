@@ -8,6 +8,8 @@
   padding-bottom: 29px;
 
   &__btn {
+    @include font-family-general($font-face-family);
+
     display: block;
     padding: 15px 35px;
 
@@ -21,11 +23,11 @@
 
     border: 3px solid #ffffff;
     border-radius: 50px;
-
-    @include font-family-general($font-face-family);
   }
 
   &__text {
+    @include font-family-general($font-face-family);
+
     margin: 0;
     padding: 0;
 
@@ -34,7 +36,5 @@
     line-height: 24px;
     text-align: center;
     color: #ffffff;
-
-    @include font-family-general($font-face-family);
   }
 }

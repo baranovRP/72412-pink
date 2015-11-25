@@ -11,6 +11,8 @@
   text-align: center;
 
   &__title {
+    @include font-family-general($font-face-family);
+
     margin: 0;
     padding: 0;
     padding-bottom: 13px;
@@ -19,11 +21,11 @@
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-
-    @include font-family-general($font-face-family);
   }
 
   &__text {
+    @include font-family-general($font-face-family);
+
     margin: 0;
     padding: 0;
 
@@ -31,7 +33,5 @@
     font-size: 14px;
     line-height: 30px;
     color: #283645;
-
-    @include font-family-general($font-face-family);
   }
 }

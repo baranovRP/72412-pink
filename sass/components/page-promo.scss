@@ -24,8 +24,8 @@
   }
 
   &__container {
-    min-height: 1002px;
-
     @include container;
+
+    min-height: 1002px;
   }
 }

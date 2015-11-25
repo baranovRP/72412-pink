@@ -9,6 +9,8 @@
   text-align: center;
 
   &__label {
+    @include font-family-general($font-face-family);
+
     display: block;
 
     font-weight: 700;
@@ -16,11 +18,11 @@
     line-height: 18px;
     color: #283645;
     font-style: normal;
-
-    @include font-family-general($font-face-family);
   }
 
   &__text {
+    @include font-family-general($font-face-family);
+
     display: block;
     padding-top: 6px;
     padding-bottom: 23px;
@@ -31,8 +33,6 @@
     color: #d22856;
     text-decoration: none;
     font-style: normal;
-
-    @include font-family-general($font-face-family);
   }
 
   &__text--red {

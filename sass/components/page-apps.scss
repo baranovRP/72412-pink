@@ -9,8 +9,8 @@
   background-color: #1d2631;
 
   &__container {
-    min-height: 240px;
-
     @include container;
+
+    min-height: 240px;
   }
 }

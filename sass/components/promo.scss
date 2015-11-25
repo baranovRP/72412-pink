@@ -9,6 +9,8 @@
   text-align: center;
 
   &__title {
+    @include font-family-general($font-face-family);
+
     position: relative;
 
     max-width: 205px;
@@ -20,8 +22,6 @@
     font-size: 24px;
     line-height: 28px;
     color: #283645;
-
-    @include font-family-general($font-face-family);
   }
 
   &__title span {

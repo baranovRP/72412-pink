@@ -2,6 +2,8 @@
 @import "../mixins";
 
 .page-address-footer {
+  @include background-image("bg-footer-map.png");
+
   position: relative;
 
   width: 100%;
@@ -13,13 +15,9 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
 
-  @include background-image("bg-footer-map.png");
-
   &__container {
     @include container;
-  }
 
-  &__container {
     position: absolute;
     top: 0;
     left: 50%;

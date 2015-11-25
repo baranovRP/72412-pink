@@ -2,9 +2,9 @@
 @import "../mixins";
 
 body {
-  background-color: #ffffff;
-
   @include font-family-general($font-face-family);
+
+  background-color: #ffffff;
 }
 
 img {
@@ -15,8 +15,8 @@ img {
 }
 
 h1 {
+  @include font-family-general($font-face-family);
+
   font-weight: 300;
   font-size: 24px;
-
-  @include font-family-general($font-face-family);
 }
