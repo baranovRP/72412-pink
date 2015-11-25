@@ -2,6 +2,9 @@
 @import "../mixins";
 
 .contacts-block {
+  padding-top: 44px;
+  padding-bottom: 5px;
+
   text-align: center;
 
   &__title {
