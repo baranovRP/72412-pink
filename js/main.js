@@ -5,15 +5,15 @@ function initMap() {
     zoom: 16,
     scrollwheel: false,
     center: {
-      lat: 59.938794,
-      lng: 30.323083
+      lat: 59.94135,
+      lng: 30.32308
     }
 
   });
 
   var contactLatLng = {
-    lat: 59.938794,
-    lng: 30.323083
+    lat: 59.93879,
+    lng: 30.32308
   };
 
   var contactLogo = {
