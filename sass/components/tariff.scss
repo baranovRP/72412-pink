@@ -34,8 +34,8 @@
     left: -2px;
     z-index: 1;
 
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     overflow: hidden;
 
     text-align: right;
@@ -45,11 +45,11 @@
     @include font-family-general($font-face-family);
 
     position: absolute;
-    top: 20px;
-    left: -31px;
+    top: 23px;
+    left: -35px;
 
     display: block;
-    width: 100px;
+    width: 116px;
 
     font-weight: 600;
     font-size: 14px;
