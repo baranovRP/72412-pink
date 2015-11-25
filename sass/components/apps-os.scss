@@ -19,7 +19,9 @@
 
     vertical-align: bottom;
 
-    background: #1d2631 no-repeat 0 0;
+    background-color: #1d2631;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   &__item:nth-child(3n) {
