@@ -1,4 +1,4 @@
-@import "variables";
+@import "../_variables";
 
 $part-file-path: $font-file-path+ $part-font-file-name;
 @font-face {
