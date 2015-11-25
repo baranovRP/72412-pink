@@ -1,6 +1,5 @@
-@import "../mixins/container";
-@import "../mixins/clearfix";
-@import "../mixins/background-image";
+@import "../variables";
+@import "../mixins";
 
 .apps-os {
   max-width: 230px;

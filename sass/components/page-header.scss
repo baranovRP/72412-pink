@@ -1,9 +1,5 @@
-@import "../mixins/container";
-@import "../mixins/clearfix";
 @import "../variables";
-@import "../mixins/font-family-general";
-@import "../mixins/hidden";
-@import "../mixins/background-image";
+@import "../mixins";
 
 .page-header {
   width: 100%;
@@ -13,15 +9,11 @@
   background-color: #1d2631;
 
   &__container {
-    @include clearfix;
-  }
-
-  &__container {
     width: 320px;
     min-height: 197px;
     margin: 0 auto;
     padding: 0;
-
+    @include clearfix;
     background: #1d2631 no-repeat 0 0;
 
     @include background-image("bg-header.jpg");

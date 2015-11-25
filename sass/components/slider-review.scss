@@ -1,5 +1,5 @@
-@import "../mixins/slider-controls--unchecked";
-@import "../mixins/slider-controls--checked";
+@import "../variables";
+@import "../mixins";
 
 .slider-review {
   position: relative;

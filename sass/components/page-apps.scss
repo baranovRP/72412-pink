@@ -1,6 +1,5 @@
-@import "../mixins/container";
-@import "../mixins/clearfix";
-@import "../mixins/font-family-general";
+@import "../variables";
+@import "../mixins";
 
 .page-apps {
   width: 100%;
