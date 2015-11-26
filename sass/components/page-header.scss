@@ -6,7 +6,6 @@
 
   width: 100%;
   min-height: 197px;
-  padding-bottom: 20px;
 
   background-color: #1d2631;
 
@@ -42,8 +41,8 @@
 
   &--index &__container {
     @include background-image("bg-header--index.jpg");
-
     min-height: 458px;
+    padding-bottom: 20px;
   }
 
   &__inner {
