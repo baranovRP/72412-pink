@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../mixins";
+
+.registration-form {
+  width: 100%;
+  min-height: 895px;
+
+  background-color: #ffffff;
+  @include container;
+
+  &__wrap {
+    min-height: 75px;
+    padding: 0 10px;
+    text-align: center;
+    padding-top: 45px;
+  }
+
+  &__intro {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  &__intro span{
+    @include hidden;
+  }
+}
