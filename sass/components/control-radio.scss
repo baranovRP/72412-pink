@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixins";
+
+.control-radio {
+  padding: 20px 0;
+  padding-bottom: 24px;
+  padding-left: 10px;
+
+  &__label {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  input + &__label {
+    cursor: pointer;
+  }
+
+  input:not(checked) {
+    position: absolute;
+
+    opacity: 0;
+  }
+
+  input:not(checked) + &__label {
+    position: relative;
+
+    padding: 0 0 0 60px;
+  }
+
+  input:not(checked) + &__label:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;;
+  }
+
+  input:checked + &__label:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 12px;
+
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    background-color: #d22856;
+    border-radius: 50%;
+
+    transition: all 0.2s;
+  }
+
+  input:checked + &__label:before {
+    background: #ffffff;
+  }
+}

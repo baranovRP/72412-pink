@@ -6,20 +6,31 @@
   min-height: 895px;
 
   background-color: #ffffff;
-  @include container;
 
   &__wrap {
     min-height: 75px;
-    padding: 0 10px;
+
     text-align: center;
-    padding-top: 45px;
+  }
+
+  &__wrap--white {
+    background-color: #ffffff;
+  }
+
+  &__wrap--grey {
+    background-color: #f2f2f2;
   }
 
   &__intro {
+    @include container;
+  }
+
+  &__text {
     @include font-family-general($font-face-family);
 
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
+    padding-top: 45px;
 
     font-weight: 400;
     font-size: 14px;
@@ -27,7 +38,52 @@
     color: #283645;
   }
 
-  &__intro span{
+  &__intro span {
     @include hidden;
+  }
+
+  &__name,
+  &__apps,
+  &__travel,
+  &__travelers,
+  &__achievements,
+  &__photos {
+    @include container;
+
+    border: 0;
+  }
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+
+  &__title--small-line {
+    line-height: 18px;
+  }
+
+  &__name {
+    min-height: 345px;
+    padding: 0;
+    padding-top: 34px;
+    padding-bottom: 27px;
+  }
+
+  &__apps {
+    min-height: 338px;
+
+    text-align: left;
+  }
+
+  &__apps > &__title {
+    padding-top: 36px;
+    padding-bottom: 20px;
+
+    text-align: center;
   }
 }
