@@ -10,7 +10,7 @@
   min-height: 612px;
   padding: 0;
 
-  background-color: #ffffff;
+  background-color: $color__white;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -25,7 +25,7 @@
     min-height: 350px;
     margin-left: -160px;
 
-    background-color: #ffffff;
+    background-color: $color__white;
   }
 
   &__container::after {
@@ -38,7 +38,7 @@
     display: block;
     margin-left: -160px;
 
-    border-top: 34px solid #ffffff;
+    border-top: 34px solid $color__white;
     border-right: 160px solid transparent;
     border-left: 160px solid transparent;
   }

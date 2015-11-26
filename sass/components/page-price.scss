@@ -20,7 +20,7 @@
     width: 200%;
     height: 479%;
 
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 50%, #f2f2f2 50%);
+    background-image: linear-gradient(to bottom, $color__white, $color__white 50%, $color__grey--very-light 50%);
     background-repeat: no-repeat;
     transform: rotate(-5deg);
   }

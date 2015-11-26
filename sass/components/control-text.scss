@@ -13,7 +13,7 @@
   font-size: 14px;
   line-height: 30px;
   text-align: left;
-  color: #d22856;
+  color: $color__pink--strong;
   text-transform: uppercase;
 
   & + input {
@@ -29,8 +29,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #283645;
+    color: $color__blue--very-dark;
 
-    border: 2px solid #e5e5e5;
+    border: 2px solid $color__grey--light;
   }
 }

@@ -18,10 +18,10 @@
     line-height: 18px;
     vertical-align: top;
     text-align: center;
-    color: #ffffff;
+    color: $color__white;
     text-decoration: none;
 
-    border: 3px solid #ffffff;
+    border: 3px solid $color__white;
     border-radius: 50px;
   }
 
@@ -35,6 +35,6 @@
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff;
+    color: $color__white;
   }
 }

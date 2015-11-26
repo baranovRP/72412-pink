@@ -12,7 +12,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #283645;
+    color: $color__blue--very-dark;
   }
 
   input + &__label {
@@ -40,8 +40,8 @@
     width: 35px;
     height: 35px;
 
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    background-color: $color__white;
+    border: 2px solid $color__grey--light;
     border-radius: 50%;;
   }
 
@@ -55,13 +55,13 @@
     width: 15px;
     height: 15px;
 
-    background-color: #d22856;
+    background-color: $color__pink--strong;
     border-radius: 50%;
 
     transition: all 0.2s;
   }
 
   input:checked + &__label:before {
-    background: #ffffff;
+    background: $color__white;
   }
 }

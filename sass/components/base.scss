@@ -4,7 +4,7 @@
 body {
   @include font-family-general($font-face-family);
 
-  background-color: #ffffff;
+  background-color: $color__white;
 }
 
 img {
