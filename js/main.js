@@ -23,7 +23,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: contactLatLng,
     icon: contactLogo,
-    draggable: true,
+    draggable: false,
     map: map
   });
 
