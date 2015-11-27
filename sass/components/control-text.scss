@@ -7,8 +7,23 @@
 
   border: 0;
 
-  &--calc {
+  &--calc,
+  &--block {
     font-size: 0;
+  }
+
+  &--block {
+    float: left;
+    width: 59px;
+    margin-left: 10px;
+
+    text-align: center;
+  }
+
+  &--short {
+    float: right;
+    width: 215px;
+    margin-right: 14px;
   }
 
   &__label {
@@ -38,6 +53,14 @@
     padding-bottom: 16px;
   }
 
+  &--block > &__label {
+    padding-left: 24px;
+  }
+
+  &--short > &__label {
+    padding-left: 23px;
+  }
+
   &__input {
     @include font-family-general($font-face-family);
 
@@ -60,6 +83,14 @@
     margin-bottom: 8px;
   }
 
+  &__input--short {
+    width: 185px;
+    margin-bottom: 16px;
+    padding: 15px 0;
+    padding-right: 9px;
+    padding-left: 21px;
+  }
+
   &__output {
     @include font-family-general($font-face-family);
 
@@ -78,6 +109,19 @@
     border: 2px solid $color__grey--light;
     border-right-width: 1px;
     border-left-width: 1px;
+  }
+
+  &__output--person {
+    background-color: $color__grey--very-light;
+  }
+
+  &__output--short {
+    width: 59px;
+    margin: 0;
+    padding: 15px 0;
+
+    background-color: $color__grey--very-light;
+    border-left-width: 2px;
   }
 
   &__btn {

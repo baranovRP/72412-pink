@@ -93,8 +93,9 @@
           <legend class="registration-form__title  registration-form__title--red">Когда вы путешествовали? *</legend>
           <div class="control-text">
             <input class="control-text__input  control-text__input--top" type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
-            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
-              Дата выезда</label>
+            <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-start-date">
+              Дата выезда
+            </label>
           </div>
 
           <fieldset class="control-text  control-text--calc">
@@ -109,45 +110,70 @@
 
           <div class="control-text">
             <input class="control-text__input  control-text__input--top" type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
-            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
-              Дата возвращения</label>
+            <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-end-date">
+              Дата возвращения
+            </label>
           </div>
         </fieldset>
       </div>
       <div class="registration-form__wrap  registration-form__wrap--grey">
         <fieldset class="registration-form__travelers">
+          <legend class="registration-form__title  registration-form__title--red">Количество попутчиков *</legend>
           <div class="registration-form__wrap  registration-form__wrap--grey">
-            <fieldset class="add-travelers">
-              <legend class="registration-form__title  registration-form__title--red">Количество попутчиков *</legend>
-              <button class="btn-sign btn-sign-minus">-</button>
-              <input type="text" name="enter-quantity-travelers" id="text-quantity" placeholder="2 чел">
-              <button class="btn-sign btn-sign-plus">+</button>
-              <label for="text-quantity" class="control-text"></label>
-            </fieldset>
-          </div>
-          <div class="registration-form__wrap  registration-form__wrap--grey">
-            <fieldset class="traveler-item">
-              <legend class="traveler-item__title  traveler-item__title--red">№</legend>
-              <label class="control-text  control-text--red">Имя: *
-                <input type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
-              </label>
-              <label class="control-text  control-text--red">Прозвище:
-                <input type="text" name="enter-nickname" id="text-nickname-1" placeholder="Ну как же без этого!">
-              </label>
-            </fieldset>
-          </div>
-          <div class="registration-form__wrap  registration-form__wrap--grey">
-            <fieldset class="traveler-item">
-              <legend class="traveler-item__title  traveler-item__title--red">№</legend>
-              <label class="control-text  control-text--red">Имя: *
-                <input type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
-              </label>
-              <label class="control-text  control-text--red">Прозвище:
-                <input type="text" name="enter-nickname" id="text-nickname-2" placeholder="Ну как же без этого!">
-              </label>
+            <fieldset class="control-text  control-text--calc">
+              <button class="control-text__btn  control-text__btn--minus" id="btn-person-minus">-</button>
+              <div class="control-text__output  control-text__output--person">
+                <output name="duration-days-output">2 чел</output>
+              </div>
+              <button class="control-text__btn  control-text__btn--plus" id="btn-person-plus">+</button>
             </fieldset>
           </div>
         </fieldset>
+
+        <div class="registration-form__wrap  registration-form__wrap--grey">
+          <fieldset class="traveler-item  traveler-item--first">
+            <div class="control-text  control-text--block">
+              <label class="control-text__label  control-text__label--red">№</label>
+
+              <div class="control-text__output control-text__output--short">
+                <output name="mate-output">1</output>
+              </div>
+            </div>
+
+            <div class="control-text  control-text--short">
+              <label class="control-text__label" for="text-name-1">Имя: *</label>
+              <input class="control-text__input  control-text__input--short" type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="control-text  control-text--short">
+              <label class="control-text__label" for="text-nickname-1">Прозвище:</label>
+              <input class="control-text__input  control-text__input--short" type="text" name="enter-nickname" id="text-nickname-1" placeholder="Ну как же без этого!">
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="registration-form__wrap  registration-form__wrap--grey">
+          <fieldset class="traveler-item  traveler-item">
+            <div class="control-text  control-text--block">
+              <label class="control-text__label  control-text__label--red">№</label>
+
+              <div class="control-text__output control-text__output--short">
+                <output name="mate-output">2</output>
+              </div>
+            </div>
+
+            <div class="control-text  control-text--short">
+              <label class="control-text__label" for="text-name-2">Имя: *</label>
+              <input class="control-text__input  control-text__input--short" type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="control-text  control-text--short">
+              <label class="control-text__label" for="text-nickname-2">Прозвище:</label>
+              <input class="control-text__input  control-text__input--short" type="text" name="enter-nickname" id="text-nickname-2" placeholder="Ну как же без этого!">
+            </div>
+          </fieldset>
+        </div>
+
         <div class="registration-form__wrap  registration-form__wrap--grey">
           <div class="registration-form__wrap  registration-form__wrap--white">
             <fieldset class="registration-form__achievements">
@@ -231,7 +257,7 @@
             <input class="btn btn--submit" type="submit" value="Отправить форму">
           </div>
         </div>
-        </div>
+      </div>
     </form>
     <div class="registration-form__wrap">
       <span class="registration-form__footnote"><span
