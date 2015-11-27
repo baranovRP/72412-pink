@@ -124,4 +124,18 @@
 
     text-align: center;
   }
+
+  &__photos {
+    min-height: 338px;
+    padding-bottom: 18px;
+
+    text-align: center;
+  }
+
+  &__photos > &__title {
+    padding-top: 30px;
+    padding-bottom: 28px;
+
+    text-align: center;
+  }
 }
