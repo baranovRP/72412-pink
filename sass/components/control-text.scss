@@ -2,21 +2,43 @@
 @import "../mixins";
 
 .control-text {
-  @include font-family-general($font-face-family);
-  @include clearfix;
+  margin: 0;
+  padding: 0;
 
-  display: block;
-  padding-bottom: 4px;
-  padding-left: 33px;
+  border: 0;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: left;
-  color: $color__pink--strong;
-  text-transform: uppercase;
+  &--calc {
+    font-size: 0;
+  }
 
-  & + input {
+  &__label {
+    @include font-family-general($font-face-family);
+    @include clearfix;
+
+    display: block;
+    padding-bottom: 4px;
+    padding-left: 33px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    color: $color__pink--strong;
+    text-transform: uppercase;
+  }
+
+  &__label--bottom {
+    padding-left: 0;
+
+    text-align: center;
+  }
+
+  &--calc > &__label--bottom {
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+
+  &__input {
     @include font-family-general($font-face-family);
 
     width: 250px;
@@ -32,5 +54,52 @@
     color: $color__blue--very-dark;
 
     border: 2px solid $color__grey--light;
+  }
+
+  &__input--top {
+    margin-bottom: 8px;
+  }
+
+  &__output {
+    @include font-family-general($font-face-family);
+
+    display: inline-block;
+    width: 157px;
+    margin-top: 13px;
+    padding: 14px 0;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: bottom;
+    color: $color__blue--very-dark;
+
+    background-color: #ffffff;
+    border: 2px solid $color__grey--light;
+    border-right-width: 1px;
+    border-left-width: 1px;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 14px 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: bottom;
+    color: $color__blue--very-dark;
+    text-decoration: none;
+
+    background-color: #ffffff;
+    border: 2px solid $color__grey--light;
+  }
+
+  &__btn--minus {
+    border-right-width: 1px;
+  }
+
+  &__btn--plus {
+    border-left-width: 1px;
   }
 }

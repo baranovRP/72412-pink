@@ -86,4 +86,15 @@
 
     text-align: center;
   }
+
+  &__travel {
+    min-height: 440px;
+    padding-bottom: 38px;
+  }
+  &__travel > &__title {
+    padding-top: 43px;
+    padding-bottom: 35px;
+
+    text-align: center;
+  }
 }

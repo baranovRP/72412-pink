@@ -50,14 +50,23 @@
     <form action="/echo" method="post" id="form-registration">
       <div class="registration-form__wrap  registration-form__wrap--white">
         <fieldset class="registration-form__name">
-          <label class="control-text  control-text--red" for="text-first-name">Имя: *</label>
-          <input type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
+          <div class="control-text">
+            <label class="control-text__label  control-text__label--red" for="text-first-name">Имя: *</label>
+            <input class="control-text__input" type="text" name="enter-first-name" id="text-first-name"
+                   placeholder="Введите ваше имя">
+          </div>
 
-          <label class="control-text  control-text--red" for="text-second-name">Фамилия: *</label>
-          <input type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
+          <div class="control-text">
+            <label class="control-text__label  control-text__label--red" for="text-second-name">Фамилия: *</label>
+            <input class="control-text__input" type="text" name="enter-second-name" id="text-second-name"
+                   placeholder="Укажите фамилию">
+          </div>
 
-          <label class="control-text  control-text--red" for="text-patronymic-name">Отчество:</label>
-          <input type="text" name="enter-patronymic-name" id="text-patronymic-name" placeholder="Ну и отчество тоже">
+          <div class="control-text">
+            <label class="control-text__label  control-text__label--red" for="text-patronymic-name">Отчество:</label>
+            <input class="control-text__input" type="text" name="enter-patronymic-name" id="text-patronymic-name"
+                   placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
       </div>
       <div class="registration-form__wrap  registration-form__wrap--grey">
@@ -85,21 +94,30 @@
       <div class="registration-form__wrap  registration-form__wrap--white">
         <fieldset class="registration-form__travel">
           <legend class="registration-form__title  registration-form__title--red">Когда вы путешествовали? *</legend>
-          <label class="control-text control-text--red">
-            <input type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
-            Дата выезда
-          </label>
-          <fieldset class="registration-duration">
-            <button class="btn-minus">-</button>
-            <input type="text" name="enter-duration" id="text-duration" placeholder="10 дней">
-            <button class="btn-plus">+</button>
-            <label for="text-duration" class="control-text  control-text--red">
+          <div class="control-text">
+            <input class="control-text__input  control-text__input--top" type="text" name="enter-start-date"
+                   id="text-start-date"
+                   placeholder="1 апреля 2015">
+            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
+              Дата выезда</label>
+          </div>
+
+          <fieldset class="control-text  control-text--calc">
+            <button class="control-text__btn  control-text__btn--minus" id="btn-day-minus">-</button>
+            <div class="control-text__output">
+              <output name="duration-days-output">10 дней</output>
+            </div>
+            <button class="control-text__btn  control-text__btn--plus" id="btn-day-plus">+</button>
+            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
               Продолжительность</label>
           </fieldset>
-          <label class="control-text  control-text--red">
-            <input type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
-            Дата возвращения
-          </label>
+
+          <div class="control-text">
+            <input class="control-text__input  control-text__input--top" type="text" name="enter-end-date"
+                   id="text-end-date" placeholder="1 апреля 2015">
+            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
+              Дата возвращения</label>
+          </div>
         </fieldset>
       </div>
       <div class="registration-form__wrap  registration-form__wrap--grey">
