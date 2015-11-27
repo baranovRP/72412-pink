@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--index">
   <div class="page-header__container">
-    <a class="page-header__logo-link" href="">Pink</a>
-
-    <div class="page-header__nav-wrap">
-      <nav class="main-nav  main-nav--hidden">
+    <div class="page-header__inner">
+      <a class="page-header__logo-link" href="index.html">
+        <img src="img/logo.png" width="74" height="23" alt="Pink">
+      </a>
+      <a class="page-header__toggle  page-header__toggle--close"></a>
+    </div>
+    <div class="page-header__nav-wrap  page-header__nav-wrap--hidden">
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Информация</a>
@@ -28,17 +30,15 @@
             <a class="main-nav__link" href="competition.html">Конкурс</a>
           </li>
         </ul>
-        <a class="mani-nav__toggle  main-nav__toggle--close" href="#"></a>
       </nav>
+    </div>
+    <div class="page-rubric">
+      <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
     </div>
   </div>
 </header>
-<div class="page-rubric  page-rubric--big">
-  <div class="page-rubric__container">
-    <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
-    <img src="http://placehold.it/320x313" width="320" height="313" alt="">
-  </div>
-</div>
+
+
 <main class="page-group-content">
   <div class="page-apps">
     <div class="page-apps__container">
@@ -46,23 +46,25 @@
         <a class="apps__btn" download="file-name" href="#">Скачать приложение</a>
 
         <div class="apps-os">
-          <a class="apps-os__item-apple" href="#">
-            <img src="http://placehold.it/46x57" width="46" height="57" alt="">apple</a>
-          <a class="apps-os__item-android" href="#">
-            <img src="http://placehold.it/42x47" width="42" height="47" alt="">android</a>
-          <a class="apps-os__item-microsoft" href="#">
-            <img src="http://placehold.it/44x42" width="44" height="42" alt="">windows</a>
+          <a class="apps-os__item  apps-os__item--apple" href="https://itunes.apple.com">
+          </a>
+          <a class="apps-os__item  apps-os__item--android" href="https://play.google.com">
+          </a>
+          <a class="apps-os__item  apps-os__item--microsoft" href="http://www.microsoftstore.com">
+          </a>
         </div>
         <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
   </div>
+
+
   <div class="page-promo">
     <div class="page-promo__container">
       <article class="promo">
         <h2 class="promo__title">
-          Устали от серости мегаполиса?<br>
-          Нам есть, что вам предложить!
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
         </h2>
         <section class="promo-item">
           <h3 class="promo-item__title">Поднимает настроение</h3>
@@ -82,11 +84,13 @@
           <p class="promo-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
         <figure class="promo__img">
-          <img src="http://placehold.it/157x278" width="157" height="278" alt="Мобильное приложение">
+          <img src="img/demo.jpg" width="157" height="278" alt="Мобильное приложение">
         </figure>
       </article>
     </div>
   </div>
+
+
   <div class="page-review">
     <div class="page-review__container">
       <div class="slider-review">
@@ -111,93 +115,100 @@
           </div>
           <div class="slider-review__wrap">
             <article class="slider-item  slider-item--hidden">
-              <h3 class="slider-item__title"></h3>
+              <h3 class="slider-item__title">Сергей Иванов</h3>
 
-              <p class="slider-item__text"></p>
+              <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»</p>
             </article>
           </div>
           <div class="slider-review__wrap">
             <article class="slider-item slider-item--hidden">
-              <h3 class="slider-item__title"></h3>
+              <h3 class="slider-item__title">Семен Кузнецов</h3>
 
-              <p class="slider-item__text"></p>
+              <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»</p>
             </article>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
   <div class="page-price">
     <div class="page-price__container">
-      <div class="price">
-        <div class="slider-price">
-          <input type="radio" id="btn-4" name="toggle-price">
-          <input type="radio" id="btn-5" name="toggle-price" checked>
-          <input type="radio" id="btn-6" name="toggle-price">
+      <div class="slider-price">
+        <input type="radio" id="btn-4" name="toggle-price">
+        <input type="radio" id="btn-5" name="toggle-price" checked>
+        <input type="radio" id="btn-6" name="toggle-price">
 
-          <div class="slider-price__controls">
-            <label for="btn-4"></label>
-            <label for="btn-5"></label>
-            <label for="btn-6"></label>
-          </div>
-          <div class="slider-price__inner">
-            <div class="slider-price__wrap">
-              <table class="tariff">
-                <tr class="tariff__row tariff__row--header">
-                  <th class="tariff__title">
-                    <span class="tariff__name">База</span>
-                    <span class="tariff__price">1,99 USD</span>
-                  </th>
-                  <th class="tariff__title  tariff__title--hit">
-                    <span class="tariff__name">Стандарт</span>
-                    <span class="tariff__price">3,99 USD</span>
-                  </th>
-                  <th class="tariff-title">
-                    <span class="tariff__name">Анлим</span>
-                    <span class="tariff__price">9,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="tariff__row">
-                  <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                  <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                  <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                    Розовый фильтр<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                </tr>
-                <tr class="tariff__row">
-                  <td class="tariff__feature-emotion  tariff__feature-emotion--no">
-                    Смайлики<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
-                  </td>
-                  <td class="tariff__feature-emotion  tariff__feature-emotion--no">
-                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                  <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
-                    Смайлики<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                </tr>
-                <tr class="tariff__row">
-                  <td class="tariff__feature-comment  tariff__feature-comment--no">
-                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
-                  </td>
-                  <td class="tariff__feature-comment  tariff__feature-comment--no">
-                    Комментарии<img src="http://placehold.it/26x26" width="26" height="26" alt="Не включено">
-                  </td>
-                  <td class="tariff__feature-comment  tariff__feature-comment--yes">
-                    Комментарии<img src="http://placehold.it/29x22" width="29" height="22" alt="Включено">
-                  </td>
-                </tr>
-              </table>
-            </div>
+        <div class="slider-price__controls">
+          <label for="btn-4"></label>
+          <label for="btn-5"></label>
+          <label for="btn-6"></label>
+        </div>
+        <div class="slider-price__inner">
+          <div class="slider-price__wrap">
+            <table class="tariff">
+              <tr class="tariff__row tariff__row--header">
+                <th class="tariff__title">
+                  <span class="tariff__name">База</span>
+                  <span class="tariff__price">1,99 USD</span>
+                </th>
+                <th class="tariff__title  tariff__title--hit">
+                  <span class="tariff__ribbon"><span>Хит</span></span>
+                  <span class="tariff__name">Стандарт</span>
+                  <span class="tariff__price">3,99 USD</span>
+                </th>
+                <th class="tariff__title">
+                  <span class="tariff__name">Анлим</span>
+                  <span class="tariff__price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr class="tariff__row">
+                <td class="tariff__feature-filter  tariff__feature-filter--yes">
+                  Розовый фильтр
+                </td>
+                <td class="tariff__feature-filter  tariff__feature-filter--yes">
+                  Розовый фильтр
+                </td>
+                <td class="tariff__feature-filter  tariff__feature-filter--yes">
+                  Розовый фильтр
+                </td>
+              </tr>
+              <tr class="tariff__row">
+                <td class="tariff__feature-emotion  tariff__feature-emotion--no">
+                  Смайлики
+                </td>
+                <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
+                  Смайлики
+                </td>
+                <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
+                  Смайлики
+                </td>
+              </tr>
+              <tr class="tariff__row">
+                <td class="tariff__feature-comment  tariff__feature-comment--no">
+                  Комментарии
+                </td>
+                <td class="tariff__feature-comment  tariff__feature-comment--no">
+                  Комментарии
+                </td>
+                <td class="tariff__feature-comment  tariff__feature-comment--yes">
+                  Комментарии
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </div>
 </main>
+
+
 <footer class="page-address-footer">
   <div class="page-address-footer__container">
     <div class="contacts-block">
@@ -205,28 +216,24 @@
         Свяжитесь с нами!
       </div>
       <address class="contacts-address">
-        <label class="contacts-address__label">Звоните:
-          <a class="contacts-address__text  contacts-address__text--red" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
-        </label>
-        <label class="contacts-address__label">Пишите:
-          <a class="contacts-address__text  contacts-address__text--red" href="mailto:mail@htmlacademy.ru?Subject=Hello">mail@htmlacademy.ru</a>
-        </label>
-        <label class="contacts-address__label">Приезжайте в гости:
-          <span class="contacts-address__text  contacts-address__text--red">ул. Большая Конюшенная, 19/8</span>
-        </label>
+        <span class="contacts-address__label">Звоните:</span>
+        <a class="contacts-address__text  contacts-address__text--red" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
+        <span class="contacts-address__label">Пишите:</span>
+        <a class="contacts-address__text  contacts-address__text--red" href="mailto:mail@htmlacademy.ru?Subject=Hello">mail@htmlacademy.ru</a>
+        <span class="contacts-address__label">Приезжайте в гости:</span>
+        <span class="contacts-address__text  contacts-address__text--red">ул. Большая Конюшенная, 19/8</span>
       </address>
     </div>
   </div>
+  <div class="page-map" id="page-map"></div>
 </footer>
-<div class="page-map">
-  <iframe class="map-layer"
-          width="100%"
-          height="320"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.938794,30.323083&maptype=roadmap&zoom=17&language=ru"
-          allowfullscreen>
-  </iframe>
-  <div class="page-map__container"></div>
-</div>
+
+
+<!-- connect map -->
+<script src="js/main.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&maptype=roadmap&language=ru&callback=initMap&signed_in=true"
+  async defer>
+</script>
 </body>
 </html>

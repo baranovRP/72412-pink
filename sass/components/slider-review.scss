@@ -1,0 +1,55 @@
+@import "../variables";
+@import "../mixins";
+
+.slider-review {
+  position: relative;
+
+  min-height: 290px;
+  padding-top: 5px;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__inner {
+    min-height: 290px;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    width: 300%;
+
+    transition: transform 300ms ease;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 19px;
+    left: 114px;
+    z-index: 95;
+
+    width: 100%;
+  }
+
+  &__controls label {
+    @include slider-controls--unchecked;
+  }
+
+  #btn-1:checked ~ &__controls label[for="btn-1"],
+  #btn-2:checked ~ &__controls label[for="btn-2"],
+  #btn-3:checked ~ &__controls label[for="btn-3"] {
+    @include slider-control-checked;
+  }
+
+  #btn-1:checked ~ &__inner &__wrap {
+    transform: translate(0);
+  }
+
+  #btn-2:checked ~ &__inner &__wrap {
+    transform: translate(-300px);
+  }
+
+  #btn-3:checked ~ &__inner &__wrap {
+    transform: translate(-600px);
+  }
+}

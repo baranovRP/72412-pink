@@ -1,0 +1,136 @@
+@import "../variables";
+@import "../mixins";
+
+.page-header {
+  position: relative;
+
+  width: 100%;
+  min-height: 197px;
+
+  background-color: #1d2631;
+
+  &__container {
+    @include container;
+    @include background-image("bg-header.jpg");
+    @include clearfix;
+
+    min-height: 197px;
+
+    background-color: #1d2631;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    min-height: 67px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__container--open{
+    width:320px;
+    padding: 0;
+  }
+
+  &--index &__container {
+    @include background-image("bg-header--index.jpg");
+    min-height: 458px;
+    padding-bottom: 20px;
+  }
+
+  &--competition &__container {
+    @include background-image("bg-header--competition.jpg");
+    min-height: 237px;
+  }
+
+  &__inner {
+    position: relative;
+
+    min-height: 25px;
+    padding: 22px 0;
+    padding-bottom: 20px;
+  }
+
+  &__inner--open {
+    margin-bottom: 1px;
+
+    background-color: $color__blue--very-dark;
+    box-shadow: 0 1px 0 #000000;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+  }
+
+  &__logo-link img {
+    width: 74px;
+    height: 23px;
+
+    vertical-align: bottom;
+  }
+
+  &__toggle {
+    display: inline-block;
+
+    vertical-align: top;
+
+    cursor: pointer;
+  }
+
+  &__toggle--close::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 10px;
+
+    width: 50px;
+    height: 5px;
+
+    border-top: 15px double $color__white;
+    border-bottom: 5px solid $color__white;
+  }
+
+  &__toggle--open {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 10px;
+
+    width: 23px;
+    height: 23px;
+  }
+
+  &__toggle--open::before,
+  &__toggle--open::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 10px;
+
+    width: 4px;
+    height: 30px;
+
+    background-color: $color__white;
+  }
+
+  &__toggle--open::before {
+    transform: rotate(45deg);
+  }
+
+  &__toggle--open::after {
+    transform: rotate(-45deg);
+  }
+
+  &__nav-wrap--hidden {
+    @include hidden;
+  }
+}

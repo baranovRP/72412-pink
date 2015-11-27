@@ -1,0 +1,34 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+
+// Fonts
+@import "font-face";
+
+// Components
+@import "components/base";
+@import "components/page-header";
+@import "components/main-nav";
+@import "components/page-rubric";
+@import "components/page-apps";
+@import "components/apps";
+@import "components/apps-os";
+@import "components/page-promo";
+@import "components/promo";
+@import "components/promo-item";
+@import "components/page-review";
+@import "components/slider-review";
+@import "components/slider-item";
+@import "components/page-price";
+@import "components/slider-price";
+@import "components/tariff";
+@import "components/page-address-footer";
+@import "components/contacts-block";
+@import "components/contacts-address";
+@import "components/page-map";
+@import "components/registration-form";
+@import "components/control-text";
+@import "components/control-radio";

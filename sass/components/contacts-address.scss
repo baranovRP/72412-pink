@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins";
+
+.contacts-address {
+  max-width: 280px;
+  min-height: 270px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  &__label {
+    @include font-family-general($font-face-family);
+
+    display: block;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color__blue--very-dark;
+    font-style: normal;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 23px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color__pink--strong;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  &__text--red {
+    color: $color__pink--strong;
+  }
+}

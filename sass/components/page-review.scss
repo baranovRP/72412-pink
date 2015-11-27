@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../mixins";
+
+.page-review {
+  width: 100%;
+  min-height: 290px;
+  padding-top: 36px;
+  overflow: hidden;
+
+  background-color: $color__white;
+
+  &__container {
+    @include container;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../mixins";
+
+.page-promo {
+  position: relative;
+
+  width: 100%;
+  min-height: 1002px;
+  overflow: hidden;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -233%;
+    left: -50%;
+    z-index: -1;
+
+    width: 200%;
+    height: 512%;
+
+    background-image: linear-gradient(to bottom, $color__white, $color__white 50%, $color__grey--very-light 50%);
+    background-repeat: no-repeat;
+    transform: rotate(-6deg);
+  }
+
+  &__container {
+    @include container;
+
+    min-height: 1002px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+.page-rubric {
+  width: 100%;
+  min-height: 128px;
+
+  &--competition{
+    padding-top: 10px;
+  }
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0 20px;
+    padding-top: 18px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: $color__white;
+  }
+}

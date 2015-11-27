@@ -1,0 +1,82 @@
+@import "variables";
+
+$part-file-path: $font-file-path+ $part-font-file-name;
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Light"),
+  local($font-face-family-join +"-Light"),
+  url($part-file-path + "light.woff2") format("woff2"),
+  url($part-file-path + "light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Light Italic"),
+  local($font-face-family-join +"Light-Italic"),
+  url($part-file-path + "lightitalic.woff2") format("woff2"),
+  url($part-file-path + "lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family),
+  local($font-face-family-join),
+  url($part-file-path + ".woff2") format("woff2"),
+  url($part-file-path + ".woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Italic"),
+  local($font-face-family-join +"-Italic"),
+  url($part-file-path + "italic.woff2") format("woff2"),
+  url($part-file-path + "italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Semibold"),
+  local($font-face-family-join +"-Semibold"),
+  url($part-file-path + "semibold.woff2") format("woff2"),
+  url($part-file-path + "semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Semibold Italic"),
+  local($font-face-family-join +"-SemiboldItalic"),
+  url($part-file-path + "semibolditalic.woff2") format("woff2"),
+  url($part-file-path + "semibolditalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Bold"),
+  local($font-face-family-join +"-Bold"),
+  url($part-file-path + "bold.woff2") format("woff2"),
+  url($part-file-path + "bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-face-family;
+  src: local($font-face-family +" Bold Italic"),
+  local($font-face-family-join +"-BoldItalic"),
+  url($part-file-path + "bolditalic.woff2") format("woff2"),
+  url($part-file-path + "bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}

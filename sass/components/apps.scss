@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../variables";
+
+
+.apps {
+  margin: 0 auto;
+  padding: 0 9px;
+  padding-bottom: 29px;
+
+  &__btn {
+    @include font-family-general($font-face-family);
+
+    display: block;
+    padding: 15px 35px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
+    text-align: center;
+    color: $color__white;
+    text-decoration: none;
+
+    border: 3px solid $color__white;
+    border-radius: 50px;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: $color__white;
+  }
+}

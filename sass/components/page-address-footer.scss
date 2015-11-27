@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../mixins";
+
+.page-address-footer {
+  @include background-image("bg-footer-map.png");
+
+  position: relative;
+
+  width: 100%;
+  min-height: 612px;
+  padding: 0;
+
+  background-color: $color__white;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  &__container {
+    @include container;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+
+    min-height: 350px;
+    margin-left: -160px;
+
+    background-color: $color__white;
+  }
+
+  &__container::after {
+    content: "";
+    position: absolute;
+    top: 412px;
+    left: 50%;
+    z-index: 5;
+
+    display: block;
+    margin-left: -160px;
+
+    border-top: 34px solid $color__white;
+    border-right: 160px solid transparent;
+    border-left: 160px solid transparent;
+  }
+}

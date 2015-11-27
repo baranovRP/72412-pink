@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - Конкурс</title>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header  page-header--competition">
   <div class="page-header__container">
-    <a class="page-header__logo-link" href="">Pink</a>
-
-    <div class="page-header__nav-wrap">
-      <nav class="main-nav  main-nav--hidden">
+    <div class="page-header__inner">
+      <a class="page-header__logo-link" href="index.html">
+        <img src="img/logo.png" width="74" height="23" alt="Pink">
+      </a>
+      <a class="page-header__toggle  page-header__toggle--close"></a>
+    </div>
+    <div class="page-header__nav-wrap  page-header__nav-wrap--hidden">
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Информация</a>
@@ -28,59 +30,59 @@
             <a class="main-nav__link" href="competition.html">Конкурс</a>
           </li>
         </ul>
-        <a class="mani-nav__toggle  main-nav__toggle--close" href="#"></a>
       </nav>
+    </div>
+    <div class="page-rubric page-rubric--competition">
+      <h1 class="page-rubric__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
     </div>
   </div>
 </header>
-<div class="page-rubric">
-  <div class="page-rubric__container">
-    <h1 class="page-rubric__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-  </div>
-</div>
+
+
 <main class="page-group-content">
   <div class="registration-form">
-    <div class="registration-form__wrap">
-      <p class="registration-form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
-        на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <div class="registration-form__wrap  registration-form__wrap--white">
+      <div class="registration-form__intro"><p class="registration-form__text">Поделитесь своей историей и получите шанс
+        выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+      </div>
     </div>
 
     <form action="/echo" method="post" id="form-registration">
-      <div class="registration-form__wrap">
+      <div class="registration-form__wrap  registration-form__wrap--white">
         <fieldset class="registration-form__name">
-          <label class="control-text  control-text--red">Имя: *
-            <input type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
-          </label>
-          <label class="control-text  control-text--red">Фамилия: *
-            <input type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
-          </label>
-          <label class="control-text  control-text--red">Отчество:
-            <input
-              type="text" name="enter-patronymic-name" id="text-patronymic-name" placeholder="Ну и отчество тоже">
-          </label>
+          <label class="control-text  control-text--red" for="text-first-name">Имя: *</label>
+          <input type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
+
+          <label class="control-text  control-text--red" for="text-second-name">Фамилия: *</label>
+          <input type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
+
+          <label class="control-text  control-text--red" for="text-patronymic-name">Отчество:</label>
+          <input type="text" name="enter-patronymic-name" id="text-patronymic-name" placeholder="Ну и отчество тоже">
         </fieldset>
       </div>
-      <div class="registration-form__wrap">
+      <div class="registration-form__wrap  registration-form__wrap--grey">
         <fieldset class="registration-form__apps">
           <legend
             class="registration-form__title  registration-form__title--red  registration-form__title--small-line">
             С каким приложением путешествовали? *
           </legend>
-          <label class="control-radio control-radio--active">
-            <input type="radio" checked name="choose-apps" value="os-ios" id="radio-ios">Pink для iOS
-            <span class="control-radio__indicator"></span>
-          </label>
-          <label class="control-radio">
-            <input type="radio" name="choose-apps" value="os-android" id="radio-android">Pink на Android
-            <span class="control-radio__indicator"></span>
-          </label>
-          <label class="control-radio">
-            <input type="radio" name="choose-apps" value="os-windows-phone" id="radio-windows-phone">Windows Phone
-            <span class="control-radio__indicator"></span>
-          </label>
+          <div class="control-radio  control-radio--active">
+            <input type="radio" checked name="choose-apps" value="os-ios" id="radio-ios">
+            <label class="control-radio__label" for="radio-ios">Pink для iOS</label>
+          </div>
+
+          <div class="control-radio">
+            <input type="radio" name="choose-apps" value="os-android" id="radio-android">
+            <label class="control-radio__label" for="radio-android">Pink на Android</label>
+          </div>
+
+          <div class="control-radio">
+            <input type="radio" name="choose-apps" value="os-windows-phone" id="radio-windows-phone">
+            <label class="control-radio__label" for="radio-windows-phone">Windows Phone</label>
+          </div>
         </fieldset>
       </div>
-      <div class="registration-form__wrap">
+      <div class="registration-form__wrap  registration-form__wrap--white">
         <fieldset class="registration-form__travel">
           <legend class="registration-form__title  registration-form__title--red">Когда вы путешествовали? *</legend>
           <label class="control-text control-text--red">
@@ -100,120 +102,122 @@
           </label>
         </fieldset>
       </div>
-      <fieldset class="registration-form__travelers">
-        <div class="registration-form__wrap">
-          <fieldset class="add-travelers">
-            <legend class="registration-form__title  registration-form__title--red">Количество попутчиков *</legend>
-            <button class="btn-sign btn-sign-minus">-</button>
-            <input type="text" name="enter-quantity-travelers" id="text-quantity" placeholder="2 чел">
-            <button class="btn-sign btn-sign-plus">+</button>
-            <label for="text-quantity" class="control-text"></label>
-          </fieldset>
-        </div>
-        <div class="registration-form__wrap">
-          <fieldset class="traveler-item">
-            <legend class="traveler-item__title  traveler-item__title--red">№</legend>
-            <label class="control-text  control-text--red">Имя: *
-              <input type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
-            </label>
-            <label class="control-text  control-text--red">Прозвище:
-              <input type="text" name="enter-nickname" id="text-nickname-1" placeholder="Ну как же без этого!">
-            </label>
-          </fieldset>
-        </div>
-        <div class="registration-form__wrap">
-          <fieldset class="traveler-item">
-            <legend class="traveler-item__title  traveler-item__title--red">№</legend>
-            <label class="control-text  control-text--red">Имя: *
-              <input type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
-            </label>
-            <label class="control-text  control-text--red">Прозвище:
-              <input type="text" name="enter-nickname" id="text-nickname-2" placeholder="Ну как же без этого!">
-            </label>
-          </fieldset>
-        </div>
-      </fieldset>
-      <div class="registration-form__wrap">
-        <fieldset class="registration-form__achievements">
-          <legend
-            class="registration-achievements__title  registration-achievements__title--red  registration-achievements__title--small-line">
-            Ваши безбашенные достижения в путешествии
-          </legend>
-          <label class="control-checkbox  control-checkbox--active">
-            <input type="checkbox" checked name="tick-selfi" id="checkbox-achievement-01">Сделал селфи с акулой
-          </label>
-          <label class="control-checkbox  control-checkbox--active">
-            <input type="checkbox" checked name="tick-burn-on-beach" id="checkbox-achievement-02">Обгорел на пляже
-          </label>
-          <label class="control-checkbox">
-            <input type="checkbox" name="tick-saw-chuck" id="checkbox-achievement-03">Видел Чака Норриса
-          </label>
-          <label class="control-checkbox">
-            <input type="checkbox" name="tick-souvenirs" id="checkbox-achievement-04">Накупил сувениров
-          </label>
-          <label class="control-checkbox  control-checkbox--active">
-            <input type="checkbox" checked name="tick-keep-tower" id="checkbox-achievement-05">Удержал башню
-          </label>
-          <label class="control-checkbox">
-            <input type="checkbox" name="tick-destroy-hotel" id="checkbox-achievement-06">Разгромил отель
-          </label>
-        </fieldset>
-      </div>
-      <div class="registration-form__wrap">
-        <fieldset class="registration-form__photos">
-          <legend class="registration-photos__title registration-photos__title--red">Ваши фотографии из поездки *
-          </legend>
-          <label class="control-text">
-            <input type="text" name="enter-path-to-photo" id="text-path-to-photo" placeholder="Загрузить фото">
-          </label>
-
-          <div class="travels-photo-gallery">
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a class="gallery-item__btn-close" href="#">
-                <img src="http://placehold.it/67x67" width="67" height="67" alt="">
-              </a>
-            </div>
+      <div class="registration-form__wrap  registration-form__wrap--grey">
+        <fieldset class="registration-form__travelers">
+          <div class="registration-form__wrap  registration-form__wrap--grey">
+            <fieldset class="add-travelers">
+              <legend class="registration-form__title  registration-form__title--red">Количество попутчиков *</legend>
+              <button class="btn-sign btn-sign-minus">-</button>
+              <input type="text" name="enter-quantity-travelers" id="text-quantity" placeholder="2 чел">
+              <button class="btn-sign btn-sign-plus">+</button>
+              <label for="text-quantity" class="control-text"></label>
+            </fieldset>
+          </div>
+          <div class="registration-form__wrap  registration-form__wrap--grey">
+            <fieldset class="traveler-item">
+              <legend class="traveler-item__title  traveler-item__title--red">№</legend>
+              <label class="control-text  control-text--red">Имя: *
+                <input type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
+              </label>
+              <label class="control-text  control-text--red">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-1" placeholder="Ну как же без этого!">
+              </label>
+            </fieldset>
+          </div>
+          <div class="registration-form__wrap  registration-form__wrap--grey">
+            <fieldset class="traveler-item">
+              <legend class="traveler-item__title  traveler-item__title--red">№</legend>
+              <label class="control-text  control-text--red">Имя: *
+                <input type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
+              </label>
+              <label class="control-text  control-text--red">Прозвище:
+                <input type="text" name="enter-nickname" id="text-nickname-2" placeholder="Ну как же без этого!">
+              </label>
+            </fieldset>
           </div>
         </fieldset>
-      </div>
-      <div class="registration-form__wrap">
-        <input class="btn btn--submit" type="submit" value="Отправить форму">
-      </div>
+        <div class="registration-form__wrap  registration-form__wrap--grey">
+          <div class="registration-form__wrap  registration-form__wrap--white">
+            <fieldset class="registration-form__achievements">
+              <legend
+                class="registration-achievements__title  registration-achievements__title--red  registration-achievements__title--small-line">
+                Ваши безбашенные достижения в путешествии
+              </legend>
+              <label class="control-checkbox  control-checkbox--active">
+                <input type="checkbox" checked name="tick-selfi" id="checkbox-achievement-01">Сделал селфи с акулой
+              </label>
+              <label class="control-checkbox  control-checkbox--active">
+                <input type="checkbox" checked name="tick-burn-on-beach" id="checkbox-achievement-02">Обгорел на пляже
+              </label>
+              <label class="control-checkbox">
+                <input type="checkbox" name="tick-saw-chuck" id="checkbox-achievement-03">Видел Чака Норриса
+              </label>
+              <label class="control-checkbox">
+                <input type="checkbox" name="tick-souvenirs" id="checkbox-achievement-04">Накупил сувениров
+              </label>
+              <label class="control-checkbox  control-checkbox--active">
+                <input type="checkbox" checked name="tick-keep-tower" id="checkbox-achievement-05">Удержал башню
+              </label>
+              <label class="control-checkbox">
+                <input type="checkbox" name="tick-destroy-hotel" id="checkbox-achievement-06">Разгромил отель
+              </label>
+            </fieldset>
+          </div>
+          <div class="registration-form__wrap  registration-form__wrap--grey">
+            <fieldset class="registration-form__photos">
+              <legend class="registration-photos__title registration-photos__title--red">Ваши фотографии из поездки *
+              </legend>
+              <label class="control-text">
+                <input type="text" name="enter-path-to-photo" id="text-path-to-photo" placeholder="Загрузить фото">
+              </label>
+
+              <div class="travels-photo-gallery">
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a class="gallery-item__btn-close" href="#">
+                    <img src="http://placehold.it/67x67" width="67" height="67" alt="">
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="registration-form__wrap">
+            <input class="btn btn--submit" type="submit" value="Отправить форму">
+          </div>
     </form>
     <div class="registration-form__wrap">
       <span class="registration-form__footnote"><span
@@ -225,19 +229,28 @@
   <div class="page-footer__container">
     <div class="logo">
       <a class="logo__link" href="index.html">
-        <img src="http://placehold.it/59x40" width="59" height="40" alt="">Pink
+        <!--<img src="http://placehold.it/59x40" width="59" height="40" alt="">-->
+        Pink
       </a>
     </div>
     <div class="social-links">
       <a class="social-links__item-twitter" href="#">
-        <img src="http://placehold.it/19x15" width="19" height="15" alt="">Twitter</a>
+        <!--<img src="http://placehold.it/19x15" width="19" height="15" alt="">-->
+        Twitter
+      </a>
       <a class="social-links__item-facebook" href="#">
-        <img src="http://placehold.it/9x19" width="9" height="19" alt="">Facebook</a>
+        <!--<img src="http://placehold.it/9x19" width="9" height="19" alt="">-->
+        Facebook
+      </a>
       <a class="social-links__item--play" href="#">
-        <img src="http://placehold.it/15x14" width="15" height="14" alt="">Play</a>
+        <!--<img src="http://placehold.it/15x14" width="15" height="14" alt="">-->
+        Play
+      </a>
     </div>
     <div class="copyright">
-      <a class="copyright__link" href="#">Разработано<img src="http://placehold.it/27x34" width="27" height="34" alt=""></a>
+      <a class="copyright__link" href="#">
+        <!--Разработано<img src="http://placehold.it/27x34" width="27" height="34" alt="">-->
+      </a>
     </div>
   </div>
 </footer>

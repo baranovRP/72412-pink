@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../mixins";
+
+.control-text {
+  @include font-family-general($font-face-family);
+  @include clearfix;
+
+  display: block;
+  padding-bottom: 4px;
+  padding-left: 33px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  color: $color__pink--strong;
+  text-transform: uppercase;
+
+  & + input {
+    @include font-family-general($font-face-family);
+
+    width: 250px;
+    margin-bottom: 18px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color__blue--very-dark;
+
+    border: 2px solid $color__grey--light;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../mixins";
+
+.apps-os {
+  max-width: 230px;
+  min-height: 42px;
+  margin: 0 auto;
+  padding: 0 38px;
+  padding-top: 32px;
+  padding-bottom: 23px;
+
+  font-size: 0;
+
+  &__item {
+    @include background-image("sprite.png");
+
+    display: inline-block;
+    margin-right: 36px;
+
+    vertical-align: bottom;
+
+    background-color: #1d2631;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__item--apple {
+    width: 46px;
+    height: 57px;
+
+    background-position: -5px -62px;
+  }
+
+  &__item--android {
+    width: 42px;
+    height: 47px;
+    padding-bottom: 1px;
+
+    background-position: -5px -5px;
+  }
+
+  &__item--microsoft {
+    width: 44px;
+    height: 42px;
+    padding-bottom: 3px;
+
+    background-position: -5px -129px;
+  }
+}

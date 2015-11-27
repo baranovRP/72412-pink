@@ -1,0 +1,89 @@
+@import "../variables";
+@import "../mixins";
+
+.registration-form {
+  width: 100%;
+  min-height: 895px;
+
+  background-color: $color__white;
+
+  &__wrap {
+    min-height: 75px;
+
+    text-align: center;
+  }
+
+  &__wrap--white {
+    background-color: $color__white;
+  }
+
+  &__wrap--grey {
+    background-color: $color__grey--very-light;
+  }
+
+  &__intro {
+    @include container;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 45px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color__blue--very-dark;
+  }
+
+  &__intro span {
+    @include hidden;
+  }
+
+  &__name,
+  &__apps,
+  &__travel,
+  &__travelers,
+  &__achievements,
+  &__photos {
+    @include container;
+
+    border: 0;
+  }
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color__pink--strong;
+    text-transform: uppercase;
+  }
+
+  &__title--small-line {
+    line-height: 18px;
+  }
+
+  &__name {
+    min-height: 345px;
+    padding: 0;
+    padding-top: 34px;
+    padding-bottom: 27px;
+  }
+
+  &__apps {
+    min-height: 338px;
+
+    text-align: left;
+  }
+
+  &__apps > &__title {
+    padding-top: 36px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+}

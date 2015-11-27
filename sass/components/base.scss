@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../mixins";
+
+body {
+  @include font-family-general($font-face-family);
+
+  background-color: $color__white;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+
+  vertical-align: top;
+}
+
+h1 {
+  @include font-family-general($font-face-family);
+
+  font-weight: 300;
+  font-size: 24px;
+}
