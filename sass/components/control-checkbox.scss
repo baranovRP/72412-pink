@@ -1,9 +1,9 @@
 @import "../variables";
 @import "../mixins";
 
-.control-radio {
+.control-checkbox {
   padding: 20px 0;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
   padding-left: 10px;
 
   &__label {
@@ -42,21 +42,24 @@
 
     background-color: $color__white;
     border: 2px solid $color__grey--light;
-    border-radius: 50%;
   }
 
   input:checked + &__label:after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 12px;
+    top: -3px;
+    left: 15px;
 
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 20px;
 
-    background-color: $color__pink--strong;
-    border-radius: 50%;
+    background-color: $color__white;
+    border-top: 0 solid transparent;
+    border-right: 2px solid $color__pink--strong;
+    border-bottom: 2px solid $color__pink--strong;
+    border-left: 0 solid transparent;
+    transform: rotate(45deg);
 
     transition: all 0.2s;
   }
