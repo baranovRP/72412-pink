@@ -125,6 +125,8 @@
   }
 
   &__btn {
+    position: relative;
+
     display: inline-block;
     padding: 14px 24px;
 
@@ -140,10 +142,42 @@
   }
 
   &__btn--minus {
+    padding-top: 13px;
+    padding-bottom: 15px;
+
     border-right-width: 1px;
+  }
+
+  &__btn--minus::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 12px;
+
+    width: 27px;
+    height: 3px;
+
+    background-color: $color__blue--very-dark;
   }
 
   &__btn--plus {
     border-left-width: 1px;
+  }
+
+  &__btn--plus::before,
+  &__btn--plus::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 28px;
+
+    width: 3px;
+    height: 27px;
+
+    background-color: $color__blue--very-dark;
+  }
+
+  &__btn--plus::after {
+    transform: rotate(90deg);
   }
 }
