@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../mixins";
+
+.modal-content {
+  width: 100%;
+  min-height: 289px;
+
+  background-color: $white;
+
+  &__wrap {
+    min-height: 75px;
+
+    text-align: center;
+  }
+
+  &__wrap--grey {
+    background-color: $grey-very-light;
+  }
+}
