@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 197px;
 
-  background-color: #1d2631;
+  background-color: $blue-mostly-black;
 
   &__container {
     @include container;
@@ -16,7 +16,7 @@
 
     min-height: 197px;
 
-    background-color: #1d2631;
+    background-color: $blue-mostly-black;
     background-repeat: no-repeat;
     background-position: 0 0;
   }

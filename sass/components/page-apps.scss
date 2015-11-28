@@ -6,7 +6,7 @@
   min-height: 240px;
   padding-top: 8px;
 
-  background-color: #1d2631;
+  background-color: $blue-mostly-black;
 
   &__container {
     @include container;
