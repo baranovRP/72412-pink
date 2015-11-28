@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../mixins";
+
+.copyright {
+  min-height: 40px;
+  margin-left: 6px;
+
+  text-align: center;
+
+  &__link {
+    @include font-family-general($font-face-family);
+
+    display: block;
+    min-height: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283645;
+    text-decoration: none;
+  }
+  &__img {
+    display: inline-block;
+    width: 40px;
+    padding-left: 5px;
+
+    vertical-align: middle;
+    color: $pink-strong;
+
+    fill: currentColor;
+  }
+}
