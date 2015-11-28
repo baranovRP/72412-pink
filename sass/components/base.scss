@@ -3,6 +3,7 @@
 
 body {
   @include font-family-general($font-face-family);
+  @include fontello-styles;
 
   background-color: $white;
 }

@@ -80,3 +80,10 @@ $part-file-path: $font-file-path+ $part-font-file-name;
   font-weight: 700;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "fontello";
+  src: url($font-file-path + "fontello.woff?78938631") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
