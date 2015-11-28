@@ -5,7 +5,7 @@
   width: 320px;
   min-height: 250px;
 
-  background-color: $color__blue--very-dark;
+  background-color: $blue-very-dark;
 
   &__list {
     margin: 0;
@@ -26,10 +26,10 @@
     font-size: 18px;
     line-height: 32px;
     vertical-align: bottom;
-    color: $color__white;
+    color: $white;
     text-transform: uppercase;
 
-    background-color: $color__blue--very-dark;
+    background-color: $blue-very-dark;
     box-shadow: 0 1px 0 #000000,
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
@@ -43,7 +43,7 @@
     line-height: 32px;
     vertical-align: bottom;
     text-align: center;
-    color: $color__white;
+    color: $white;
     text-transform: uppercase;
     text-decoration: none;
   }

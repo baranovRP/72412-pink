@@ -61,7 +61,7 @@
   &__inner--open {
     margin-bottom: 1px;
 
-    background-color: $color__blue--very-dark;
+    background-color: $blue-very-dark;
     box-shadow: 0 1px 0 #000000;
   }
 
@@ -95,8 +95,8 @@
     width: 50px;
     height: 5px;
 
-    border-top: 15px double $color__white;
-    border-bottom: 5px solid $color__white;
+    border-top: 15px double $white;
+    border-bottom: 5px solid $white;
   }
 
   &__toggle--open {
@@ -119,7 +119,7 @@
     width: 4px;
     height: 30px;
 
-    background-color: $color__white;
+    background-color: $white;
   }
 
   &__toggle--open::before {

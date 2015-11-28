@@ -17,11 +17,11 @@
     max-width: 272px;
     min-height: 90px;
 
-    background-color: $color__blue--very-dark;
-    border-top: 2px solid $color__blue--very-dark;
-    border-right: 2px solid $color__grey--light;
-    border-bottom: 2px solid $color__blue--very-dark;
-    border-left: 2px solid $color__grey--light;;
+    background-color: $blue-very-dark;
+    border-top: 2px solid $blue-very-dark;
+    border-right: 2px solid $grey-light;
+    border-bottom: 2px solid $blue-very-dark;
+    border-left: 2px solid $grey-light;;
   }
 
   &__title span {
@@ -55,10 +55,10 @@
     font-size: 14px;
     line-height: 30px;
     text-align: center;
-    color: $color__white;
+    color: $white;
     text-transform: uppercase;
 
-    background-color: $color__pink--strong;
+    background-color: $pink-strong;
     transform: rotate(-45deg);
   }
 
@@ -70,7 +70,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    color: $color__white;
+    color: $white;
     text-transform: uppercase;
   }
 
@@ -82,7 +82,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
-    color: $color__white;
+    color: $white;
     text-transform: uppercase;
   }
 
@@ -100,10 +100,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: $color__blue--very-dark;
+    color: $blue-very-dark;
     text-transform: uppercase;
 
-    border: 2px solid $color__grey--light;
+    border: 2px solid $grey-light;
   }
 
   &__feature-filter--yes::before,

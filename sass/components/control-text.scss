@@ -38,7 +38,7 @@
     font-size: 14px;
     line-height: 30px;
     text-align: left;
-    color: $color__pink--strong;
+    color: $pink-strong;
     text-transform: uppercase;
   }
 
@@ -74,9 +74,9 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: $color__blue--very-dark;
+    color: $blue-very-dark;
 
-    border: 2px solid $color__grey--light;
+    border: 2px solid $grey-light;
   }
 
   &__input--top {
@@ -103,16 +103,16 @@
     font-size: 18px;
     line-height: 30px;
     vertical-align: bottom;
-    color: $color__blue--very-dark;
+    color: $blue-very-dark;
 
     background-color: #ffffff;
-    border: 2px solid $color__grey--light;
+    border: 2px solid $grey-light;
     border-right-width: 1px;
     border-left-width: 1px;
   }
 
   &__output--person {
-    background-color: $color__grey--very-light;
+    background-color: $grey-very-light;
   }
 
   &__output--short {
@@ -120,7 +120,7 @@
     margin: 0;
     padding: 15px 0;
 
-    background-color: $color__grey--very-light;
+    background-color: $grey-very-light;
     border-left-width: 2px;
   }
 
@@ -134,11 +134,11 @@
     font-size: 18px;
     line-height: 30px;
     vertical-align: bottom;
-    color: $color__blue--very-dark;
+    color: $blue-very-dark;
     text-decoration: none;
 
     background-color: #ffffff;
-    border: 2px solid $color__grey--light;
+    border: 2px solid $grey-light;
   }
 
   &__btn--minus {
@@ -157,7 +157,7 @@
     width: 27px;
     height: 3px;
 
-    background-color: $color__blue--very-dark;
+    background-color: $blue-very-dark;
   }
 
   &__btn--plus {
@@ -174,7 +174,7 @@
     width: 3px;
     height: 27px;
 
-    background-color: $color__blue--very-dark;
+    background-color: $blue-very-dark;
   }
 
   &__btn--plus::after {
