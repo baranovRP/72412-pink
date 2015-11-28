@@ -1,7 +1,11 @@
 @import "../variables";
 @import "../mixins";
 
-.page-footer{
+.page-footer {
   width: 100%;
-  min-height: 197px;
+  min-height: 290px;
+
+  &__container {
+    @include container;
+  }
 }
