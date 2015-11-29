@@ -2,7 +2,7 @@
 @import "../variables";
 
 .modal-content {
-  @include container;
+  width:320px;
   @include hidden;
 
   position: absolute;
