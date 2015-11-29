@@ -1,5 +1,4 @@
-@import "../variables";
-@import "../mixins";
+@import "../style";
 
 .btn {
   @include font-family-general($font-face-family);
