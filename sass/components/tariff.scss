@@ -18,6 +18,7 @@
     min-height: 90px;
 
     background-color: $blue-very-dark;
+    background-clip: content-box;
     border-top: 2px solid $blue-very-dark;
     border-right: 2px solid $grey-light;
     border-bottom: 2px solid $blue-very-dark;
