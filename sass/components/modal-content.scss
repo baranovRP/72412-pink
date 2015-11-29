@@ -2,8 +2,19 @@
 @import "../variables";
 
 .modal-content {
-  width: 100%;
+  @include container;
+  @include hidden;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+
   min-height: 289px;
+  margin-top: 280px;
+  margin-left: -160px;
+
+  font-size: 0;
 
   background-color: $white;
 
