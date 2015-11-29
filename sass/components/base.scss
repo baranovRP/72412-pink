@@ -1,5 +1,4 @@
-@import "../variables";
-@import "../mixins";
+@import "../style";
 
 body {
   @include font-family-general($font-face-family);

@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../style";
 
 @mixin background-image ($pic-name) {
   background-image: url($img-folder-path + $pic-name);
