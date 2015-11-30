@@ -22,10 +22,11 @@
   &__controls {
     position: absolute;
     bottom: 19px;
-    left: 114px;
+    left: 50%;
     z-index: 95;
 
-    width: 100%;
+    width: 70px;
+    margin-left: -35px;
   }
 
   &__controls label {
@@ -48,5 +49,37 @@
 
   #btn-3:checked ~ &__inner &__wrap {
     transform: translate(-600px);
+  }
+}
+
+
+@media (min-width: $screen-tablet) {
+  .slider-review {
+    min-height: 150px;
+
+    &__inner {
+      min-height: 150px;
+    }
+
+    &__controls {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+
+      width: 76px;
+      margin-left: -38px;
+    }
+
+    #btn-1:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+
+    #btn-2:checked ~ &__inner &__wrap {
+      transform: translate(-640px);
+    }
+
+    #btn-3:checked ~ &__inner &__wrap {
+      transform: translate(-1280px);
+    }
   }
 }

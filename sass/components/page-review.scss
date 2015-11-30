@@ -7,3 +7,10 @@
     @include container;
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .page-review {
+    min-height: 150px;
+    padding-top: 17px;
+  }
+}
