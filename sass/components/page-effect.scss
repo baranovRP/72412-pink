@@ -1,0 +1,26 @@
+.page-effect {
+  width: 100%;
+  min-height: 280px;
+  margin: 0 auto;
+
+  &__container {
+    @include container;
+
+    min-height: 280px;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .page-effect {
+    @include hidden;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-effect {
+    display: inline-block;
+    padding: 40px 0;
+
+    vertical-align: top;
+  }
+}
