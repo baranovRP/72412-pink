@@ -27,3 +27,13 @@
     min-height: 1002px;
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .page-promo {
+    min-height: 725px;
+
+    &__container {
+      min-height: 725px;
+    }
+  }
+}

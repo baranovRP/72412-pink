@@ -1,5 +1,4 @@
 .promo-item {
-  max-width: 300px;
   min-height: 100px;
   margin: 0 auto;
   margin-bottom: 18px;
@@ -31,5 +30,19 @@
     font-size: 14px;
     line-height: 24px;
     color: $blue-very-dark;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .promo-item {
+    width: 320px;
+    margin-bottom: 23px;
+    padding: 0;
+
+    text-align: left;
+
+    &:last-of-type {
+      margin-bottom: 34px;
+    }
   }
 }
