@@ -76,6 +76,22 @@
     border: 2px solid $grey-light;
   }
 
+  &__input::-webkit-input-placeholder {
+    color: $blue-very-dark;
+  }
+
+  &__input::-moz-placeholder {
+    color: $blue-very-dark;
+  }
+
+  &__input:-moz-placeholder {
+    color: $blue-very-dark;
+  }
+
+  &__input:-ms-input-placeholder {
+    color: $blue-very-dark;
+  }
+
   &__input--top {
     margin-bottom: 8px;
   }
