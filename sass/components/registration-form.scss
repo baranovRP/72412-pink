@@ -1,11 +1,11 @@
-@import "../variables";
 @import "../mixins";
+@import "../variables";
 
 .registration-form {
   width: 100%;
   min-height: 895px;
 
-  background-color: $color__white;
+  background-color: $white;
 
   &__wrap {
     min-height: 75px;
@@ -14,11 +14,11 @@
   }
 
   &__wrap--white {
-    background-color: $color__white;
+    background-color: $white;
   }
 
   &__wrap--grey {
-    background-color: $color__grey--very-light;
+    background-color: $grey-very-light;
   }
 
   &__intro {
@@ -35,7 +35,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: $color__blue--very-dark;
+    color: $blue-very-dark;
   }
 
   &__intro span {
@@ -47,7 +47,8 @@
   &__travel,
   &__travelers,
   &__achievements,
-  &__photos {
+  &__photos,
+  &__footnote {
     @include container;
 
     border: 0;
@@ -59,7 +60,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: $color__pink--strong;
+    color: $pink-strong;
     text-transform: uppercase;
   }
 
@@ -85,5 +86,74 @@
     padding-bottom: 20px;
 
     text-align: center;
+  }
+
+  &__travel {
+    min-height: 440px;
+    padding-bottom: 38px;
+  }
+
+  &__travel > &__title {
+    padding-top: 43px;
+    padding-bottom: 35px;
+
+    text-align: center;
+  }
+
+  &__travelers {
+    min-height: 149px;
+    padding-bottom: 48px;
+  }
+
+  &__travelers > &__title {
+    padding-top: 30px;
+    padding-bottom: 14px;
+
+    text-align: center;
+  }
+
+  &__achievements {
+    min-height: 338px;
+    padding-bottom: 18px;
+
+    text-align: left;
+  }
+
+  &__achievements > &__title {
+    padding-top: 46px;
+    padding-bottom: 24px;
+
+    text-align: center;
+  }
+
+  &__photos {
+    position: relative;
+
+    min-height: 338px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &__photos > &__title {
+    padding-top: 30px;
+    padding-bottom: 28px;
+
+    text-align: center;
+  }
+
+  &__footnote {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $blue-very-dark;
+    text-transform: uppercase;
+  }
+
+  &__asterisk {
+    color: $pink-strong;
+    font-style: normal;
   }
 }

@@ -1,10 +1,11 @@
-@import "../variables";
 @import "../mixins";
+@import "../variables";
 
 body {
   @include font-family-general($font-face-family);
+  @include fontello-styles;
 
-  background-color: $color__white;
+  background-color: $white;
 }
 
 img {

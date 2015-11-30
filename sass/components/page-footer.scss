@@ -1,10 +1,9 @@
 @import "../mixins";
 @import "../variables";
 
-.page-review {
+.page-footer {
   width: 100%;
-  min-height: 290px;
-  padding-top: 36px;
+  min-height: 260px;
 
   &__container {
     @include container;

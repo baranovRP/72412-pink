@@ -1,5 +1,5 @@
-@import "../variables";
 @import "../mixins";
+@import "../variables";
 
 .page-header {
   position: relative;
@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 197px;
 
-  background-color: #1d2631;
+  background-color: $blue-mostly-black;
 
   &__container {
     @include container;
@@ -16,7 +16,7 @@
 
     min-height: 197px;
 
-    background-color: #1d2631;
+    background-color: $blue-mostly-black;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -34,19 +34,21 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &__container--open{
-    width:320px;
+  &__container--open {
+    width: 320px;
     padding: 0;
   }
 
   &--index &__container {
     @include background-image("bg-header--index.jpg");
+
     min-height: 458px;
     padding-bottom: 20px;
   }
 
   &--competition &__container {
     @include background-image("bg-header--competition.jpg");
+
     min-height: 237px;
   }
 
@@ -61,14 +63,16 @@
   &__inner--open {
     margin-bottom: 1px;
 
-    background-color: $color__blue--very-dark;
-    box-shadow: 0 1px 0 #000000;
+    background-color: $blue-very-dark;
+    box-shadow: 0 1px 0 $black;
   }
 
   &__logo-link {
     display: inline-block;
     float: left;
     padding-left: 10px;
+
+    vertical-align: top;
   }
 
   &__logo-link img {
@@ -95,8 +99,8 @@
     width: 50px;
     height: 5px;
 
-    border-top: 15px double $color__white;
-    border-bottom: 5px solid $color__white;
+    border-top: 15px double $white;
+    border-bottom: 5px solid $white;
   }
 
   &__toggle--open {
@@ -119,7 +123,7 @@
     width: 4px;
     height: 30px;
 
-    background-color: $color__white;
+    background-color: $white;
   }
 
   &__toggle--open::before {

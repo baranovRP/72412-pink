@@ -1,0 +1,30 @@
+@import "../mixins";
+@import "../variables";
+
+.modal-content {
+  width:320px;
+  @include hidden;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 110;
+
+  min-height: 289px;
+  margin-top: 280px;
+  margin-left: -160px;
+
+  font-size: 0;
+
+  background-color: $white;
+
+  &__wrap {
+    min-height: 75px;
+
+    text-align: center;
+  }
+
+  &__wrap--grey {
+    background-color: $grey-very-light;
+  }
+}

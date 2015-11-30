@@ -1,5 +1,5 @@
-@import "../variables";
 @import "../mixins";
+@import "../variables";
 
 .page-address-footer {
   @include background-image("bg-footer-map.png");
@@ -10,7 +10,7 @@
   min-height: 612px;
   padding: 0;
 
-  background-color: $color__white;
+  background-color: $white;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -25,7 +25,7 @@
     min-height: 350px;
     margin-left: -160px;
 
-    background-color: $color__white;
+    background-color: $white;
   }
 
   &__container::after {
@@ -38,7 +38,7 @@
     display: block;
     margin-left: -160px;
 
-    border-top: 34px solid $color__white;
+    border-top: 34px solid $white;
     border-right: 160px solid transparent;
     border-left: 160px solid transparent;
   }

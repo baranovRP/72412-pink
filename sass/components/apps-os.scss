@@ -1,5 +1,5 @@
-@import "../variables";
 @import "../mixins";
+@import "../variables";
 
 .apps-os {
   max-width: 230px;
@@ -19,7 +19,7 @@
 
     vertical-align: bottom;
 
-    background-color: #1d2631;
+    background-color: $blue-mostly-black;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
