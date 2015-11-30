@@ -1,8 +1,5 @@
-@import "../mixins";
-@import "../variables";
-
 .main-nav {
-  width: 320px;
+  width: $screen-phone;
   min-height: 250px;
 
   background-color: $blue-very-dark;
@@ -19,7 +16,7 @@
     @include font-family-general($font-face-family);
 
     display: inline-block;
-    width: 320px;
+    width: $screen-phone;
     margin-bottom: 1px;
 
     font-weight: 700;
@@ -46,5 +43,15 @@
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .main-nav {
+    width: $screen-tablet;
+
+    &__item {
+      width: $screen-tablet;
+    }
   }
 }

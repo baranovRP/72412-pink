@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -9,9 +10,16 @@
 <header class="page-header page-header--index">
   <div class="page-header__container">
     <div class="page-header__inner">
-      <a class="page-header__logo-link" href="index.html">
-        <img src="img/logo.png" width="74" height="23" alt="Pink">
-      </a>
+      <div class="logo logo--header">
+        <a class="logo__link" href="index.html">
+        <span class="logo__img  logo__img--glass">
+          <img src="img/logo-glass.png" width="59" height="40" alt="Пинк">
+        </span>
+        <span class="logo__img  logo__img--pink">
+          <img src="img/logo.png" width="74" height="23" alt="Пинк">
+        </span>
+        </a>
+      </div>
       <a class="page-header__toggle  page-header__toggle--close"></a>
     </div>
     <div class="page-header__nav-wrap  page-header__nav-wrap--hidden">
@@ -32,33 +40,33 @@
         </ul>
       </nav>
     </div>
-    <div class="page-rubric">
-      <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
+    <div class="page-rubric  page-rubric--index">
+      <h1 class="page-rubric__title">Взгляните на&nbsp;жизнь иначе!</h1>
     </div>
+
+
+    <div class="page-apps">
+
+        <div class="apps">
+          <a class="apps__btn" download="file-name" href="#">Скачать приложение</a>
+
+          <div class="apps-os">
+            <a class="apps-os__item  apps-os__item--apple" href="https://itunes.apple.com">
+            </a>
+            <a class="apps-os__item  apps-os__item--android" href="https://play.google.com">
+            </a>
+            <a class="apps-os__item  apps-os__item--microsoft" href="http://www.microsoftstore.com">
+            </a>
+          </div>
+          <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+
   </div>
 </header>
 
 
 <main class="page-group-content">
-  <div class="page-apps">
-    <div class="page-apps__container">
-      <div class="apps">
-        <a class="apps__btn" download="file-name" href="#">Скачать приложение</a>
-
-        <div class="apps-os">
-          <a class="apps-os__item  apps-os__item--apple" href="https://itunes.apple.com">
-          </a>
-          <a class="apps-os__item  apps-os__item--android" href="https://play.google.com">
-          </a>
-          <a class="apps-os__item  apps-os__item--microsoft" href="http://www.microsoftstore.com">
-          </a>
-        </div>
-        <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </div>
-  </div>
-
-
   <div class="page-promo">
     <div class="page-promo__container">
       <article class="promo">

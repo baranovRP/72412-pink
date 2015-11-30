@@ -1,11 +1,8 @@
-@import "../mixins";
-@import "../variables";
-
 .tariff {
   width: 846px;
   min-height: 250px;
   margin: 0;
-  margin-left: 13px;
+  margin-left: 4px;
   padding: 0;
 
   border-collapse: collapse;
@@ -14,7 +11,7 @@
   &__title {
     position: relative;
 
-    width: 282px;
+    max-width: 282px;
     min-height: 90px;
 
     background-color: $blue-very-dark;
@@ -94,7 +91,7 @@
 
     position: relative;
 
-    width: 282px;
+    max-width: 282px;
     padding: 14px 0;
     padding-left: 21px;
 

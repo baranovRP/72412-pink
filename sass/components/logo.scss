@@ -1,10 +1,6 @@
-@import "../mixins";
-@import "../variables";
-
 .logo {
   width: 100%;
   padding: 10px 0;
-
 
   &__link {
     display: block;
@@ -23,7 +19,48 @@
     vertical-align: bottom;
   }
 
+  &--header &__img {
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+
+    vertical-align: top;
+  }
+
   &__img--glass {
     padding-right: 10px;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .logo {
+    &--header &__link {
+      height: 0;
+    }
+
+    &--header &__img--glass {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .logo {
+    &--header {
+      padding-top: 13px;
+    }
+
+    &--header &__img--glass {
+      display: inline-block;
+      padding-right: 2px;
+    }
+
+    &--header &__link {
+      height: 0;
+    }
+
+    &--header &__img--pink {
+      padding-top: 17px;
+    }
   }
 }

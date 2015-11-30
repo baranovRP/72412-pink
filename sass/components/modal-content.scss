@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .modal-content {
   width:320px;
   @include hidden;

@@ -1,11 +1,9 @@
-@import "../mixins";
-@import "../variables";
-
 .page-rubric {
   width: 100%;
   min-height: 128px;
+  margin-bottom: 284px;
 
-  &--competition{
+  &--competition {
     padding-top: 10px;
   }
 
@@ -21,5 +19,29 @@
     line-height: 30px;
     text-align: center;
     color: $white;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-rubric {
+    &--index {
+      width: 50%;
+      min-height: 126px;
+      margin-bottom: 22px;
+      padding-top: 135px;
+    }
+
+    &--index &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0 20px;
+
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: $white;
+    }
   }
 }
