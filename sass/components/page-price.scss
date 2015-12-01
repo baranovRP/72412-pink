@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 372px;
   padding-top: 100px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
   overflow: hidden;
 
   &::before {
@@ -28,5 +28,11 @@
     width: $screen-phone;
     min-height: 250px;
     overflow: hidden;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-price {
+    padding-top: 108px;
   }
 }

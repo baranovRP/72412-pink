@@ -1,4 +1,6 @@
 .tariff {
+  display: block;
+  box-sizing: border-box;
   width: 846px;
   min-height: 250px;
   margin: 0;
@@ -6,20 +8,42 @@
   padding: 0;
 
   border-collapse: collapse;
-  border-spacing: 0;
+  empty-cells: hide;
+
+  & tbody {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 
   &__title {
     position: relative;
 
-    max-width: 282px;
+    display: block;
+    box-sizing: border-box;
+    width: 282px;
     min-height: 90px;
 
+    border-collapse: collapse;
+
     background-color: $blue-very-dark;
-    background-clip: content-box;
-    border-top: 2px solid $blue-very-dark;
-    border-right: 2px solid $grey-light;
+    border-right: 1px solid $grey-light;
     border-bottom: 2px solid $blue-very-dark;
-    border-left: 2px solid $grey-light;;
+    border-left: 1px solid $grey-light;
+  }
+
+  &__title:first-child {
+    border-left: none;
+  }
+
+  &__title:last-child {
+    border-right: none;
   }
 
   &__title span {
@@ -39,7 +63,7 @@
     text-align: right;
   }
 
-  &__ribbon > span {
+  &__ribbon span {
     @include font-family-general($font-face-family);
 
     position: absolute;
@@ -91,17 +115,35 @@
 
     position: relative;
 
-    max-width: 282px;
+    display: block;
+    box-sizing: border-box;
+    width: 282px;
     padding: 14px 0;
     padding-left: 21px;
 
+    border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
     color: $blue-very-dark;
     text-transform: uppercase;
 
-    border: 2px solid $grey-light;
+    border: 1px solid $grey-light;
+  }
+
+  &__row:nth-child(2) {
+    border-top: none;
+  }
+  &__row td:last-child {
+    border-right: 2px solid $grey-light;
+  }
+
+  &__row td:first-child {
+    border-left: 2px solid $grey-light;
+  }
+
+  &__row:last-child td {
+    border-bottom: 2px solid $grey-light;
   }
 
   &__feature-filter--yes::before,
@@ -149,5 +191,123 @@
   &__feature-emotion--no::after,
   &__feature-comment--no::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .tariff {
+    &__title--separate,
+    &__feature-filter--separate,
+    &__feature-emotion--separate,
+    &__feature-comment--separate {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .tariff {
+    width: 100%;
+    margin: 0;
+
+    &__row {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__row:nth-child(2) td:first-child {
+      border-top: 2px solid $grey-light;
+    }
+
+    &__title {
+      width: 25%;
+      min-height: 70px;
+    }
+
+    &__title--empty {
+      background: none;
+      border-bottom: none;
+    }
+
+    &__name {
+      @include font-family-general($font-face-family);
+
+      padding-top: 12px;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    &__price {
+      @include font-family-general($font-face-family);
+
+      padding-top: 3px;
+      padding-bottom: 15px;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 18px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    &__ribbon span {
+      top: 17px;
+    }
+
+    &__title--separate,
+    &__feature-filter--separate,
+    &__feature-emotion--separate,
+    &__feature-comment--separate {
+      display: block;
+    }
+
+    &__mobile-feature {
+      @include hidden;
+    }
+
+    &__feature-filter,
+    &__feature-emotion,
+    &__feature-comment {
+      @include font-family-general($font-face-family);
+
+      width: 25%;
+    }
+
+    &__feature-filter--separate,
+    &__feature-emotion--separate,
+    &__feature-comment--separate {
+      @include font-family-general($font-face-family);
+
+      width: 25%;
+      padding: 7px 0;
+      padding-left: 15px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $blue-very-dark;
+      text-transform: none;
+    }
+
+    &__feature-filter--yes::before,
+    &__feature-emotion--yes::before,
+    &__feature-comment--yes::before {
+      top: 4px;
+      right: 68px;
+    }
+
+    &__feature-filter--no::before,
+    &__feature-filter--no::after,
+    &__feature-emotion--no::before,
+    &__feature-emotion--no::after,
+    &__feature-comment--no::before,
+    &__feature-comment--no::after {
+      top: 5px;
+      right: 75px;
+    }
   }
 }
