@@ -33,6 +33,8 @@
 
 @media (min-width: $screen-tablet) {
   .page-price {
+    min-height: 250px;
     padding-top: 108px;
+    padding-bottom: 38px;
   }
 }

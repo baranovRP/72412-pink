@@ -273,7 +273,7 @@
     &__feature-emotion,
     &__feature-comment {
       @include font-family-general($font-face-family);
-
+      background-color: $white;
       width: 25%;
     }
 

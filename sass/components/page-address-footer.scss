@@ -40,3 +40,19 @@
     border-left: 160px solid transparent;
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .page-address-footer {
+    &__container {
+      margin-left: -330px;
+    }
+
+    &__container::after {
+      margin-left: -330px;
+
+      border-top: 63px solid $white;
+      border-right: 328px solid transparent;
+      border-left: 328px solid transparent;
+    }
+  }
+}
