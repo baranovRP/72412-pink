@@ -1,9 +1,15 @@
 .promo {
+  position: relative;
+
   width: 100%;
-  min-height: 1002px;
+  min-height: 900px;
   margin: 0 auto;
 
   text-align: center;
+
+  &__title-wrap {
+    @include container;
+  }
 
   &__title {
     @include font-family-general($font-face-family);
@@ -29,6 +35,30 @@
     padding-top: 42px;
   }
 
+  &__line {
+    position: relative;
+
+    height: 0;
+  }
+
+  &__line::after {
+    content: "";
+    position: absolute;
+    top: -5vh;
+    left: -50vw;
+    z-index: -1;
+
+    width: 150vw;
+    height: 105vh;
+
+    background-color: #f2f2f2;
+    transform: skewY(-6deg);
+  }
+
+  &__inner {
+    background-color: $grey-very-light;
+  }
+
   &__img {
     width: 157px;
     margin: 0 auto;
@@ -44,12 +74,13 @@
       @include font-family-general($font-face-family);
 
       width: 100%;
+      padding-bottom: 113px;
+
       font-weight: 300;
       font-size: 40px;
       line-height: 48px;
       text-align: center;
       color: $blue-very-dark;
-      padding-bottom: 113px;
     }
 
     &__title span {
@@ -66,7 +97,7 @@
       padding-left: 30px;
     }
 
-    &__inner{
+    &__inner {
       display: flex;
       flex-direction: row-reverse;
     }
