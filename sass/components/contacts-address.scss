@@ -1,5 +1,4 @@
 .contacts-address {
-  max-width: 280px;
   min-height: 270px;
   margin: 0 auto;
 
@@ -34,5 +33,47 @@
 
   &__text--red {
     color: $pink-strong;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .contacts-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 150px;
+
+    &__flex-wrap {
+      width: 50%;
+      margin-bottom: 28px;
+    }
+
+    &__flex-wrap:last-child {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    &__label {
+      @include font-family-general($font-face-family);
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text--red {
+      color: $pink-strong;
+    }
   }
 }

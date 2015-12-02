@@ -44,15 +44,18 @@
 @media (min-width: $screen-tablet) {
   .page-address-footer {
     &__container {
-      margin-left: -330px;
+      width: 680px;
+      margin-left: -350px;
     }
 
     &__container::after {
-      margin-left: -330px;
+      top: 401px;
 
-      border-top: 63px solid $white;
-      border-right: 328px solid transparent;
-      border-left: 328px solid transparent;
+      margin-left: -350px;
+
+      border-top: 72px solid $white;
+      border-right: 352px solid transparent;
+      border-left: 352px solid transparent;
     }
   }
 }

@@ -9,7 +9,6 @@
 
     position: relative;
 
-    max-width: 230px;
     min-height: 48px;
     margin: 0 auto;
     padding-bottom: 37px;
@@ -18,5 +17,22 @@
     font-size: 24px;
     line-height: 28px;
     color: $blue-very-dark;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .contacts-block {
+    @include container;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      padding: 47px 0;
+
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+      color: $blue-very-dark;
+    }
   }
 }
