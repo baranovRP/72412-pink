@@ -59,6 +59,10 @@
     background-color: $grey-very-light;
   }
 
+  &__inner-wrap {
+    @include container;
+  }
+
   &__img {
     width: 157px;
     margin: 0 auto;
@@ -97,7 +101,13 @@
       padding-left: 30px;
     }
 
-    &__inner {
+    &__line::after {
+      top: -2vh;
+
+      transform: skewY(-4deg);
+    }
+
+    &__inner-wrap {
       display: flex;
       flex-direction: row-reverse;
     }
