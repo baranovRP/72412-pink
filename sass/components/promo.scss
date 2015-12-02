@@ -18,7 +18,7 @@
 
     min-height: 185px;
     margin: 0 auto;
-    padding-bottom: 90px;
+    padding-bottom: 91px;
 
     font-weight: 300;
     font-size: 24px;
@@ -44,7 +44,7 @@
   &__line::after {
     content: "";
     position: absolute;
-    top: -5vh;
+    top: -4vh;
     left: -50vw;
     z-index: -1;
 
