@@ -5,21 +5,19 @@
   min-height: 372px;
   padding-top: 100px;
   padding-bottom: 18px;
-  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    top: -233%;
-    left: -50%;
+    top: 5vh;
+    left: -50vw;
     z-index: -1;
 
-    width: 200%;
-    height: 479%;
+    width: 150vw;
+    height: 105vh;
 
-    background-image: linear-gradient(to bottom, $white, $white 50%, $grey-very-light 50%);
-    background-repeat: no-repeat;
-    transform: rotate(-5deg);
+    background-color: $grey-very-light;
+    transform: skewY(-6deg);
   }
 
   &__container {
