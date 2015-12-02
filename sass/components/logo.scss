@@ -46,6 +46,8 @@
 
 @media (min-width: $screen-tablet) {
   .logo {
+    padding-left: 12px;
+
     &--header {
       padding-top: 13px;
     }
@@ -61,6 +63,12 @@
 
     &--header &__img--pink {
       padding-top: 17px;
+    }
+
+    &--flex-block {
+      display: flex;
+      align-items: center;
+      width: 30%;
     }
   }
 }

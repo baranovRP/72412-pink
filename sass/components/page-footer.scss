@@ -6,3 +6,24 @@
     @include container;
   }
 }
+
+@media (min-width: $screen-phone) {
+  .page-footer {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-footer {
+    display: block;
+    min-height: 127px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 26px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.page-address-footer {
+.page-address {
   @include background-image("bg-footer-map.png");
 
   position: relative;
@@ -28,7 +28,7 @@
   &__container::after {
     content: "";
     position: absolute;
-    top: 412px;
+    top: 411px;
     left: 50%;
     z-index: 5;
 
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: $screen-tablet) {
-  .page-address-footer {
+  .page-address {
     &__container {
       width: 680px;
       margin-left: -350px;

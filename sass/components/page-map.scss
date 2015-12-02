@@ -7,3 +7,15 @@
   width: 100%;
   min-height: 612px;
 }
+
+@media (min-width: $screen-tablet) {
+  .page-map {
+    width: 100%;
+    min-height: 779px;
+  }
+
+  #page-map {
+    width: 100%;
+    min-height: 779px;
+  }
+}
