@@ -1,4 +1,6 @@
 .slider-price {
+  @include container;
+
   position: relative;
 
   min-height: 250px;
@@ -23,7 +25,7 @@
 
   &__controls {
     position: absolute;
-    bottom: 19px;
+    bottom: 7px;
     left: 50%;
     z-index: 95;
 

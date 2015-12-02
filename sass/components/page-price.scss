@@ -21,11 +21,7 @@
   }
 
   &__container {
-    @include container;
-
-    width: $screen-phone;
-    min-height: 250px;
-    overflow: hidden;
+    background-color: $grey-very-light;
   }
 }
 
