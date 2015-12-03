@@ -145,6 +145,11 @@
       background-image: url("http://placehold.it/700x729");
     }
 
+    &--competition &__container {
+      //@include background-image("bg-header--competition.jpg");
+      min-height: 170px;
+    }
+
     &__toggle--close::after {
       top: 42px;
     }

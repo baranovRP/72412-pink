@@ -78,18 +78,20 @@
 
   &__input::-webkit-input-placeholder {
     color: $blue-very-dark;
+
+    opacity: 1;
   }
 
   &__input::-moz-placeholder {
     color: $blue-very-dark;
-  }
 
-  &__input:-moz-placeholder {
-    color: $blue-very-dark;
+    opacity: 1;
   }
 
   &__input:-ms-input-placeholder {
     color: $blue-very-dark;
+
+    opacity: 1;
   }
 
   &__input--top {
