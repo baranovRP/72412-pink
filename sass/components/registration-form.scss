@@ -10,6 +10,18 @@
     text-align: center;
   }
 
+  &__wrap--intro {
+    background-color: $white;
+  }
+
+  &__wrap--apps {
+    background-color: $grey-very-light;
+  }
+
+  &__wrap--travel {
+    background-color: $white;
+  }
+
   &__wrap--white {
     background-color: $white;
   }
@@ -33,10 +45,6 @@
     font-size: 14px;
     line-height: 30px;
     color: $blue-very-dark;
-  }
-
-  &__intro span {
-    @include hidden;
   }
 
   &__name,
@@ -152,5 +160,91 @@
   &__asterisk {
     color: $pink-strong;
     font-style: normal;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .registration-form {
+    &__intro span {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .registration-form {
+    &__wrap--apps {
+      background-color: $white;
+    }
+
+    &__intro {
+      padding-top: 93px;
+    }
+
+    &__intro span {
+      display: block;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      padding: 0 40px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__name {
+      padding-bottom: 20px;
+    }
+
+    &__apps {
+      width: 596px;
+      min-height: 105px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__apps &__title {
+      padding-top: 21px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__travel {
+      box-sizing: border-box;
+      width: 616px;
+      min-height: 105px;
+      margin-top: 19px;
+      padding-bottom: 10px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travel &__title {
+      padding-top: 33px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: -7px;
+      padding-left: 38px;
+    }
+
+    &__travel-flex {
+      margin-bottom: 13px;
+    }
+
+    &__travel-flex .control-text__input {
+      width: 240px;
+      margin-bottom: 13px;
+    }
   }
 }

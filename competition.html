@@ -49,7 +49,7 @@
 
 <main class="page-group-content">
   <div class="registration-form">
-    <div class="registration-form__wrap  registration-form__wrap--white">
+    <div class="registration-form__wrap  registration-form__wrap--intro">
       <div class="registration-form__intro"><p class="registration-form__text">Поделитесь своей историей и получите шанс
         выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
       </div>
@@ -74,10 +74,9 @@
           </div>
         </fieldset>
       </div>
-      <div class="registration-form__wrap  registration-form__wrap--grey">
+      <div class="registration-form__wrap  registration-form__wrap--apps">
         <fieldset class="registration-form__apps">
-          <legend
-            class="registration-form__title  registration-form__title--red  registration-form__title--small-line">
+          <legend class="registration-form__title  registration-form__title--red  registration-form__title--small-line">
             С каким приложением путешествовали? *
           </legend>
           <div class="control-radio  control-radio--active">
@@ -96,31 +95,37 @@
           </div>
         </fieldset>
       </div>
-      <div class="registration-form__wrap  registration-form__wrap--white">
+      <div class="registration-form__wrap  registration-form__wrap--travel">
         <fieldset class="registration-form__travel">
           <legend class="registration-form__title  registration-form__title--red">Когда вы путешествовали? *</legend>
-          <div class="control-text">
-            <input class="control-text__input  control-text__input--top" type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
-            <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-start-date">
-              Дата выезда
-            </label>
-          </div>
-
-          <fieldset class="control-text  control-text--calc">
-            <button class="control-text__btn  control-text__btn--minus" id="btn-day-minus">-</button>
-            <div class="control-text__output">
-              <output name="duration-days-output">10 дней</output>
+          <div class="registration-form__flex-block">
+            <div class="registration-form__travel-flex">
+              <div class="control-text">
+                <input class="control-text__input  control-text__input--top" type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
+                <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-start-date">
+                  Дата выезда
+                </label>
+              </div>
             </div>
-            <button class="control-text__btn  control-text__btn--plus" id="btn-day-plus">+</button>
-            <label class="control-text__label  control-text__label--bottom  control-text__label--red">
-              Продолжительность</label>
-          </fieldset>
-
-          <div class="control-text">
-            <input class="control-text__input  control-text__input--top" type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
-            <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-end-date">
-              Дата возвращения
-            </label>
+            <div class="registration-form__travel-flex">
+              <fieldset class="control-text  control-text--calc">
+                <button class="control-text__btn  control-text__btn--minus" id="btn-day-minus">-</button>
+                <div class="control-text__output">
+                  <output name="duration-days-output">10 дней</output>
+                </div>
+                <button class="control-text__btn  control-text__btn--plus" id="btn-day-plus">+</button>
+                <label class="control-text__label  control-text__label--bottom  control-text__label--red">
+                  Продолжительность</label>
+              </fieldset>
+            </div>
+            <div class="registration-form__travel-flex">
+              <div class="control-text">
+                <input class="control-text__input  control-text__input--top" type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
+                <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-end-date">
+                  Дата возвращения
+                </label>
+              </div>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -276,9 +281,11 @@
     </div>
   </div>
 </main>
+
+
 <footer class="page-footer">
   <div class="page-footer__container">
-    <div class="logo">
+    <div class="logo  logo--flex-block">
       <a class="logo__link" href="index.html">
         <span class="logo__img  logo__img--glass">
           <img src="img/logo-glass.png" width="59" height="40" alt="Пинк">
@@ -288,7 +295,8 @@
         </span>
       </a>
     </div>
-    <div class="social-links">
+
+    <div class="social-links  social-links--flex-block">
       <a class="social-links__item  social-links__item--twitter" href="https://twitter.com/">
         <i class="icon-twitter"></i>
       </a>
@@ -299,7 +307,8 @@
         <i class="icon-play"></i>
       </a>
     </div>
-    <div class="copyright">
+
+    <div class="copyright  copyright--flex-block">
       <a class="copyright__link" href="https://htmlacademy.ru/">
         Разработано
           <span class="copyright__img">
@@ -309,6 +318,8 @@
     </div>
   </div>
 </footer>
+
+
 <div class="modal-content  modal-content--hidden">
   <section class="popup  popup--success">
     <h2 class="popup__title">Ваша заявка отправлена</h2>

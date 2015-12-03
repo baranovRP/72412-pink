@@ -196,3 +196,46 @@
     transform: rotate(90deg);
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .control-text {
+    padding: 0 10px;
+
+    &__label {
+      padding-bottom: 7px;
+      padding-left: 22px;
+    }
+
+    &__input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 17px;
+    }
+
+    &__input--short {
+      width: 185px;
+      margin-bottom: 16px;
+      padding: 15px 0;
+      padding-right: 9px;
+      padding-left: 21px;
+    }
+
+    &__output {
+      box-sizing: border-box;
+      width: 120px;
+      margin-top: 0;
+    }
+
+    &__label--bottom {
+      margin-left: 19px;
+      padding-left: 0;
+
+      text-align: left;
+    }
+
+    &--calc &__label--bottom {
+      margin-left: 38px;
+    }
+  }
+}
