@@ -25,7 +25,8 @@
     "pregosha": "npm install > /dev/null",
     "gosha": "gulp gosha",
     "test": "gulp lint",
-    "start": "gulp start"
+    "start": "gulp start",
+    "watch": "while true ; do gulp watch ; done"
   },
   "engines": {
     "node": "^5.0.0"

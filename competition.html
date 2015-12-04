@@ -59,17 +59,17 @@
       <div class="registration-form__wrap  registration-form__wrap--white">
         <fieldset class="registration-form__name">
           <div class="control-text">
-            <label class="control-text__label  control-text__label--red" for="text-first-name">Имя: *</label>
+            <label class="control-text__label" for="text-first-name">Имя: *</label>
             <input class="control-text__input" type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
           </div>
 
           <div class="control-text">
-            <label class="control-text__label  control-text__label--red" for="text-second-name">Фамилия: *</label>
+            <label class="control-text__label" for="text-second-name">Фамилия: *</label>
             <input class="control-text__input" type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
           </div>
 
           <div class="control-text">
-            <label class="control-text__label  control-text__label--red" for="text-patronymic-name">Отчество:</label>
+            <label class="control-text__label" for="text-patronymic-name">Отчество:</label>
             <input class="control-text__input" type="text" name="enter-patronymic-name" id="text-patronymic-name"
                    placeholder="Ну и отчество тоже">
           </div>
@@ -77,7 +77,7 @@
       </div>
       <div class="registration-form__wrap  registration-form__wrap--apps">
         <fieldset class="registration-form__apps">
-          <legend class="registration-form__title  registration-form__title--red  registration-form__title--small-line">
+          <legend class="registration-form__title  registration-form__title--small-line">
             С каким приложением путешествовали? *
           </legend>
           <div class="control-radio  control-radio--active">
@@ -98,7 +98,7 @@
       </div>
       <div class="registration-form__wrap  registration-form__wrap--travel">
         <fieldset class="registration-form__travel">
-          <legend class="registration-form__title  registration-form__title--red">Когда вы путешествовали? *</legend>
+          <legend class="registration-form__title">Когда вы путешествовали? *</legend>
           <div class="registration-form__flex-block">
             <div class="registration-form__travel-flex">
               <div class="control-text">
@@ -132,7 +132,7 @@
       </div>
       <div class="registration-form__wrap  registration-form__wrap--travelers">
         <fieldset class="registration-form__travelers">
-          <legend class="registration-form__title  registration-form__title--red">Количество попутчиков *</legend>
+          <legend class="registration-form__title">Количество попутчиков *</legend>
           <div class="registration-form__wrap  registration-form__wrap--calc">
             <fieldset class="control-text  control-text--calc">
               <button class="control-text__btn  control-text__btn--minus" id="btn-person-minus">-</button>
@@ -147,7 +147,7 @@
             <fieldset class="traveler-item">
               <div class="traveler-item__flex-wrap">
                 <div class="control-text  control-text--block">
-                  <label class="control-text__label  control-text__label--red">№</label>
+                  <label class="control-text__label">№</label>
 
                   <div class="control-text__output control-text__output--short">
                     <output name="mate-output">1</output>
@@ -171,7 +171,7 @@
             <fieldset class="traveler-item">
               <div class="traveler-item__flex-wrap">
                 <div class="control-text  control-text--block">
-                  <label class="control-text__label  control-text__label--red">№</label>
+                  <label class="control-text__label">№</label>
 
                   <div class="control-text__output control-text__output--short">
                     <output name="mate-output">2</output>
@@ -196,7 +196,7 @@
       <div class="registration-form__wrap  registration-form__wrap--achievements">
         <fieldset class="registration-form__achievements">
           <legend
-            class="registration-form__title  registration-form__title--red  registration-form__title--small-line">
+            class="registration-form__title  registration-form__title--small-line">
             Ваши безбашенные достижения&nbsp;в&nbsp;путешествии
           </legend>
           <div class="control-checkbox">
@@ -231,9 +231,9 @@
           </div>
         </fieldset>
       </div>
-      <div class="registration-form__wrap  registration-form__wrap--grey">
+      <div class="registration-form__wrap  registration-form__wrap--photos">
         <fieldset class="registration-form__photos">
-          <legend class="registration-form__title registration--form__title--red">
+          <legend class="registration-form__title">
             Ваши фотографии из поездки *
           </legend>
           <button class="btn  btn--upload" id="btn-upload">Загрузить фото</button>
@@ -282,14 +282,17 @@
           </div>
         </fieldset>
       </div>
-      <div class="registration-form__wrap  registration-form__wrap--white">
-        <input class="btn btn--submit" type="submit" value="Отправить форму">
+      <div class="registration-form__footer">
+        <div class="registration-form__wrap  registration-form__wrap--submit">
+          <input class="btn btn--submit" type="submit" value="Отправить форму">
+        </div>
+        <div class="registration-form__wrap">
+          <span class="registration-form__footnote">
+            <i class="registration-form__asterisk">*</i> — Обязательные поля
+          </span>
+        </div>
       </div>
     </form>
-    <div class="registration-form__wrap">
-      <span class="registration-form__footnote"><i
-        class="registration-form__asterisk">*</i> — Обязательные поля</span>
-    </div>
   </div>
 </main>
 

@@ -57,7 +57,7 @@
   &__travelers,
   &__achievements,
   &__photos,
-  &__footnote {
+  &__footer {
     @include container;
 
     border: 0;
@@ -233,7 +233,7 @@
 
     &__travel {
       box-sizing: border-box;
-      width: 616px;
+      width: 620px;
       min-height: 105px;
       margin-top: 19px;
       padding-bottom: 10px;
@@ -306,8 +306,9 @@
 
     &__photos {
       box-sizing: border-box;
-      width: 616px;
+      width: 620px;
       min-height: 105px;
+      margin-bottom: 66px;
       padding-right: 60px;
       padding-left: 60px;
 
@@ -318,6 +319,29 @@
       padding-top: 30px;
       padding-right: 20px;
       padding-left: 20px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 620px;
+      padding: 0;
+    }
+
+    &__footer &__wrap {
+      display: flex;
+      width: 50%;
+      min-height: 60px;
+    }
+
+    &__footer &__wrap:last-child {
+      justify-content: flex-end;
+    }
+
+    &__footnote {
+      display: flex;
+      align-items: center;
     }
   }
 }
