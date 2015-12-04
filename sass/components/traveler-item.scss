@@ -6,25 +6,10 @@
 
   border: 0;
 
-  &--first {
-    padding-top: 32px;
-  }
+  &__flex-wrap{
+    @include clearfix;
 
-  &--first::before {
-    content: "";
-    position: absolute;
-    top: auto;
-    left: auto;
-
-    width: 280px;
-    height: 2px;
-    margin-top: -31px;
+    margin-right: 14px;
     margin-left: 10px;
-
-    background-color: $grey-light;
-  }
-
-  &--last {
-    padding-bottom: 31px;
   }
 }

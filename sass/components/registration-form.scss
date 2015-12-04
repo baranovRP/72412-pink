@@ -25,21 +25,6 @@
     background-color: $white;
   }
 
-  &__wrap--traveler .traveler-item__flex-wrap {
-    margin-right: 14px;
-    margin-left: 10px;
-  }
-
-  &__wrap--traveler:first-of-type .traveler-item__flex-wrap {
-    padding-top: 30px;
-
-    border-top: 2px solid $grey-light;
-  }
-
-  &__wrap--traveler:nth-of-type(2) {
-    padding-bottom: 37px;
-  }
-
   &__wrap--white {
     background-color: $white;
   }
@@ -135,6 +120,18 @@
     text-align: center;
   }
 
+  &__wrap--calc{
+    margin-bottom: 29px;
+  }
+
+  &__wrap--traveler-item:nth-of-type(2) .traveler-item__flex-wrap{
+    border-top: 2px solid $grey-light;
+    padding-top: 29px;
+  }
+
+  &__wrap--traveler-item:nth-last-of-type(1){
+  }
+
   &__achievements {
     min-height: 338px;
     padding-bottom: 18px;
@@ -191,7 +188,10 @@
 
 @media (min-width: $screen-tablet) {
   .registration-form {
-    &__wrap--apps {
+    &__wrap--apps,
+    &__wrap--travelers,
+    &__wrap--calc,
+    &__wrap--traveler {
       background-color: $white;
     }
 
@@ -263,6 +263,22 @@
     &__travel-flex .control-text__input {
       width: 240px;
       margin-bottom: 13px;
+    }
+
+    &__travelers {
+      box-sizing: border-box;
+      width: 616px;
+      min-height: 105px;
+      margin-top: 19px;
+      padding-bottom: 10px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travelers &__title {
+      padding-top: 33px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 }
