@@ -195,9 +195,22 @@
   }
 }
 
+@media (min-width: $screen-phone) {
+  .control-text {
+    &__text {
+      @include hidden;
+    }
+  }
+}
+
 @media (min-width: $screen-tablet) {
   .control-text {
     padding: 0 10px;
+
+    &--short {
+      width: 296px;
+      padding: 0;
+    }
 
     &__label {
       padding-bottom: 7px;
@@ -212,7 +225,7 @@
     }
 
     &__input--short {
-      width: 185px;
+      width: 296px;
       margin-bottom: 16px;
       padding: 15px 0;
       padding-right: 9px;
@@ -225,6 +238,14 @@
       margin-top: 0;
     }
 
+    &--block {
+
+    }
+
+    &__output--short {
+      width: 59px;
+    }
+
     &__label--bottom {
       margin-left: 19px;
       padding-left: 0;
@@ -234,6 +255,25 @@
 
     &--calc &__label--bottom {
       margin-left: 38px;
+    }
+
+    &--block {
+      padding: 0;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      display: flex;
+      align-items: center;
+      width: 64px;
+      padding-top: 20px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $blue-very-dark;
+      text-transform: uppercase;
     }
   }
 }

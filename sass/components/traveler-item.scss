@@ -6,10 +6,35 @@
 
   border: 0;
 
-  &__flex-wrap{
+  &__flex-wrap {
     @include clearfix;
 
     margin-right: 14px;
     margin-left: 10px;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .traveler-item {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__flex-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__block-wrap:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 420px;
+      margin-left: 20px;
+    }
   }
 }

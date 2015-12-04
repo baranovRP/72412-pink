@@ -266,10 +266,8 @@
     }
 
     &__travelers {
-      display: flex;
-      //box-sizing: border-box;
-      //width: 616px;
-      width: 596px;
+      box-sizing: border-box;
+      width: 620px;
       min-height: 105px;
       margin-top: 19px;
       padding-bottom: 10px;
@@ -285,10 +283,13 @@
 
     &__wrap--calc {
       display: flex;
+      box-sizing: border-box;
+      width: 600px;
     }
 
     &__wrap--traveler-item {
-      display: flex;
+      box-sizing: border-box;
+      width: 600px;
     }
 
     &__achievements {
