@@ -5,18 +5,10 @@
 
   font-size: 0;
   text-align: left;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 214px;
-    left: 11px;
-
-    width: 280px;
-    height: 2px;
-    margin-top: -31px;
-    margin-left: 10px;
-
-    background-color: $grey-light;
+@media (min-width: $screen-tablet) {
+  .travels-photo-gallery {
+    border-top: 2px solid #e5e5e5;
   }
 }
