@@ -271,12 +271,33 @@
       min-height: 105px;
       margin-top: 19px;
       padding-bottom: 10px;
-
+      display: flex;
       border: 2px solid #e5e5e5;
     }
 
     &__travelers &__title {
-      padding-top: 33px;
+      padding-top: 12px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__wrap--calc{
+      display: flex;
+    }
+
+    &__wrap--traveler-item{
+      display: flex;
+    }
+
+    &__achievements {
+      width: 596px;
+      min-height: 105px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__achievements &__title {
+      padding-top: 21px;
       padding-right: 20px;
       padding-left: 20px;
     }
