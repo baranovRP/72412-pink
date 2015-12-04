@@ -258,6 +258,8 @@
 
     &__travel-flex {
       margin-bottom: 13px;
+      margin-right: 10px;
+
     }
 
     &__travel-flex .control-text__input {
@@ -285,6 +287,7 @@
       display: flex;
       box-sizing: border-box;
       width: 600px;
+      padding-left: 50px;
     }
 
     &__wrap--traveler-item {

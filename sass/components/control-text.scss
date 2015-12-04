@@ -252,6 +252,9 @@
 
       text-align: left;
     }
+    &--calc{
+      padding: 0;
+    }
 
     &--calc &__label--bottom {
       margin-left: 38px;
