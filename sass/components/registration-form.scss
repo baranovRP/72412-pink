@@ -14,12 +14,30 @@
     background-color: $white;
   }
 
-  &__wrap--apps {
+  &__wrap--apps,
+  &__wrap--travelers,
+  &__wrap--traveler,
+  &__wrap--calc {
     background-color: $grey-very-light;
   }
 
   &__wrap--travel {
     background-color: $white;
+  }
+
+  &__wrap--traveler .traveler-item__flex-wrap {
+    margin-right: 14px;
+    margin-left: 10px;
+  }
+
+  &__wrap--traveler:first-of-type .traveler-item__flex-wrap {
+    padding-top: 30px;
+
+    border-top: 2px solid $grey-light;
+  }
+
+  &__wrap--traveler:nth-of-type(2) {
+    padding-bottom: 37px;
   }
 
   &__wrap--white {
@@ -95,7 +113,7 @@
 
   &__travel {
     min-height: 440px;
-    padding-bottom: 38px;
+    padding-bottom: 45px;
   }
 
   &__travel > &__title {
@@ -107,7 +125,7 @@
 
   &__travelers {
     min-height: 149px;
-    padding-bottom: 48px;
+    padding-bottom: 29px;
   }
 
   &__travelers > &__title {

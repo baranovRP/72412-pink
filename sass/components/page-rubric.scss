@@ -1,7 +1,7 @@
 .page-rubric {
   width: 100%;
   min-height: 128px;
-  margin-bottom: 284px;
+
 
   &--competition {
     padding-top: 10px;
@@ -24,6 +24,8 @@
 
 @media (min-width: $screen-tablet) {
   .page-rubric {
+    margin-bottom: 284px;
+
     &--index {
       width: 50%;
       min-height: 126px;
