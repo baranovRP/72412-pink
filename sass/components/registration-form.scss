@@ -225,6 +225,13 @@
       border: 2px solid #e5e5e5;
     }
 
+    &__apps &__flex-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
+
     &__apps &__title {
       padding-top: 21px;
       padding-right: 20px;
@@ -257,9 +264,8 @@
     }
 
     &__travel-flex {
-      margin-bottom: 13px;
       margin-right: 10px;
-
+      margin-bottom: 13px;
     }
 
     &__travel-flex .control-text__input {
@@ -359,19 +365,34 @@
       padding: 0 80px;
       padding-top: 45px;
 
-      color: $blue-very-dark;
-
-      font-size: 18px;
       font-weight: 400;
+      font-size: 18px;
       line-height: 30px;
+      color: $blue-very-dark;
     }
 
     &__name &__flex-block {
-      padding: 0;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      padding: 0;
+    }
+
+    &__apps {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__apps &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0;
     }
   }
 }
