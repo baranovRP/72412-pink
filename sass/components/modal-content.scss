@@ -1,12 +1,10 @@
 .modal-content {
-  width:320px;
-  @include hidden;
-
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 110;
 
+  width: 320px;
   min-height: 289px;
   margin-top: 280px;
   margin-left: -160px;
@@ -14,6 +12,10 @@
   font-size: 0;
 
   background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  &--hidden {
+    @include hidden;
+  }
 
   &__wrap {
     min-height: 75px;
@@ -23,5 +25,25 @@
 
   &__wrap--grey {
     background-color: $grey-very-light;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .modal-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 110;
+
+    width: 460px;
+    min-height: 289px;
+    margin-top: 280px;
+    margin-left: -230px;
+
+    font-size: 0;
+
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }

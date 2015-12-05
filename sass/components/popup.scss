@@ -35,3 +35,37 @@
     padding: 10px;
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .popup {
+    width: 440px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0 30px;
+      padding-top: 40px;
+      padding-bottom: 12px;
+
+
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: $black;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 10px 60px;
+      padding-bottom: 14px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $blue-very-dark;
+    }
+  }
+}

@@ -63,5 +63,23 @@
       margin: 0;
       padding: 14px 56px;
     }
+
+    &--ok,
+    &--confirmation {
+      box-sizing: border-box;
+      width: 298px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--confirmation {
+      margin-top: 48px;
+      margin-bottom: 52px;
+      padding: 14px 67px;
+    }
   }
 }
