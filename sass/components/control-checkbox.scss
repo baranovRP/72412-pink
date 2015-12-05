@@ -3,6 +3,8 @@
   padding-bottom: 32px;
   padding-left: 10px;
 
+  border-radius: 3px;
+
   &__label {
     @include font-family-general($font-face-family);
 
