@@ -10,7 +10,7 @@
     width: $container-tablet;
   }
 
-  //@media (min-width: $screen-desktop) {
-  //  width: $container-desktop;
-  //}
+  @media (min-width: $screen-desktop) {
+    width: $container-desktop;
+  }
 }

@@ -1,7 +1,6 @@
 .main-nav {
   position: absolute;
 
-  width: $screen-phone;
   min-height: 250px;
 
   background-color: $blue-very-dark;
@@ -47,17 +46,18 @@
 
 @media (min-width: $screen-phone) {
   .main-nav {
-
-    &__item {
-      width: 100%;
-    }
+    width: $screen-phone;
   }
 }
 
 @media (min-width: $screen-tablet) {
   .main-nav {
     width: $screen-tablet;
+  }
+}
 
+@media(min-width: $screen-phone) and (max-width: $screen-desktop) {
+  .main-nav {
     &__item {
       width: 100%;
     }
@@ -69,21 +69,34 @@
   .main-nav {
     position: relative;
 
+    min-height: 18px;
+
     background-color: transparent;
 
     &__list {
-      flex-shrink: 1;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: flex-end;
     }
 
     &__item {
-      flex-grow: 1;
+      margin: 0 35px;
 
       background-color: transparent;
       border: none;
       box-shadow: none;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+
+    &__link {
+      @include font-family-general($font-face-family);
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: $white;
+      text-transform: none;
     }
   }
 }

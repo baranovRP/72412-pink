@@ -167,8 +167,18 @@
 
 @media (min-width: $screen-desktop) {
   .page-header {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     &__container::before {
       min-height: 110px;
+    }
+
+    &__inner {
     }
 
     &--competition &__container {
@@ -181,8 +191,9 @@
       @include hidden;
     }
 
-    &__nav-wrap--hidden {
+    &__nav-wrap {
       display: block;
+      padding-top: 30px;
     }
   }
 }

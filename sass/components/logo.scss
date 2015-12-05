@@ -73,3 +73,11 @@
     }
   }
 }
+
+@media (min-width: $screen-tablet) {
+  .logo {
+    &--header &__img--glass {
+      padding-left: 0;
+    }
+  }
+}

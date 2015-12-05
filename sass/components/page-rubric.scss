@@ -61,3 +61,21 @@
     }
   }
 }
+
+
+@media (min-width: $screen-desktop) {
+  .page-rubric {
+    width: 100%;
+  }
+
+  &--competition &__title {
+    @include font-family-general($font-face-family);
+
+    padding-top: 0;
+
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    color: $white;
+  }
+}
