@@ -31,11 +31,6 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &__container--open {
-    width: $screen-phone;
-    padding: 0;
-  }
-
   &--index &__container {
     @include background-image("bg-header--index.jpg");
 
@@ -56,15 +51,6 @@
     padding: 0;
     padding-top: 12px;
     padding-bottom: 10px;
-  }
-
-  &__inner--open {
-    margin-bottom: 1px;
-    padding-bottom: 33px;
-    padding-left: 10px;
-
-    background-color: $blue-very-dark;
-    box-shadow: 0 1px 0 $black;
   }
 
   &__toggle {
@@ -125,6 +111,19 @@
   }
 }
 
+@media (min-width: $screen-phone) {
+  .page-header {
+    &__container--open {
+      width: $screen-phone;
+      padding: 0;
+    }
+
+    &__inner--open {
+      @include page-header-inner--open;
+    }
+  }
+}
+
 @media (min-width: $screen-tablet) {
   .page-header {
     &__container::before {
@@ -133,6 +132,13 @@
 
     &__container--open {
       width: $screen-tablet;
+      padding: 0;
+    }
+
+    &__inner--open {
+      @include page-header-inner--open;
+
+      padding-bottom: 69px;
     }
 
     &--index &__container {
@@ -147,10 +153,6 @@
       min-height: 170px;
 
       background-image: url("http://placehold.it/700x440");
-    }
-
-    &__inner--open {
-      padding-bottom: 69px;
     }
 
     &__toggle--close::after {

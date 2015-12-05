@@ -1,0 +1,8 @@
+@mixin page-header-inner--open() {
+    margin-bottom: 1px;
+    padding-bottom: 33px;
+    padding-left: 10px;
+
+    background-color: $blue-very-dark;
+    box-shadow: 0 1px 0 $black;
+}
