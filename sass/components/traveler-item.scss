@@ -38,3 +38,35 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .traveler-item {
+    width: 820px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__flex-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__block-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__block-wrap:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 737px;
+      margin-left: 20px;
+    }
+  }
+}

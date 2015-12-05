@@ -424,5 +424,38 @@
       margin: 0;
       padding: 0;
     }
+
+    &__travelers {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+      margin-top: 19px;
+      padding-bottom: 10px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travelers &__wrap {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__travelers &__title {
+      padding-top: 12px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__travelers &__wrap--calc {
+      display: flex;
+      box-sizing: border-box;
+      width: 301px;
+      padding-left: 50px;
+    }
+
+    &__wrap--traveler-item {
+      box-sizing: border-box;
+      width: 920px;
+    }
   }
 }
