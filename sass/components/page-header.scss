@@ -61,6 +61,7 @@
   &__inner--open {
     margin-bottom: 1px;
     padding-bottom: 33px;
+    padding-left: 10px;
 
     background-color: $blue-very-dark;
     box-shadow: 0 1px 0 $black;
@@ -95,6 +96,7 @@
 
     width: 23px;
     height: 23px;
+    padding-right: 10px;
   }
 
   &__toggle--open::before,
@@ -146,8 +148,9 @@
     }
 
     &--competition &__container {
-      //@include background-image("bg-header--competition.jpg");
       min-height: 170px;
+
+      background-image: url("http://placehold.it/700x440");
     }
 
     &__toggle--close::after {
@@ -156,6 +159,28 @@
 
     &__toggle--open {
       top: 42px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-header {
+    &__container::before {
+      min-height: 110px;
+    }
+
+    &--competition &__container {
+      min-height: 170px;
+
+      background-image: url("http://placehold.it/960x394");
+    }
+
+    &__toggle {
+      @include hidden;
+    }
+
+    &__nav-wrap--hidden {
+      display: block;
     }
   }
 }
