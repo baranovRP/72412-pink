@@ -48,16 +48,12 @@
 
 @media (min-width: $screen-tablet) {
   .main-nav {
-    //width: $screen-tablet;
-
-    &__item {
-      //width: $screen-tablet;
-    }
+    width: $screen-tablet;
   }
 }
 
 
-@media (min-width: $screen-tablet) {
+@media (min-width: $screen-desktop) {
   .main-nav {
     position: relative;
 

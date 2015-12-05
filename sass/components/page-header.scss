@@ -135,10 +135,6 @@
       width: $screen-tablet;
     }
 
-    &_inner {
-      padding: 42px 0;
-    }
-
     &--index &__container {
       min-height: 458px;
       padding-bottom: 85px;
@@ -151,6 +147,10 @@
       min-height: 170px;
 
       background-image: url("http://placehold.it/700x440");
+    }
+
+    &__inner--open {
+      padding-bottom: 69px;
     }
 
     &__toggle--close::after {
