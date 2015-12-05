@@ -69,13 +69,37 @@
 @media (min-width: $screen-tablet) {
   .control-checkbox {
     padding-left: 50px;
+  }
+}
 
-    &:first-of-type {
-      padding-top: 30px;
+@media (min-width: $screen-desktop) {
+  .control-checkbox {
+    width: 30%;
+    margin: 0;
+    padding: 44px 0;
+
+    &:nth-child(1) {
+      order: 1;
     }
 
-    &:last-of-type {
-      padding-bottom: 32px;
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
     }
   }
 }
