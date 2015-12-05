@@ -47,3 +47,41 @@
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .modal-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 110;
+
+    width: 780px;
+    min-height: 289px;
+    margin-top: 280px;
+    margin-left: -390px;
+
+    font-size: 0;
+
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+    &--failure {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 110;
+
+      width: 460px;
+      min-height: 289px;
+      margin-top: 280px;
+      margin-left: -230px;
+
+      font-size: 0;
+
+      background-color: $white;
+      border-radius: 5px;
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    }
+  }
+}

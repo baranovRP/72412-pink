@@ -89,3 +89,41 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .btn {
+    &--confirmation {
+      box-sizing: border-box;
+      width: 460px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--confirmation {
+      margin-top: 48px;
+      margin-bottom: 52px;
+      padding: 14px 67px;
+    }
+
+    &--ok {
+      box-sizing: border-box;
+      width: 298px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--ok {
+      margin-top: 8px;
+      margin-bottom: 52px;
+      padding: 14px 125px;
+    }
+  }
+}
