@@ -286,5 +286,13 @@
     display: block;
     width: 300px;
     padding: 0;
+
+    &--travel {
+      width: 240px;
+    }
+
+    &--calc&--travel {
+      margin: 0 44px;
+    }
   }
 }
