@@ -182,6 +182,10 @@
     &__intro span {
       @include hidden;
     }
+
+    &__footnote span{
+      @include hidden;
+    }
   }
 }
 
@@ -496,6 +500,33 @@
       padding-top: 30px;
       padding-right: 20px;
       padding-left: 20px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 940px;
+      padding: 0;
+    }
+
+    &__footer &__wrap {
+      display: flex;
+      width: 50%;
+      min-height: 60px;
+    }
+
+    &__footer &__wrap:last-child {
+      justify-content: flex-end;
+    }
+
+    &__footnote {
+      display: flex;
+      align-items: center;
+    }
+
+    &__footnote span{
+      display: inline-block;
     }
   }
 }
