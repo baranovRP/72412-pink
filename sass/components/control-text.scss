@@ -239,7 +239,6 @@
     }
 
     &--block {
-
     }
 
     &__output--short {
@@ -252,7 +251,8 @@
 
       text-align: left;
     }
-    &--calc{
+
+    &--calc {
       padding: 0;
     }
 
@@ -278,5 +278,13 @@
       color: $blue-very-dark;
       text-transform: uppercase;
     }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .control-text {
+    display: block;
+    width: 300px;
+    padding: 0;
   }
 }
