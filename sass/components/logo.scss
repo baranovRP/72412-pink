@@ -4,68 +4,93 @@
 
   &__link {
     display: block;
-    height: 40px;
-
-    font-size: 0;
-    text-align: center;
-  }
-
-  &__img {
-    display: inline-block;
+    //height: 40px;
+    width: 147px;
+    //font-size: 0;
+    //text-align: center;
     margin: 0 auto;
-    padding: 0;
-
-    font-size: 0;
-    vertical-align: bottom;
+  }
+  &--header &__link{
+    width: 74px;
+    margin: 0
   }
 
-  &--header &__img {
-    display: inline-block;
-    float: left;
-    padding-left: 10px;
+    //&__img{
+  //}
+  //
+  //&--header &__img{
+  //  //display: inline-block;
+  //  width: 74px;
+  //  //margin: 0 auto;
+  //  padding: 0;
+  //
+  //  //font-size: 0;
+  //  vertical-align: bottom;
+  //}
 
-    vertical-align: top;
-  }
 
-  &__img--glass {
-    padding-right: 10px;
-  }
+
+  //
+  //&--header &__img {
+  //  display: inline-block;
+  //  float: left;
+  //  padding-left: 10px;
+  //
+  //  vertical-align: top;
+  //}
+  //
+  //&__img--glass {
+  //  padding-right: 10px;
+  //  width: 74px;
+  //}
 }
 
-@media (min-width: $screen-phone) {
-  .logo {
-    &--header &__link {
-      height: 0;
-    }
-
-    &--header &__img--glass {
-      @include hidden;
-    }
-  }
-}
-
+//@media (min-width: $screen-phone) {
+//  .logo {
+//    &--header &__link {
+//      //height: 0;
+//    }
+//
+//    &--header &__img--glass {
+//      @include hidden;
+//    }
+//  }
+//}
+//
 @media (min-width: $screen-tablet) {
   .logo {
-    padding-left: 12px;
+    //padding-left: 12px;
 
-    &--header {
-      padding-top: 13px;
-      padding-left: 0;
+    &__link,
+    &--header &__link{
+      display: block;
+      width: 147px;
+      margin: 0;
     }
 
-    &--header &__img--glass {
-      display: inline-block;
-      padding-right: 2px;
-    }
-
-    &--header &__link {
-      height: 0;
-    }
-
-    &--header &__img--pink {
-      padding-top: 17px;
-    }
-
+    //&__img{
+    //  width: 146px;
+    //}
+    //
+    //&--header {
+    //  padding-top: 13px;
+    //  padding-left: 0;
+    //}
+    //
+    //&--header &__img--glass {
+    //  display: inline-block;
+    //  padding-right: 2px;
+    //  width: 145px;
+    //}
+    //
+    //&--header &__link {
+    //  height: 0;
+    //}
+    //
+    //&--header &__img--pink {
+    //  padding-top: 17px;
+    //}
+    //
     &--flex-block {
       display: flex;
       align-items: center;
@@ -73,11 +98,15 @@
     }
   }
 }
-
-@media (min-width: $screen-tablet) {
+//
+@media (min-width: $screen-desktop) {
   .logo {
-    &--header &__img--glass {
-      padding-left: 0;
+
+    &__link,
+    &--header &__link{
+      display: block;
+      width: 147px;
+      margin: 0;
     }
   }
 }
