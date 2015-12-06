@@ -15,3 +15,13 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .page-promo {
+    min-height: 670px;
+
+    &__container {
+      min-height: 670px;
+    }
+  }
+}

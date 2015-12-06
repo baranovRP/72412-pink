@@ -113,3 +113,48 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .promo {
+    min-height: 170px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      width: 100%;
+      padding-bottom: 113px;
+
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      color: $blue-very-dark;
+    }
+
+    &__title span {
+      display: inline-block;
+      padding: 0;
+    }
+
+    &__title span:first-child {
+      padding-top: 49px;
+    }
+
+    &__title span:last-child {
+      padding-right: 30px;
+      padding-left: 30px;
+      width: 70%;
+    }
+
+    &__line::after {
+      top: -2vh;
+
+      transform: skewY(-4deg);
+    }
+
+    &__inner-wrap {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
