@@ -9,8 +9,6 @@
   font-size: 0;
 
   &__item {
-    @include background-image("sprite.png");
-
     display: inline-block;
     margin-right: 36px;
 
@@ -27,29 +25,31 @@
   &__item--apple {
     width: 46px;
     height: 57px;
-
-    background-position: -5px -62px;
   }
 
   &__item--android {
     width: 42px;
     height: 47px;
     padding-bottom: 1px;
-
-    background-position: -5px -5px;
   }
 
   &__item--microsoft {
     width: 44px;
     height: 42px;
     padding-bottom: 3px;
-
-    background-position: -5px -129px;
   }
 }
 
 
 @media (min-width: $screen-tablet) {
+  .apps-os{
+    padding-left: 49px;
+    padding-top: 46px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
   .apps-os{
     padding-left: 49px;
     padding-top: 46px;
