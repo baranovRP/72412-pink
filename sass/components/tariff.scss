@@ -255,7 +255,24 @@
     }
 
     &__ribbon span {
+      @include font-family-general($font-face-family);
+
+      position: absolute;
       top: 17px;
+      left: -35px;
+
+      display: block;
+      width: 116px;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+
+      background-color: $pink-strong;
+      transform: rotate(-45deg);
     }
 
     &__title--separate,
@@ -273,8 +290,10 @@
     &__feature-emotion,
     &__feature-comment {
       @include font-family-general($font-face-family);
-      background-color: $white;
+
       width: 25%;
+
+      background-color: $white;
     }
 
     &__feature-filter--separate,
@@ -308,6 +327,132 @@
     &__feature-comment--no::after {
       top: 5px;
       right: 75px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .tariff {
+    width: 100%;
+    margin: 0;
+
+    &__row {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__row:nth-child(2) td:first-child {
+      border-top: 2px solid $grey-light;
+    }
+
+    &__title {
+      width: 25%;
+      min-height: 70px;
+    }
+
+    &__title--empty {
+      background: none;
+      border-bottom: none;
+    }
+
+    &__name {
+      @include font-family-general($font-face-family);
+
+      padding-top: 12px;
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    &__price {
+      @include font-family-general($font-face-family);
+
+      padding-top: 3px;
+      padding-bottom: 15px;
+
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    &__ribbon span {
+      @include font-family-general($font-face-family);
+
+      position: absolute;
+      top: 17px;
+      left: -35px;
+
+      display: block;
+      width: 116px;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+
+      background-color: $pink-strong;
+      transform: rotate(-45deg);
+    }
+
+    &__title--separate,
+    &__feature-filter--separate,
+    &__feature-emotion--separate,
+    &__feature-comment--separate {
+      display: block;
+    }
+
+    &__mobile-feature {
+      @include hidden;
+    }
+
+    &__feature-filter,
+    &__feature-emotion,
+    &__feature-comment {
+      @include font-family-general($font-face-family);
+
+      width: 25%;
+
+      background-color: $white;
+    }
+
+    &__feature-filter--separate,
+    &__feature-emotion--separate,
+    &__feature-comment--separate {
+      @include font-family-general($font-face-family);
+
+      width: 25%;
+      padding: 7px 0;
+      padding-left: 15px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+      text-transform: none;
+    }
+
+    &__feature-filter--yes::before,
+    &__feature-emotion--yes::before,
+    &__feature-comment--yes::before {
+      top: 4px;
+      right: 109px;
+    }
+
+    &__feature-filter--no::before,
+    &__feature-filter--no::after,
+    &__feature-emotion--no::before,
+    &__feature-emotion--no::after,
+    &__feature-comment--no::before,
+    &__feature-comment--no::after {
+      top: 5px;
+      right: 115px;
     }
   }
 }

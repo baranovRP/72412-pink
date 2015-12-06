@@ -39,3 +39,17 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .page-price {
+    min-height: 250px;
+    padding-top: 108px;
+    padding-bottom: 38px;
+
+    &::before {
+      top: 7vh;
+
+      transform: skewY(-4deg);
+    }
+  }
+}

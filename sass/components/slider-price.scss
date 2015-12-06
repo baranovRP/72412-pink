@@ -83,3 +83,31 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .slider-price {
+    padding-bottom: 0;
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__wrap {
+      width: 100%;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    #btn-4:checked ~ &__inner &__wrap,
+    #btn-5:checked ~ &__inner &__wrap,
+    #btn-6:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+  }
+}
