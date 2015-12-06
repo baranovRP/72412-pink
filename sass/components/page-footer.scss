@@ -9,7 +9,9 @@
 
 @media (min-width: $screen-phone) {
   .page-footer {
-    display: none;
+    &--index {
+      display: none;
+    }
   }
 }
 
