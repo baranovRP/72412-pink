@@ -14,3 +14,10 @@
     padding-top: 17px;
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .page-review {
+    min-height: 150px;
+    padding-top: 17px;
+  }
+}

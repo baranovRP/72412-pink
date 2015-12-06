@@ -52,7 +52,6 @@
   }
 }
 
-
 @media (min-width: $screen-tablet) {
   .slider-review {
     min-height: 150px;
@@ -80,6 +79,36 @@
 
     #btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1280px);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-review {
+    min-height: 150px;
+
+    &__inner {
+      min-height: 150px;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    #btn-1:checked ~ &__inner &__wrap {
+      transform: translate(0px);
+    }
+
+    #btn-2:checked ~ &__inner &__wrap {
+      transform: translate(-960px);
+    }
+
+    #btn-3:checked ~ &__inner &__wrap {
+      transform: translate(-1920px);
     }
   }
 }

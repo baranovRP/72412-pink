@@ -71,6 +71,7 @@
     input[type=radio] {
       @include hidden;
     }
+
     &__controls {
       @include hidden;
     }
