@@ -48,3 +48,38 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .promo-item {
+    width: 26%;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
+    text-align: center;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 10px 0;
+
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 2px 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+  }
+}

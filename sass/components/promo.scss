@@ -141,9 +141,9 @@
     }
 
     &__title span:last-child {
+      width: 70%;
       padding-right: 30px;
       padding-left: 30px;
-      width: 70%;
     }
 
     &__line::after {
@@ -154,7 +154,13 @@
 
     &__inner-wrap {
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column-reverse;
+    }
+
+    &__flex-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
