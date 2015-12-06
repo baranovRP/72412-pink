@@ -59,3 +59,23 @@
     }
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .page-address {
+    &__container {
+      width: 1180px;
+      min-height: 170px;
+      margin-left: -600px;
+    }
+
+    &__container::after {
+      top: 347px;
+
+      margin-left: -602px;
+
+      border-top: 120px solid $white;
+      border-right: 602px solid transparent;
+      border-left: 602px solid transparent;
+    }
+  }
+}

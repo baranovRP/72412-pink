@@ -19,3 +19,15 @@
     min-height: 779px;
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .page-map {
+    width: 100%;
+    min-height: 868px;
+  }
+
+  #page-map {
+    width: 100%;
+    min-height: 868px;
+  }
+}
