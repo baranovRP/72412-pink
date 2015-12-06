@@ -181,6 +181,12 @@
     &__inner {
     }
 
+    &--index &__container {
+      min-height: 170px;
+
+      background-image: url("http://placehold.it/960x854");
+    }
+
     &--competition &__container {
       min-height: 170px;
 

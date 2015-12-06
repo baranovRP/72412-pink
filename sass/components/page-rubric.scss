@@ -2,7 +2,6 @@
   width: 100%;
   min-height: 128px;
 
-
   &--competition {
     padding-top: 10px;
   }
@@ -62,20 +61,39 @@
   }
 }
 
-
 @media (min-width: $screen-desktop) {
   .page-rubric {
     width: 100%;
-  }
 
-  &--competition &__title {
-    @include font-family-general($font-face-family);
+    &--index {
+      min-height: 126px;
+      margin-bottom: 22px;
+      padding-top: 135px;
+    }
 
-    padding-top: 0;
+    &--index &__title {
+      @include font-family-general($font-face-family);
 
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
-    color: $white;
+      width: 32%;
+      margin: 0;
+      padding: 0;
+
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      color: $white;
+    }
+
+    &--competition &__title {
+      @include font-family-general($font-face-family);
+
+      padding-top: 0;
+
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      color: $white;
+    }
   }
 }
