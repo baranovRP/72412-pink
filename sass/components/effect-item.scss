@@ -42,3 +42,55 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .effect-item {
+    float: right;
+    width: 56%;
+    min-height: 280px;
+    margin-right: 49px;
+    padding-top: 51px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 5px 0;
+
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title span{
+      @include hidden;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 5px 0;
+      padding-right: 15px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $blue-very-dark;
+    }
+
+    &__link {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 11px 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $pink-strong;
+      text-decoration: underline;
+    }
+  }
+}

@@ -24,3 +24,13 @@
     vertical-align: top;
   }
 }
+
+
+@media (min-width: $screen-desktop) {
+  .page-effect {
+    display: inline-block;
+    padding: 40px 0;
+    background-color: $grey-very-light;
+    vertical-align: top;
+  }
+}
