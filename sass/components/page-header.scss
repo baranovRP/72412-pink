@@ -1,15 +1,14 @@
 .page-header {
   @include background-image("background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top -2px;
+  background-color: $blue-mostly-black;
+  @include clearfix;
 
   position: relative;
-
   width: 100%;
   min-height: 197px;
   margin: 0 auto;
-
-  background-color: $blue-mostly-black;
-  background-repeat: no-repeat;
-  background-position: center top -2px;
 
   &__container {
     @include container;
@@ -33,6 +32,10 @@
 
   &--index &__container {
     min-height: 458px;
+    background-image: url($img-folder-path + "iphone-hand--mobile@1x.png"),
+    url($img-folder-path + "background-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top 172px, center top -2px;
   }
 
   &--competition &__container {
@@ -108,7 +111,6 @@
     position: absolute;
     top: 172px;
     left: 50%;
-
     margin: 0;
     margin-left: -160px;
   }
@@ -137,26 +139,39 @@
   }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: $screen-phone),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: $screen-phone),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: $screen-phone),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: $screen-phone),
-only screen and (                min-resolution: 192dpi) and (min-width: $screen-phone),
-only screen and (                min-resolution: 2dppx)  and (min-width: $screen-phone) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-phone),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-phone),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-phone),
+only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-phone),
+only screen and (min-resolution: 192dpi) and (min-width: $screen-phone),
+only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
   .page-header {
-    @include background-image("background-mobile@2x.jpg");
+    &--index &__container {
+      min-height: 458px;
+      background-image: url($img-folder-path + "iphone-hand--mobile@1x.png"),
+      url($img-folder-path + "background-mobile@1x.jpg");
+      background-size: 700px;
+    }
 
-    background-repeat: no-repeat;
-    background-position: center -2px;
-    background-size: 700px;
   }
 }
 
 @media (min-width: $screen-tablet) {
   .page-header {
+    @include background-image("background-tablet@1x.jpg");
+    background-position: center top;
+
     &__container::before {
       min-height: 110px;
+    }
+
+    &--index &__container {
+      min-height: 370px;
+      padding-bottom: 0;
+    }
+
+    &__inner {
+      padding-top: 17px;
     }
 
     &__container--open {
@@ -170,11 +185,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: $screen
       padding-bottom: 69px;
     }
 
-    &--index &__container {
-      min-height: 458px;
-      padding-bottom: 85px;
-    }
-
     &--competition &__container {
       min-height: 170px;
     }
@@ -186,6 +196,27 @@ only screen and (                min-resolution: 2dppx)  and (min-width: $screen
     &__toggle--open {
       top: 42px;
     }
+
+    &__img {
+      width: 700px;
+    }
+
+    &__container-wrap {
+      background-color: transparent;
+      padding-top: 0;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-tablet),
+only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (min-resolution: 192dpi) and (min-width: $screen-tablet),
+only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
+  .page-header {
+    @include background-image("background-tablet@2x.jpg");
+    background-size: 1200px;
   }
 }
 

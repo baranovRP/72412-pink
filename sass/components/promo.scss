@@ -44,7 +44,7 @@
   &__line::after {
     content: "";
     position: absolute;
-    top: -4vh;
+    top: -5vh;
     left: -50vw;
     z-index: -1;
 
@@ -56,8 +56,9 @@
   }
 
   &__inner {
-    background-color: $grey-very-light;
     margin-bottom: -4px;
+
+    background-color: $grey-very-light;
   }
 
   &__inner-wrap {
@@ -68,6 +69,7 @@
     width: 157px;
     margin: 0 auto;
     padding: 0;
+    padding-top: 3px;
   }
 }
 

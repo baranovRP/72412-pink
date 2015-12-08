@@ -2,6 +2,10 @@
   width: 100%;
   min-height: 128px;
 
+  &--index {
+    padding-bottom: 245px;
+  }
+
   &--competition {
     padding-top: 10px;
   }
@@ -20,7 +24,7 @@
     color: $white;
   }
 
-  &--index &__title{
+  &--index &__title {
     padding-top: 8px;
   }
 }
@@ -33,7 +37,7 @@
       width: 50%;
       min-height: 126px;
       margin-bottom: 22px;
-      padding-top: 135px;
+      padding-top: 104px;
     }
 
     &--index &__title {
