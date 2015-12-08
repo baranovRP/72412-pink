@@ -146,13 +146,14 @@ only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-phone),
 only screen and (min-resolution: 192dpi) and (min-width: $screen-phone),
 only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
   .page-header {
+    @include background-image("background-mobile@2x.jpg");
+
     &--index &__container {
       min-height: 458px;
-      background-image: url($img-folder-path + "iphone-hand--mobile@1x.png"),
-      url($img-folder-path + "background-mobile@1x.jpg");
-      background-size: 700px;
+      background-image: url($img-folder-path + "iphone-hand--mobile@2x.png"),
+      url($img-folder-path + "background-mobile@2x.jpg");
+      background-size: 258px, 700px;
     }
-
   }
 }
 
@@ -217,6 +218,8 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
   .page-header {
     @include background-image("background-tablet@2x.jpg");
     background-size: 1200px;
+
+
   }
 }
 
