@@ -106,24 +106,6 @@
   &__nav-wrap--hidden {
     @include hidden;
   }
-
-  &__product {
-    position: absolute;
-    top: 172px;
-    left: 50%;
-    margin: 0;
-    margin-left: -160px;
-  }
-
-  &__img {
-    width: 258px;
-  }
-
-  &__container-wrap {
-    padding-top: 20px;
-
-    background-color: $blue-mostly-black;
-  }
 }
 
 @media (min-width: $screen-phone) {
@@ -168,7 +150,12 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
 
     &--index &__container {
       min-height: 370px;
-      padding-bottom: 0;
+      padding-bottom: 80px;
+      background-image: url($img-folder-path + "iphone-hand--tablet@1x.png"),
+      url($img-folder-path + "background-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left -20px top 184px, center top;
+      background-size: 700px, 1200px;
     }
 
     &__inner {
@@ -197,15 +184,6 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
     &__toggle--open {
       top: 42px;
     }
-
-    &__img {
-      width: 700px;
-    }
-
-    &__container-wrap {
-      background-color: transparent;
-      padding-top: 0;
-    }
   }
 }
 
@@ -219,6 +197,12 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
     @include background-image("background-tablet@2x.jpg");
     background-size: 1200px;
 
+    &--index &__container {
+      min-height: 458px;
+      background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
+      url($img-folder-path + "background-tablet@2x.jpg");
+      background-size: 258px, 700px;
+    }
 
   }
 }

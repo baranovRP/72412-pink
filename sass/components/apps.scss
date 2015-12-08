@@ -38,6 +38,8 @@
 
 @media (min-width: $screen-tablet) {
   .apps {
+    margin: 0 auto;
+    padding-top: 10px;
     &__btn {
       width: 68%;
     }

@@ -59,13 +59,14 @@
 @media (min-width: 320px) {
   .slider-price {
     width: 320px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $screen-tablet) {
   .slider-price {
+    width: 640px;
     padding-bottom: 0;
 
     &__inner {
