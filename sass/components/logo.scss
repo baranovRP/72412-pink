@@ -10,12 +10,14 @@
     //text-align: center;
     margin: 0 auto;
   }
-  &--header &__link{
+
+  &--header &__link {
     width: 74px;
-    margin: 0
+    margin: 0;
+    padding-left: 10px;
   }
 
-    //&__img{
+  //&__img{
   //}
   //
   //&--header &__img{
@@ -62,7 +64,7 @@
     //padding-left: 12px;
 
     &__link,
-    &--header &__link{
+    &--header &__link {
       display: block;
       width: 147px;
       margin: 0;
@@ -101,9 +103,8 @@
 //
 @media (min-width: $screen-desktop) {
   .logo {
-
     &__link,
-    &--header &__link{
+    &--header &__link {
       display: block;
       width: 147px;
       margin: 0;

@@ -18,7 +18,7 @@
 
     min-height: 185px;
     margin: 0 auto;
-    padding-bottom: 91px;
+    padding-bottom: 90px;
 
     font-weight: 300;
     font-size: 24px;
@@ -57,6 +57,7 @@
 
   &__inner {
     background-color: $grey-very-light;
+    margin-bottom: -4px;
   }
 
   &__inner-wrap {

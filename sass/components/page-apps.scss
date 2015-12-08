@@ -1,13 +1,10 @@
 .page-apps {
+  @include container;
+
   width: 100%;
   min-height: 240px;
   padding-top: 8px;
-
-  &__container {
-    @include container;
-
-    min-height: 240px;
-  }
+  padding-bottom: 3px;
 }
 
 @media (min-width: $screen-tablet) {

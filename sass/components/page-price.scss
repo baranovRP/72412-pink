@@ -3,14 +3,14 @@
 
   width: 100%;
   min-height: 372px;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 18px;
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    top: 5vh;
+    top: 4vh;
     left: -50vw;
     z-index: -1;
 
@@ -18,7 +18,7 @@
     height: 105vh;
 
     background-color: $grey-very-light;
-    transform: skewY(-6deg);
+    transform: skewY(-4deg);
   }
 
   &__container {

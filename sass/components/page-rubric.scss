@@ -19,6 +19,10 @@
     text-align: center;
     color: $white;
   }
+
+  &--index &__title{
+    padding-top: 8px;
+  }
 }
 
 @media (min-width: $screen-tablet) {

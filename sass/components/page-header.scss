@@ -1,21 +1,21 @@
 .page-header {
+  @include background-image("background-mobile@1x.jpg");
+
   position: relative;
 
   width: 100%;
   min-height: 197px;
+  margin: 0 auto;
 
   background-color: $blue-mostly-black;
+  background-repeat: no-repeat;
+  background-position: center top -2px;
 
   &__container {
     @include container;
-    @include background-image("bg-header.jpg");
     @include clearfix;
 
     min-height: 197px;
-
-    background-color: $blue-mostly-black;
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 
   &__container::before {
@@ -26,21 +26,16 @@
 
     display: block;
     width: 100%;
-    min-height: 67px;
+    min-height: 66px;
 
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   &--index &__container {
-    @include background-image("bg-header--index.jpg");
-
     min-height: 458px;
-    padding-bottom: 5px;
   }
 
   &--competition &__container {
-    @include background-image("bg-header--competition.jpg");
-
     min-height: 237px;
   }
 
@@ -50,7 +45,6 @@
     min-height: 25px;
     padding: 0;
     padding-top: 12px;
-    padding-bottom: 10px;
   }
 
   &__toggle {
@@ -109,6 +103,25 @@
   &__nav-wrap--hidden {
     @include hidden;
   }
+
+  &__product {
+    position: absolute;
+    top: 172px;
+    left: 50%;
+
+    margin: 0;
+    margin-left: -160px;
+  }
+
+  &__img {
+    width: 258px;
+  }
+
+  &__container-wrap {
+    padding-top: 20px;
+
+    background-color: $blue-mostly-black;
+  }
 }
 
 @media (min-width: $screen-phone) {
@@ -121,6 +134,22 @@
     &__inner--open {
       @include page-header-inner--open;
     }
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: $screen-phone),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: $screen-phone),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: $screen-phone),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: $screen-phone),
+only screen and (                min-resolution: 192dpi) and (min-width: $screen-phone),
+only screen and (                min-resolution: 2dppx)  and (min-width: $screen-phone) {
+  .page-header {
+    @include background-image("background-mobile@2x.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center -2px;
+    background-size: 700px;
   }
 }
 
@@ -144,15 +173,10 @@
     &--index &__container {
       min-height: 458px;
       padding-bottom: 85px;
-      //@include background-image("background-tablet@1x.jpg");
-
-      background-image: url("http://placehold.it/700x729");
     }
 
     &--competition &__container {
       min-height: 170px;
-
-      background-image: url("http://placehold.it/700x440");
     }
 
     &__toggle--close::after {
@@ -183,14 +207,10 @@
 
     &--index &__container {
       min-height: 170px;
-
-      background-image: url("http://placehold.it/960x854");
     }
 
     &--competition &__container {
       min-height: 170px;
-
-      background-image: url("http://placehold.it/960x394");
     }
 
     &__toggle {

@@ -1,10 +1,10 @@
 .tariff {
   display: block;
   box-sizing: border-box;
-  width: 846px;
+  width: 840px;
   min-height: 250px;
   margin: 0;
-  margin-left: 4px;
+  margin-left: 16px;
   padding: 0;
 
   border-collapse: collapse;
@@ -27,7 +27,7 @@
 
     display: block;
     box-sizing: border-box;
-    width: 282px;
+    width: 280px;
     min-height: 90px;
 
     border-collapse: collapse;
@@ -88,6 +88,7 @@
     @include font-family-general($font-face-family);
 
     padding-top: 15px;
+    padding-bottom: 3px;
 
     font-weight: 700;
     font-size: 18px;
@@ -99,7 +100,7 @@
   &__price {
     @include font-family-general($font-face-family);
 
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 
     font-weight: 300;
     font-size: 24px;
@@ -117,7 +118,7 @@
 
     display: block;
     box-sizing: border-box;
-    width: 282px;
+    width: 280px;
     padding: 14px 0;
     padding-left: 21px;
 
@@ -152,7 +153,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    right: 23px;
+    right: 26px;
 
     width: 13px;
     height: 27px;
@@ -173,7 +174,7 @@
     content: "";
     position: absolute;
     top: 13px;
-    right: 29px;
+    right: 32px;
 
     width: 2px;
     height: 35px;

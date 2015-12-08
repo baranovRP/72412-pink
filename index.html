@@ -8,6 +8,7 @@
 </head>
 <body>
 <header class="page-header  page-header--index">
+
   <div class="page-header__container">
     <div class="page-header__inner">
       <div class="logo logo--header">
@@ -52,8 +53,26 @@
     <div class="page-rubric  page-rubric--index">
       <h1 class="page-rubric__title">Взгляните на&nbsp;жизнь иначе!</h1>
     </div>
+    <figure class="page-header__product">
+      <picture class="page-header__img">
+        <source
+          type="image/png"
+          media="(min-width: 960px)"
+          srcset="img/iphone-hand--desktop@2x.png 2x, img/iphone-hand--desktop@1x.png 1x">
+        <source
+          type="image/png"
+          media="(min-width: 640px)"
+          srcset="img/iphone-hand--tablet@2x.png 2x, img/iphone-hand--tablet@1x.png 1x">
+        <source
+          type="image/png"
+          media="(min-width: 320px)"
+          srcset="img/iphone-hand--mobile@2x.png 2x, img/iphone-hand--mobile@1x.png 1x">
+        <img src="img/iphone-hand--mobile@1x.png" width="258">
+      </picture>
+    </figure>
+  </div>
 
-
+  <div class="page-header__container-wrap">
     <div class="page-apps">
 
       <div class="apps">
@@ -91,7 +110,6 @@
         <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
-
   </div>
 </header>
 
@@ -131,7 +149,21 @@
               </section>
             </div>
             <figure class="promo__img">
-              <img src="img/demo.jpg" width="157" height="278" alt="Мобильное приложение">
+              <picture>
+                <!--<source-->
+                  <!--type="image/png"-->
+                  <!--media="(min-width: 960px)"-->
+                  <!--srcset="img/iphone-hand&#45;&#45;desktop@2x.png 2x, img/iphone-hand&#45;&#45;desktop@1x.png 1x">-->
+                <!--<source-->
+                  <!--type="image/png"-->
+                  <!--media="(min-width: 640px)"-->
+                  <!--srcset="img/iphone-hand&#45;&#45;tablet@2x.png 2x, img/iphone-hand&#45;&#45;tablet@1x.png 1x">-->
+                <source
+                  type="image/png"
+                  media="(min-width: 320px)"
+                  srcset="img/iphone-screen--mobile@2x.png 2x, img/iphone-screen--mobile@1x.png 1x">
+                <img src="img/iphone-screen--mobile@1x.png" width="158" alt="Мобильное приложение">
+              </picture>
             </figure>
           </div>
         </div>
