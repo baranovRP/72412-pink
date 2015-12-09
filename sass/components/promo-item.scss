@@ -54,15 +54,21 @@
     width: 26%;
     margin: 0;
     margin-bottom: 25px;
+    margin-left: -13px;
     padding: 0;
 
     text-align: center;
+
+    &:nth-child(3n) {
+      margin-right: -16px;
+    }
 
     &__title {
       @include font-family-general($font-face-family);
 
       margin: 0;
       padding: 10px 0;
+      padding-bottom: 22px;
 
       font-weight: 700;
       font-size: 30px;

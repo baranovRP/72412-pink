@@ -100,7 +100,8 @@
       @include font-family-general($font-face-family);
 
       margin: 0;
-      padding: 36px 0;
+      padding: 0;
+      padding-top: 36px;
 
       font-weight: 700;
       font-size: 24px;
@@ -140,7 +141,7 @@
       content: "";
       position: absolute;
       top: 32px;
-      left: 24px;
+      left: 7px;
 
       width: 30px;
       height: 30px;
@@ -158,7 +159,7 @@
       content: "";
       position: absolute;
       top: 32px;
-      right: 24px;
+      right: 7px;
 
       width: 30px;
       height: 30px;

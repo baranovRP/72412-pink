@@ -67,6 +67,11 @@
 
 @media (min-width: $screen-desktop) {
   .page-address {
+    @include background-image("background-footer-map--desktop.png");
+
+    background-repeat: no-repeat;
+    background-position: center top 89px;
+
     &__container {
       width: 1180px;
       min-height: 170px;

@@ -43,8 +43,9 @@
 @media (min-width: $screen-desktop) {
   .page-price {
     min-height: 250px;
+    margin-top: 35px;
     padding-top: 108px;
-    padding-bottom: 38px;
+    padding-bottom: 95px;
 
     &::before {
       top: 7vh;

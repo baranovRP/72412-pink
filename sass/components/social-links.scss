@@ -38,16 +38,17 @@
   .social-links {
     margin: 0;
     padding-top: 12px;
+    padding-left: 6px;
 
     &--flex-block {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       width: 30%;
     }
 
     &__item {
-      margin: 0 7px;
+      margin: 0 6px;
     }
     &__item:first-child {
       margin-left: 0;

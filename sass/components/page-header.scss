@@ -201,14 +201,16 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       min-height: 458px;
       background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
       url($img-folder-path + "background-tablet@2x.jpg");
-      background-size: 258px, 700px;
+      background-size: 700px, 1200px;
     }
-
   }
 }
 
 @media (min-width: $screen-desktop) {
   .page-header {
+    @include background-image("background-desktop@1x.jpg");
+    background-position: center top;
+
     &__container {
       display: flex;
       flex-direction: row;
@@ -220,11 +222,14 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       min-height: 110px;
     }
 
-    &__inner {
-    }
-
     &--index &__container {
       min-height: 170px;
+      padding-bottom: 121px;
+      background-image: url($img-folder-path + "iphone-hand--desktop@1x.png"),
+      url($img-folder-path + "background-desktop@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left 26px top 209px, center top;
+      background-size: 1050px, 1281px;
     }
 
     &--competition &__container {
@@ -238,6 +243,26 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
     &__nav-wrap {
       display: block;
       padding-top: 30px;
+    }
+  }
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+          only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+          only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-desktop),
+               only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+                  only screen and (min-resolution: 192dpi) and (min-width: $screen-desktop),
+                   only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
+  .page-header {
+    @include background-image("background-desktop@2x.jpg");
+    background-size: 1281px;
+
+    &--index &__container {
+      min-height: 170px;
+      background-image: url($img-folder-path + "iphone-hand--desktop@2x.png"),
+      url($img-folder-path + "background-desktop@2x.jpg");
+      background-size: 1050px, 1281px;
     }
   }
 }

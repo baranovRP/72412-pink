@@ -364,7 +364,7 @@
     &__name {
       @include font-family-general($font-face-family);
 
-      padding-top: 12px;
+      padding-top: 16px;
 
       font-weight: 700;
       font-size: 18px;
@@ -434,8 +434,9 @@
       @include font-family-general($font-face-family);
 
       width: 25%;
-      padding: 7px 0;
-      padding-left: 15px;
+      padding-top: 14px;
+      padding-bottom: 15px;
+      padding-left: 21px;
 
       font-weight: 400;
       font-size: 18px;
@@ -447,7 +448,7 @@
     &__feature-filter--yes::before,
     &__feature-emotion--yes::before,
     &__feature-comment--yes::before {
-      top: 4px;
+      top: 13px;
       right: 109px;
     }
 
@@ -457,7 +458,7 @@
     &__feature-emotion--no::after,
     &__feature-comment--no::before,
     &__feature-comment--no::after {
-      top: 5px;
+      top: 12px;
       right: 115px;
     }
   }

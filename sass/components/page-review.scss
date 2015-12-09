@@ -17,7 +17,12 @@
 
 @media (min-width: $screen-desktop) {
   .page-review {
+    @include background-image("quotes.svg");
+
     min-height: 150px;
-    padding-top: 17px;
+    padding-top: 180px;
+
+    background-repeat: no-repeat;
+    background-position: center top 72px;
   }
 }
