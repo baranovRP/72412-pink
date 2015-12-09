@@ -183,7 +183,7 @@
       @include hidden;
     }
 
-    &__footnote span{
+    &__footnote span {
       @include hidden;
     }
   }
@@ -234,6 +234,8 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
+      padding-top: 9px;
+      padding-bottom: 31px;
     }
 
     &__apps &__title {
@@ -246,8 +248,9 @@
       box-sizing: border-box;
       width: 620px;
       min-height: 105px;
-      margin-top: 19px;
-      padding-bottom: 10px;
+      margin-top: 17px;
+      margin-bottom: 38px;
+      padding-bottom: 5px;
 
       border: 2px solid #e5e5e5;
     }
@@ -264,18 +267,14 @@
       flex-wrap: wrap;
       align-items: flex-start;
       margin-top: -7px;
+      padding-top: 2px;
       padding-left: 38px;
     }
 
     &__travel-flex {
       margin-right: 10px;
-      margin-bottom: 13px;
+      margin-bottom: 0;
     }
-
-    //&__travel-flex .control-text__input {
-    //  width: 240px;
-    //  margin-bottom: 13px;
-    //}
 
     &__travelers {
       box-sizing: border-box;
@@ -297,6 +296,7 @@
       display: flex;
       box-sizing: border-box;
       width: 600px;
+      margin-top: 15px;
       padding-left: 50px;
     }
 
@@ -305,17 +305,29 @@
       width: 600px;
     }
 
+    &__wrap--traveler-item:last-child {
+      box-sizing: border-box;
+      width: 600px;
+      margin-bottom: 28px;
+    }
+
     &__achievements {
       width: 596px;
       min-height: 105px;
+      margin-top: 33px;
 
       border: 2px solid #e5e5e5;
     }
 
     &__achievements &__title {
-      padding-top: 21px;
+      padding-top: 23px;
       padding-right: 20px;
       padding-left: 20px;
+    }
+
+    &__achievements &__flex-block {
+      margin-top: 4px;
+      padding-bottom: 3px;
     }
 
     &__photos {
@@ -327,6 +339,10 @@
       padding-left: 60px;
 
       border: 2px solid #e5e5e5;
+    }
+
+    &__wrap--photos {
+      margin-top: 21px;
     }
 
     &__photos &__title {
@@ -525,7 +541,7 @@
       align-items: center;
     }
 
-    &__footnote span{
+    &__footnote span {
       display: inline-block;
     }
   }

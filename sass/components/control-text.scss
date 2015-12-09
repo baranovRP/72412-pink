@@ -216,8 +216,13 @@
     padding: 0 10px;
 
     &--short {
-      width: 296px;
+      width: 300px;
+      margin-left: 4px;
       padding: 0;
+    }
+
+    &--short &__label {
+      padding-bottom: 4px;
     }
 
     &__label {
@@ -229,30 +234,51 @@
       display: block;
       box-sizing: border-box;
       width: 100%;
-      margin-bottom: 17px;
+      margin-bottom: 16px;
+      padding-top: 13px;
+      padding-bottom: 14px;
+      padding-left: 20px;
+    }
+
+    &__input--top {
+      margin-bottom: 11px;
+    }
+
+    &__input--top + &__label {
+      margin-left: 22px;
     }
 
     &__input--short {
-      width: 296px;
+      width: 300px;
       margin-bottom: 16px;
       padding: 15px 0;
       padding-right: 9px;
       padding-left: 21px;
     }
 
+    &--short &__input--short {
+      margin-bottom: 16px;
+    }
+
+    &--nickname &__input--short {
+      margin-bottom: 12px;
+    }
+
     &__output {
       box-sizing: border-box;
-      width: 120px;
+      width: 116px;
       margin-top: 0;
     }
 
     &__output--short {
-      width: 59px;
+      width: 63px;
 
       border: 2px solid $grey-light;
     }
 
     &__output--person {
+      width: 128px;
+
       background-color: $white;
       border-top-color: $white;
       border-bottom-color: $white;
@@ -267,7 +293,7 @@
 
     &--travel {
       width: 240px;
-      margin-bottom: 13px;
+      margin-bottom: 20px;
     }
 
     &--calc {
@@ -280,6 +306,10 @@
 
     &--block {
       padding: 0;
+    }
+
+    &--block &__label {
+      padding-bottom: 4px;
     }
 
     &__btn--text {
@@ -324,6 +354,7 @@
       width: 240px;
     }
 
+    //TODO ?? incorrect selector
     &--calc&--travel {
       margin: 0 44px;
     }

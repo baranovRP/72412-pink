@@ -65,7 +65,12 @@
 
 @media (min-width: $screen-tablet) {
   .control-radio {
+    padding-bottom: 26px;
     padding-left: 50px;
+
+    input:not(checked) + &__label {
+      padding-left: 58px;
+    }
   }
 }
 

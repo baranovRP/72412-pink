@@ -37,8 +37,12 @@
 @media (min-width: $screen-tablet) {
   .social-links {
     margin: 0;
+    padding: 0;
     padding-top: 12px;
-    padding-left: 6px;
+
+    &--index {
+      padding-left: 6px;
+    }
 
     &--flex-block {
       display: flex;
