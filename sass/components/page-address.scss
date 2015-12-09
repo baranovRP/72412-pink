@@ -43,13 +43,18 @@
 
 @media (min-width: $screen-tablet) {
   .page-address {
+    @include background-image("background-footer-map--tablet.png");
+
+    background-repeat: no-repeat;
+    background-position: center top 57px;
+
     &__container {
       width: 680px;
       margin-left: -350px;
     }
 
     &__container::after {
-      top: 401px;
+      top: 400px;
 
       margin-left: -350px;
 

@@ -22,6 +22,7 @@
     padding-left: 9px;
 
     vertical-align: middle;
+
     fill: $pink-strong;
   }
 }
@@ -43,9 +44,10 @@
 
       display: block;
       min-height: 40px;
+      padding-right: 10px;
 
       font-weight: 400;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 18px;
       color: #283645;
       text-decoration: none;
@@ -57,7 +59,7 @@
   }
 }
 
-@media (min-width: $screen-tablet) {
+@media (min-width: $screen-desktop) {
   .copyright {
     margin: 0;
     padding-top: 19px;
