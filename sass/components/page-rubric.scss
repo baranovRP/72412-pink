@@ -24,7 +24,8 @@
     color: $white;
   }
 
-  &--index &__title {
+  &--index &__title,
+  &--competition &__title{
     padding-top: 8px;
   }
 }

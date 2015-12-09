@@ -12,6 +12,9 @@
   border-radius: 3px;
 
   &--upload {
+    padding-right: 59px;
+    padding-left: 51px;
+
     color: $black;
 
     background-color: $white;
@@ -20,7 +23,8 @@
 
   &--submit {
     margin: 49px 0;
-    margin-bottom: 36px;
+    margin-top: 50px;
+    margin-bottom: 35px;
     padding: 14px 45px;
 
     color: $white;
