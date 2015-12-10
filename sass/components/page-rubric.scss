@@ -94,6 +94,10 @@
       color: $white;
     }
 
+    &--competition {
+      padding-top: 95px;
+    }
+
     &--competition &__title {
       @include font-family-general($font-face-family);
 

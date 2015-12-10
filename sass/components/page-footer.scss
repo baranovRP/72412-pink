@@ -34,3 +34,12 @@
     }
   }
 }
+
+
+@media (min-width: $screen-desktop) {
+  .page-footer {
+    &__container {
+      padding-top: 60px;
+    }
+  }
+}

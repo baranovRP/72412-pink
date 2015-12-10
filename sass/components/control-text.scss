@@ -340,6 +340,10 @@
     width: 300px;
     padding: 0;
 
+    &--short {
+      margin-left: 1px;
+    }
+
     &__output {
       box-sizing: border-box;
       width: 126px;
@@ -352,6 +356,13 @@
 
     &--travel {
       width: 240px;
+      margin-bottom: 6px;
+    }
+
+    &--calc &__label--bottom {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 0;
     }
 
     //TODO ?? incorrect selector

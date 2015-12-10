@@ -76,24 +76,37 @@
 
 @media (min-width: $screen-desktop) {
   .control-checkbox {
-    width: 30%;
+    width: 257px;
     margin: 0;
-    padding: 44px 0;
+    padding: 21px 0;
+    padding-bottom: 31px;
+
+    &:nth-child(1+3n) {
+      width: 315px;
+    }
+
+    &:nth-child(2+3n) {
+      width: 305px;
+    }
 
     &:nth-child(1) {
       order: 1;
+      width: 315px;
     }
 
     &:nth-child(2) {
       order: 4;
+      width: 315px;
     }
 
     &:nth-child(3) {
       order: 2;
+      width: 305px;
     }
 
     &:nth-child(4) {
       order: 5;
+      width: 305px;
     }
 
     &:nth-child(5) {

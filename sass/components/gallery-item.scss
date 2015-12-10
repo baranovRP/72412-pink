@@ -14,6 +14,7 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
+
   &__text {
     @include font-family-general($font-face-family);
 
@@ -64,5 +65,82 @@
 
   &__cross-btn::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .gallery-item {
+    width: 120px;
+    min-height: 120px;
+    margin-right: 68px;
+    margin-bottom: 30px;
+    margin-left: 0;
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      display: inline-block;
+      padding-top: 10px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      vertical-align: bottom;
+      color: $blue-very-dark;
+      text-transform: uppercase;
+    }
+
+    &__cross-btn {
+      position: absolute;
+      top: -9px;
+      right: -24px;
+
+      width: 53px;
+      height: 53px;
+
+      font-size: 0;
+
+      background-color: $white;
+      background-position: 50% 50%;
+      border: 2px solid $grey-light;
+      border-radius: 50%;
+    }
+
+    &__cross-btn::before,
+    &__cross-btn:after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 10px;
+
+      width: 25px;
+      height: 2px;
+
+      background-color: #333333;
+      opacity: 0.3;
+    }
+
+    &__cross-btn::before {
+      transform: rotate(45deg);
+    }
+
+    &__cross-btn::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .gallery-item {
+    margin-right: 54px;
+    margin-bottom: 7px;
+
+    &:nth-child(3n) {
+      margin-right: 54px;
+    }
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
   }
 }
