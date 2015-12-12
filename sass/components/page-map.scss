@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .page-map {
   width: 100%;
   min-height: 612px;
@@ -9,4 +6,28 @@
 #page-map {
   width: 100%;
   min-height: 612px;
+}
+
+@media (min-width: $screen-tablet) {
+  .page-map {
+    width: 100%;
+    min-height: 779px;
+  }
+
+  #page-map {
+    width: 100%;
+    min-height: 779px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-map {
+    width: 100%;
+    min-height: 868px;
+  }
+
+  #page-map {
+    width: 100%;
+    min-height: 868px;
+  }
 }

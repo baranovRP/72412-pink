@@ -1,16 +1,24 @@
-@import "../mixins";
-@import "../variables";
-
 .page-apps {
+  @include container;
+
   width: 100%;
   min-height: 240px;
-  padding-top: 8px;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 2px;
+}
 
-  background-color: $blue-mostly-black;
+@media (min-width: $screen-tablet) {
+  .page-apps {
+    width: 50%;
+    margin: 0;
+    padding-top: 10px;
+  }
+}
 
-  &__container {
-    @include container;
 
-    min-height: 240px;
+@media (min-width: $screen-desktop) {
+  .page-apps {
+    width: 32%;
   }
 }

@@ -2,55 +2,88 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header page-header--index">
+<header class="page-header  page-header--index">
+
   <div class="page-header__container">
     <div class="page-header__inner">
-      <a class="page-header__logo-link" href="index.html">
-        <img src="img/logo.png" width="74" height="23" alt="Pink">
-      </a>
+      <div class="logo logo--header">
+        <a class="logo__link" href="index.html">
+          <picture class="logo__img">
+            <source
+              type="image/svg+xml"
+              media="(min-width: 960px)"
+              srcset="img/logotype-white--desktop.svg 2x, img/logotype-white--desktop.svg 1x">
+            <source
+              type="image/svg+xml"
+              media="(min-width: 660px)"
+              srcset="img/logotype-white--tablet.svg 2x, img/logotype-white--tablet.svg 1x">
+            <source
+              type="image/svg+xml"
+              media="(min-width: 320px)"
+              srcset="img/logotype-white--mobile.svg 2x, img/logotype-white--mobile.svg 1x">
+            <img src="img/logotype-white--mobile.svg" width="74">
+          </picture>
+        </a>
+      </div>
       <a class="page-header__toggle  page-header__toggle--close"></a>
     </div>
     <div class="page-header__nav-wrap  page-header__nav-wrap--hidden">
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <div class="main-nav__list">
+          <div class="main-nav__item">
             <a class="main-nav__link" href="index.html">Информация</a>
-          </li>
-          <li class="main-nav__item">
+          </div>
+          <div class="main-nav__item">
             <a class="main-nav__link" href="blog.html">Блог</a>
-          </li>
-          <li class="main-nav__item">
+          </div>
+          <div class="main-nav__item">
             <a class="main-nav__link" href="reviews.html">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
+          </div>
+          <div class="main-nav__item">
             <a class="main-nav__link" href="competition.html">Конкурс</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </div>
-    <div class="page-rubric">
-      <h1 class="page-rubric__title">Взгляните на жизнь иначе!</h1>
+    <div class="page-rubric  page-rubric--index">
+      <h1 class="page-rubric__title">Взгляните на&nbsp;жизнь иначе!</h1>
     </div>
-  </div>
-</header>
-
-
-<main class="page-group-content">
-  <div class="page-apps">
-    <div class="page-apps__container">
+    <div class="page-apps">
       <div class="apps">
         <a class="apps__btn" download="file-name" href="#">Скачать приложение</a>
 
         <div class="apps-os">
           <a class="apps-os__item  apps-os__item--apple" href="https://itunes.apple.com">
+            <picture class="apps-os__img--apple">
+              <source
+                type="image/svg+xml"
+                media="all"
+                srcset="img/apple-logo.svg 2x, img/apple-logo.svg 1x">
+              <img src="img/apple-logo.svg" width="46">
+            </picture>
           </a>
           <a class="apps-os__item  apps-os__item--android" href="https://play.google.com">
+            <picture class="apps-os__img--android">
+              <source
+                type="image/svg+xml"
+                media="all"
+                srcset="img/android-logo.svg 2x, img/android-logo.svg 1x">
+              <img src="img/android-logo.svg" width="42">
+            </picture>
           </a>
           <a class="apps-os__item  apps-os__item--microsoft" href="http://www.microsoftstore.com">
+            <picture class="apps-os__img--microsoft">
+              <source
+                type="image/svg+xml"
+                media="all"
+                srcset="img/microsoft-logo.svg 2x, img/microsoft-logo.svg 1x">
+              <img src="img/microsoft-logo.svg" width="44">
+            </picture>
           </a>
         </div>
         <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -59,34 +92,98 @@
   </div>
 
 
+
+
+</header>
+
+
+<main class="page-group-content">
   <div class="page-promo">
-    <div class="page-promo__container">
       <article class="promo">
-        <h2 class="promo__title">
-          <span>Устали от серости мегаполиса?</span>
-          <span>Нам есть, что вам предложить!</span>
-        </h2>
-        <section class="promo-item">
-          <h3 class="promo-item__title">Поднимает настроение</h3>
+        <div class="promo__title-wrap">
+          <h2 class="promo__title">
+            <span>Устали от серости мегаполиса?</span>
+            <span>Нам есть, что вам предложить!</span>
+          </h2>
+        </div>
+        <div class="promo__line"></div>
+        <div class="promo__inner">
+          <div class="promo__inner-wrap">
+            <div class="promo__flex-wrap">
+              <section class="promo-item">
+                <h3 class="promo-item__title">Поднимает настроение</h3>
 
-          <p class="promo-item__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько
-            кликов!</p>
-        </section>
-        <section class="promo-item">
-          <h3 class="promo-item__title">Меняет мир вокруг</h3>
+                <p class="promo-item__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
+                  несколько
+                  кликов!</p>
+              </section>
+              <section class="promo-item">
+                <h3 class="promo-item__title">Меняет мир вокруг</h3>
 
-          <p class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
-        </section>
-        <section class="promo-item">
-          <h3 class="promo-item__title">Заводит новых друзей</h3>
+                <p class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                  усилить
+                  эффект</p>
+              </section>
+              <section class="promo-item">
+                <h3 class="promo-item__title">Заводит новых&nbsp;друзей</h3>
 
-          <p class="promo-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </section>
-        <figure class="promo__img">
-          <img src="img/demo.jpg" width="157" height="278" alt="Мобильное приложение">
-        </figure>
+                <p class="promo-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
+                  новых</p>
+              </section>
+            </div>
+            <div class="promo__flex-wrap">
+              <figure class="promo__img  promo__img--1">
+                <picture>
+                  <source
+                    type="image/png"
+                    media="(min-width: 960px)"
+                    srcset="img/iphone-screen--desktop-1@2x.png 2x, img/iphone-screen--desktop-1@1x.png 1x">
+                  <img src="img/iphone-screen--desktop-1@1x.png" alt="Мобильное приложение">
+                </picture>
+              </figure>
+              <figure class="promo__img  promo__img--2">
+                <picture>
+                  <source
+                    type="image/png"
+                    media="(min-width: 960px)"
+                    srcset="img/iphone-screen--desktop-2@2x.png 2x, img/iphone-screen--desktop-2@1x.png 1x">
+                  <img src="img/iphone-screen--desktop-2@1x.png" alt="Мобильное приложение">
+                </picture>
+              </figure>
+              <figure class="promo__img  promo__img--3">
+                <picture>
+                  <source
+                    type="image/png"
+                    media="(min-width: 960px)"
+                    srcset="img/iphone-screen--desktop-3@2x.png 2x, img/iphone-screen--desktop-3@1x.png 1x">
+                  <source
+                    type="image/png"
+                    media="(min-width: 660px)"
+                    srcset="img/iphone-screen--tablet@2x.png 2x, img/iphone-screen--tablet@1x.png 1x">
+                  <source
+                    type="image/png"
+                    media="(min-width: 320px)"
+                    srcset="img/iphone-screen--mobile@2x.png 2x, img/iphone-screen--mobile@1x.png 1x">
+                  <img src="img/iphone-screen--mobile@1x.png" alt="Мобильное приложение">
+                </picture>
+              </figure>
+            </div>
+          </div>
+        </div>
       </article>
+  </div>
+
+
+  <div class="page-effect">
+    <div class="page-effect__container">
+      <section class="effect-item">
+        <h2 class="effect-item__title">Эффект&nbsp;<span><br></span>на 24 часа!</h2>
+
+        <p class="effect-item__text">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
+          целые сутки!<a class="effect-item__link" href="#">Узнать больше об исследовании</a>
+        </p>
+      </section>
     </div>
   </div>
 
@@ -106,29 +203,41 @@
         <div class="slider-review__inner">
           <div class="slider-review__wrap">
             <article class="slider-item  slider-item--active">
-              <h3 class="slider-item__title">Николай Петров</h3>
+              <h3 class="slider-item__title">Николай Петров
+                <small class="slider-item__title slider-item__title--small">
+                  25 лет, водитель трамвая
+                </small>
+              </h3>
 
-              <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              <p class="slider-item__text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»</p>
+                фотографии!<span>»</span></p>
             </article>
           </div>
           <div class="slider-review__wrap">
-            <article class="slider-item  slider-item--hidden">
-              <h3 class="slider-item__title">Сергей Иванов</h3>
+            <article class="slider-item  slider-item--active">
+              <h3 class="slider-item__title">Сергей Иванов
+                <small class="slider-item__title slider-item__title--small">
+                  42 года, водитель бронепоезда
+                </small>
+              </h3>
 
-              <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              <p class="slider-item__text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»</p>
+                фотографии!<span>»</span></p>
             </article>
           </div>
           <div class="slider-review__wrap">
-            <article class="slider-item slider-item--hidden">
-              <h3 class="slider-item__title">Семен Кузнецов</h3>
+            <article class="slider-item  slider-item--active">
+              <h3 class="slider-item__title">Семен Кузнецов
+                <small class="slider-item__title slider-item__title--small">
+                  37 лет, косарь
+                </small>
+              </h3>
 
-              <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              <p class="slider-item__text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»</p>
+                фотографии!<span>»</span></p>
             </article>
           </div>
         </div>
@@ -153,12 +262,16 @@
           <div class="slider-price__wrap">
             <table class="tariff">
               <tr class="tariff__row tariff__row--header">
+                <th class="tariff__title  tariff__title--empty  tariff__title--separate">
+                </th>
                 <th class="tariff__title">
                   <span class="tariff__name">База</span>
                   <span class="tariff__price">1,99 USD</span>
                 </th>
                 <th class="tariff__title  tariff__title--hit">
-                  <span class="tariff__ribbon"><span>Хит</span></span>
+                  <span class="tariff__ribbon">
+                    <span>Хит</span>
+                  </span>
                   <span class="tariff__name">Стандарт</span>
                   <span class="tariff__price">3,99 USD</span>
                 </th>
@@ -168,36 +281,45 @@
                 </th>
               </tr>
               <tr class="tariff__row">
-                <td class="tariff__feature-filter  tariff__feature-filter--yes">
+                <td class="tariff__feature-filter  tariff__feature-filter--separate">
                   Розовый фильтр
                 </td>
                 <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                  Розовый фильтр
+                  <span class="tariff__mobile-feature">Розовый фильтр</span>
                 </td>
                 <td class="tariff__feature-filter  tariff__feature-filter--yes">
-                  Розовый фильтр
+                  <span class="tariff__mobile-feature">Розовый фильтр</span>
+                </td>
+                <td class="tariff__feature-filter  tariff__feature-filter--yes">
+                  <span class="tariff__mobile-feature">Розовый фильтр</span>
                 </td>
               </tr>
               <tr class="tariff__row">
+                <td class="tariff__feature-emotion  tariff__feature-emotion--separate">
+                  Смайлики
+                </td>
                 <td class="tariff__feature-emotion  tariff__feature-emotion--no">
-                  Смайлики
+                  <span class="tariff__mobile-feature">Смайлики</span>
                 </td>
                 <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
-                  Смайлики
+                  <span class="tariff__mobile-feature">Смайлики</span>
                 </td>
                 <td class="tariff__feature-emotion  tariff__feature-emotion--yes">
-                  Смайлики
+                  <span class="tariff__mobile-feature">Смайлики</span>
                 </td>
               </tr>
               <tr class="tariff__row">
-                <td class="tariff__feature-comment  tariff__feature-comment--no">
+                <td class="tariff__feature-comment  tariff__feature-comment--separate">
                   Комментарии
                 </td>
                 <td class="tariff__feature-comment  tariff__feature-comment--no">
-                  Комментарии
+                  <span class="tariff__mobile-feature">Комментарии</span>
+                </td>
+                <td class="tariff__feature-comment  tariff__feature-comment--no">
+                  <span class="tariff__mobile-feature">Комментарии</span>
                 </td>
                 <td class="tariff__feature-comment  tariff__feature-comment--yes">
-                  Комментарии
+                  <span class="tariff__mobile-feature">Комментарии</span>
                 </td>
               </tr>
             </table>
@@ -206,26 +328,81 @@
       </div>
     </div>
   </div>
+
+
+  <div class="page-address">
+    <div class="page-address__container">
+      <div class="contacts-block">
+        <div class="contacts-block__title">Остались вопросы?<br>
+          Свяжитесь с нами!
+        </div>
+        <address class="contacts-address">
+          <div class="contacts-address__flex-wrap">
+            <span class="contacts-address__label">Звоните:</span>
+            <a class="contacts-address__text  contacts-address__text--red" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts-address__flex-wrap">
+            <span class="contacts-address__label">Пишите:</span>
+            <a class="contacts-address__text  contacts-address__text--red" href="mailto:mail@htmlacademy.ru?Subject=Hello">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts-address__flex-wrap">
+            <span class="contacts-address__label">Приезжайте в гости:</span>
+            <span class="contacts-address__text  contacts-address__text--red">ул. Большая<br>Конюшенная,&nbsp;19/8</span>
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="page-map" id="page-map"></div>
+  </div>
 </main>
 
 
-<footer class="page-address-footer">
-  <div class="page-address-footer__container">
-    <div class="contacts-block">
-      <div class="contacts-block__title">Остались вопросы?<br>
-        Свяжитесь с нами!
-      </div>
-      <address class="contacts-address">
-        <span class="contacts-address__label">Звоните:</span>
-        <a class="contacts-address__text  contacts-address__text--red" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
-        <span class="contacts-address__label">Пишите:</span>
-        <a class="contacts-address__text  contacts-address__text--red" href="mailto:mail@htmlacademy.ru?Subject=Hello">mail@htmlacademy.ru</a>
-        <span class="contacts-address__label">Приезжайте в гости:</span>
-        <span class="contacts-address__text  contacts-address__text--red">ул. Большая Конюшенная, 19/8</span>
-      </address>
+
+
+<footer class="page-footer  page-footer--index">
+  <div class="page-footer__container">
+    <div class="logo  logo--flex-block">
+      <a class="logo__link" href="index.html">
+        <picture class="logo__img">
+          <source
+            type="image/svg+xml"
+            media="(min-width: 960px)"
+            srcset="img/logotype-blue--desktop.svg 2x, img/logotype-blue--desktop.svg 1x">
+          <source
+            type="image/svg+xml"
+            media="(min-width: 660px)"
+            srcset="img/logotype-blue--tablet.svg 2x, img/logotype-blue--tablet.svg 1x">
+          <img src="img/logotype-blue--tablet.svg" width="145">
+        </picture>
+      </a>
+    </div>
+
+    <div class="social-links  social-links--flex-block  social-links--index">
+      <a class="social-links__item  social-links__item--twitter" href="https://twitter.com/">
+        <i class="icon-twitter"></i>
+      </a>
+      <a class="social-links__item  social-links__item--facebook" href="https://www.facebook.com/">
+        <i class="icon-facebook"></i>
+      </a>
+      <a class="social-links__item  social-links__item--play" href="https://play.com/">
+        <i class="icon-play"></i>
+      </a>
+    </div>
+
+    <div class="copyright  copyright--flex-block">
+      <a class="copyright__link" href="https://htmlacademy.ru/">
+        Разработано
+        <svg class="copyright__img" id="icon-htmlacademy--svg" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
+  l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
+  l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
+  l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65
+  l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036
+  v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+        </svg>
+      </a>
     </div>
   </div>
-  <div class="page-map" id="page-map"></div>
 </footer>
 
 

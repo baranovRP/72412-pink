@@ -1,35 +1,56 @@
-@import "../mixins";
-@import "../variables";
-
 .page-price {
   position: relative;
 
   width: 100%;
   min-height: 372px;
-  padding-top: 100px;
-  padding-bottom: 19px;
+  padding-top: 101px;
+  padding-bottom: 18px;
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    top: -233%;
-    left: -50%;
+    top: 4vh;
+    left: -50vw;
     z-index: -1;
 
-    width: 200%;
-    height: 479%;
+    width: 150vw;
+    height: 105vh;
 
-    background-image: linear-gradient(to bottom, $white, $white 50%, $grey-very-light 50%);
-    background-repeat: no-repeat;
-    transform: rotate(-5deg);
+    background-color: $grey-very-light;
+    transform: skewY(-4deg);
   }
 
   &__container {
-    @include container;
+    background-color: $grey-very-light;
+  }
+}
 
-    width: 320px;
+@media (min-width: $screen-tablet) {
+  .page-price {
     min-height: 250px;
-    overflow: hidden;
+    padding-top: 108px;
+    padding-bottom: 38px;
+
+    &::before {
+      top: 7vh;
+
+      transform: skewY(-4deg);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-price {
+    min-height: 250px;
+    margin-top: 35px;
+    padding-top: 108px;
+    padding-bottom: 95px;
+
+    &::before {
+      top: 7vh;
+
+      transform: skewY(-4deg);
+    }
   }
 }

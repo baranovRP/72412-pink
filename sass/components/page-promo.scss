@@ -1,32 +1,29 @@
-@import "../mixins";
-@import "../variables";
-
 .page-promo {
   position: relative;
 
   width: 100%;
-  min-height: 1002px;
+  min-height: 900px;
+  padding-bottom: 4px;
   overflow: hidden;
+}
 
+@media (min-width: $screen-tablet) {
+  .page-promo {
+    min-height: 725px;
+    padding-bottom: 1px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -233%;
-    left: -50%;
-    z-index: -1;
-
-    width: 200%;
-    height: 512%;
-
-    background-image: linear-gradient(to bottom, $white, $white 50%, $grey-very-light 50%);
-    background-repeat: no-repeat;
-    transform: rotate(-6deg);
+    &__container {
+      min-height: 725px;
+    }
   }
+}
 
-  &__container {
-    @include container;
+@media (min-width: $screen-desktop) {
+  .page-promo {
+    min-height: 670px;
 
-    min-height: 1002px;
+    &__container {
+      min-height: 670px;
+    }
   }
 }

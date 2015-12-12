@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .control-radio {
   padding: 20px 0;
   padding-bottom: 24px;
@@ -63,5 +60,30 @@
 
   input:checked + &__label:before {
     background: $white;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .control-radio {
+    padding-bottom: 26px;
+    padding-left: 50px;
+
+    input:not(checked) + &__label {
+      padding-left: 58px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .control-radio {
+    width: 194px;
+    margin: 0;
+    padding: 0 60px;
+    padding-top: 29px;
+    padding-bottom: 59px;
+
+    &:nth-child(3n) {
+      padding-right: 0;
+    }
   }
 }

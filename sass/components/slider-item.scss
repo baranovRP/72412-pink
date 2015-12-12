@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .slider-item {
   float: left;
   width: 280px;
@@ -33,5 +30,147 @@
     font-size: 14px;
     line-height: 30px;
     color: $blue-very-dark;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .slider-item {
+    &__title--small {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .slider-item {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 620px;
+    min-height: 150px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 36px 0;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title--small {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 1px 0;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 680px;
+    min-height: 150px;
+    padding: 0 130px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+      padding-top: 36px;
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title--small {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 1px 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text span {
+      @include hidden;
+    }
+
+    &__text::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 7px;
+
+      width: 30px;
+      height: 30px;
+
+      border-top: 0 solid transparent;
+      border-right: 2px solid $blue-very-dark;
+      border-bottom: 2px solid $blue-very-dark;
+      border-left: 0 solid transparent;
+      transform: rotate(135deg);
+      cursor: pointer;
+      opacity: 0.3;
+    }
+
+    &__text::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      right: 7px;
+
+      width: 30px;
+      height: 30px;
+
+      border-top: 0 solid transparent;
+      border-right: 2px solid $blue-very-dark;
+      border-bottom: 2px solid $blue-very-dark;
+      border-left: 0 solid transparent;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      opacity: 0.3;
+    }
   }
 }

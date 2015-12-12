@@ -7,3 +7,6 @@ Thumbs.db
 *.sublime*
 *.log
 css/*.css
+/scratch
+/pink-mockup
+/pink-full-pack

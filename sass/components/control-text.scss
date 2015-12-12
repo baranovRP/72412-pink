@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .control-text {
   margin: 0;
   padding: 0;
@@ -15,7 +12,6 @@
   &--block {
     float: left;
     width: 59px;
-    margin-left: 10px;
 
     text-align: center;
   }
@@ -23,7 +19,6 @@
   &--short {
     float: right;
     width: 215px;
-    margin-right: 14px;
   }
 
   &__label {
@@ -64,7 +59,7 @@
   &__input {
     @include font-family-general($font-face-family);
 
-    width: 250px;
+    width: 252px;
     margin-bottom: 18px;
     padding-top: 15px;
     padding-right: 5px;
@@ -77,6 +72,25 @@
     color: $blue-very-dark;
 
     border: 2px solid $grey-light;
+    border-radius: 3px;
+  }
+
+  &__input::-webkit-input-placeholder {
+    color: $blue-very-dark;
+
+    opacity: 1;
+  }
+
+  &__input::-moz-placeholder {
+    color: $blue-very-dark;
+
+    opacity: 1;
+  }
+
+  &__input:-ms-input-placeholder {
+    color: $blue-very-dark;
+
+    opacity: 1;
   }
 
   &__input--top {
@@ -85,7 +99,7 @@
 
   &__input--short {
     width: 185px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     padding: 15px 0;
     padding-right: 9px;
     padding-left: 21px;
@@ -107,8 +121,8 @@
 
     background-color: #ffffff;
     border: 2px solid $grey-light;
-    border-right-width: 1px;
-    border-left-width: 1px;
+    border-right: none;
+    border-left: none;
   }
 
   &__output--person {
@@ -121,38 +135,42 @@
     padding: 15px 0;
 
     background-color: $grey-very-light;
+    border: 2px solid $grey-light;
+    border-right: none;
     border-left-width: 2px;
+    border-radius: 3px;
   }
 
   &__btn {
     position: relative;
 
     display: inline-block;
-    padding: 14px 24px;
+    padding: 14px 25px;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     vertical-align: bottom;
-    color: $blue-very-dark;
+    color: $white;
     text-decoration: none;
 
     background-color: #ffffff;
     border: 2px solid $grey-light;
+    border-radius: 3px;
   }
 
   &__btn--minus {
     padding-top: 13px;
+    padding-right: 26px;
     padding-bottom: 15px;
-
-    border-right-width: 1px;
+    padding-left: 26px;
   }
 
   &__btn--minus::before {
     content: "";
     position: absolute;
     top: 28px;
-    right: 12px;
+    right: 15px;
 
     width: 27px;
     height: 3px;
@@ -161,7 +179,10 @@
   }
 
   &__btn--plus {
-    border-left-width: 1px;
+    padding-top: 13px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    padding-left: 24px;
   }
 
   &__btn--plus::before,
@@ -179,5 +200,188 @@
 
   &__btn--plus::after {
     transform: rotate(90deg);
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .control-text {
+    &__btn--text {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .control-text {
+    padding: 0 10px;
+
+    &--short {
+      width: 300px;
+      margin-left: 4px;
+      padding: 0;
+    }
+
+    &--short &__label {
+      padding-bottom: 4px;
+    }
+
+    &__label {
+      padding-bottom: 7px;
+      padding-left: 22px;
+    }
+
+    &__input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 16px;
+      padding-top: 13px;
+      padding-bottom: 14px;
+      padding-left: 20px;
+    }
+
+    &__input--top {
+      margin-bottom: 11px;
+    }
+
+    &__input--top + &__label {
+      margin-left: 22px;
+    }
+
+    &__input--short {
+      width: 300px;
+      margin-bottom: 16px;
+      padding: 15px 0;
+      padding-right: 9px;
+      padding-left: 21px;
+    }
+
+    &--short &__input--short {
+      margin-bottom: 16px;
+    }
+
+    &--nickname &__input--short {
+      margin-bottom: 12px;
+    }
+
+    &__output {
+      box-sizing: border-box;
+      width: 116px;
+      margin-top: 0;
+    }
+
+    &__output--short {
+      width: 63px;
+
+      border: 2px solid $grey-light;
+    }
+
+    &__output--person {
+      width: 128px;
+
+      background-color: $white;
+      border-top-color: $white;
+      border-bottom-color: $white;
+    }
+
+    &__label--bottom {
+      margin-left: 19px;
+      padding-left: 0;
+
+      text-align: left;
+    }
+
+    &--travel {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+
+    &--calc {
+      padding: 0;
+    }
+
+    &--calc &__label--bottom {
+      margin-left: 38px;
+    }
+
+    &--block {
+      padding: 0;
+    }
+
+    &--block &__label {
+      padding-bottom: 4px;
+    }
+
+    &__btn--text {
+      @include font-family-general($font-face-family);
+
+      display: flex;
+      align-items: center;
+      width: 64px;
+      margin: 0;
+      padding: 0;
+      padding-top: 20px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $blue-very-dark;
+      text-transform: uppercase;
+
+      background-color: $white;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .control-text {
+    display: block;
+    width: 300px;
+    padding: 0;
+
+    &--short {
+      margin-left: 1px;
+    }
+
+    &__output {
+      box-sizing: border-box;
+      width: 126px;
+    }
+
+    &__output--short {
+      box-sizing: border-box;
+      width: 63px;
+    }
+
+    &--travel {
+      width: 240px;
+      margin-bottom: 6px;
+    }
+
+    &--calc &__label--bottom {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    //TODO ?? incorrect selector
+    &--calc&--travel {
+      margin: 0 44px;
+    }
+
+    &--block {
+      width: 63px;
+    }
+
+    &__input--short {
+      box-sizing: border-box;
+      width: 300px;
+    }
+
+    &__btn--text {
+      order: 3;
+      margin-left: 37px;
+    }
   }
 }

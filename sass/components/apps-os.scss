@@ -1,25 +1,19 @@
-@import "../mixins";
-@import "../variables";
-
 .apps-os {
   max-width: 230px;
   min-height: 42px;
   margin: 0 auto;
   padding: 0 38px;
-  padding-top: 32px;
-  padding-bottom: 23px;
+  padding-top: 31px;
+  padding-bottom: 21px;
 
   font-size: 0;
 
   &__item {
-    @include background-image("sprite.png");
-
     display: inline-block;
     margin-right: 36px;
 
     vertical-align: bottom;
 
-    background-color: $blue-mostly-black;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -31,23 +25,34 @@
   &__item--apple {
     width: 46px;
     height: 57px;
-
-    background-position: -5px -62px;
   }
 
   &__item--android {
     width: 42px;
     height: 47px;
     padding-bottom: 1px;
-
-    background-position: -5px -5px;
   }
 
   &__item--microsoft {
     width: 44px;
     height: 42px;
     padding-bottom: 3px;
+  }
+}
 
-    background-position: -5px -129px;
+
+@media (min-width: $screen-tablet) {
+  .apps-os {
+    padding-top: 46px;
+    padding-bottom: 36px;
+    padding-left: 49px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .apps-os {
+    padding-top: 66px;
+    padding-bottom: 54px;
+    padding-left: 47px;
   }
 }

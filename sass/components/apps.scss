@@ -1,16 +1,14 @@
-@import "../mixins";
-@import "../variables";
-
 .apps {
   margin: 0 auto;
   padding: 0 9px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
 
   &__btn {
     @include font-family-general($font-face-family);
 
     display: block;
-    padding: 15px 35px;
+    padding: 17px 35px;
+    padding-top: 14px;
 
     font-weight: 700;
     font-size: 18px;
@@ -35,5 +33,59 @@
     line-height: 24px;
     text-align: center;
     color: $white;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .apps {
+    margin: 0 auto;
+    padding-top: 10px;
+    &__btn {
+      width: 68%;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .apps {
+    padding: 0;
+
+    &__btn {
+      @include font-family-general($font-face-family);
+
+      width: 82%;
+      padding: 17px 24px;
+
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 18px;
+      color: $white;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: $white;
+    }
   }
 }

@@ -1,29 +1,59 @@
-@import "../mixins";
-@import "../variables";
-
 .logo {
   width: 100%;
   padding: 10px 0;
 
-
   &__link {
     display: block;
-    height: 40px;
-
-    font-size: 0;
-    text-align: center;
-  }
-
-  &__img {
-    display: inline-block;
+    width: 147px;
     margin: 0 auto;
-    padding: 0;
-
-    font-size: 0;
-    vertical-align: bottom;
   }
 
-  &__img--glass {
-    padding-right: 10px;
+  &--header &__link {
+    width: 74px;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .logo {
+    &__link {
+      display: block;
+      width: 147px;
+      margin: 0;
+    }
+
+    &--header &__link {
+      width: 147px;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    &--flex-block {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      padding-top: 3px;
+      padding-left: 11px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .logo {
+    &__link,
+    &--header &__link {
+      display: block;
+      width: 147px;
+      margin: 0;
+    }
+
+    &--header &__link {
+      padding: 0;
+    }
+
+    &--flex-block {
+      padding-left: 0;
+    }
   }
 }

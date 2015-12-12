@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 .copyright {
   min-height: 40px;
   margin-left: 6px;
@@ -12,6 +9,8 @@
 
     display: block;
     min-height: 40px;
+    padding-top: 3px;
+    padding-right: 6px;
 
     font-weight: 400;
     font-size: 14px;
@@ -21,12 +20,75 @@
   }
   &__img {
     display: inline-block;
-    width: 40px;
-    padding-left: 5px;
+    width: 27px;
+    padding-left: 11px;
 
     vertical-align: middle;
-    color: $pink-strong;
 
-    fill: currentColor;
+    fill: $pink-strong;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .copyright {
+    margin: 0;
+    padding-top: 19px;
+
+    &--flex-block {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 30%;
+    }
+
+    &__link {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      min-height: 40px;
+      padding-right: 10px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #283645;
+      text-decoration: none;
+    }
+
+    &__img {
+      padding-left: 9px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .copyright {
+    margin: 0;
+    padding-top: 19px;
+
+    &--flex-block {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 30%;
+    }
+
+    &__link {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      min-height: 40px;
+      padding-right: 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: #283645;
+      text-decoration: none;
+    }
+
+    &__img {
+      padding-left: 9px;
+    }
   }
 }

@@ -1,33 +1,73 @@
-@import "../mixins";
-@import "../variables";
-
 .traveler-item {
   @include container;
   @include clearfix;
 
-  padding-top: 21px;
+  padding-top: 23px;
 
   border: 0;
 
-  &--first {
-    padding-top: 32px;
-  }
+  &__flex-wrap {
+    @include clearfix;
 
-  &--first::before {
-    content: "";
-    position: absolute;
-    top: auto;
-    left: auto;
-
-    width: 280px;
-    height: 2px;
-    margin-top: -31px;
+    margin-right: 14px;
     margin-left: 10px;
-
-    background-color: $grey-light;
   }
+}
 
-  &--last {
-    padding-bottom: 31px;
+@media (min-width: $screen-tablet) {
+  .traveler-item {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__flex-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-top: 26px;
+    }
+
+    &__block-wrap:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 420px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .traveler-item {
+    width: 820px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__flex-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__block-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__block-wrap:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 737px;
+      margin-left: 20px;
+    }
   }
 }

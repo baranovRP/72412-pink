@@ -1,10 +1,7 @@
-@import "../mixins";
-@import "../variables";
-
 .social-links {
   margin: 29px 0;
-  margin-left: 55px;
   margin-bottom: 37px;
+  margin-left: 55px;
 
   font-size: 0;
 
@@ -34,5 +31,31 @@
 
     font-size: 21px;
     color: $pink-strong;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .social-links {
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+
+    &--index {
+      padding-left: 6px;
+    }
+
+    &--flex-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+    }
+
+    &__item {
+      margin: 0 6px;
+    }
+    &__item:first-child {
+      margin-left: 0;
+    }
   }
 }

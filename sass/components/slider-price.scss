@@ -1,7 +1,6 @@
-@import "../mixins";
-@import "../variables";
-
 .slider-price {
+  @include container;
+
   position: relative;
 
   min-height: 250px;
@@ -26,11 +25,12 @@
 
   &__controls {
     position: absolute;
-    bottom: 6px;
-    left: 126px;
+    bottom: 7px;
+    left: 50%;
     z-index: 95;
 
-    width: 100%;
+    width: 70px;
+    margin-left: -35px;
   }
 
   &__controls label {
@@ -53,5 +53,72 @@
 
   #btn-6:checked ~ &__inner &__wrap {
     transform: translate(-552px);
+  }
+}
+
+@media (min-width: 320px) {
+  .slider-price {
+    width: 320px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .slider-price {
+    width: 640px;
+    padding-bottom: 0;
+
+    &__inner {
+      padding: 0 10px;
+    }
+
+    &__wrap {
+      width: 100%;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    #btn-4:checked ~ &__inner &__wrap,
+    #btn-5:checked ~ &__inner &__wrap,
+    #btn-6:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-price {
+    width: 940px;
+    padding-top: 46px;
+    padding-bottom: 0;
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__wrap {
+      width: 100%;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    #btn-4:checked ~ &__inner &__wrap,
+    #btn-5:checked ~ &__inner &__wrap,
+    #btn-6:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
   }
 }
