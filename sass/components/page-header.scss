@@ -30,12 +30,15 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &--index &__container {
-    min-height: 458px;
+  &--index {
     background-image: url($img-folder-path + "iphone-hand--mobile@1x.png"),
     url($img-folder-path + "background-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: left top 172px, center top -2px;
+    background-position: calc(50% - 31px) 172px, center top -2px;
+  }
+
+  &--index &__container {
+    min-height: 458px;
   }
 
   &--competition &__container {
@@ -130,8 +133,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
   .page-header {
     @include background-image("background-mobile@2x.jpg");
 
-    &--index &__container {
-      min-height: 458px;
+    &--index {
       background-image: url($img-folder-path + "iphone-hand--mobile@2x.png"),
       url($img-folder-path + "background-mobile@2x.jpg");
       background-size: 258px, 700px;
@@ -148,14 +150,17 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
       min-height: 110px;
     }
 
-    &--index &__container {
-      min-height: 370px;
-      padding-bottom: 80px;
+    &--index {
       background-image: url($img-folder-path + "iphone-hand--tablet@1x.png"),
       url($img-folder-path + "background-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: left -20px top 184px, center top;
+      background-position: calc(50% - 1px) 184px, center top;
       background-size: 700px, 1200px;
+    }
+
+    &--index &__container {
+      min-height: 370px;
+      padding-bottom: 80px;
     }
 
     &__inner {
@@ -198,7 +203,6 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
     background-size: 1200px;
 
     &--index &__container {
-      min-height: 458px;
       background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
       url($img-folder-path + "background-tablet@2x.jpg");
       background-size: 700px, 1200px;
@@ -211,7 +215,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
     @include background-image("background-desktop@1x.jpg");
     background-position: center top;
 
-    &--competition{
+    &--competition {
       padding-bottom: 13px;
     }
 
@@ -220,24 +224,23 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      min-height: 170px;
     }
 
     &__container::before {
       min-height: 110px;
     }
 
-    &--index &__container {
-      min-height: 170px;
-      padding-bottom: 121px;
+    &--index {
       background-image: url($img-folder-path + "iphone-hand--desktop@1x.png"),
       url($img-folder-path + "background-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: left 26px top 209px, center top;
+      background-position: calc(50% - 71px) 209px, center top;
       background-size: 1050px, 1281px;
     }
 
-    &--competition &__container {
-      min-height: 170px;
+    &--index &__container {
+      padding-bottom: 121px;
     }
 
     &__toggle {
@@ -261,8 +264,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
     @include background-image("background-desktop@2x.jpg");
     background-size: 1281px;
 
-    &--index &__container {
-      min-height: 170px;
+    &--index {
       background-image: url($img-folder-path + "iphone-hand--desktop@2x.png"),
       url($img-folder-path + "background-desktop@2x.jpg");
       background-size: 1050px, 1281px;
