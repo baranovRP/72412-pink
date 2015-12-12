@@ -7,7 +7,7 @@
   }
 
   &--competition {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   &__title {
@@ -57,7 +57,7 @@
 
     &--competition {
       margin-bottom: 80px;
-      padding-top: 72px;
+      padding-top: 62px;
     }
 
     &--competition &__title {
@@ -95,7 +95,10 @@
     }
 
     &--competition {
-      padding-top: 95px;
+      padding-top: 64px;
+      .&--competition:first-line {
+        letter-spacing: 1px;
+      }
     }
 
     &--competition &__title {
