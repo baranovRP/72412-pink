@@ -69,7 +69,6 @@ function showNav() {
   showMenu();
 }
 
-
 function hideNav() {
   hideToggle();
   hideHeader();
