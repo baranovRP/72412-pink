@@ -3,6 +3,7 @@
   min-height: 128px;
 
   &--index {
+    padding-top: 9px;
     padding-bottom: 245px;
   }
 
@@ -96,9 +97,10 @@
 
     &--competition {
       padding-top: 64px;
-      .&--competition:first-line {
-        letter-spacing: 1px;
-      }
+    }
+
+    .page-rubric.page-rubric--competition:first-line {
+      letter-spacing: 1px;
     }
 
     &--competition &__title {
