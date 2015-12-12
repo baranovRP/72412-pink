@@ -48,9 +48,8 @@
   &__inner {
     position: relative;
 
-    min-height: 25px;
+    height: 67px;
     padding: 0;
-    padding-top: 12px;
   }
 
   &__toggle {
@@ -154,17 +153,17 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
       background-image: url($img-folder-path + "iphone-hand--tablet@1x.png"),
       url($img-folder-path + "background-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: calc(50% - 1px) 184px, center top;
+      background-position: center 184px, center top;
       background-size: 700px, 1200px;
     }
 
     &--index &__container {
       min-height: 370px;
-      padding-bottom: 80px;
+      padding-bottom: 81px;
     }
 
     &__inner {
-      padding-top: 17px;
+      height: 109px;
     }
 
     &__container--open {

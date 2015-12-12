@@ -8,6 +8,10 @@
     margin: 0 auto;
   }
 
+  &--header {
+    padding-top: 22px;
+  }
+
   &--header &__link {
     width: 74px;
     margin: 0;
@@ -21,6 +25,10 @@
       display: block;
       width: 147px;
       margin: 0;
+    }
+
+    &--header {
+      padding-top: 26px;
     }
 
     &--header &__link {
