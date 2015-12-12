@@ -42,5 +42,10 @@
     &__container {
       padding-top: 60px;
     }
+
+    &--index &__container {
+      padding-top: 61px;
+      padding-bottom: 73px;
+    }
   }
 }

@@ -144,6 +144,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
   .page-header {
     @include background-image("background-tablet@1x.jpg");
     background-position: center top;
+    background-repeat: no-repeat;
 
     &__container::before {
       min-height: 110px;
@@ -159,7 +160,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
 
     &--index &__container {
       min-height: 370px;
-      padding-bottom: 81px;
+      padding-bottom: 80px;
     }
 
     &__inner {
@@ -200,11 +201,13 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
   .page-header {
     @include background-image("background-tablet@2x.jpg");
     background-size: 1200px;
+    background-repeat: no-repeat;
 
     &--index &__container {
       background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
       url($img-folder-path + "background-tablet@2x.jpg");
       background-size: 700px, 1200px;
+      background-repeat: no-repeat, no-repeat;      background-position: center 184px, center top;
     }
   }
 }
@@ -213,6 +216,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
   .page-header {
     @include background-image("background-desktop@1x.jpg");
     background-position: center top;
+    background-repeat: no-repeat;
 
     &--competition {
       padding-bottom: 13px;
@@ -234,12 +238,12 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       background-image: url($img-folder-path + "iphone-hand--desktop@1x.png"),
       url($img-folder-path + "background-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: calc(50% - 71px) 209px, center top;
+      background-position: calc(50% + 71px) 209px, center top;
       background-size: 1050px, 1281px;
     }
 
     &--index &__container {
-      padding-bottom: 90px;
+      padding-bottom: 121px;
     }
 
     &__toggle {
@@ -262,11 +266,14 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
   .page-header {
     @include background-image("background-desktop@2x.jpg");
     background-size: 1281px;
+    background-repeat: no-repeat;
 
     &--index {
       background-image: url($img-folder-path + "iphone-hand--desktop@2x.png"),
       url($img-folder-path + "background-desktop@2x.jpg");
       background-size: 1050px, 1281px;
+      background-repeat: no-repeat, no-repeat;
+      background-position: calc(50% + 71px) 209px, center top;
     }
   }
 }

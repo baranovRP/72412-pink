@@ -92,6 +92,10 @@
       margin-right: 0;
     }
 
+    &__item:first-child {
+      border-top: 0;
+    }
+
     &__link {
       @include font-family-general($font-face-family);
 
