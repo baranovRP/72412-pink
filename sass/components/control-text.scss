@@ -226,6 +226,18 @@
       background-color: $white;
     }
   }
+
+  input:disabled {
+    background-color: $grey-very-light;
+
+    &:hover {
+      border-color: $grey-light;
+    }
+
+    &:active {
+      border-color: $grey-light;
+    }
+  }
 }
 
 @media (min-width: $screen-phone) {
