@@ -209,6 +209,23 @@
   &__btn--plus::after {
     transform: rotate(90deg);
   }
+
+  &__btn--minus:hover,
+  &__btn--plus:hover {
+    border-color: $blue-very-dark;
+  }
+
+  &__btn--minus:active,
+  &__btn--plus:active {
+    color: $white;
+
+    background-color: $blue-very-dark;
+
+    &:before,
+    &:after {
+      background-color: $white;
+    }
+  }
 }
 
 @media (min-width: $screen-phone) {
@@ -345,8 +362,9 @@
       }
 
       &:active {
-        opacity: 0.3;
         text-decoration: none;
+
+        opacity: 0.3;
       }
     }
   }
@@ -383,11 +401,6 @@
 
       text-align: center;
     }
-
-    //TODO ?? incorrect selector
-    //&--calc&--travel {
-    //  margin: 0 44px;
-    //}
 
     &--block {
       width: 63px;
