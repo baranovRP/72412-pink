@@ -1,12 +1,1 @@
-@mixin page-header-inner--open() {
-  @media (min-width: $screen-phone) {
-    padding-left: 10px;
-
-    background-color: $blue-very-dark;
-    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  }
-
-  @media (min-width: $screen-tablet) {
-    padding-bottom: 0;
-  }
-}
+@mixin page-header-inner--open() {  @media (min-width: $screen-phone) {    padding-left: 10px;    background-color: $blue-very-dark;    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);  }  @media (min-width: $screen-tablet) {    padding-bottom: 0;  }}

@@ -1,73 +1,1 @@
-.traveler-item {
-  @include container;
-  @include clearfix;
-
-  padding-top: 23px;
-
-  border: 0;
-
-  &__flex-wrap {
-    @include clearfix;
-
-    margin-right: 14px;
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .traveler-item {
-    width: 500px;
-    margin: 0 auto;
-    padding: 0;
-
-    &__flex-wrap {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      padding-top: 26px;
-    }
-
-    &__block-wrap:last-child {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 420px;
-      margin-left: 20px;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .traveler-item {
-    width: 820px;
-    margin: 0 auto;
-    padding: 0;
-
-    &__flex-wrap {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    &__block-wrap {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    &__block-wrap:last-child {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 737px;
-      margin-left: 20px;
-    }
-  }
-}
+.traveler-item {  @include container;  @include clearfix;  padding-top: 23px;  border: 0;  &__flex-wrap {    @include clearfix;    margin-right: 14px;    margin-left: 10px;  }}@media (min-width: $screen-tablet) {  .traveler-item {    width: 500px;    margin: 0 auto;    padding: 0;    &__flex-wrap {      display: flex;      flex-direction: row;      flex-wrap: wrap;      width: 100%;      margin: 0;      padding: 0;      padding-top: 26px;    }    &__block-wrap:last-child {      display: flex;      flex-wrap: wrap;      justify-content: space-between;      width: 420px;      margin-left: 20px;    }  }}@media (min-width: $screen-desktop) {  .traveler-item {    width: 820px;    margin: 0 auto;    padding: 0;    &__flex-wrap {      display: flex;      flex-direction: row;      flex-wrap: wrap;      width: 100%;      margin: 0;      padding: 0;    }    &__block-wrap {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: flex-start;    }    &__block-wrap:last-child {      display: flex;      flex-wrap: wrap;      justify-content: space-between;      width: 737px;      margin-left: 20px;    }  }}

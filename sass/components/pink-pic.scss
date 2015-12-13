@@ -1,111 +1,1 @@
-.pink-pic {
-  &:hover {
-    fill: $pink-strong;
-  }
-
-  &:active {
-    fill-opacity: 0.3;
-  }
-
-  &--header {
-    width: 74px;
-
-    fill: $white;
-
-    &:active {
-      fill: $white;
-    }
-  }
-
-  &--footer {
-    width: 147px;
-
-    fill: $blue-very-dark;
-
-    &:active {
-      fill: $blue-very-dark;
-    }
-  }
-
-  &--footer &__glass {
-    fill: $pink-strong;
-
-    &:active {
-      fill: $pink-strong;
-    }
-  }
-
-  &--header &__tablet,
-  &--header &__desktop,
-  &--footer &__desktop {
-    display: none;
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .pink-pic {
-    &--header &__mobile {
-      @include hidden;
-    }
-
-    &--header &__tablet {
-      display: block;
-      width: 147px;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .pink-pic {
-    width: 147px;
-
-    &:hover &__desktop {
-      fill: $pink-strong;
-    }
-
-    &:active &__desktop {
-      fill-opacity: 0.3;
-    }
-
-    &--header &__desktop {
-      display: block;
-
-      fill: $white;
-
-      &:active {
-        fill: $white;
-      }
-    }
-
-    &--header &__star {
-      fill: $pink-strong;
-
-      &:active {
-        fill: $pink-strong;
-      }
-    }
-
-    &--footer &__desktop {
-      display: block;
-
-      fill: $blue-very-dark;
-
-      &:active {
-        fill: $blue-very-dark;
-      }
-    }
-
-    &--footer &__star--letter {
-      fill: $pink-strong;
-
-      &:active {
-        fill: $pink-strong;
-      }
-    }
-
-    &--header &__tablet,
-    &--footer &__tablet {
-      @include hidden;
-    }
-  }
-}
+.pink-pic {  &:hover {    fill: $pink-strong;  }  &:active {    fill-opacity: 0.3;  }  &--header {    width: 74px;    fill: $white;    &:active {      fill: $white;    }  }  &--footer {    width: 147px;    fill: $blue-very-dark;    &:active {      fill: $blue-very-dark;    }  }  &--footer &__glass {    fill: $pink-strong;    &:active {      fill: $pink-strong;    }  }  &--header &__tablet,  &--header &__desktop,  &--footer &__desktop {    display: none;  }}@media (min-width: $screen-tablet) {  .pink-pic {    &--header &__mobile {      @include hidden;    }    &--header &__tablet {      display: block;      width: 147px;    }  }}@media (min-width: $screen-desktop) {  .pink-pic {    width: 147px;    &:hover &__desktop {      fill: $pink-strong;    }    &:active &__desktop {      fill-opacity: 0.3;    }    &--header &__desktop {      display: block;      fill: $white;      &:active {        fill: $white;      }    }    &--header &__star {      fill: $pink-strong;      &:active {        fill: $pink-strong;      }    }    &--footer &__desktop {      display: block;      fill: $blue-very-dark;      &:active {        fill: $blue-very-dark;      }    }    &--footer &__star--letter {      fill: $pink-strong;      &:active {        fill: $pink-strong;      }    }    &--header &__tablet,    &--footer &__tablet {      @include hidden;    }  }}

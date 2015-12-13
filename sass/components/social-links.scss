@@ -1,81 +1,1 @@
-.social-links {
-  margin: 29px 0;
-  margin-bottom: 37px;
-  margin-left: 55px;
-
-  font-size: 0;
-
-  &__item {
-    position: relative;
-
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    margin: 0 6px;
-
-    vertical-align: middle;
-    text-decoration: none;
-
-    background-color: #fefefe;
-    background-repeat: no-repeat;
-    border: 3px solid rgba(40, 54, 69, 0.1);
-    border-radius: 50%;
-
-    &:hover{
-      border-color: $blue-very-dark;
-    }
-
-    &:active{
-      border-color: rgba(40, 54, 69, 0.1);
-    }
-  }
-
-  .icon-twitter,
-  .icon-facebook,
-  .icon-play {
-    position: absolute;
-    top: 9px;
-    left: 9px;
-
-    font-size: 21px;
-    color: $pink-strong;
-
-    &:active{
-      opacity: 0.3;
-    }
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .social-links {
-    margin: 0;
-    padding: 0;
-    padding-top: 12px;
-
-    &--index {
-      margin-left: -5px;
-    }
-
-    &--flex-block {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-    }
-
-    &__item {
-      margin: 0 6px;
-    }
-    &__item:first-child {
-      margin-left: 0;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .social-links {
-    &--index {
-      margin-left: 3px;
-    }
-  }
-}
+.social-links {  margin: 29px 0;  margin-bottom: 37px;  margin-left: 55px;  font-size: 0;  &__item {    position: relative;    display: inline-block;    width: 45px;    height: 45px;    margin: 0 6px;    vertical-align: middle;    text-decoration: none;    background-color: #fefefe;    background-repeat: no-repeat;    border: 3px solid rgba(40, 54, 69, 0.1);    border-radius: 50%;    &:hover{      border-color: $blue-very-dark;    }    &:active{      border-color: rgba(40, 54, 69, 0.1);    }  }  .icon-twitter,  .icon-facebook,  .icon-play {    position: absolute;    top: 9px;    left: 9px;    font-size: 21px;    color: $pink-strong;    &:active{      opacity: 0.3;    }  }}@media (min-width: $screen-tablet) {  .social-links {    margin: 0;    padding: 0;    padding-top: 12px;    &--index {      margin-left: -5px;    }    &--flex-block {      display: flex;      justify-content: center;      align-items: center;      width: 30%;    }    &__item {      margin: 0 6px;    }    &__item:first-child {      margin-left: 0;    }  }}@media (min-width: $screen-desktop) {  .social-links {    &--index {      margin-left: 3px;    }  }}

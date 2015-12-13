@@ -1,58 +1,1 @@
-.apps-os {
-  max-width: 230px;
-  min-height: 42px;
-  margin: 0 auto;
-  padding: 0 38px;
-  padding-top: 31px;
-  padding-bottom: 21px;
-
-  font-size: 0;
-
-  &__item {
-    display: inline-block;
-    margin-right: 36px;
-
-    vertical-align: bottom;
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  &__item:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &__item--apple {
-    width: 46px;
-    height: 57px;
-  }
-
-  &__item--android {
-    width: 42px;
-    height: 47px;
-    padding-bottom: 1px;
-  }
-
-  &__item--microsoft {
-    width: 44px;
-    height: 42px;
-    padding-bottom: 3px;
-  }
-}
-
-
-@media (min-width: $screen-tablet) {
-  .apps-os {
-    padding-top: 46px;
-    padding-bottom: 36px;
-    padding-left: 49px;
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .apps-os {
-    padding-top: 66px;
-    padding-bottom: 54px;
-    padding-left: 47px;
-  }
-}
+.apps-os {  max-width: 230px;  min-height: 42px;  margin: 0 auto;  padding: 0 38px;  padding-top: 31px;  padding-bottom: 21px;  font-size: 0;  &__item {    display: inline-block;    margin-right: 36px;    vertical-align: bottom;    background-repeat: no-repeat;    background-position: 0 0;  }  &__item:nth-child(3n) {    margin-right: 0;  }  &__item--apple {    width: 46px;    height: 57px;  }  &__item--android {    width: 42px;    height: 47px;    padding-bottom: 1px;  }  &__item--microsoft {    width: 44px;    height: 42px;    padding-bottom: 3px;  }}@media (min-width: $screen-tablet) {  .apps-os {    padding-top: 46px;    padding-bottom: 36px;    padding-left: 49px;  }}@media (min-width: $screen-desktop) {  .apps-os {    padding-top: 66px;    padding-bottom: 54px;    padding-left: 47px;  }}

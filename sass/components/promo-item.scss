@@ -1,91 +1,1 @@
-.promo-item {
-  @include container;
-
-  min-height: 100px;
-  margin: 0 auto;
-  margin-bottom: 19px;
-  padding: 0;
-
-  &:last-of-type {
-    margin-bottom: 35px;
-  }
-
-  &__title {
-    @include font-family-general($font-face-family);
-
-    margin: 0;
-    padding: 10px 0;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: $black;
-  }
-
-  &__text {
-    @include font-family-general($font-face-family);
-
-    margin: 0;
-    padding: 2px 0;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $blue-very-dark;
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .promo-item {
-    width: 320px;
-    margin-bottom: 22px;
-    padding: 0;
-
-    text-align: left;
-
-    &:last-of-type {
-      margin-bottom: 34px;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .promo-item {
-    width: 26%;
-    margin: 0;
-    margin-bottom: 25px;
-    margin-left: -13px;
-    padding: 0;
-
-    text-align: center;
-
-    &:nth-child(3n) {
-      margin-right: -16px;
-    }
-
-    &__title {
-      @include font-family-general($font-face-family);
-
-      margin: 0;
-      padding: 10px 0;
-      padding-bottom: 22px;
-
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 30px;
-      color: $black;
-    }
-
-    &__text {
-      @include font-family-general($font-face-family);
-
-      margin: 0;
-      padding: 2px 0;
-
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
-      color: $blue-very-dark;
-    }
-  }
-}
+.promo-item {  @include container;  min-height: 100px;  margin: 0 auto;  margin-bottom: 19px;  padding: 0;  &:last-of-type {    margin-bottom: 35px;  }  &__title {    @include font-family-general($font-face-family);    margin: 0;    padding: 10px 0;    font-weight: 700;    font-size: 18px;    line-height: 24px;    color: $black;  }  &__text {    @include font-family-general($font-face-family);    margin: 0;    padding: 2px 0;    font-weight: 400;    font-size: 14px;    line-height: 24px;    color: $blue-very-dark;  }}@media (min-width: $screen-tablet) {  .promo-item {    width: 320px;    margin-bottom: 22px;    padding: 0;    text-align: left;    &:last-of-type {      margin-bottom: 34px;    }  }}@media (min-width: $screen-desktop) {  .promo-item {    width: 26%;    margin: 0;    margin-bottom: 25px;    margin-left: -13px;    padding: 0;    text-align: center;    &:nth-child(3n) {      margin-right: -16px;    }    &__title {      @include font-family-general($font-face-family);      margin: 0;      padding: 10px 0;      padding-bottom: 22px;      font-weight: 700;      font-size: 30px;      line-height: 30px;      color: $black;    }    &__text {      @include font-family-general($font-face-family);      margin: 0;      padding: 2px 0;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }  }}

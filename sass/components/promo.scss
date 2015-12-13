@@ -1,217 +1,1 @@
-.promo {
-  position: relative;
-
-  width: 100%;
-  min-height: 900px;
-  margin: 0 auto;
-
-  text-align: center;
-
-  &__title-wrap {
-    @include container;
-  }
-
-  &__title {
-    @include font-family-general($font-face-family);
-
-    position: relative;
-
-    min-height: 185px;
-    margin: 0 auto;
-    padding-bottom: 90px;
-
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    color: $blue-very-dark;
-  }
-
-  &__title span {
-    display: inline-block;
-    padding: 15px 0;
-  }
-
-  &__title span:first-child {
-    padding-top: 42px;
-  }
-
-  &__line {
-    position: relative;
-
-    height: 0;
-  }
-
-  &__line::after {
-    content: "";
-    position: absolute;
-    top: -5vh;
-    left: -50vw;
-    z-index: -1;
-
-    width: 150vw;
-    height: 105vh;
-
-    background-color: $grey-very-light;
-    transform: skewY(-6deg);
-  }
-
-  &__inner {
-    margin-bottom: -4px;
-
-    background-color: transparent;
-  }
-
-  &__inner-wrap {
-    @include container;
-  }
-
-  &__img--3 {
-    width: 157px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 3px;
-  }
-}
-
-@media (min-width: $screen-phone) {
-  .promo {
-    &__img--1,
-    &__img--2 {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .promo {
-    min-height: 426px;
-
-    &__title {
-      @include font-family-general($font-face-family);
-
-      width: 100%;
-      padding-bottom: 113px;
-
-      font-weight: 300;
-      font-size: 40px;
-      line-height: 48px;
-      text-align: center;
-      color: $blue-very-dark;
-    }
-
-    &__title span {
-      display: inline-block;
-      padding: 0;
-    }
-
-    &__title span:first-child {
-      padding-top: 49px;
-    }
-
-    &__title span:last-child {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-
-    &__line::after {
-      top: -3vh;
-
-      transform: skewY(-4deg);
-    }
-
-    &__inner {
-      background-color: transparent;
-    }
-
-    &__inner-wrap {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    &__img--3 {
-      width: 268px;
-      margin-top: -64px;
-      margin-left: 0;
-      padding-right: 42px;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .promo {
-    min-height: 170px;
-
-    &__title {
-      @include font-family-general($font-face-family);
-
-      width: 100%;
-      padding-top: 17px;
-      padding-bottom: 75px;
-
-      font-weight: 300;
-      font-size: 50px;
-      line-height: 60px;
-      text-align: center;
-      color: $blue-very-dark;
-    }
-
-    &__title span {
-      display: inline-block;
-      padding: 0;
-    }
-
-    &__title span:first-child {
-      padding-top: 49px;
-    }
-
-    &__title span:last-child {
-      width: 70%;
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-
-    &__line::after {
-      top: 8vh;
-
-      transform: skewY(-4deg);
-    }
-
-    &__inner {
-      background-color: transparent;
-    }
-
-    &__inner-wrap {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-    &__flex-wrap {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    &__flex-wrap:first-child {
-      justify-content: space-around;
-    }
-
-    &__flex-wrap:last-child {
-      margin-bottom: 46px;
-    }
-
-    &__img {
-      display: block;
-      width: 292px;
-      margin: 0;
-      padding: 0;
-    }
-
-    &__img--1 {
-      padding-left: 4px;
-    }
-
-    &__img--2 {
-      padding-left: 3px;
-    }
-  }
-}
+.promo {  position: relative;  width: 100%;  min-height: 900px;  margin: 0 auto;  text-align: center;  &__title-wrap {    @include container;  }  &__title {    @include font-family-general($font-face-family);    position: relative;    min-height: 185px;    margin: 0 auto;    padding-bottom: 90px;    font-weight: 300;    font-size: 24px;    line-height: 28px;    color: $blue-very-dark;  }  &__title span {    display: inline-block;    padding: 15px 0;  }  &__title span:first-child {    padding-top: 42px;  }  &__line {    position: relative;    height: 0;  }  &__line::after {    content: "";    position: absolute;    top: -5vh;    left: -50vw;    z-index: -1;    width: 150vw;    height: 105vh;    background-color: $grey-very-light;    transform: skewY(-6deg);  }  &__inner {    margin-bottom: -4px;    background-color: transparent;  }  &__inner-wrap {    @include container;  }  &__img--3 {    width: 157px;    margin: 0 auto;    padding: 0;    padding-top: 3px;  }}@media (min-width: $screen-phone) {  .promo {    &__img--1,    &__img--2 {      display: none;    }  }}@media (min-width: $screen-tablet) {  .promo {    min-height: 426px;    &__title {      @include font-family-general($font-face-family);      width: 100%;      padding-bottom: 113px;      font-weight: 300;      font-size: 40px;      line-height: 48px;      text-align: center;      color: $blue-very-dark;    }    &__title span {      display: inline-block;      padding: 0;    }    &__title span:first-child {      padding-top: 49px;    }    &__title span:last-child {      padding-right: 30px;      padding-left: 30px;    }    &__line::after {      top: -3vh;      transform: skewY(-4deg);    }    &__inner {      background-color: transparent;    }    &__inner-wrap {      display: flex;      flex-direction: row-reverse;    }    &__img--3 {      width: 268px;      margin-top: -64px;      margin-left: 0;      padding-right: 42px;    }  }}@media (min-width: $screen-desktop) {  .promo {    min-height: 170px;    &__title {      @include font-family-general($font-face-family);      width: 100%;      padding-top: 17px;      padding-bottom: 75px;      font-weight: 300;      font-size: 50px;      line-height: 60px;      text-align: center;      color: $blue-very-dark;    }    &__title span {      display: inline-block;      padding: 0;    }    &__title span:first-child {      padding-top: 49px;    }    &__title span:last-child {      width: 70%;      padding-right: 30px;      padding-left: 30px;    }    &__line::after {      top: 8vh;      transform: skewY(-4deg);    }    &__inner {      background-color: transparent;    }    &__inner-wrap {      display: flex;      flex-direction: column-reverse;    }    &__flex-wrap {      display: flex;      flex-direction: row;      justify-content: space-between;    }    &__flex-wrap:first-child {      justify-content: space-around;    }    &__flex-wrap:last-child {      margin-bottom: 46px;    }    &__img {      display: block;      width: 292px;      margin: 0;      padding: 0;    }    &__img--1 {      padding-left: 4px;    }    &__img--2 {      padding-left: 3px;    }  }}

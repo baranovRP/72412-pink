@@ -1,117 +1,1 @@
-.page-rubric {
-  width: 100%;
-  min-height: 128px;
-
-  &--index {
-    padding-top: 9px;
-    padding-bottom: 245px;
-  }
-
-  &--competition {
-    padding-top: 20px;
-  }
-
-  &__title {
-    @include font-family-general($font-face-family);
-
-    margin: 0;
-    padding: 0 20px;
-    padding-top: 18px;
-
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    color: $white;
-  }
-
-  &--index &__title,
-  &--competition &__title {
-    padding-top: 8px;
-  }
-}
-
-@media (min-width: $screen-tablet) {
-  .page-rubric {
-    margin-bottom: 284px;
-
-    &--index {
-      width: 50%;
-      min-height: 126px;
-      margin-bottom: 10px;
-      padding-top: 95px;
-      padding-bottom: 0;
-    }
-
-    &--index &__title {
-      @include font-family-general($font-face-family);
-
-      margin: 0;
-      padding: 0 20px;
-
-      font-weight: 300;
-      font-size: 40px;
-      line-height: 48px;
-      text-align: center;
-      color: $white;
-    }
-
-    &--competition {
-      margin-bottom: 80px;
-      padding-top: 62px;
-    }
-
-    &--competition &__title {
-      @include font-family-general($font-face-family);
-
-      font-weight: 300;
-      font-size: 50px;
-      line-height: 60px;
-      color: $white;
-    }
-  }
-}
-
-@media (min-width: $screen-desktop) {
-  .page-rubric {
-    width: 100%;
-
-    &--index {
-      margin-bottom: 39px;
-      padding-top: 110px;
-    }
-
-    &--index &__title {
-      @include font-family-general($font-face-family);
-
-      width: 32%;
-      margin: 0;
-      padding: 0;
-
-      font-weight: 300;
-      font-size: 50px;
-      line-height: 60px;
-      text-align: center;
-      color: $white;
-    }
-
-    &--competition {
-      padding-top: 64px;
-    }
-
-    .page-rubric.page-rubric--competition:first-line {
-      letter-spacing: 1px;
-    }
-
-    &--competition &__title {
-      @include font-family-general($font-face-family);
-
-      padding-top: 0;
-
-      font-weight: 300;
-      font-size: 50px;
-      line-height: 60px;
-      color: $white;
-    }
-  }
-}
+.page-rubric {  width: 100%;  min-height: 128px;  &--index {    padding-top: 9px;    padding-bottom: 245px;  }  &--competition {    padding-top: 20px;  }  &__title {    @include font-family-general($font-face-family);    margin: 0;    padding: 0 20px;    padding-top: 18px;    font-weight: 300;    font-size: 24px;    line-height: 30px;    text-align: center;    color: $white;  }  &--index &__title,  &--competition &__title {    padding-top: 8px;  }}@media (min-width: $screen-tablet) {  .page-rubric {    margin-bottom: 284px;    &--index {      width: 50%;      min-height: 126px;      margin-bottom: 10px;      padding-top: 95px;      padding-bottom: 0;    }    &--index &__title {      @include font-family-general($font-face-family);      margin: 0;      padding: 0 20px;      font-weight: 300;      font-size: 40px;      line-height: 48px;      text-align: center;      color: $white;    }    &--competition {      margin-bottom: 80px;      padding-top: 62px;    }    &--competition &__title {      @include font-family-general($font-face-family);      font-weight: 300;      font-size: 50px;      line-height: 60px;      color: $white;    }  }}@media (min-width: $screen-desktop) {  .page-rubric {    width: 100%;    &--index {      margin-bottom: 39px;      padding-top: 110px;    }    &--index &__title {      @include font-family-general($font-face-family);      width: 32%;      margin: 0;      padding: 0;      font-weight: 300;      font-size: 50px;      line-height: 60px;      text-align: center;      color: $white;    }    &--competition {      padding-top: 64px;    }    .page-rubric.page-rubric--competition:first-line {      letter-spacing: 1px;    }    &--competition &__title {      @include font-family-general($font-face-family);      padding-top: 0;      font-weight: 300;      font-size: 50px;      line-height: 60px;      color: $white;    }  }}
