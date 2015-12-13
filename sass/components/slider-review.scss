@@ -50,6 +50,10 @@
   #btn-3:checked ~ &__inner &__wrap {
     transform: translate(-600px);
   }
+
+  &__arrow-btn {
+    @include hidden;
+  }
 }
 
 @media (min-width: $screen-tablet) {
@@ -79,10 +83,6 @@
 
     #btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1280px);
-    }
-
-    &__arrow-btn {
-      @include hidden;
     }
   }
 }
