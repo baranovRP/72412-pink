@@ -40,6 +40,14 @@
     line-height: 24px;
     color: $pink-strong;
     text-decoration: underline;
+
+    &:hover {
+      color: $blue-very-dark;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
