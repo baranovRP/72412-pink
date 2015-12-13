@@ -20,6 +20,14 @@
     background-repeat: no-repeat;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 50%;
+
+    &:hover{
+      border-color: $blue-very-dark;
+    }
+
+    &:active{
+      border-color: rgba(40, 54, 69, 0.1);
+    }
   }
 
   .icon-twitter,
@@ -31,6 +39,10 @@
 
     font-size: 21px;
     color: $pink-strong;
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 }
 
