@@ -7,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 211vh;
+    top: 242vh;
     left: -50vw;
     z-index: -1;
 
@@ -15,7 +15,7 @@
     height: 105vh;
 
     background-color: $grey-very-light;
-    transform: skewY(-4deg);
+    transform: skewY(-5deg);
   }
 
   &__container {
