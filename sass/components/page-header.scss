@@ -203,7 +203,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
   .page-header {
     @include background-image("background-tablet@2x.jpg");
 
-    &--index &__container {
+    &--index {
       background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
       url($img-folder-path + "background-tablet@2x.jpg");
     }
