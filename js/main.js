@@ -58,6 +58,12 @@ toggle.addEventListener("click", function(event) {
   }
 });
 
+window.addEventListener("resize", function(event) {
+  event.preventDefault();
+
+  hideNav();
+});
+
 
 function isNavHidden() {
   return document.querySelector("." + PAGE_HEADER_BL + NAV_WRAP_EL + HIDDEN_STATE);
