@@ -61,6 +61,16 @@
   input:checked + &__label:before {
     background: $white;
   }
+
+  input:not(checked):hover + &__label:before,
+  input:checked:hover + &__label:after {
+    border-color: $blue-very-dark;
+  }
+
+  input:not(checked):active + &__label:before,
+  input:checked:active + &__label:after {
+    border-color: $pink-strong;
+  }
 }
 
 @media (min-width: $screen-tablet) {
