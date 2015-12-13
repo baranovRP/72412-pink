@@ -7,12 +7,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: 242vh;
+    top: 212vh;
     left: -50vw;
     z-index: -1;
 
     width: 150vw;
-    height: 105vh;
+    height: 60vh;
 
     background-color: $grey-very-light;
     transform: skewY(-5deg);
