@@ -80,6 +80,10 @@
     #btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1280px);
     }
+
+    &__arrow-btn {
+      @include hidden;
+    }
   }
 }
 
@@ -109,6 +113,46 @@
 
     #btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1920px);
+    }
+
+    &__arrow-btn {
+      position: absolute;
+      top: 39px;
+      z-index: 30;
+
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      font-size: 0;
+
+      background-color: transparent;
+      border-top: 0 solid transparent;
+      border-right: 2px solid $blue-very-dark;
+      border-bottom: 2px solid $blue-very-dark;
+      border-left: 0 solid transparent;
+      cursor: pointer;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+
+    &__arrow-btn--prev {
+      left: 7px;
+
+      transform: rotate(135deg);
+    }
+
+    &__arrow-btn--next {
+      right: 7px;
+
+      transform: rotate(-45deg);
     }
   }
 }
