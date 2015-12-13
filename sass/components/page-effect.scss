@@ -36,11 +36,9 @@ only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-tablet)
 only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-tablet),
 only screen and (min-resolution: 192dpi) and (min-width: $screen-tablet),
 only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
-  .page-header {
+  .page-effect {
     @include background-image("background-diagram--tablet@2x.png");
 
-    background-repeat: no-repeat;
-    background-position: calc(50% - 178px) 56px;
     background-size: 262px;
   }
 }
@@ -67,11 +65,9 @@ only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-desktop
 only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-desktop),
 only screen and (min-resolution: 192dpi) and (min-width: $screen-desktop),
 only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
-  .page-header {
+  .page-effect {
     @include background-image("background-diagram--desktop@2x.png");
 
-    background-repeat: no-repeat;
-    background-position: left 10px top 32px;
     background-size: 301px;
   }
 }
