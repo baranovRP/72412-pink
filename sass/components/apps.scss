@@ -20,6 +20,19 @@
 
     border: 3px solid $white;
     border-radius: 50px;
+
+    &:hover {
+      color: $pink-strong;
+
+      background-color: $white;
+    }
+
+    &:active {
+      color: $pink-strong;
+
+      background-color: $white;
+      opacity: 0.3;
+    }
   }
 
   &__text {

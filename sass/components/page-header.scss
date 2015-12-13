@@ -146,6 +146,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
     @include background-image("background-tablet@1x.jpg");
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: 1200px;
 
     &__container::before {
       min-height: 110px;
@@ -201,14 +202,34 @@ only screen and (min-resolution: 192dpi) and (min-width: $screen-tablet),
 only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
   .page-header {
     @include background-image("background-tablet@2x.jpg");
-    background-size: 1200px;
-    background-repeat: no-repeat;
 
     &--index &__container {
       background-image: url($img-folder-path + "iphone-hand--tablet@2x.png"),
       url($img-folder-path + "background-tablet@2x.jpg");
-      background-size: 700px, 1200px;
-      background-repeat: no-repeat, no-repeat;      background-position: center 184px, center top;
+    }
+  }
+}
+
+@media(min-width: $screen-phone) and (max-width: $screen-desktop - 1) {
+  .page-header {
+    &__toggle--close:hover::after {
+      border-color: $pink-strong;
+    }
+
+    &__toggle--close:active::after {
+      border-color: $pink-strong;
+      opacity: 0.3;
+    }
+
+    &__toggle--open:hover::before,
+    &__toggle--open:hover::after {
+      background-color: $pink-strong;
+    }
+
+    &__toggle--open:active::before,
+    &__toggle--open:active::after {
+      background-color: $pink-strong;
+      opacity: 0.3;
     }
   }
 }
@@ -218,6 +239,7 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
     @include background-image("background-desktop@1x.jpg");
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: 1281px;
 
     &--competition {
       padding-bottom: 13px;
@@ -266,15 +288,10 @@ only screen and (min-resolution: 192dpi) and (min-width: $screen-desktop),
 only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
   .page-header {
     @include background-image("background-desktop@2x.jpg");
-    background-size: 1281px;
-    background-repeat: no-repeat;
 
     &--index {
       background-image: url($img-folder-path + "iphone-hand--desktop@2x.png"),
       url($img-folder-path + "background-desktop@2x.jpg");
-      background-size: 1050px, 1281px;
-      background-repeat: no-repeat, no-repeat;
-      background-position: calc(50% + 71px) 209px, center top;
     }
   }
 }
