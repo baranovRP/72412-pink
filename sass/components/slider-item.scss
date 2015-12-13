@@ -1,1 +1,140 @@
-.slider-item {  float: left;  width: 280px;  min-height: 290px;  margin: 0;  padding: 0 10px;  text-align: center;  &__title {    @include font-family-general($font-face-family);    margin: 0;    padding: 0;    padding-bottom: 13px;    font-weight: 700;    font-size: 18px;    line-height: 30px;    color: $black;  }  &__text {    @include font-family-general($font-face-family);    margin: 0;    padding: 0;    font-weight: 400;    font-size: 14px;    line-height: 30px;    color: $blue-very-dark;  }}@media (min-width: $screen-phone) {  .slider-item {    &__title--small {      @include hidden;    }  }}@media (min-width: $screen-tablet) {  .slider-item {    display: flex;    flex-direction: column-reverse;    width: 620px;    min-height: 150px;    &__title {      @include font-family-general($font-face-family);      margin: 0;      padding: 36px 0;      font-weight: 700;      font-size: 20px;      line-height: 30px;      color: $black;    }    &__title--small {      @include font-family-general($font-face-family);      display: block;      padding: 1px 0;      font-weight: 400;      font-size: 14px;      line-height: 30px;      color: $blue-very-dark;    }    &__text {      @include font-family-general($font-face-family);      margin: 0;      padding: 0;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }  }}@media (min-width: $screen-desktop) {  .slider-item {    position: relative;    display: flex;    flex-direction: column-reverse;    width: 680px;    min-height: 150px;    padding: 0 130px;    &__title {      @include font-family-general($font-face-family);      margin: 0;      padding: 0;      padding-top: 36px;      font-weight: 700;      font-size: 24px;      line-height: 30px;      color: $black;    }    &__title--small {      @include font-family-general($font-face-family);      display: block;      padding: 1px 0;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }    &__text {      @include font-family-general($font-face-family);      margin: 0;      padding: 0;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }    &__text span {      @include hidden;    }  }}
+.slider-item {
+  float: left;
+  width: 280px;
+  min-height: 290px;
+  margin: 0;
+  padding: 0 10px;
+
+  text-align: center;
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 13px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: $black;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $blue-very-dark;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .slider-item {
+    &__title--small {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .slider-item {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 620px;
+    min-height: 150px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 36px 0;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title--small {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 1px 0;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 680px;
+    min-height: 150px;
+    padding: 0 130px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+      padding-top: 36px;
+
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title--small {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 1px 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__text span {
+      @include hidden;
+    }
+  }
+}

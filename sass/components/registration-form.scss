@@ -1,1 +1,564 @@
-.registration-form {  width: 100%;  min-height: 895px;  background-color: $white;  &__wrap {    min-height: 75px;    text-align: center;  }  &__wrap--intro {    background-color: $white;  }  &__wrap--apps,  &__wrap--travelers,  &__wrap--traveler,  &__wrap--calc,  &__wrap--photos {    background-color: $grey-very-light;  }  &__wrap--travel {    background-color: $white;  }  &__wrap--white {    background-color: $white;  }  &__wrap--grey {    background-color: $grey-very-light;  }  &__intro {    @include container;  }  &__text {    @include font-family-general($font-face-family);    margin: 0;    padding: 0 10px;    padding-top: 45px;    font-weight: 400;    font-size: 14px;    line-height: 30px;    color: $blue-very-dark;  }  &__name,  &__apps,  &__travel,  &__travelers,  &__achievements,  &__photos,  &__footer {    @include container;    border: 0;  }  &__title {    @include font-family-general($font-face-family);    font-weight: 400;    font-size: 14px;    line-height: 30px;    color: $pink-strong;    text-transform: uppercase;  }  &__title--small-line {    line-height: 18px;  }  &__name {    min-height: 345px;    padding: 0;    padding-top: 34px;    padding-bottom: 27px;  }  &__apps {    min-height: 338px;    text-align: left;  }  &__apps > &__title {    padding-top: 36px;    padding-bottom: 20px;    text-align: center;  }  &__travel {    min-height: 440px;    padding-bottom: 38px;  }  &__travel > &__title {    padding-top: 43px;    padding-bottom: 35px;    text-align: center;  }  &__travelers {    min-height: 149px;    padding-bottom: 29px;  }  &__travelers > &__title {    padding-top: 30px;    padding-bottom: 14px;    text-align: center;  }  &__wrap--calc {    margin-bottom: 29px;  }  &__wrap--traveler-item:nth-of-type(2) .traveler-item__flex-wrap {    padding-top: 29px;    border-top: 2px solid $grey-light;  }  &__achievements {    min-height: 338px;    padding-bottom: 18px;    text-align: left;  }  &__achievements > &__title {    padding-top: 46px;    padding-bottom: 24px;    text-align: center;  }  &__photos {    position: relative;    min-height: 338px;    padding-bottom: 20px;    text-align: center;  }  &__photos > &__title {    padding-top: 30px;    padding-bottom: 28px;    text-align: center;  }  &__footnote {    @include font-family-general($font-face-family);    font-weight: 400;    font-size: 14px;    line-height: 30px;    color: $blue-very-dark;    text-transform: uppercase;  }  &__asterisk {    color: $pink-strong;    font-style: normal;  }}@media (min-width: $screen-phone) {  .registration-form {    &__intro span {      @include hidden;    }    &__footnote span {      @include hidden;    }  }}@media (min-width: $screen-tablet) {  .registration-form {    &__wrap--apps,    &__wrap--travelers,    &__wrap--calc,    &__wrap--traveler,    &__wrap--photos {      background-color: $white;    }    &__intro {      padding-top: 93px;    }    &__intro span {      display: inline-block;    }    &__text {      @include font-family-general($font-face-family);      padding: 0 40px;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }    &__name {      padding-bottom: 20px;    }    &__apps {      width: 596px;      min-height: 105px;      border: 2px solid #e5e5e5;    }    &__apps &__flex-block {      display: flex;      flex-direction: column;      align-items: flex-start;      padding: 0;      padding-top: 9px;      padding-bottom: 31px;    }    &__apps &__title {      padding-top: 21px;      padding-right: 20px;      padding-left: 20px;    }    &__travel {      box-sizing: border-box;      width: 620px;      min-height: 105px;      margin-top: 17px;      margin-bottom: 38px;      padding-bottom: 5px;      border: 2px solid #e5e5e5;    }    &__travel &__title {      padding-top: 33px;      padding-right: 20px;      padding-left: 20px;    }    &__travel &__flex-block {      display: flex;      flex-direction: row;      flex-wrap: wrap;      align-items: flex-start;      margin-top: -7px;      padding-top: 2px;      padding-left: 38px;    }    &__travel-flex {      margin-right: 10px;      margin-bottom: 0;    }    &__travelers {      box-sizing: border-box;      width: 620px;      min-height: 105px;      margin-top: 19px;      padding-bottom: 10px;      border: 2px solid #e5e5e5;    }    &__travelers &__title {      padding-top: 12px;      padding-right: 20px;      padding-left: 20px;    }    &__wrap--calc {      display: flex;      box-sizing: border-box;      width: 600px;      margin-top: 15px;      padding-left: 50px;    }    &__wrap--traveler-item {      box-sizing: border-box;      width: 600px;    }    &__wrap--traveler-item:last-child {      box-sizing: border-box;      width: 600px;      margin-bottom: 28px;    }    &__achievements {      width: 596px;      min-height: 105px;      margin-top: 33px;      border: 2px solid #e5e5e5;    }    &__achievements &__title {      padding-top: 23px;      padding-right: 20px;      padding-left: 20px;    }    &__achievements &__flex-block {      margin-top: 4px;      padding-bottom: 3px;    }    &__photos {      box-sizing: border-box;      width: 620px;      min-height: 105px;      margin-bottom: 66px;      padding-right: 60px;      padding-bottom: 8px;      padding-left: 60px;      border: 2px solid #e5e5e5;    }    &__wrap--photos {      margin-top: 21px;    }    &__photos &__title {      padding-top: 30px;      padding-right: 20px;      padding-left: 20px;    }    &__footer {      display: flex;      justify-content: space-between;      box-sizing: border-box;      width: 620px;      padding: 0;    }    &__footer &__wrap {      display: flex;      width: 50%;      min-height: 60px;    }    &__footer &__wrap:last-child {      justify-content: flex-end;    }    &__footnote {      display: flex;      align-items: center;    }  }}@media (min-width: $screen-desktop) {  .registration-form {    &__intro {      padding-top: 47px;    }    &__text {      @include font-family-general($font-face-family);      margin: 0;      padding: 0 80px;      padding-top: 45px;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }    &__name {      min-height: 115px;      padding-top: 65px;    }    &__name &__flex-block {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: space-between;      padding: 0;    }    &__apps {      box-sizing: border-box;      width: 940px;      min-height: 105px;      border: 2px solid #e5e5e5;    }    &__apps &__flex-block {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: flex-start;      margin-left: -13px;      padding: 0;    }    &__travel {      box-sizing: border-box;      width: 940px;      min-height: 105px;      margin-top: 18px;      padding-bottom: 0;      border: 2px solid #e5e5e5;    }    &__travel &__title {      padding-top: 33px;    }    &__travel &__flex-block {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: center;      margin: 0;      margin-top: -6px;      padding: 0;    }    &__travel-flex {      margin: 0;      padding: 0 10px;    }    &__travelers {      box-sizing: border-box;      width: 940px;      min-height: 105px;      margin-top: 19px;      padding-bottom: 10px;      border: 2px solid #e5e5e5;    }    &__travelers &__wrap {      margin: 0;      padding: 0;    }    &__travelers &__title {      padding-top: 12px;    }    &__travelers &__wrap--calc {      display: flex;      box-sizing: border-box;      width: 301px;      padding-top: 15px;      padding-bottom: 42px;      padding-left: 50px;    }    &__travelers &__wrap--traveler-item {      box-sizing: border-box;      width: 920px;      padding-bottom: 5px;    }    &__travelers &__wrap--traveler-item:last-child {      box-sizing: border-box;      width: 920px;      padding-bottom: 32px;    }    &__achievements {      box-sizing: border-box;      width: 940px;      min-height: 105px;      padding: 0;      border: 2px solid #e5e5e5;    }    &__achievements &__title {      padding-top: 24px;    }    &__achievements &__flex-block {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: flex-start;      margin-bottom: 28px;      margin-left: 58px;      padding: 0;    }    &__photos {      box-sizing: border-box;      width: 940px;      min-height: 105px;      margin-bottom: 66px;      padding-right: 60px;      padding-bottom: 44px;      padding-left: 60px;      border: 2px solid #e5e5e5;    }    &__photos &__title {      padding-top: 30px;    }    &__footer {      display: flex;      justify-content: space-between;      box-sizing: border-box;      width: 940px;      padding: 0;    }    &__footer &__wrap {      display: flex;      width: 50%;      min-height: 60px;    }    &__footer &__wrap:last-child {      justify-content: flex-end;    }    &__footnote {      display: flex;      align-items: center;    }    &__footnote span {      display: inline-block;    }  }}
+.registration-form {
+  width: 100%;
+  min-height: 895px;
+
+  background-color: $white;
+
+  &__wrap {
+    min-height: 75px;
+
+    text-align: center;
+  }
+
+  &__wrap--intro {
+    background-color: $white;
+  }
+
+  &__wrap--apps,
+  &__wrap--travelers,
+  &__wrap--traveler,
+  &__wrap--calc,
+  &__wrap--photos {
+    background-color: $grey-very-light;
+  }
+
+  &__wrap--travel {
+    background-color: $white;
+  }
+
+  &__wrap--white {
+    background-color: $white;
+  }
+
+  &__wrap--grey {
+    background-color: $grey-very-light;
+  }
+
+  &__intro {
+    @include container;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 45px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $blue-very-dark;
+  }
+
+  &__name,
+  &__apps,
+  &__travel,
+  &__travelers,
+  &__achievements,
+  &__photos,
+  &__footer {
+    @include container;
+
+    border: 0;
+  }
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink-strong;
+    text-transform: uppercase;
+  }
+
+  &__title--small-line {
+    line-height: 18px;
+  }
+
+  &__name {
+    min-height: 345px;
+    padding: 0;
+    padding-top: 34px;
+    padding-bottom: 27px;
+  }
+
+  &__apps {
+    min-height: 338px;
+
+    text-align: left;
+  }
+
+  &__apps > &__title {
+    padding-top: 36px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &__travel {
+    min-height: 440px;
+    padding-bottom: 38px;
+  }
+
+  &__travel > &__title {
+    padding-top: 43px;
+    padding-bottom: 35px;
+
+    text-align: center;
+  }
+
+  &__travelers {
+    min-height: 149px;
+    padding-bottom: 29px;
+  }
+
+  &__travelers > &__title {
+    padding-top: 30px;
+    padding-bottom: 14px;
+
+    text-align: center;
+  }
+
+  &__wrap--calc {
+    margin-bottom: 29px;
+  }
+
+  &__wrap--traveler-item:nth-of-type(2) .traveler-item__flex-wrap {
+    padding-top: 29px;
+
+    border-top: 2px solid $grey-light;
+  }
+
+  &__achievements {
+    min-height: 338px;
+    padding-bottom: 18px;
+
+    text-align: left;
+  }
+
+  &__achievements > &__title {
+    padding-top: 46px;
+    padding-bottom: 24px;
+
+    text-align: center;
+  }
+
+  &__photos {
+    position: relative;
+
+    min-height: 338px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+
+  &__photos > &__title {
+    padding-top: 30px;
+    padding-bottom: 28px;
+
+    text-align: center;
+  }
+
+  &__footnote {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $blue-very-dark;
+    text-transform: uppercase;
+  }
+
+  &__asterisk {
+    color: $pink-strong;
+    font-style: normal;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .registration-form {
+    &__intro span {
+      @include hidden;
+    }
+
+    &__footnote span {
+      @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .registration-form {
+    &__wrap--apps,
+    &__wrap--travelers,
+    &__wrap--calc,
+    &__wrap--traveler,
+    &__wrap--photos {
+      background-color: $white;
+    }
+
+    &__intro {
+      padding-top: 93px;
+    }
+
+    &__intro span {
+      display: inline-block;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      padding: 0 40px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__name {
+      padding-bottom: 20px;
+    }
+
+    &__apps {
+      width: 596px;
+      min-height: 105px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__apps &__flex-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      padding-top: 9px;
+      padding-bottom: 31px;
+    }
+
+    &__apps &__title {
+      padding-top: 21px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__travel {
+      box-sizing: border-box;
+      width: 620px;
+      min-height: 105px;
+      margin-top: 17px;
+      margin-bottom: 38px;
+      padding-bottom: 5px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travel &__title {
+      padding-top: 33px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__travel &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: -7px;
+      padding-top: 2px;
+      padding-left: 38px;
+    }
+
+    &__travel-flex {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    &__travelers {
+      box-sizing: border-box;
+      width: 620px;
+      min-height: 105px;
+      margin-top: 19px;
+      padding-bottom: 10px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travelers &__title {
+      padding-top: 12px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__wrap--calc {
+      display: flex;
+      box-sizing: border-box;
+      width: 600px;
+      margin-top: 15px;
+      padding-left: 50px;
+    }
+
+    &__wrap--traveler-item {
+      box-sizing: border-box;
+      width: 600px;
+    }
+
+    &__wrap--traveler-item:last-child {
+      box-sizing: border-box;
+      width: 600px;
+      margin-bottom: 28px;
+    }
+
+    &__achievements {
+      width: 596px;
+      min-height: 105px;
+      margin-top: 33px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__achievements &__title {
+      padding-top: 23px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__achievements &__flex-block {
+      margin-top: 4px;
+      padding-bottom: 3px;
+    }
+
+    &__photos {
+      box-sizing: border-box;
+      width: 620px;
+      min-height: 105px;
+      margin-bottom: 66px;
+      padding-right: 60px;
+      padding-bottom: 8px;
+      padding-left: 60px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__wrap--photos {
+      margin-top: 21px;
+    }
+
+    &__photos &__title {
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 620px;
+      padding: 0;
+    }
+
+    &__footer &__wrap {
+      display: flex;
+      width: 50%;
+      min-height: 60px;
+    }
+
+    &__footer &__wrap:last-child {
+      justify-content: flex-end;
+    }
+
+    &__footnote {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .registration-form {
+    &__intro {
+      padding-top: 47px;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 0 80px;
+      padding-top: 45px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__name {
+      min-height: 115px;
+      padding-top: 65px;
+    }
+
+    &__name &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    &__apps {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__apps &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-left: -13px;
+      padding: 0;
+    }
+
+    &__travel {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+      margin-top: 18px;
+      padding-bottom: 0;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travel &__title {
+      padding-top: 33px;
+    }
+
+    &__travel &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      margin-top: -6px;
+      padding: 0;
+    }
+
+    &__travel-flex {
+      margin: 0;
+      padding: 0 10px;
+    }
+
+    &__travelers {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+      margin-top: 19px;
+      padding-bottom: 10px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__travelers &__wrap {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__travelers &__title {
+      padding-top: 12px;
+    }
+
+    &__travelers &__wrap--calc {
+      display: flex;
+      box-sizing: border-box;
+      width: 301px;
+      padding-top: 15px;
+      padding-bottom: 42px;
+      padding-left: 50px;
+    }
+
+    &__travelers &__wrap--traveler-item {
+      box-sizing: border-box;
+      width: 920px;
+      padding-bottom: 5px;
+    }
+
+    &__travelers &__wrap--traveler-item:last-child {
+      box-sizing: border-box;
+      width: 920px;
+      padding-bottom: 32px;
+    }
+
+    &__achievements {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+      padding: 0;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__achievements &__title {
+      padding-top: 24px;
+    }
+
+    &__achievements &__flex-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 28px;
+      margin-left: 58px;
+      padding: 0;
+    }
+
+    &__photos {
+      box-sizing: border-box;
+      width: 940px;
+      min-height: 105px;
+      margin-bottom: 66px;
+      padding-right: 60px;
+      padding-bottom: 44px;
+      padding-left: 60px;
+
+      border: 2px solid #e5e5e5;
+    }
+
+    &__photos &__title {
+      padding-top: 30px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 940px;
+      padding: 0;
+    }
+
+    &__footer &__wrap {
+      display: flex;
+      width: 50%;
+      min-height: 60px;
+    }
+
+    &__footer &__wrap:last-child {
+      justify-content: flex-end;
+    }
+
+    &__footnote {
+      display: flex;
+      align-items: center;
+    }
+
+    &__footnote span {
+      display: inline-block;
+    }
+  }
+}

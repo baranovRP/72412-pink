@@ -1,1 +1,133 @@
-.btn {  @include font-family-general($font-face-family);  display: inline-block;  padding: 14px 55px;  font-weight: 700;  font-size: 18px;  line-height: 30px;  text-transform: uppercase;  border-radius: 3px;  &--upload {    padding-right: 59px;    padding-left: 51px;    color: $black;    background-color: $white;    border: 2px solid $grey-light;  }  &--submit {    margin: 49px 0;    margin-top: 50px;    margin-bottom: 35px;    padding: 14px 45px;    color: $white;    background-color: $lime-green;    border: 2px solid $lime-green;  }  &--ok,  &--confirmation {    margin: 0;    color: $white;    background-color: $lime-green;    border: 2px solid $lime-green;  }  &--confirmation {    margin-top: 48px;    margin-bottom: 53px;    padding: 14px 67px;  }  &--ok {    margin-top: 9px;    margin-bottom: 50px;    padding: 14px 125px;  }}@media (min-width: $screen-tablet) {  .btn {    &--upload {      width: 100%;      margin-bottom: 43px;    }    &--submit {      margin: 0;      padding: 14px 56px;    }    &--ok,    &--confirmation {      box-sizing: border-box;      width: 298px;      margin: 0;      color: $white;      background-color: $lime-green;      border: 2px solid $lime-green;    }    &--confirmation {      margin-top: 48px;      margin-bottom: 52px;      padding: 14px 67px;    }    &--ok {      margin-top: 8px;      margin-bottom: 52px;      padding: 14px 125px;    }  }}@media (min-width: $screen-desktop) {  .btn {    &--confirmation {      box-sizing: border-box;      width: 460px;      margin: 0;      color: $white;      background-color: $lime-green;      border: 2px solid $lime-green;    }    &--confirmation {      margin-top: 48px;      margin-bottom: 52px;      padding: 14px 67px;    }    &--ok {      box-sizing: border-box;      width: 298px;      margin: 0;      color: $white;      background-color: $lime-green;      border: 2px solid $lime-green;    }    &--ok {      margin-top: 8px;      margin-bottom: 52px;      padding: 14px 125px;    }  }}
+.btn {
+  @include font-family-general($font-face-family);
+
+  display: inline-block;
+  padding: 14px 55px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border-radius: 3px;
+
+  &--upload {
+    padding-right: 59px;
+    padding-left: 51px;
+
+    color: $black;
+
+    background-color: $white;
+    border: 2px solid $grey-light;
+  }
+
+  &--submit {
+    margin: 49px 0;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding: 14px 45px;
+
+    color: $white;
+
+    background-color: $lime-green;
+    border: 2px solid $lime-green;
+  }
+
+  &--ok,
+  &--confirmation {
+    margin: 0;
+
+    color: $white;
+
+    background-color: $lime-green;
+    border: 2px solid $lime-green;
+  }
+
+  &--confirmation {
+    margin-top: 48px;
+    margin-bottom: 53px;
+    padding: 14px 67px;
+  }
+
+  &--ok {
+    margin-top: 9px;
+    margin-bottom: 50px;
+    padding: 14px 125px;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .btn {
+    &--upload {
+      width: 100%;
+      margin-bottom: 43px;
+    }
+
+    &--submit {
+      margin: 0;
+      padding: 14px 56px;
+    }
+
+    &--ok,
+    &--confirmation {
+      box-sizing: border-box;
+      width: 298px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--confirmation {
+      margin-top: 48px;
+      margin-bottom: 52px;
+      padding: 14px 67px;
+    }
+
+    &--ok {
+      margin-top: 8px;
+      margin-bottom: 52px;
+      padding: 14px 125px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .btn {
+    &--confirmation {
+      box-sizing: border-box;
+      width: 460px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--confirmation {
+      margin-top: 48px;
+      margin-bottom: 52px;
+      padding: 14px 67px;
+    }
+
+    &--ok {
+      box-sizing: border-box;
+      width: 298px;
+      margin: 0;
+
+      color: $white;
+
+      background-color: $lime-green;
+      border: 2px solid $lime-green;
+    }
+
+    &--ok {
+      margin-top: 8px;
+      margin-bottom: 52px;
+      padding: 14px 125px;
+    }
+  }
+}

@@ -1,1 +1,28 @@
-.page-review {  width: 100%;  min-height: 290px;  padding-top: 36px;  &__container {    @include container;  }}@media (min-width: $screen-tablet) {  .page-review {    min-height: 150px;    padding-top: 17px;  }}@media (min-width: $screen-desktop) {  .page-review {    @include background-image("quotes.svg");    min-height: 150px;    padding-top: 180px;    background-repeat: no-repeat;    background-position: center top 72px;  }}
+.page-review {
+  width: 100%;
+  min-height: 290px;
+  padding-top: 36px;
+
+  &__container {
+    @include container;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-review {
+    min-height: 150px;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-review {
+    @include background-image("quotes.svg");
+
+    min-height: 150px;
+    padding-top: 180px;
+
+    background-repeat: no-repeat;
+    background-position: center top 72px;
+  }
+}

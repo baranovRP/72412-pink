@@ -1,1 +1,120 @@
-.control-checkbox {  padding: 20px 0;  padding-bottom: 32px;  padding-left: 10px;  border-radius: 3px;  &__label {    @include font-family-general($font-face-family);    font-weight: 400;    font-size: 18px;    line-height: 30px;    color: $blue-very-dark;  }  input + &__label {    cursor: pointer;  }  input:not(checked) {    position: absolute;    opacity: 0;  }  input:not(checked) + &__label {    position: relative;    padding: 0 0 0 60px;  }  input:not(checked) + &__label:before {    content: "";    position: absolute;    top: -8px;    left: 0;    width: 35px;    height: 35px;    background-color: $white;    border: 2px solid $grey-light;  }  input:checked + &__label:after {    content: "";    position: absolute;    top: -3px;    left: 15px;    display: block;    width: 8px;    height: 20px;    background-color: $white;    border-top: 0 solid transparent;    border-right: 2px solid $pink-strong;    border-bottom: 2px solid $pink-strong;    border-left: 0 solid transparent;    transform: rotate(45deg);    transition: all 0.2s;  }  input:checked + &__label:before {    background: $white;  }}@media (min-width: $screen-tablet) {  .control-checkbox {    padding-left: 48px;  }}@media (min-width: $screen-desktop) {  .control-checkbox {    width: 257px;    margin: 0;    padding: 21px 0;    padding-bottom: 31px;    &:nth-child(1+3n) {      width: 315px;    }    &:nth-child(2+3n) {      width: 305px;    }    &:nth-child(1) {      order: 1;      width: 315px;    }    &:nth-child(2) {      order: 4;      width: 315px;    }    &:nth-child(3) {      order: 2;      width: 305px;    }    &:nth-child(4) {      order: 5;      width: 305px;    }    &:nth-child(5) {      order: 3;    }    &:nth-child(6) {      order: 6;    }  }}
+.control-checkbox {
+  padding: 20px 0;
+  padding-bottom: 32px;
+  padding-left: 10px;
+
+  border-radius: 3px;
+
+  &__label {
+    @include font-family-general($font-face-family);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $blue-very-dark;
+  }
+
+  input + &__label {
+    cursor: pointer;
+  }
+
+  input:not(checked) {
+    position: absolute;
+
+    opacity: 0;
+  }
+
+  input:not(checked) + &__label {
+    position: relative;
+
+    padding: 0 0 0 60px;
+  }
+
+  input:not(checked) + &__label:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: $white;
+    border: 2px solid $grey-light;
+  }
+
+  input:checked + &__label:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 15px;
+
+    display: block;
+    width: 8px;
+    height: 20px;
+
+    background-color: $white;
+    border-top: 0 solid transparent;
+    border-right: 2px solid $pink-strong;
+    border-bottom: 2px solid $pink-strong;
+    border-left: 0 solid transparent;
+    transform: rotate(45deg);
+
+    transition: all 0.2s;
+  }
+
+  input:checked + &__label:before {
+    background: $white;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .control-checkbox {
+    padding-left: 48px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .control-checkbox {
+    width: 257px;
+    margin: 0;
+    padding: 21px 0;
+    padding-bottom: 31px;
+
+    &:nth-child(1+3n) {
+      width: 315px;
+    }
+
+    &:nth-child(2+3n) {
+      width: 305px;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+      width: 315px;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+      width: 315px;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+      width: 305px;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+      width: 305px;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+  }
+}

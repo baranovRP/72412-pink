@@ -1,1 +1,16 @@
-.travels-photo-gallery {  width: 100%;  padding: 0;  padding-top: 53px;  font-size: 0;  text-align: left;}@media (min-width: $screen-tablet) {  .travels-photo-gallery {    padding-top: 47px;    border-top: 2px solid #e5e5e5;  }}
+.travels-photo-gallery {
+  width: 100%;
+  padding: 0;
+  padding-top: 53px;
+
+  font-size: 0;
+  text-align: left;
+}
+
+@media (min-width: $screen-tablet) {
+  .travels-photo-gallery {
+    padding-top: 47px;
+
+    border-top: 2px solid #e5e5e5;
+  }
+}

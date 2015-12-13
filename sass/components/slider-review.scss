@@ -1,1 +1,158 @@
-.slider-review {  position: relative;  min-height: 290px;  padding-top: 5px;  & input[type=radio] {    display: none;  }  &__inner {    min-height: 290px;    overflow: hidden;  }  &__wrap {    width: 300%;    transition: transform 300ms ease;  }  &__controls {    position: absolute;    bottom: 19px;    left: 50%;    z-index: 95;    width: 70px;    margin-left: -35px;  }  &__controls label {    @include slider-controls--unchecked;  }  #btn-1:checked ~ &__controls label[for="btn-1"],  #btn-2:checked ~ &__controls label[for="btn-2"],  #btn-3:checked ~ &__controls label[for="btn-3"] {    @include slider-control-checked;  }  #btn-1:checked ~ &__inner &__wrap {    transform: translate(0);  }  #btn-2:checked ~ &__inner &__wrap {    transform: translate(-300px);  }  #btn-3:checked ~ &__inner &__wrap {    transform: translate(-600px);  }  &__arrow-btn {    @include hidden;  }}@media (min-width: $screen-tablet) {  .slider-review {    min-height: 150px;    &__inner {      min-height: 150px;    }    &__controls {      position: absolute;      bottom: -12px;      left: 50%;      width: 76px;      margin-left: -38px;    }    #btn-1:checked ~ &__inner &__wrap {      transform: translate(0);    }    #btn-2:checked ~ &__inner &__wrap {      transform: translate(-640px);    }    #btn-3:checked ~ &__inner &__wrap {      transform: translate(-1280px);    }  }}@media (min-width: $screen-desktop) {  .slider-review {    min-height: 150px;    &__inner {      min-height: 150px;    }    &__controls {      @include hidden;    }    input[type=radio] {      @include hidden;    }    #btn-1:checked ~ &__inner &__wrap {      transform: translate(0px);    }    #btn-2:checked ~ &__inner &__wrap {      transform: translate(-960px);    }    #btn-3:checked ~ &__inner &__wrap {      transform: translate(-1920px);    }    &__arrow-btn {      position: absolute;      top: 39px;      z-index: 30;      display: block;      width: 30px;      height: 30px;      font-size: 0;      background-color: transparent;      border-top: 0 solid transparent;      border-right: 2px solid $blue-very-dark;      border-bottom: 2px solid $blue-very-dark;      border-left: 0 solid transparent;      cursor: pointer;      opacity: 0.3;      &:hover {        opacity: 0.6;      }      &:active {        opacity: 0.1;      }    }    &__arrow-btn--prev {      left: 7px;      transform: rotate(135deg);    }    &__arrow-btn--next {      right: 7px;      transform: rotate(-45deg);    }  }}
+.slider-review {
+  position: relative;
+
+  min-height: 290px;
+  padding-top: 5px;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__inner {
+    min-height: 290px;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    width: 300%;
+
+    transition: transform 300ms ease;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    z-index: 95;
+
+    width: 70px;
+    margin-left: -35px;
+  }
+
+  &__controls label {
+    @include slider-controls--unchecked;
+  }
+
+  #btn-1:checked ~ &__controls label[for="btn-1"],
+  #btn-2:checked ~ &__controls label[for="btn-2"],
+  #btn-3:checked ~ &__controls label[for="btn-3"] {
+    @include slider-control-checked;
+  }
+
+  #btn-1:checked ~ &__inner &__wrap {
+    transform: translate(0);
+  }
+
+  #btn-2:checked ~ &__inner &__wrap {
+    transform: translate(-300px);
+  }
+
+  #btn-3:checked ~ &__inner &__wrap {
+    transform: translate(-600px);
+  }
+
+  &__arrow-btn {
+    @include hidden;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .slider-review {
+    min-height: 150px;
+
+    &__inner {
+      min-height: 150px;
+    }
+
+    &__controls {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+
+      width: 76px;
+      margin-left: -38px;
+    }
+
+    #btn-1:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+
+    #btn-2:checked ~ &__inner &__wrap {
+      transform: translate(-640px);
+    }
+
+    #btn-3:checked ~ &__inner &__wrap {
+      transform: translate(-1280px);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-review {
+    min-height: 150px;
+
+    &__inner {
+      min-height: 150px;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    #btn-1:checked ~ &__inner &__wrap {
+      transform: translate(0px);
+    }
+
+    #btn-2:checked ~ &__inner &__wrap {
+      transform: translate(-960px);
+    }
+
+    #btn-3:checked ~ &__inner &__wrap {
+      transform: translate(-1920px);
+    }
+
+    &__arrow-btn {
+      position: absolute;
+      top: 39px;
+      z-index: 30;
+
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      font-size: 0;
+
+      background-color: transparent;
+      border-top: 0 solid transparent;
+      border-right: 2px solid $blue-very-dark;
+      border-bottom: 2px solid $blue-very-dark;
+      border-left: 0 solid transparent;
+      cursor: pointer;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+
+    &__arrow-btn--prev {
+      left: 7px;
+
+      transform: rotate(135deg);
+    }
+
+    &__arrow-btn--next {
+      right: 7px;
+
+      transform: rotate(-45deg);
+    }
+  }
+}

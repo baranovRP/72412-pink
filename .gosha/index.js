@@ -1,1 +1,4 @@
-"use strict";require("./lint");require("./gosha");
+"use strict";
+
+require("./lint");
+require("./gosha");

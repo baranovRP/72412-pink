@@ -1,1 +1,73 @@
-.page-effect {  width: 100%;  min-height: 200px;  margin: 0 auto;  padding: 40px 0;  &__container {    @include container;  }}@media (min-width: $screen-phone) {  .page-effect {    @include hidden;  }}@media (min-width: $screen-tablet) {  .page-effect {    @include background-image("background-diagram--tablet@1x.png");    display: inline-block;    padding-bottom: 39px;    vertical-align: top;    background-repeat: no-repeat;    background-position: calc(50% - 178px) 56px;    background-size: 262px;  }}@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-tablet),only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-tablet),only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-tablet),only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-tablet),only screen and (min-resolution: 192dpi) and (min-width: $screen-tablet),only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {  .page-effect {    @include background-image("background-diagram--tablet@2x.png");    background-size: 262px;  }}@media (min-width: $screen-desktop) {  .page-effect {    @include background-image("background-diagram--desktop@1x.png");    padding: 0;    padding-bottom: 43px;    vertical-align: top;    background-color: $grey-very-light;    background-repeat: no-repeat;    background-position: calc(50% - 320px) 32px;    background-size: 301px;  }}@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-desktop),only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-desktop),only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-desktop),only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-desktop),only screen and (min-resolution: 192dpi) and (min-width: $screen-desktop),only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {  .page-effect {    @include background-image("background-diagram--desktop@2x.png");    background-size: 301px;  }}
+.page-effect {
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  &__container {
+    @include container;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .page-effect {
+    @include hidden;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-effect {
+    @include background-image("background-diagram--tablet@1x.png");
+
+    display: inline-block;
+    padding-bottom: 39px;
+
+    vertical-align: top;
+
+    background-repeat: no-repeat;
+    background-position: calc(50% - 178px) 56px;
+    background-size: 262px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-tablet),
+only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-tablet),
+only screen and (min-resolution: 192dpi) and (min-width: $screen-tablet),
+only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
+  .page-effect {
+    @include background-image("background-diagram--tablet@2x.png");
+
+    background-size: 262px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-effect {
+    @include background-image("background-diagram--desktop@1x.png");
+
+    padding: 0;
+    padding-bottom: 43px;
+
+    vertical-align: top;
+
+    background-color: $grey-very-light;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 320px) 32px;
+    background-size: 301px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+only screen and (min--moz-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $screen-desktop),
+only screen and (min-device-pixel-ratio: 2) and (min-width: $screen-desktop),
+only screen and (min-resolution: 192dpi) and (min-width: $screen-desktop),
+only screen and (min-resolution: 2dppx) and (min-width: $screen-desktop) {
+  .page-effect {
+    @include background-image("background-diagram--desktop@2x.png");
+
+    background-size: 301px;
+  }
+}

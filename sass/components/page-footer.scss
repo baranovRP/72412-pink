@@ -1,1 +1,51 @@
-.page-footer {  width: 100%;  min-height: 260px;  &__container {    @include container;  }}@media (min-width: $screen-phone) {  .page-footer {    &--index {      display: none;    }  }}@media (min-width: $screen-tablet) {  .page-footer {    display: block;    min-height: 127px;    &__container {      display: flex;      flex-direction: row;      flex-wrap: wrap;      justify-content: space-between;      padding-top: 91px;      padding-bottom: 73px;    }    &--index &__container {      padding-top: 27px;      padding-bottom: 37px;    }  }}@media (min-width: $screen-desktop) {  .page-footer {    &__container {      padding-top: 60px;    }    &--index &__container {      padding-top: 61px;      padding-bottom: 73px;    }  }}
+.page-footer {
+  width: 100%;
+  min-height: 260px;
+
+  &__container {
+    @include container;
+  }
+}
+
+@media (min-width: $screen-phone) {
+  .page-footer {
+    &--index {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-footer {
+    display: block;
+    min-height: 127px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 91px;
+      padding-bottom: 73px;
+    }
+
+    &--index &__container {
+      padding-top: 27px;
+      padding-bottom: 37px;
+    }
+  }
+}
+
+
+@media (min-width: $screen-desktop) {
+  .page-footer {
+    &__container {
+      padding-top: 60px;
+    }
+
+    &--index &__container {
+      padding-top: 61px;
+      padding-bottom: 73px;
+    }
+  }
+}

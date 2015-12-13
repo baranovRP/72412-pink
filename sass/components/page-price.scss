@@ -1,1 +1,53 @@
-.page-price {  width: 100%;  min-height: 372px;  padding-top: 101px;  padding-bottom: 18px;  &::before {    content: "";    position: absolute;    top: 212vh;    left: -50vw;    z-index: -1;    width: 150vw;    height: 60vh;    background-color: $grey-very-light;    transform: skewY(-5deg);  }  &__container {    background-color: $grey-very-light;  }}@media (min-width: $screen-tablet) {  .page-price {    min-height: 250px;    padding-top: 108px;    padding-bottom: 38px;    &::before {      top: 219vh;      transform: skewY(-4deg);    }  }}@media (min-width: $screen-desktop) {  .page-price {    min-height: 250px;    margin-top: 35px;    padding-top: 108px;    padding-bottom: 95px;    &::before {      top: 271vh;      transform: skewY(-4deg);    }  }}
+.page-price {
+  width: 100%;
+  min-height: 372px;
+  padding-top: 101px;
+  padding-bottom: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 212vh;
+    left: -50vw;
+    z-index: -1;
+
+    width: 150vw;
+    height: 60vh;
+
+    background-color: $grey-very-light;
+    transform: skewY(-5deg);
+  }
+
+  &__container {
+    background-color: $grey-very-light;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .page-price {
+    min-height: 250px;
+    padding-top: 108px;
+    padding-bottom: 38px;
+
+    &::before {
+      top: 219vh;
+
+      transform: skewY(-4deg);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-price {
+    min-height: 250px;
+    margin-top: 35px;
+    padding-top: 108px;
+    padding-bottom: 95px;
+
+    &::before {
+      top: 271vh;
+
+      transform: skewY(-4deg);
+    }
+  }
+}

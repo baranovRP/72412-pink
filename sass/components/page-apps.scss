@@ -1,1 +1,27 @@
-.page-apps {  @include container;  width: 100%;  min-height: 240px;  padding: 0;  padding-top: 37px;  padding-bottom: 2px;}@media (min-width: $screen-tablet) {  .page-apps {    width: 322px;    margin: 0;    padding-top: 10px;    &--open {      margin: 0 10px;    }  }}@media (min-width: $screen-desktop) {  .page-apps {    width: 32%;  }}
+.page-apps {
+  @include container;
+
+  width: 100%;
+  min-height: 240px;
+  padding: 0;
+  padding-top: 37px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: $screen-tablet) {
+  .page-apps {
+    width: 322px;
+    margin: 0;
+    padding-top: 10px;
+
+    &--open {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-apps {
+    width: 32%;
+  }
+}

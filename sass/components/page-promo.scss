@@ -1,1 +1,29 @@
-.page-promo {  position: relative;  width: 100%;  min-height: 900px;  padding-bottom: 4px;  overflow: hidden;}@media (min-width: $screen-tablet) {  .page-promo {    min-height: 725px;    padding-bottom: 1px;    &__container {      min-height: 725px;    }  }}@media (min-width: $screen-desktop) {  .page-promo {    min-height: 670px;    &__container {      min-height: 670px;    }  }}
+.page-promo {
+  position: relative;
+
+  width: 100%;
+  min-height: 900px;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+@media (min-width: $screen-tablet) {
+  .page-promo {
+    min-height: 725px;
+    padding-bottom: 1px;
+
+    &__container {
+      min-height: 725px;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-promo {
+    min-height: 670px;
+
+    &__container {
+      min-height: 670px;
+    }
+  }
+}

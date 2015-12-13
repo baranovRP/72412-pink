@@ -1,1 +1,106 @@
-.effect-item {  float: right;  width: 320px;  min-height: 280px;  padding-top: 51px;  &__title {    @include font-family-general($font-face-family);    margin: 0;    padding: 5px 0;    font-weight: 700;    font-size: 30px;    line-height: 36px;    color: $black;  }  &__text {    @include font-family-general($font-face-family);    margin: 0;    padding: 5px 0;    padding-right: 15px;    font-weight: 400;    font-size: 14px;    line-height: 24px;    color: $blue-very-dark;  }  &__link {    @include font-family-general($font-face-family);    display: block;    padding: 11px 0;    font-weight: 400;    font-size: 14px;    line-height: 24px;    color: $pink-strong;    text-decoration: underline;    &:hover {      color: $blue-very-dark;    }    &:active {      opacity: 0.3;    }  }}@media (min-width: $screen-desktop) {  .effect-item {    float: right;    width: 56%;    min-height: 280px;    margin-right: 47px;    padding-top: 122px;    &__title {      @include font-family-general($font-face-family);      margin: 0;      margin-bottom: 15px;      padding: 5px 0;      font-weight: 700;      font-size: 30px;      line-height: 30px;      color: $black;    }    &__title span {      @include hidden;    }    &__text {      @include font-family-general($font-face-family);      margin: 0;      padding: 5px 0;      padding-right: 15px;      font-weight: 400;      font-size: 18px;      line-height: 30px;      color: $blue-very-dark;    }    &__link {      @include font-family-general($font-face-family);      display: block;      padding: 11px 0;      padding-top: 34px;      font-weight: 400;      font-size: 18px;      line-height: 22px;      color: $pink-strong;      text-decoration: underline;    }  }}
+.effect-item {
+  float: right;
+  width: 320px;
+  min-height: 280px;
+  padding-top: 51px;
+
+  &__title {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 5px 0;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    margin: 0;
+    padding: 5px 0;
+    padding-right: 15px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue-very-dark;
+  }
+
+  &__link {
+    @include font-family-general($font-face-family);
+
+    display: block;
+    padding: 11px 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $pink-strong;
+    text-decoration: underline;
+
+    &:hover {
+      color: $blue-very-dark;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .effect-item {
+    float: right;
+    width: 56%;
+    min-height: 280px;
+    margin-right: 47px;
+    padding-top: 122px;
+
+    &__title {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      margin-bottom: 15px;
+      padding: 5px 0;
+
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      color: $black;
+    }
+
+    &__title span {
+      @include hidden;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      margin: 0;
+      padding: 5px 0;
+      padding-right: 15px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $blue-very-dark;
+    }
+
+    &__link {
+      @include font-family-general($font-face-family);
+
+      display: block;
+      padding: 11px 0;
+      padding-top: 34px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: $pink-strong;
+      text-decoration: underline;
+    }
+  }
+}

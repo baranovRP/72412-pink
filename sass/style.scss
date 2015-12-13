@@ -1,1 +1,49 @@
-// Core variables and mixins@import "variables";@import "mixins";// Reset and dependencies@import "normalize";// Fonts@import "font-face";// Components@import "components/base";@import "components/pink-pic";@import "components/page-header";@import "components/main-nav";@import "components/page-rubric";@import "components/page-apps";@import "components/apps";@import "components/apps-os";@import "components/page-group-content";@import "components/page-promo";@import "components/promo";@import "components/promo-item";@import "components/page-effect";@import "components/effect-item";@import "components/page-review";@import "components/slider-review";@import "components/slider-item";@import "components/page-price";@import "components/slider-price";@import "components/tariff";@import "components/page-address";@import "components/contacts-block";@import "components/contacts-address";@import "components/page-map";@import "components/registration-form";@import "components/control-text";@import "components/control-radio";@import "components/traveler-item";@import "components/control-checkbox";@import "components/btn";@import "components/travels-photo-gallery";@import "components/gallery-item";@import "components/page-footer";@import "components/logo";@import "components/social-links";@import "components/copyright";@import "components/modal-content";@import "components/popup";
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+
+// Fonts
+@import "font-face";
+
+// Components
+@import "components/base";
+@import "components/pink-pic";
+@import "components/page-header";
+@import "components/main-nav";
+@import "components/page-rubric";
+@import "components/page-apps";
+@import "components/apps";
+@import "components/apps-os";
+@import "components/page-group-content";
+@import "components/page-promo";
+@import "components/promo";
+@import "components/promo-item";
+@import "components/page-effect";
+@import "components/effect-item";
+@import "components/page-review";
+@import "components/slider-review";
+@import "components/slider-item";
+@import "components/page-price";
+@import "components/slider-price";
+@import "components/tariff";
+@import "components/page-address";
+@import "components/contacts-block";
+@import "components/contacts-address";
+@import "components/page-map";
+@import "components/registration-form";
+@import "components/control-text";
+@import "components/control-radio";
+@import "components/traveler-item";
+@import "components/control-checkbox";
+@import "components/btn";
+@import "components/travels-photo-gallery";
+@import "components/gallery-item";
+@import "components/page-footer";
+@import "components/logo";
+@import "components/social-links";
+@import "components/copyright";
+@import "components/modal-content";
+@import "components/popup";

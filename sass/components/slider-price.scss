@@ -1,1 +1,124 @@
-.slider-price {  @include container;  position: relative;  min-height: 250px;  padding-top: 11px;  padding-bottom: 64px;  overflow: hidden;  & input[type=radio] {    display: none;  }  &__inner {    min-height: 250px;    overflow: hidden;  }  &__wrap {    width: 300%;    transition: transform 300ms ease;  }  &__controls {    position: absolute;    bottom: 7px;    left: 50%;    z-index: 95;    width: 70px;    margin-left: -35px;  }  &__controls label {    @include slider-controls--unchecked;  }  #btn-4:checked ~ &__controls label[for="btn-4"],  #btn-5:checked ~ &__controls label[for="btn-5"],  #btn-6:checked ~ &__controls label[for="btn-6"] {    @include slider-control-checked;  }  #btn-4:checked ~ &__inner &__wrap {    transform: translate(0);  }  #btn-5:checked ~ &__inner &__wrap {    transform: translate(-276px);  }  #btn-6:checked ~ &__inner &__wrap {    transform: translate(-552px);  }}@media (min-width: 320px) {  .slider-price {    width: 320px;    padding-right: 0;    padding-left: 0;  }}@media (min-width: $screen-tablet) {  .slider-price {    width: 640px;    padding-bottom: 0;    &__inner {      padding: 0 10px;    }    &__wrap {      width: 100%;    }    input[type=radio] {      @include hidden;    }    &__controls {      @include hidden;    }    #btn-4:checked ~ &__inner &__wrap,    #btn-5:checked ~ &__inner &__wrap,    #btn-6:checked ~ &__inner &__wrap {      transform: translate(0);    }  }}@media (min-width: $screen-desktop) {  .slider-price {    width: 940px;    padding-top: 46px;    padding-bottom: 0;    &__inner {      padding: 0;    }    &__wrap {      width: 100%;    }    input[type=radio] {      @include hidden;    }    &__controls {      @include hidden;    }    #btn-4:checked ~ &__inner &__wrap,    #btn-5:checked ~ &__inner &__wrap,    #btn-6:checked ~ &__inner &__wrap {      transform: translate(0);    }  }}
+.slider-price {
+  @include container;
+
+  position: relative;
+
+  min-height: 250px;
+  padding-top: 11px;
+  padding-bottom: 64px;
+  overflow: hidden;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__inner {
+    min-height: 250px;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    width: 300%;
+
+    transition: transform 300ms ease;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    z-index: 95;
+
+    width: 70px;
+    margin-left: -35px;
+  }
+
+  &__controls label {
+    @include slider-controls--unchecked;
+  }
+
+  #btn-4:checked ~ &__controls label[for="btn-4"],
+  #btn-5:checked ~ &__controls label[for="btn-5"],
+  #btn-6:checked ~ &__controls label[for="btn-6"] {
+    @include slider-control-checked;
+  }
+
+  #btn-4:checked ~ &__inner &__wrap {
+    transform: translate(0);
+  }
+
+  #btn-5:checked ~ &__inner &__wrap {
+    transform: translate(-276px);
+  }
+
+  #btn-6:checked ~ &__inner &__wrap {
+    transform: translate(-552px);
+  }
+}
+
+@media (min-width: 320px) {
+  .slider-price {
+    width: 320px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .slider-price {
+    width: 640px;
+    padding-bottom: 0;
+
+    &__inner {
+      padding: 0 10px;
+    }
+
+    &__wrap {
+      width: 100%;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    #btn-4:checked ~ &__inner &__wrap,
+    #btn-5:checked ~ &__inner &__wrap,
+    #btn-6:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .slider-price {
+    width: 940px;
+    padding-top: 46px;
+    padding-bottom: 0;
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__wrap {
+      width: 100%;
+    }
+
+    input[type=radio] {
+      @include hidden;
+    }
+
+    &__controls {
+      @include hidden;
+    }
+
+    #btn-4:checked ~ &__inner &__wrap,
+    #btn-5:checked ~ &__inner &__wrap,
+    #btn-6:checked ~ &__inner &__wrap {
+      transform: translate(0);
+    }
+  }
+}

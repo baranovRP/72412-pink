@@ -1,1 +1,129 @@
-.contacts-address {  min-height: 270px;  margin: 0 auto;  text-align: center;  &__label {    @include font-family-general($font-face-family);    display: block;    font-weight: 700;    font-size: 18px;    line-height: 18px;    color: $blue-very-dark;    font-style: normal;  }  &__text {    @include font-family-general($font-face-family);    display: block;    padding-top: 6px;    padding-bottom: 23px;    font-weight: 300;    font-size: 24px;    line-height: 30px;    color: $pink-strong;    text-decoration: none;    font-style: normal;  }  &__text--link {    &:hover {      color: $blue-very-dark;      text-decoration: underline;    }    &:active {      text-decoration: none;      opacity: 0.3;    }  }}@media (min-width: $screen-tablet) {  .contacts-address {    display: flex;    flex-direction: row;    flex-wrap: wrap;    min-height: 150px;    &__flex-wrap {      width: 50%;      margin-bottom: 28px;    }    &__flex-wrap:last-child {      width: 100%;      margin-bottom: 0;    }    &__label {      @include font-family-general($font-face-family);      font-weight: 700;      font-size: 18px;      line-height: 18px;      color: $blue-very-dark;    }    &__text {      @include font-family-general($font-face-family);      font-weight: 300;      font-size: 24px;      line-height: 30px;      color: $pink-strong;    }  }}@media (min-width: $screen-desktop) {  .contacts-address {    display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-between;    min-height: 70px;    &__flex-wrap {      width: 32%;      margin-bottom: 0;    }    &__flex-wrap:last-child {      width: 32%;    }    &__flex-wrap:nth-child(2) {      order: 2;    }    &__label {      @include font-family-general($font-face-family);      padding-bottom: 21px;      font-weight: 700;      font-size: 18px;      line-height: 18px;      color: $blue-very-dark;    }    &__text {      @include font-family-general($font-face-family);      padding-top: 6px;      padding-bottom: 0;      font-weight: 300;      font-size: 24px;      line-height: 30px;      color: $pink-strong;    }  }}
+.contacts-address {
+  min-height: 270px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  &__label {
+    @include font-family-general($font-face-family);
+
+    display: block;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $blue-very-dark;
+    font-style: normal;
+  }
+
+  &__text {
+    @include font-family-general($font-face-family);
+
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 23px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: $pink-strong;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  &__text--link {
+    &:hover {
+      color: $blue-very-dark;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .contacts-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 150px;
+
+    &__flex-wrap {
+      width: 50%;
+      margin-bottom: 28px;
+    }
+
+    &__flex-wrap:last-child {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    &__label {
+      @include font-family-general($font-face-family);
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: $pink-strong;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .contacts-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 70px;
+
+    &__flex-wrap {
+      width: 32%;
+      margin-bottom: 0;
+    }
+
+    &__flex-wrap:last-child {
+      width: 32%;
+    }
+
+    &__flex-wrap:nth-child(2) {
+      order: 2;
+    }
+
+    &__label {
+      @include font-family-general($font-face-family);
+
+      padding-bottom: 21px;
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: $blue-very-dark;
+    }
+
+    &__text {
+      @include font-family-general($font-face-family);
+
+      padding-top: 6px;
+      padding-bottom: 0;
+
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      color: $pink-strong;
+    }
+  }
+}
