@@ -43,6 +43,14 @@
     background-position: 50% 50%;
     border: 2px solid $grey-light;
     border-radius: 50%;
+
+    &:hover {
+      border-color: $blue-very-dark;
+    }
+
+    &:active {
+      background-color: $blue-very-dark;
+    }
   }
 
   &__cross-btn::before,
@@ -55,8 +63,18 @@
     width: 15px;
     height: 2px;
 
-    background-color: #333333;
+    background-color: $grey-very-dark;
     opacity: 0.3;
+  }
+
+  &__cross-btn:hover::before,
+  &__cross-btn:hover::after {
+    opacity: 1;
+  }
+
+  &__cross-btn:active::before,
+  &__cross-btn:active::after {
+    background-color: $white;
   }
 
   &__cross-btn::before {
