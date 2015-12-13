@@ -73,6 +73,14 @@
 
     border: 2px solid $grey-light;
     border-radius: 3px;
+
+    &:hover{
+      border-color: $blue-very-dark;
+    }
+
+    &:focus{
+      border-color: $pink-strong;
+    }
   }
 
   &__input::-webkit-input-placeholder {
