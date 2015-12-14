@@ -4,20 +4,6 @@
   padding-top: 101px;
   padding-bottom: 18px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 212vh;
-    left: -50vw;
-    z-index: -1;
-
-    width: 150vw;
-    height: 60vh;
-
-    background-color: $grey-very-light;
-    transform: skewY(-5deg);
-  }
-
   &__container {
     background-color: $grey-very-light;
   }

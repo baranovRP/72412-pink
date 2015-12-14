@@ -1,0 +1,54 @@
+.page__line{
+    position: relative;
+
+    height: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4vh;
+    left: -50vw;
+    z-index: -1;
+
+    width: 150vw;
+    height: 105vh;
+
+    background-color: $grey-very-light;
+    transform: skewY(-6deg);
+  }
+
+  &--price::after{
+    top: 5vh;
+    transform: skewY(-4deg);
+  }
+}
+
+@media (min-width: $screen-tablet){
+  .page__line{
+
+    &::after {
+      top: -2vh;
+
+      transform: skewY(-5deg);
+    }
+
+    &--price::after{
+      top: 8vh;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop){
+  .page__line{
+
+    &::after {
+      top: 8vh;
+      transform: skewY(-4deg);
+    }
+
+    &--price::after{
+      top: 12vh;
+      transform: skewY(-5deg);
+    }
+  }
+}
