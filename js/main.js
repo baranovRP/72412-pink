@@ -47,6 +47,8 @@ var headerContainer = document.querySelector("." + PAGE_HEADER_BL + CONTAINER_EL
 var headerInner = document.querySelector("." + PAGE_HEADER_BL + INNER_EL);
 var pageApps = document.querySelector("." + PAGE_APPS_BL);
 
+var desktopScreenSize = 960;
+
 
 toggle.addEventListener("click", function(event) {
   event.preventDefault();
@@ -61,13 +63,11 @@ toggle.addEventListener("click", function(event) {
 window.addEventListener("resize", function(event) {
   event.preventDefault();
 
-  hideNav();
+  if (!isNavHidden() && isDesktop(desktopScreenSize)) {
+    hideNav();
+  }
 });
 
-
-function isNavHidden() {
-  return document.querySelector("." + PAGE_HEADER_BL + NAV_WRAP_EL + HIDDEN_STATE);
-}
 
 function showNav() {
   showToggle();
@@ -80,7 +80,6 @@ function hideNav() {
   hideHeader();
   hideMenu();
 }
-
 
 function showToggle() {
   toggle.classList.remove(PAGE_HEADER_BL + TOGGLE_EL + CLOSE_STATE);
@@ -116,6 +115,14 @@ function hideMenu() {
   nav.classList.add(PAGE_HEADER_BL + NAV_WRAP_EL + HIDDEN_STATE);
 }
 
+function isNavHidden() {
+  return document.querySelector("." + PAGE_HEADER_BL + NAV_WRAP_EL + HIDDEN_STATE);
+}
+
 function isAppsPresent() {
   return document.querySelector("." + PAGE_APPS_BL);
+}
+
+function isDesktop(size) {
+  return window.matchMedia("(min-width: " + size + "px)");
 }
