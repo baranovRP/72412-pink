@@ -173,18 +173,18 @@
       </div>
     </div>
 
-    <form action="/echo" method="post" id="form-registration">
+    <form action="/echo" method="post" enctype="multipart/form-data" id="form-registration">
       <div class="registration-form__wrap  registration-form__wrap--name">
         <fieldset class="registration-form__name">
           <div class="registration-form__flex-block">
             <div class="control-text">
               <label class="control-text__label" for="text-first-name">Имя: *</label>
-              <input class="control-text__input" type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
+              <input class="control-text__input" required type="text" name="enter-first-name" id="text-first-name" placeholder="Введите ваше имя">
             </div>
 
             <div class="control-text">
               <label class="control-text__label" for="text-second-name">Фамилия: *</label>
-              <input class="control-text__input" type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
+              <input class="control-text__input" required type="text" name="enter-second-name" id="text-second-name" placeholder="Укажите фамилию">
             </div>
 
             <div class="control-text">
@@ -283,7 +283,7 @@
                 <div class="traveler-item__block-wrap">
                   <div class="control-text  control-text--short">
                     <label class="control-text__label" for="text-name-1">Имя: *</label>
-                    <input class="control-text__input  control-text__input--short" type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
+                    <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
                   </div>
                   <button class="control-text__btn--text" id="btn-person-1-plus" title="delete">Удалить</button>
 
@@ -312,7 +312,7 @@
                 <div class="traveler-item__block-wrap">
                   <div class="control-text  control-text--short">
                     <label class="control-text__label" for="text-name-2">Имя: *</label>
-                    <input class="control-text__input  control-text__input--short" type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
+                    <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
                   </div>
                   <button class="control-text__btn--text" id="btn-person-2-plus" title="delete">Удалить</button>
 
