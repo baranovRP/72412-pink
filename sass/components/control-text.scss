@@ -229,14 +229,14 @@
     }
   }
 
-  input:disabled {
+  input:read-only {
     background-color: $grey-very-light;
 
     &:hover {
       border-color: $grey-light;
     }
 
-    &:active {
+    &:focus {
       border-color: $grey-light;
     }
   }

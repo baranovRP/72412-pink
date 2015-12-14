@@ -135,11 +135,16 @@ function isDesktop(size) {
 
 
 /* submit form */
+var firstEl = 0;
+var nameAttr = "name";
+
 var form = document.querySelector("#form-registration");
 var popupFailure = document.querySelector("." + MODAL_CONTENT_BL + FAILURE_STATE);
 var popupSuccess = document.querySelector("." + MODAL_CONTENT_BL);
 var buttonOk = document.querySelector("." + BTN_BL + OK_STATE);
 var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
+var outputDuration = document.getElementsByName("duration-days-output")[firstEl];
+var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
 (function() {
 
@@ -151,6 +156,8 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
     event.preventDefault();
 
     var data = new FormData(form);
+    data.append(outputDuration.getAttribute(nameAttr), outputDuration.value);
+    data.append(outputPersons.getAttribute(nameAttr), outputPersons.value);
 
     request(data, function(response) {
       console.log(response);
