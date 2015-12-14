@@ -124,5 +124,5 @@ function isAppsPresent() {
 }
 
 function isDesktop(size) {
-  return window.matchMedia("(min-width: " + size + "px)");
+  return window.matchMedia("(min-width: " + size + "px)").matches;
 }
