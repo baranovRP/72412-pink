@@ -198,21 +198,17 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
 
 /* days counter */
-var outputDays = document.getElementById("days-output");
-var minusDay = document.getElementById("btn-day-minus");
-var plusDay = document.getElementById("btn-day-plus");
 
-var outputPerson = document.getElementById("persons");
-var minusPerson = document.getElementById("btn-person-minus");
-var plusPerson = document.getElementById("btn-person-plus");
-
-var daySuffix = "дн";
-var personSuffix = "чел";
-
-var min = 0;
-var max = 999;
 
 (function() {
+
+  var outputDays = document.getElementById("days-output");
+  var minusDay = document.getElementById("btn-day-minus");
+  var plusDay = document.getElementById("btn-day-plus");
+
+  var daySuffix = "дн";
+  var min = 0;
+  var max = 999;
 
   minusDay.addEventListener("click", function() {
     changeNumber(outputDays, false, daySuffix);
@@ -221,35 +217,77 @@ var max = 999;
   plusDay.addEventListener("click", function() {
     changeNumber(outputDays, true, daySuffix);
   });
+
+  function changeNumber(output, operation, suffix) {
+    var value = parseInt(output.value);
+
+    if (operation) {
+      if (max <= value) {
+        return;
+      }
+
+      value = value + 1;
+    } else {
+      if (min >= value) {
+        return;
+      }
+
+      value = value - 1;
+    }
+
+    output.value = value + " " + suffix;
+  }
 })();
 
-(function() {
+
+
+(function(){
+  var area = document.querySelector(".registration-form__travelers");
+  var outputPerson = document.getElementById("persons");
+  var minusPerson = document.getElementById("btn-person-minus");
+  var plusPerson = document.getElementById("btn-person-plus");
+
+  var personSuffix = "чел";
+
+  var min = 0;
+  var max = 999;
+
+  plusPerson.addEventListener("click", function() {
+    event.preventDefault();
+    addTraveler();
+    changeNumber(outputPerson, true, personSuffix);
+  });
 
   minusPerson.addEventListener("click", function() {
+    event.preventDefault();
     changeNumber(outputPerson, false, personSuffix);
   });
 
-  plusPerson.addEventListener("click", function() {
-    changeNumber(outputPerson, true, personSuffix);
-  });
-})();
+  function addTraveler() {
+    var template = document.getElementById("traveler-item-template").innerHTML;
+    var nextTraveler = area.querySelectorAll(".registration-form__travelers .traveler-item").length + 1;
 
-function changeNumber(output, operation, suffix) {
-  var value = parseInt(output.value);
-
-  if (operation) {
-    if (max <= value) {
-      return;
-    }
-
-    value = value + 1;
-  } else {
-    if (min >= value) {
-      return;
-    }
-
-    value = value - 1;
+    var html = template.replace("{{index-number}}", nextTraveler.toString());
+    area.innerHTML = area.innerHTML + html;
   }
 
-  output.value = value + " " + suffix;
-}
+  function changeNumber(output, operation, suffix) {
+    var value = parseInt(output.value);
+
+    if (operation) {
+      if (max <= value) {
+        return;
+      }
+
+      value = value + 1;
+    } else {
+      if (min >= value) {
+        return;
+      }
+
+      value = value - 1;
+    }
+
+    output.value = value + " " + suffix;
+  }
+})();

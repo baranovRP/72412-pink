@@ -606,6 +606,41 @@
   </div>
 </div>
 
+
+<!-- traveler-item  template-->
+<script id="traveler-item-template" type="text/html">
+  <div class="registration-form__wrap  registration-form__wrap--traveler-item">
+    <fieldset class="traveler-item">
+      <div class="traveler-item__flex-wrap">
+        <div class="traveler-item__block-wrap">
+          <div class="control-text  control-text--block">
+            <label class="control-text__label">№</label>
+
+            <div class="control-text__output control-text__output--short">
+              <output name="mate-output">{{index-number}}</output>
+            </div>
+          </div>
+        </div>
+
+        <div class="traveler-item__block-wrap">
+          <div class="control-text  control-text--short">
+            <label class="control-text__label" for="text-name-{{index-number}}">Имя: *</label>
+            <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-{{index-number}}" placeholder="Введите ваше имя">
+          </div>
+          <button class="control-text__btn--text" id="btn-person-{{index-number}}-plus" type="button" title="delete">Удалить</button>
+
+          <div class="control-text  control-text--short">
+            <label class="control-text__label" for="text-nickname-{{index-number}}">Прозвище:</label>
+            <input class="control-text__input  control-text__input--short" type="text" name="enter-nickname" id="text-nickname-{{index-number}}" placeholder="Ну как же без этого!">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</script>
+
+<!-- scripts -->
+<script src="js/vendor/mustache-2.2.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
