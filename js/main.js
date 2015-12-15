@@ -135,16 +135,11 @@ function isDesktop(size) {
 
 
 /* submit form */
-var firstEl = 0;
-var nameAttr = "name";
-
 var form = document.querySelector("#form-registration");
 var popupFailure = document.querySelector("." + MODAL_CONTENT_BL + FAILURE_STATE);
 var popupSuccess = document.querySelector("." + MODAL_CONTENT_BL);
 var buttonOk = document.querySelector("." + BTN_BL + OK_STATE);
 var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
-var outputDuration = document.getElementsByName("duration-days-output")[firstEl];
-var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
 (function() {
 
@@ -156,8 +151,6 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
     event.preventDefault();
 
     var data = new FormData(form);
-    data.append(outputDuration.getAttribute(nameAttr), outputDuration.value);
-    data.append(outputPersons.getAttribute(nameAttr), outputPersons.value);
 
     request(data, function(response) {
       console.log(response);
@@ -203,3 +196,60 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
   });
 })();
 
+
+/* days counter */
+var outputDays = document.getElementById("days-output");
+var minusDay = document.getElementById("btn-day-minus");
+var plusDay = document.getElementById("btn-day-plus");
+
+var outputPerson = document.getElementById("persons");
+var minusPerson = document.getElementById("btn-person-minus");
+var plusPerson = document.getElementById("btn-person-plus");
+
+var daySuffix = "дн";
+var personSuffix = "чел";
+
+var min = 0;
+var max = 999;
+
+(function() {
+
+  minusDay.addEventListener("click", function() {
+    changeNumber(outputDays, false, daySuffix);
+  });
+
+  plusDay.addEventListener("click", function() {
+    changeNumber(outputDays, true, daySuffix);
+  });
+})();
+
+(function() {
+
+  minusPerson.addEventListener("click", function() {
+    changeNumber(outputPerson, false, personSuffix);
+  });
+
+  plusPerson.addEventListener("click", function() {
+    changeNumber(outputPerson, true, personSuffix);
+  });
+})();
+
+function changeNumber(output, operation, suffix) {
+  var value = parseInt(output.value);
+
+  if (operation) {
+    if (max <= value) {
+      return;
+    }
+
+    value = value + 1;
+  } else {
+    if (min >= value) {
+      return;
+    }
+
+    value = value - 1;
+  }
+
+  output.value = value + " " + suffix;
+}

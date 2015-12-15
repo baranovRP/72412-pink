@@ -113,6 +113,10 @@
     padding-left: 21px;
   }
 
+  &__output-wrap {
+    display: inline-block;
+  }
+
   &__output {
     @include font-family-general($font-face-family);
 
@@ -125,6 +129,7 @@
     font-size: 18px;
     line-height: 30px;
     vertical-align: bottom;
+    text-align: center;
     color: $blue-very-dark;
 
     background-color: #ffffff;
