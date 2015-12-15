@@ -328,6 +328,30 @@
       border-bottom-color: $white;
     }
 
+    input:read-only.control-text__output--person {
+      background-color: $white;
+
+      &:hover {
+        border-color: $white;
+      }
+
+      &:focus {
+        border-color: $white;
+      }
+    }
+
+    input:read-only.control-text__output--days {
+      background-color: $white;
+
+      &:hover {
+        border-color: $grey-light;
+      }
+
+      &:focus {
+        border-color: $grey-light;
+      }
+    }
+
     &__label--bottom {
       margin-left: 19px;
       padding-left: 0;
