@@ -148,7 +148,7 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
 (function() {
 
-  if (!("FormData" in window) || !("FileReader" in window)) {
+  if (!("FormData" in window) || !("FileReader" in window) || !form) {
     return;
   }
 
@@ -189,16 +189,17 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
     xhr.send(data);
   }
+
+  buttonConfirm.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupSuccess.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
+    popupSuccess.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
+  });
+
+  buttonOk.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupFailure.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
+    popupFailure.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
+  });
 })();
 
-buttonConfirm.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupSuccess.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
-  popupSuccess.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
-});
-
-buttonOk.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupFailure.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
-  popupFailure.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
-});
