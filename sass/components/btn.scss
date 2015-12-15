@@ -19,6 +19,16 @@
 
     background-color: $white;
     border: 2px solid $grey-light;
+
+    &:hover {
+      border-color: $blue-very-dark;
+    }
+
+    &:active {
+      color: $white;
+
+      background-color: $blue-very-dark;
+    }
   }
 
   &--submit {
@@ -33,6 +43,16 @@
     border: 2px solid $lime-green;
   }
 
+  &--submit:disabled {
+    background-color: $grey-light;
+    border: 2px solid $grey-light;
+
+    &:hover {
+      background-color: $grey-light;
+      border: 2px solid $grey-light;
+    }
+  }
+
   &--ok,
   &--confirmation {
     margin: 0;
@@ -41,6 +61,19 @@
 
     background-color: $lime-green;
     border: 2px solid $lime-green;
+  }
+
+  &--ok,
+  &--confirmation,
+  &--submit {
+    &:hover {
+      background-color: $lime-green-dark;
+      border: 2px solid $lime-green-dark;
+    }
+
+    &:active {
+      color: $lime-green;
+    }
   }
 
   &--confirmation {

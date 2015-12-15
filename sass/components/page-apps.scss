@@ -10,12 +10,15 @@
 
 @media (min-width: $screen-tablet) {
   .page-apps {
-    width: 50%;
+    width: 322px;
     margin: 0;
     padding-top: 10px;
+
+    &--open {
+      margin: 0 10px;
+    }
   }
 }
-
 
 @media (min-width: $screen-desktop) {
   .page-apps {

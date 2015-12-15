@@ -1,16 +1,17 @@
 .traveler-item {
-  @include container;
-  @include clearfix;
-
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
   padding-top: 23px;
 
   border: 0;
 
   &__flex-wrap {
-    @include clearfix;
-
-    margin-right: 14px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 274px;
+    margin: 0;
+    padding: 0;
   }
 }
 

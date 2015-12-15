@@ -73,6 +73,14 @@
 
     border: 2px solid $grey-light;
     border-radius: 3px;
+
+    &:hover {
+      border-color: $blue-very-dark;
+    }
+
+    &:focus {
+      border-color: $pink-strong;
+    }
   }
 
   &__input::-webkit-input-placeholder {
@@ -126,6 +134,8 @@
   }
 
   &__output--person {
+    width: 155px;
+
     background-color: $grey-very-light;
   }
 
@@ -200,6 +210,35 @@
 
   &__btn--plus::after {
     transform: rotate(90deg);
+  }
+
+  &__btn--minus:hover,
+  &__btn--plus:hover {
+    border-color: $blue-very-dark;
+  }
+
+  &__btn--minus:active,
+  &__btn--plus:active {
+    color: $white;
+
+    background-color: $blue-very-dark;
+
+    &:before,
+    &:after {
+      background-color: $white;
+    }
+  }
+
+  input:read-only {
+    background-color: $grey-very-light;
+
+    &:hover {
+      border-color: $grey-light;
+    }
+
+    &:focus {
+      border-color: $grey-light;
+    }
   }
 }
 
@@ -330,6 +369,17 @@
 
       background-color: $white;
       border: none;
+
+      &:hover {
+        color: $pink-strong;
+        text-decoration: underline;
+      }
+
+      &:active {
+        text-decoration: none;
+
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -361,13 +411,9 @@
 
     &--calc &__label--bottom {
       margin: 0;
-      text-align: center;
       padding-bottom: 0;
-    }
 
-    //TODO ?? incorrect selector
-    &--calc&--travel {
-      margin: 0 44px;
+      text-align: center;
     }
 
     &--block {

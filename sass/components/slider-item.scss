@@ -136,41 +136,5 @@
     &__text span {
       @include hidden;
     }
-
-    &__text::before {
-      content: "";
-      position: absolute;
-      top: 32px;
-      left: 7px;
-
-      width: 30px;
-      height: 30px;
-
-      border-top: 0 solid transparent;
-      border-right: 2px solid $blue-very-dark;
-      border-bottom: 2px solid $blue-very-dark;
-      border-left: 0 solid transparent;
-      transform: rotate(135deg);
-      cursor: pointer;
-      opacity: 0.3;
-    }
-
-    &__text::after {
-      content: "";
-      position: absolute;
-      top: 32px;
-      right: 7px;
-
-      width: 30px;
-      height: 30px;
-
-      border-top: 0 solid transparent;
-      border-right: 2px solid $blue-very-dark;
-      border-bottom: 2px solid $blue-very-dark;
-      border-left: 0 solid transparent;
-      transform: rotate(-45deg);
-      cursor: pointer;
-      opacity: 0.3;
-    }
   }
 }

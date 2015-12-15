@@ -20,6 +20,14 @@
     background-repeat: no-repeat;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 50%;
+
+    &:hover{
+      border-color: $blue-very-dark;
+    }
+
+    &:active{
+      border-color: rgba(40, 54, 69, 0.1);
+    }
   }
 
   .icon-twitter,
@@ -31,6 +39,10 @@
 
     font-size: 21px;
     color: $pink-strong;
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 }
 
@@ -41,7 +53,7 @@
     padding-top: 12px;
 
     &--index {
-      padding-left: 6px;
+      margin-left: -5px;
     }
 
     &--flex-block {
@@ -56,6 +68,14 @@
     }
     &__item:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .social-links {
+    &--index {
+      margin-left: 3px;
     }
   }
 }

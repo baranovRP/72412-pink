@@ -3,11 +3,12 @@
   min-height: 128px;
 
   &--index {
+    padding-top: 9px;
     padding-bottom: 245px;
   }
 
   &--competition {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   &__title {
@@ -38,7 +39,7 @@
       width: 50%;
       min-height: 126px;
       margin-bottom: 10px;
-      padding-top: 104px;
+      padding-top: 95px;
       padding-bottom: 0;
     }
 
@@ -57,7 +58,7 @@
 
     &--competition {
       margin-bottom: 80px;
-      padding-top: 72px;
+      padding-top: 62px;
     }
 
     &--competition &__title {
@@ -76,8 +77,8 @@
     width: 100%;
 
     &--index {
-      margin-bottom: 40px;
-      padding-top: 140px;
+      margin-bottom: 39px;
+      padding-top: 110px;
     }
 
     &--index &__title {
@@ -95,7 +96,11 @@
     }
 
     &--competition {
-      padding-top: 95px;
+      padding-top: 64px;
+    }
+
+    .page-rubric.page-rubric--competition:first-line {
+      letter-spacing: 1px;
     }
 
     &--competition &__title {

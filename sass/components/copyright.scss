@@ -26,6 +26,15 @@
     vertical-align: middle;
 
     fill: $pink-strong;
+
+    &:hover{
+      fill: $blue-very-dark;
+
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 }
 
