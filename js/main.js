@@ -201,7 +201,7 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
 
 (function() {
-  if (!document.querySelector(".registration-form__travelers")){
+  if (!document.querySelector(".registration-form__travel")){
     return;
   }
 
@@ -214,10 +214,12 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
   var max = 999;
 
   minusDay.addEventListener("click", function() {
+    event.preventDefault();
     changeNumber(outputDays, false, daySuffix);
   });
 
   plusDay.addEventListener("click", function() {
+    event.preventDefault();
     changeNumber(outputDays, true, daySuffix);
   });
 
@@ -267,6 +269,7 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
   minusPerson.addEventListener("click", function() {
     event.preventDefault();
+    removeTraveler();
     changeNumber(outputPerson, false, personSuffix);
   });
 
@@ -281,6 +284,10 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
     personWrap.innerHTML = html;
 
     area.appendChild(personWrap);
+  }
+
+  function removeTraveler() {
+    area.removeChild(document.querySelector(".registration-form__wrap--traveler-item:last-child"));
   }
 
   function changeNumber(output, operation, suffix) {
