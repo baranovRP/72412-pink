@@ -201,6 +201,9 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
 
 (function() {
+  if (!document.querySelector(".registration-form__travelers")){
+    return;
+  }
 
   var outputDays = document.getElementById("days-output");
   var minusDay = document.getElementById("btn-day-minus");
@@ -242,6 +245,10 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
 
 (function(){
+   if (!document.querySelector(".registration-form__travelers")){
+    return;
+  }
+
   var area = document.querySelector(".registration-form__travelers");
   var outputPerson = document.getElementById("persons");
   var minusPerson = document.getElementById("btn-person-minus");
@@ -266,9 +273,14 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
   function addTraveler() {
     var template = document.getElementById("traveler-item-template").innerHTML;
     var nextTraveler = area.querySelectorAll(".registration-form__travelers .traveler-item").length + 1;
-
     var html = template.replace("{{index-number}}", nextTraveler.toString());
-    area.innerHTML = area.innerHTML + html;
+
+    var personWrap = document.createElement("div");
+    personWrap.classList.add("registration-form__wrap");
+    personWrap.classList.add("registration-form__wrap--traveler-item");
+    personWrap.innerHTML = html;
+
+    area.appendChild(personWrap);
   }
 
   function changeNumber(output, operation, suffix) {
