@@ -113,6 +113,10 @@
     padding-left: 21px;
   }
 
+  &__output-wrap {
+    display: inline-block;
+  }
+
   &__output {
     @include font-family-general($font-face-family);
 
@@ -125,6 +129,7 @@
     font-size: 18px;
     line-height: 30px;
     vertical-align: bottom;
+    text-align: center;
     color: $blue-very-dark;
 
     background-color: #ffffff;
@@ -321,6 +326,30 @@
       background-color: $white;
       border-top-color: $white;
       border-bottom-color: $white;
+    }
+
+    input:read-only.control-text__output--person {
+      background-color: $white;
+
+      &:hover {
+        border-color: $white;
+      }
+
+      &:focus {
+        border-color: $white;
+      }
+    }
+
+    input:read-only.control-text__output--days {
+      background-color: $white;
+
+      &:hover {
+        border-color: $grey-light;
+      }
+
+      &:focus {
+        border-color: $grey-light;
+      }
     }
 
     &__label--bottom {

@@ -135,20 +135,15 @@ function isDesktop(size) {
 
 
 /* submit form */
-var firstEl = 0;
-var nameAttr = "name";
-
 var form = document.querySelector("#form-registration");
 var popupFailure = document.querySelector("." + MODAL_CONTENT_BL + FAILURE_STATE);
 var popupSuccess = document.querySelector("." + MODAL_CONTENT_BL);
 var buttonOk = document.querySelector("." + BTN_BL + OK_STATE);
 var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
-var outputDuration = document.getElementsByName("duration-days-output")[firstEl];
-var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
 (function() {
 
-  if (!("FormData" in window) || !("FileReader" in window)) {
+  if (!("FormData" in window) || !("FileReader" in window) || !form) {
     return;
   }
 
@@ -156,8 +151,6 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
     event.preventDefault();
 
     var data = new FormData(form);
-    data.append(outputDuration.getAttribute(nameAttr), outputDuration.value);
-    data.append(outputPersons.getAttribute(nameAttr), outputPersons.value);
 
     request(data, function(response) {
       console.log(response);
@@ -189,16 +182,131 @@ var outputPersons = document.getElementsByName("persons-output")[firstEl];
 
     xhr.send(data);
   }
+
+  buttonConfirm.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupSuccess.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
+    popupSuccess.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
+  });
+
+  buttonOk.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupFailure.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
+    popupFailure.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
+  });
 })();
 
-buttonConfirm.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupSuccess.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
-  popupSuccess.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
-});
 
-buttonOk.addEventListener("click", function(event) {
-  event.preventDefault();
-  popupFailure.classList.remove(MODAL_CONTENT_BL + SHOW_STATE);
-  popupFailure.classList.add(MODAL_CONTENT_BL + HIDDEN_STATE);
-});
+/* days counter */
+
+
+(function() {
+  if (!document.querySelector(".registration-form__travel")){
+    return;
+  }
+
+  var outputDays = document.getElementById("days-output");
+  var minusDay = document.getElementById("btn-day-minus");
+  var plusDay = document.getElementById("btn-day-plus");
+
+  var daySuffix = "дн";
+  var min = 0;
+  var max = 999;
+
+  minusDay.addEventListener("click", function(event) {
+    event.preventDefault();
+    changeNumber(outputDays, false, daySuffix);
+  });
+
+  plusDay.addEventListener("click", function(event) {
+    event.preventDefault();
+    changeNumber(outputDays, true, daySuffix);
+  });
+
+  function changeNumber(output, operation, suffix) {
+    var value = parseInt(output.value);
+
+    if (operation) {
+      if (max <= value) {
+        return;
+      }
+
+      value = value + 1;
+    } else {
+      if (min >= value) {
+        return;
+      }
+
+      value = value - 1;
+    }
+
+    output.value = value + " " + suffix;
+  }
+})();
+
+
+
+(function(){
+  if (!document.querySelector(".registration-form__travelers")){
+    return;
+  }
+
+  var area = document.querySelector(".registration-form__travelers");
+  var outputPerson = document.getElementById("persons");
+  var minusPerson = document.getElementById("btn-person-minus");
+  var plusPerson = document.getElementById("btn-person-plus");
+
+  var personSuffix = "чел";
+
+  var min = 0;
+  var max = 999;
+
+  plusPerson.addEventListener("click", function(event) {
+    event.preventDefault();
+    addTraveler();
+    changeNumber(outputPerson, true, personSuffix);
+  });
+
+  minusPerson.addEventListener("click", function(event) {
+    event.preventDefault();
+    removeTraveler();
+    changeNumber(outputPerson, false, personSuffix);
+  });
+
+  function addTraveler() {
+    var template = document.getElementById("traveler-item-template").innerHTML;
+    var nextTraveler = area.querySelectorAll(".registration-form__travelers .traveler-item").length + 1;
+    var html = template.replace("{{index-number}}", nextTraveler.toString());
+
+    var personWrap = document.createElement("div");
+    personWrap.classList.add("registration-form__wrap");
+    personWrap.classList.add("registration-form__wrap--traveler-item");
+    personWrap.innerHTML = html;
+
+    area.appendChild(personWrap);
+  }
+
+  function removeTraveler() {
+    area.removeChild(document.querySelector(".registration-form__wrap--traveler-item:last-child"));
+  }
+
+  function changeNumber(output, operation, suffix) {
+    var value = parseInt(output.value);
+
+    if (operation) {
+      if (max <= value) {
+        return;
+      }
+
+      value = value + 1;
+    } else {
+      if (min >= value) {
+        return;
+      }
+
+      value = value - 1;
+    }
+
+    output.value = value + " " + suffix;
+  }
+})();

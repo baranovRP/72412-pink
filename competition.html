@@ -225,7 +225,7 @@
           <div class="registration-form__flex-block">
             <div class="registration-form__travel-flex">
               <div class="control-text  control-text--travel">
-                <input class="control-text__input  control-text__input--top" required type="text" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
+                <input class="control-text__input  control-text__input--top" required type="date" name="enter-start-date" id="text-start-date" placeholder="1 апреля 2015">
                 <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-start-date">
                   Дата выезда
                 </label>
@@ -233,18 +233,18 @@
             </div>
             <div class="registration-form__travel-flex">
               <fieldset class="control-text  control-text--calc">
-                <button class="control-text__btn  control-text__btn--minus" id="btn-day-minus" title="minus">-</button>
-                <div class="control-text__output">
-                  <output name="duration-days-output">10 дней</output>
+                <button class="control-text__btn  control-text__btn--minus" id="btn-day-minus" type="button" title="minus">-</button>
+                <div class="control-text__output-wrap">
+                  <input class="control-text__output  control-text__output--days" readonly name="duration-days-output" value="10 дней" id="days-output">
                 </div>
-                <button class="control-text__btn  control-text__btn--plus" id="btn-day-plus" title="plus">+</button>
+                <button class="control-text__btn  control-text__btn--plus" id="btn-day-plus" type="button" title="plus">+</button>
                 <label class="control-text__label  control-text__label--bottom  control-text__label--red">
                   Продолжительность</label>
               </fieldset>
             </div>
             <div class="registration-form__travel-flex">
               <div class="control-text  control-text--travel">
-                <input class="control-text__input  control-text__input--top" readonly type="text" name="enter-end-date" id="text-end-date" placeholder="1 апреля 2015">
+                <input class="control-text__input  control-text__input--top" readonly type="text" name="enter-end-date" id="text-end-date" value="1 апреля 2015">
                 <label class="control-text__label  control-text__label--bottom  control-text__label--red" for="text-end-date">
                   Дата возвращения
                 </label>
@@ -259,11 +259,11 @@
           <legend class="registration-form__title">Количество попутчиков *</legend>
           <div class="registration-form__wrap  registration-form__wrap--calc">
             <fieldset class="control-text  control-text--calc">
-              <button class="control-text__btn  control-text__btn--minus" id="btn-person-minus" title="minus">-</button>
-              <div class="control-text__output  control-text__output--person">
-                <output name="persons-output">2 чел</output>
+              <button class="control-text__btn  control-text__btn--minus" id="btn-person-minus" type="button" title="minus">-</button>
+              <div class="control-text__output-wrap">
+                <input class="control-text__output  control-text__output--person" readonly name="persons-output" value="2 чел" id="persons">
               </div>
-              <button class="control-text__btn  control-text__btn--plus" id="btn-person-plus" title="plus">+</button>
+              <button class="control-text__btn  control-text__btn--plus" id="btn-person-plus" type="button" title="plus">+</button>
             </fieldset>
           </div>
 
@@ -285,7 +285,7 @@
                     <label class="control-text__label" for="text-name-1">Имя: *</label>
                     <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-1" placeholder="Введите ваше имя">
                   </div>
-                  <button class="control-text__btn--text" id="btn-person-1-plus" title="delete">Удалить</button>
+                  <button class="control-text__btn--text" id="btn-person-1-plus" type="button" title="delete">Удалить</button>
 
                   <div class="control-text  control-text--short  control-text--nickname">
                     <label class="control-text__label" for="text-nickname-1">Прозвище:</label>
@@ -314,7 +314,7 @@
                     <label class="control-text__label" for="text-name-2">Имя: *</label>
                     <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-2" placeholder="Введите ваше имя">
                   </div>
-                  <button class="control-text__btn--text" id="btn-person-2-plus" title="delete">Удалить</button>
+                  <button class="control-text__btn--text" id="btn-person-2-plus" type="button" title="delete">Удалить</button>
 
                   <div class="control-text  control-text--short">
                     <label class="control-text__label" for="text-nickname-2">Прозвище:</label>
@@ -373,46 +373,46 @@
           <legend class="registration-form__title">
             Ваши фотографии из поездки *
           </legend>
-          <button class="btn  btn--upload" id="btn-upload">Загрузить фото</button>
+          <button class="btn  btn--upload" type="button" id="btn-upload">Загрузить фото</button>
 
           <div class="travels-photo-gallery">
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-1.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-2.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-3.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-4.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-5.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-6.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-7.JPG</span>
             </div>
             <div class="gallery-item">
-              <button class="gallery-item__cross-btn">Закрыть</button>
+              <button class="gallery-item__cross-btn" type="button">Закрыть</button>
               <img src="img/photo-upload.png" alt="">
               <span class="gallery-item__text">IMG-8.JPG</span>
             </div>
@@ -586,7 +586,7 @@
   </section>
   <div class="modal-content__wrap  modal-content__wrap--grey">
     <div class="modal-content__container">
-      <button class="btn btn--confirmation">Закрыть окно</button>
+      <button class="btn btn--confirmation" type="button">Закрыть окно</button>
     </div>
   </div>
 </div>
@@ -601,11 +601,45 @@
   </section>
   <div class="modal-content__wrap">
     <div class="modal-content__container">
-      <button class="btn btn--ok">ОК</button>
+      <button class="btn btn--ok" type="button">ОК</button>
     </div>
   </div>
 </div>
 
+
+<!-- traveler-item  template-->
+<script id="traveler-item-template" type="text/html">
+
+    <fieldset class="traveler-item">
+      <div class="traveler-item__flex-wrap">
+        <div class="traveler-item__block-wrap">
+          <div class="control-text  control-text--block">
+            <label class="control-text__label">№</label>
+
+            <div class="control-text__output control-text__output--short">
+              <output name="mate-output">{{index-number}}</output>
+            </div>
+          </div>
+        </div>
+
+        <div class="traveler-item__block-wrap">
+          <div class="control-text  control-text--short">
+            <label class="control-text__label" for="text-name-{{index-number}}">Имя: *</label>
+            <input class="control-text__input  control-text__input--short" required type="text" name="enter-name" id="text-name-{{index-number}}" placeholder="Введите ваше имя">
+          </div>
+          <button class="control-text__btn--text" id="btn-person-{{index-number}}-plus" type="button" title="delete">Удалить</button>
+
+          <div class="control-text  control-text--short">
+            <label class="control-text__label" for="text-nickname-{{index-number}}">Прозвище:</label>
+            <input class="control-text__input  control-text__input--short" type="text" name="enter-nickname" id="text-nickname-{{index-number}}" placeholder="Ну как же без этого!">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+</script>
+
+<!-- scripts -->
 <script src="js/main.js"></script>
 </body>
 </html>
