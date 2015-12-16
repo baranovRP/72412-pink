@@ -245,7 +245,7 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
 
 
 (function(){
-   if (!document.querySelector(".registration-form__travelers")){
+  if (!document.querySelector(".registration-form__travelers")){
     return;
   }
 
