@@ -213,12 +213,12 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
   var min = 0;
   var max = 999;
 
-  minusDay.addEventListener("click", function() {
+  minusDay.addEventListener("click", function(event) {
     event.preventDefault();
     changeNumber(outputDays, false, daySuffix);
   });
 
-  plusDay.addEventListener("click", function() {
+  plusDay.addEventListener("click", function(event) {
     event.preventDefault();
     changeNumber(outputDays, true, daySuffix);
   });
@@ -261,13 +261,13 @@ var buttonConfirm = document.querySelector("." + BTN_BL + CONFIRM_STATE);
   var min = 0;
   var max = 999;
 
-  plusPerson.addEventListener("click", function() {
+  plusPerson.addEventListener("click", function(event) {
     event.preventDefault();
     addTraveler();
     changeNumber(outputPerson, true, personSuffix);
   });
 
-  minusPerson.addEventListener("click", function() {
+  minusPerson.addEventListener("click", function(event) {
     event.preventDefault();
     removeTraveler();
     changeNumber(outputPerson, false, personSuffix);
