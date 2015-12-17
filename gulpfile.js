@@ -36,7 +36,7 @@ var paths = {
 
 /* [DEV] */
 gulp.task("webserver", function() {
-  gulp.src("./")
+  gulp.src("source/")
     .pipe(webserver({
       fallback: "index.html",
       livereload: true,
