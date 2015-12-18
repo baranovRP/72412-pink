@@ -467,7 +467,7 @@
       box-sizing: border-box;
       width: 940px;
       min-height: 105px;
-      margin-top: 18px;
+      margin-top: 16px;
       padding-bottom: 0;
 
       border: 2px solid #e5e5e5;
@@ -519,7 +519,7 @@
 
     &__travelers &__wrap--calc {
       padding-top: 15px;
-      padding-bottom: 42px;
+      padding-bottom: 40px;
       padding-left: 26px;
     }
 
@@ -556,6 +556,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
+      margin-top: 8px;
       margin-bottom: 28px;
       margin-left: 58px;
       padding: 0;

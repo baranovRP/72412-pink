@@ -431,6 +431,10 @@
       margin-left: 1px;
     }
 
+    &--short &__label{
+      padding-left: 22px;
+    }
+
     &__output {
       box-sizing: border-box;
       width: 126px;
