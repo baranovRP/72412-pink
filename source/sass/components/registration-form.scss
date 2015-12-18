@@ -181,6 +181,11 @@
 
 @media (min-width: $screen-phone) {
   .registration-form {
+    &__title {
+      display: block;
+
+      text-align: center;
+    }
     &__intro span {
       @include hidden;
     }
@@ -243,9 +248,12 @@
     }
 
     &__apps &__title {
+      margin-left: 115px;
       padding-top: 21px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travel {
@@ -260,9 +268,12 @@
     }
 
     &__travel &__title {
+      margin-left: 169px;
       padding-top: 33px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travel &__flex-block {
@@ -291,9 +302,12 @@
     }
 
     &__travelers &__title {
+      margin-left: 177px;
       padding-top: 12px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travelers &__wrap--calc {
@@ -324,9 +338,12 @@
     }
 
     &__achievements &__title {
+      margin-left: 94px;
       padding-top: 23px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__achievements &__flex-block {
@@ -351,9 +368,12 @@
     }
 
     &__photos &__title {
+      margin-left: 105px;
       padding-top: 30px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__footer {
@@ -421,6 +441,12 @@
       border: 2px solid #e5e5e5;
     }
 
+    &__apps &__title {
+      margin-left: 275px;
+
+      text-align: left;
+    }
+
     &__apps &__flex-block {
       display: flex;
       flex-direction: row;
@@ -441,7 +467,10 @@
     }
 
     &__travel &__title {
+      margin-left: 329px;
       padding-top: 33px;
+
+      text-align: left;
     }
 
     &__travel &__flex-block {
@@ -475,7 +504,10 @@
     }
 
     &__travelers &__title {
+      margin-left: 337px;
       padding-top: 12px;
+
+      text-align: left;
     }
 
     &__travelers &__wrap--calc {
@@ -506,7 +538,10 @@
     }
 
     &__achievements &__title {
+      margin-left: 254px;
       padding-top: 24px;
+
+      text-align: left;
     }
 
     &__achievements &__flex-block {
@@ -532,7 +567,10 @@
     }
 
     &__photos &__title {
+      margin-left: 267px;
       padding-top: 30px;
+
+      text-align: left;
     }
 
     &__footer {
