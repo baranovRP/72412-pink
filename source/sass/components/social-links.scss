@@ -1,5 +1,6 @@
 .social-links {
   margin: 29px 0;
+  margin-top: 23px;
   margin-bottom: 37px;
   margin-left: 55px;
 
@@ -21,11 +22,11 @@
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 50%;
 
-    &:hover{
+    &:hover {
       border-color: $blue-very-dark;
     }
 
-    &:active{
+    &:active {
       border-color: rgba(40, 54, 69, 0.1);
     }
   }
@@ -40,7 +41,7 @@
     font-size: 21px;
     color: $pink-strong;
 
-    &:active{
+    &:active {
       opacity: 0.3;
     }
   }
