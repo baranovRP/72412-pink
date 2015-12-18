@@ -140,7 +140,7 @@
     text-align: left;
   }
 
-  &__achievements  &__title {
+  &__achievements &__title {
     padding-top: 46px;
     padding-bottom: 22px;
 
@@ -179,20 +179,25 @@
   }
 }
 
-@media (min-width: $screen-phone)  and (max-width: $screen-tablet) {
+@media (min-width: $screen-phone) {
   .registration-form {
-    &__title {
-      display: block;
-      width: 100%;
-
-      text-align: center;
-    }
     &__intro span {
       @include hidden;
     }
 
     &__footnote span {
       @include hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+  .registration-form {
+    &__title {
+      display: block;
+      width: 100%;
+
+      text-align: center;
     }
   }
 }
@@ -263,7 +268,7 @@
       min-height: 105px;
       margin-top: 17px;
       margin-bottom: 38px;
-      padding-bottom: 5px;
+      padding-bottom: 0;
 
       border: 2px solid #e5e5e5;
     }
@@ -283,7 +288,6 @@
       flex-wrap: wrap;
       align-items: flex-start;
       margin-top: -7px;
-      padding-top: 2px;
       padding-left: 38px;
     }
 
@@ -298,6 +302,7 @@
       min-height: 105px;
       margin-top: 19px;
       padding-bottom: 10px;
+      padding-left: 8px;
 
       border: 2px solid #e5e5e5;
     }
@@ -316,6 +321,7 @@
       box-sizing: border-box;
       width: 600px;
       margin-top: 15px;
+      margin-bottom: 30px;
       padding-left: 50px;
     }
 
