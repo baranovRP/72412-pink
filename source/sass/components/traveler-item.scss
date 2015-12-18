@@ -1,7 +1,8 @@
 .traveler-item {
-  width: 280px;
+  box-sizing: border-box;
+  width: 300px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   padding-top: 23px;
 
   border: 0;
@@ -9,7 +10,6 @@
   &__flex-wrap {
     display: flex;
     flex-direction: row;
-    width: 274px;
     margin: 0;
     padding: 0;
   }
@@ -35,7 +35,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 420px;
+      width: 417px;
       margin-left: 20px;
     }
   }

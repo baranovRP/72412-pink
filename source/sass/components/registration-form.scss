@@ -124,9 +124,6 @@
   }
 
   &__travelers &__wrap--calc {
-    display: flex;
-    box-sizing: border-box;
-    width: 280px;
     margin-bottom: 29px;
   }
 
@@ -480,12 +477,9 @@
     }
 
     &__travelers &__wrap--calc {
-      display: flex;
-      box-sizing: border-box;
-      width: 301px;
       padding-top: 15px;
       padding-bottom: 42px;
-      padding-left: 50px;
+      padding-left: 26px;
     }
 
     &__travelers &__wrap--traveler-item {

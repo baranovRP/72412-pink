@@ -2,6 +2,8 @@
   @include font-family-general($font-face-family);
 
   display: inline-block;
+  box-sizing: border-box;
+  height: 63px;
   padding: 14px 55px;
 
   font-weight: 700;
@@ -11,7 +13,7 @@
 
   border-radius: 3px;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 
@@ -96,11 +98,14 @@
 @media (min-width: $screen-tablet) {
   .btn {
     &--upload {
-      width: 100%;
+      box-sizing: border-box;
+      width: 500px;
       margin-bottom: 43px;
     }
 
     &--submit {
+      box-sizing: border-box;
+      width: 300px;
       margin: 0;
       padding: 14px 56px;
     }
