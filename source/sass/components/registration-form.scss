@@ -207,6 +207,8 @@
 
     &__intro span {
       display: inline-block;
+
+      vertical-align: middle;
     }
 
     &__text {
@@ -558,6 +560,8 @@
 
     &__footnote span {
       display: inline-block;
+
+      vertical-align: middle;
     }
   }
 }
