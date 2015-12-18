@@ -111,8 +111,8 @@
 
   &__travelers {
     box-sizing: border-box;
-    width: 300px;
     min-height: 149px;
+    padding: 0;
     padding-bottom: 29px;
   }
 
@@ -179,7 +179,7 @@
   }
 }
 
-@media (min-width: $screen-phone) {
+@media (min-width: $screen-phone)  and (max-width: $screen-tablet) {
   .registration-form {
     &__title {
       display: block;
