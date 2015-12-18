@@ -80,6 +80,7 @@
 
     &:focus {
       border-color: $pink-strong;
+      outline: none;
     }
   }
 
@@ -220,6 +221,11 @@
   &__btn--minus:hover,
   &__btn--plus:hover {
     border-color: $blue-very-dark;
+  }
+
+  &__btn--minus:focus,
+  &__btn--plus:focus {
+    outline: none;
   }
 
   &__btn--minus:active,
