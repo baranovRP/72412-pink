@@ -21,18 +21,16 @@
   &__img {
     display: inline-block;
     width: 27px;
+    height: 34px;
     padding-left: 11px;
 
     vertical-align: middle;
 
-    fill: $pink-strong;
-
-    &:hover{
+    &:hover {
       fill: $blue-very-dark;
-
     }
 
-    &:active{
+    &:active {
       opacity: 0.3;
     }
   }
@@ -94,10 +92,6 @@
       line-height: 18px;
       color: #283645;
       text-decoration: none;
-    }
-
-    &__img {
-      padding-left: 9px;
     }
   }
 }
