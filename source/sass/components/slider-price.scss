@@ -37,21 +37,21 @@
     @include slider-controls--unchecked;
   }
 
-  #btn-4:checked ~ &__controls label[for="btn-4"],
-  #btn-5:checked ~ &__controls label[for="btn-5"],
-  #btn-6:checked ~ &__controls label[for="btn-6"] {
+  &__input--btn-4:checked + &__label--btn-4,
+  &__input--btn-5:checked + &__label--btn-5,
+  &__input--btn-6:checked + &__label--btn-6 {
     @include slider-control-checked;
   }
 
-  #btn-4:checked ~ &__inner &__wrap {
+  &__input--btn-4:checked ~ &__inner &__wrap {
     transform: translate(0);
   }
 
-  #btn-5:checked ~ &__inner &__wrap {
+  &__input--btn-5:checked ~ &__inner &__wrap {
     transform: translate(-276px);
   }
 
-  #btn-6:checked ~ &__inner &__wrap {
+  &__input--btn-6:checked ~ &__inner &__wrap {
     transform: translate(-552px);
   }
 }
@@ -85,9 +85,9 @@
       @include hidden;
     }
 
-    #btn-4:checked ~ &__inner &__wrap,
-    #btn-5:checked ~ &__inner &__wrap,
-    #btn-6:checked ~ &__inner &__wrap {
+    &__input--btn-4:checked ~ &__inner &__wrap,
+    &__input--btn-5:checked ~ &__inner &__wrap,
+    &__input--btn-6:checked ~ &__inner &__wrap {
       transform: translate(0);
     }
   }
@@ -115,9 +115,9 @@
       @include hidden;
     }
 
-    #btn-4:checked ~ &__inner &__wrap,
-    #btn-5:checked ~ &__inner &__wrap,
-    #btn-6:checked ~ &__inner &__wrap {
+    &__input--btn-4:checked ~ &__inner &__wrap,
+    &__input--btn-5:checked ~ &__inner &__wrap,
+    &__input--btn-6:checked ~ &__inner &__wrap {
       transform: translate(0);
     }
   }
