@@ -33,21 +33,21 @@
     @include slider-controls--unchecked;
   }
 
-  #btn-1:checked ~ &__controls label[for="btn-1"],
-  #btn-2:checked ~ &__controls label[for="btn-2"],
-  #btn-3:checked ~ &__controls label[for="btn-3"] {
+  &__input--btn-1:checked + &__label--btn-1,
+  &__input--btn-2:checked + &__label--btn-2,
+  &__input--btn-3:checked + &__label--btn-3 {
     @include slider-control-checked;
   }
 
-  #btn-1:checked ~ &__inner &__wrap {
+  &__input--btn-1:checked ~ &__inner &__wrap  {
     transform: translate(0);
   }
 
-  #btn-2:checked ~ &__inner &__wrap {
+  &__input--btn-2:checked ~ &__inner &__wrap {
     transform: translate(-300px);
   }
 
-  #btn-3:checked ~ &__inner &__wrap {
+  &__input--btn-3:checked ~ &__inner &__wrap {
     transform: translate(-600px);
   }
 
@@ -73,15 +73,15 @@
       margin-left: -38px;
     }
 
-    #btn-1:checked ~ &__inner &__wrap {
+    &__input--btn-1:checked ~ &__inner &__wrap {
       transform: translate(0);
     }
 
-    #btn-2:checked ~ &__inner &__wrap {
+    &__input--btn-2:checked ~ &__inner &__wrap {
       transform: translate(-640px);
     }
 
-    #btn-3:checked ~ &__inner &__wrap {
+    &__input--btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1280px);
     }
   }
@@ -103,15 +103,15 @@
       @include hidden;
     }
 
-    #btn-1:checked ~ &__inner &__wrap {
+    &__input--btn-1:checked ~ &__inner &__wrap {
       transform: translate(0px);
     }
 
-    #btn-2:checked ~ &__inner &__wrap {
+    &__input--btn-2:checked ~ &__inner &__wrap {
       transform: translate(-960px);
     }
 
-    #btn-3:checked ~ &__inner &__wrap {
+    &__input--btn-3:checked ~ &__inner &__wrap {
       transform: translate(-1920px);
     }
 
