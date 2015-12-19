@@ -11,14 +11,13 @@
 
   &--block {
     float: left;
-    width: 59px;
 
     text-align: center;
   }
 
   &--short {
     float: right;
-    width: 215px;
+    width: 217px;
   }
 
   &__label {
@@ -53,13 +52,15 @@
   }
 
   &--short > &__label {
-    padding-left: 23px;
+    padding-left: 20px;
   }
 
   &__input {
     @include font-family-general($font-face-family);
 
-    width: 252px;
+    box-sizing: border-box;
+    width: 280px;
+    height: 63px;
     margin-bottom: 18px;
     padding-top: 15px;
     padding-right: 5px;
@@ -80,6 +81,7 @@
 
     &:focus {
       border-color: $pink-strong;
+      outline: none;
     }
   }
 
@@ -106,22 +108,28 @@
   }
 
   &__input--short {
-    width: 185px;
-    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 217px;
+    height: 63px;
+    margin-bottom: 17px;
     padding: 15px 0;
     padding-right: 9px;
-    padding-left: 21px;
+    padding-left: 18px;
   }
 
   &__output-wrap {
     display: inline-block;
+
+    vertical-align: middle;
   }
 
   &__output {
     @include font-family-general($font-face-family);
 
     display: inline-block;
-    width: 157px;
+    box-sizing: border-box;
+    width: 156px;
+    height: 63px;
     margin-top: 13px;
     padding: 14px 0;
 
@@ -138,14 +146,8 @@
     border-left: none;
   }
 
-  &__output--person {
-    width: 155px;
-
-    background-color: $grey-very-light;
-  }
-
   &__output--short {
-    width: 59px;
+    width: 63px;
     margin: 0;
     padding: 15px 0;
 
@@ -160,6 +162,8 @@
     position: relative;
 
     display: inline-block;
+    width: 63px;
+    height: 63px;
     padding: 14px 25px;
 
     font-weight: 400;
@@ -222,6 +226,11 @@
     border-color: $blue-very-dark;
   }
 
+  &__btn--minus:focus,
+  &__btn--plus:focus {
+    outline: none;
+  }
+
   &__btn--minus:active,
   &__btn--plus:active {
     color: $white;
@@ -261,7 +270,6 @@
 
     &--short {
       width: 300px;
-      margin-left: 4px;
       padding: 0;
     }
 
@@ -385,7 +393,7 @@
 
       display: flex;
       align-items: center;
-      width: 64px;
+      width: 63px;
       margin: 0;
       padding: 0;
       padding-top: 20px;
@@ -421,6 +429,10 @@
 
     &--short {
       margin-left: 1px;
+    }
+
+    &--short &__label{
+      padding-left: 22px;
     }
 
     &__output {

@@ -1,4 +1,6 @@
 .pink-pic {
+  display: block;
+
   &:hover {
     fill: $pink-strong;
   }
@@ -9,6 +11,7 @@
 
   &--header {
     width: 74px;
+    height: 23px;
 
     fill: $white;
 
@@ -19,6 +22,7 @@
 
   &--footer {
     width: 147px;
+    height: 40px;
 
     fill: $blue-very-dark;
 
@@ -51,6 +55,7 @@
     &--header &__tablet {
       display: block;
       width: 147px;
+      height: 40px;
     }
   }
 }

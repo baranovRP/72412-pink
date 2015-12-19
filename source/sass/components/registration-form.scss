@@ -90,7 +90,7 @@
     text-align: left;
   }
 
-  &__apps > &__title {
+  &__apps &__title {
     padding-top: 36px;
     padding-bottom: 20px;
 
@@ -102,7 +102,7 @@
     padding-bottom: 38px;
   }
 
-  &__travel > &__title {
+  &__travel &__title {
     padding-top: 43px;
     padding-bottom: 35px;
 
@@ -111,12 +111,12 @@
 
   &__travelers {
     box-sizing: border-box;
-    width: 300px;
     min-height: 149px;
+    padding: 0;
     padding-bottom: 29px;
   }
 
-  &__travelers > &__title {
+  &__travelers &__title {
     padding-top: 30px;
     padding-bottom: 14px;
 
@@ -124,10 +124,7 @@
   }
 
   &__travelers &__wrap--calc {
-    display: flex;
-    box-sizing: border-box;
-    width: 280px;
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
 
   &__wrap--traveler-item:nth-of-type(2) .traveler-item__flex-wrap {
@@ -143,9 +140,9 @@
     text-align: left;
   }
 
-  &__achievements > &__title {
+  &__achievements &__title {
     padding-top: 46px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 
     text-align: center;
   }
@@ -159,7 +156,7 @@
     text-align: center;
   }
 
-  &__photos > &__title {
+  &__photos &__title {
     padding-top: 30px;
     padding-bottom: 28px;
 
@@ -194,6 +191,17 @@
   }
 }
 
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+  .registration-form {
+    &__title {
+      display: block;
+      width: 100%;
+
+      text-align: center;
+    }
+  }
+}
+
 @media (min-width: $screen-tablet) {
   .registration-form {
     &__wrap--apps,
@@ -210,6 +218,8 @@
 
     &__intro span {
       display: inline-block;
+
+      vertical-align: top;
     }
 
     &__text {
@@ -244,9 +254,12 @@
     }
 
     &__apps &__title {
+      margin-left: 115px;
       padding-top: 21px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travel {
@@ -255,15 +268,18 @@
       min-height: 105px;
       margin-top: 17px;
       margin-bottom: 38px;
-      padding-bottom: 5px;
+      padding-bottom: 0;
 
       border: 2px solid #e5e5e5;
     }
 
     &__travel &__title {
+      margin-left: 169px;
       padding-top: 33px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travel &__flex-block {
@@ -272,7 +288,6 @@
       flex-wrap: wrap;
       align-items: flex-start;
       margin-top: -7px;
-      padding-top: 2px;
       padding-left: 38px;
     }
 
@@ -287,14 +302,18 @@
       min-height: 105px;
       margin-top: 19px;
       padding-bottom: 10px;
+      padding-left: 8px;
 
       border: 2px solid #e5e5e5;
     }
 
     &__travelers &__title {
+      margin-left: 177px;
       padding-top: 12px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__travelers &__wrap--calc {
@@ -302,6 +321,7 @@
       box-sizing: border-box;
       width: 600px;
       margin-top: 15px;
+      margin-bottom: 30px;
       padding-left: 50px;
     }
 
@@ -325,9 +345,12 @@
     }
 
     &__achievements &__title {
+      margin-left: 94px;
       padding-top: 23px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__achievements &__flex-block {
@@ -352,9 +375,12 @@
     }
 
     &__photos &__title {
+      margin-left: 105px;
       padding-top: 30px;
       padding-right: 20px;
       padding-left: 20px;
+
+      text-align: left;
     }
 
     &__footer {
@@ -422,6 +448,12 @@
       border: 2px solid #e5e5e5;
     }
 
+    &__apps &__title {
+      margin-left: 275px;
+
+      text-align: left;
+    }
+
     &__apps &__flex-block {
       display: flex;
       flex-direction: row;
@@ -435,14 +467,17 @@
       box-sizing: border-box;
       width: 940px;
       min-height: 105px;
-      margin-top: 18px;
+      margin-top: 16px;
       padding-bottom: 0;
 
       border: 2px solid #e5e5e5;
     }
 
     &__travel &__title {
+      margin-left: 329px;
       padding-top: 33px;
+
+      text-align: left;
     }
 
     &__travel &__flex-block {
@@ -476,16 +511,16 @@
     }
 
     &__travelers &__title {
+      margin-left: 337px;
       padding-top: 12px;
+
+      text-align: left;
     }
 
     &__travelers &__wrap--calc {
-      display: flex;
-      box-sizing: border-box;
-      width: 301px;
       padding-top: 15px;
-      padding-bottom: 42px;
-      padding-left: 50px;
+      padding-bottom: 40px;
+      padding-left: 26px;
     }
 
     &__travelers &__wrap--traveler-item {
@@ -510,7 +545,10 @@
     }
 
     &__achievements &__title {
+      margin-left: 254px;
       padding-top: 24px;
+
+      text-align: left;
     }
 
     &__achievements &__flex-block {
@@ -518,6 +556,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
+      margin-top: 8px;
       margin-bottom: 28px;
       margin-left: 58px;
       padding: 0;
@@ -536,7 +575,10 @@
     }
 
     &__photos &__title {
+      margin-left: 267px;
       padding-top: 30px;
+
+      text-align: left;
     }
 
     &__footer {
@@ -564,6 +606,8 @@
 
     &__footnote span {
       display: inline-block;
+
+      vertical-align: middle;
     }
   }
 }
