@@ -4,7 +4,7 @@ var fs = require("fs-extra");
 var gulp = require("gulp");
 
 function copy() {
-  return gulp.src(["source/*.html", "build/{css,img,js,fonts}/**"])
+  return gulp.src(["*.html", "{css,img,js,fonts}/**"])
     .pipe(gulp.dest("gosha"));
 }
 
