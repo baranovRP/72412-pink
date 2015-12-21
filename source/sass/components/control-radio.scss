@@ -67,8 +67,8 @@
     border-color: $blue-very-dark;
   }
 
-  input:not(checked):active + &__label:before,
-  input:checked:active + &__label:after {
+  input:not(checked) + &__label:active::before,
+  input:checked + &__label:active::after {
     border-color: $pink-strong;
   }
 }
