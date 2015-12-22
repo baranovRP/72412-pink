@@ -1,8 +1,14 @@
 .page-price {
+  @include background-image("triangle-grey.svg");
+
   width: 100%;
   min-height: 372px;
   padding-top: 101px;
   padding-bottom: 18px;
+
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
+  background-size: cover;
 
   &__container {
     background-color: $grey-very-light;
@@ -15,11 +21,7 @@
     padding-top: 108px;
     padding-bottom: 38px;
 
-    &::before {
-      top: 219vh;
-
-      transform: skewY(-4deg);
-    }
+    background-position: 91% 100%;
   }
 }
 
@@ -30,10 +32,6 @@
     padding-top: 108px;
     padding-bottom: 95px;
 
-    &::before {
-      top: 271vh;
-
-      transform: skewY(-4deg);
-    }
+    background-position: 98% 100%;
   }
 }
