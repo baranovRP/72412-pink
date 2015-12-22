@@ -263,10 +263,11 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       background-repeat: no-repeat, no-repeat;
       background-position: calc(50% + 71px) 209px, center top;
       background-size: 1050px, 1281px;
+      padding-bottom: 24px;
     }
 
     &--index &__container {
-      padding-bottom: 121px;
+      padding-bottom: 97px;
     }
 
     &__toggle {
