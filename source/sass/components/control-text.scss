@@ -431,7 +431,7 @@
       margin-left: 1px;
     }
 
-    &--short &__label{
+    &--short &__label {
       padding-left: 22px;
     }
 
@@ -452,6 +452,7 @@
 
     &--calc &__label--bottom {
       margin: 0;
+      padding-top: 11px;
       padding-bottom: 0;
 
       text-align: center;
