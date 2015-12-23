@@ -16,6 +16,7 @@ var minifyHtml = require("gulp-minify-html");
 
 var watch = require("gulp-watch");
 var webserver = require("gulp-webserver");
+var concat = require('gulp-concat');
 
 
 var bases = {
@@ -111,6 +112,7 @@ gulp.task('imagemin', ['clean'], function() {
 gulp.task("scripts", ["clean"], function() {
   gulp.src(paths.scripts, {cwd: bases.source})
     .pipe(plumber())
+    .pipe(concat('main.js'))
     .pipe(gulp.dest(bases.build + "js"))
     .pipe(minifyJs())
     .pipe(rename(function(path) {
