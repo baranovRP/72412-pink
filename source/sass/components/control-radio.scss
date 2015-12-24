@@ -42,7 +42,8 @@
     border-radius: 50%;
   }
 
-  input:checked + &__label:after {
+  input:checked + &__label:after,
+  input:not(checked):active + &__label:after{
     content: "";
     position: absolute;
     top: 4px;
@@ -58,7 +59,8 @@
     transition: all 0.2s;
   }
 
-  input:checked + &__label:before {
+  input:checked + &__label:before,
+  input:checked + &__label:active::after {
     background: $white;
   }
 

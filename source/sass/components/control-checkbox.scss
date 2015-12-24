@@ -43,7 +43,8 @@
     border: 2px solid $grey-light;
   }
 
-  input:checked + &__label:after {
+  input:checked + &__label:after,
+  input:not(checked):active + &__label:after {
     content: "";
     position: absolute;
     top: -3px;
@@ -64,16 +65,19 @@
   }
 
   input:checked + &__label:before {
-    background: $white;
+    background-color: $white;
   }
 
   input:not(checked):hover + &__label:before {
     border-color: $blue-very-dark;
   }
 
-  input:not(checked) + &__label:active::before,
-  input:checked + &__label:active::after{
+  input:not(checked) + &__label:active::before {
     border-color: $pink-strong;
+  }
+
+  input:checked:active + &__label::after {
+    border-color: $white;
   }
 }
 
