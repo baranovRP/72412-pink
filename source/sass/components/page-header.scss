@@ -35,7 +35,7 @@
     background-image: url($img-folder-path + "iphone-hand--mobile@1x.png"),
     url($img-folder-path + "background-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: calc(50% - 31px) 172px, center top -2px;
+    background-position: calc(50% - 31px) 173px, center top -2px;
     background-size: 258px, 700px;
   }
 
@@ -158,11 +158,11 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-phone) {
       background-repeat: no-repeat, no-repeat;
       background-position: center 184px, center top;
       background-size: 700px, 1200px;
+      min-height: 728px;
     }
 
     &--index &__container {
       min-height: 370px;
-      padding-bottom: 80px;
     }
 
     &__inner {
@@ -261,13 +261,9 @@ only screen and (min-resolution: 2dppx) and (min-width: $screen-tablet) {
       background-image: url($img-folder-path + "iphone-hand--desktop@1x.png"),
       url($img-folder-path + "background-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: calc(50% + 71px) 209px, center top;
+      background-position: calc(50% + 71px) 211px, center top;
       background-size: 1050px, 1281px;
-      padding-bottom: 24px;
-    }
-
-    &--index &__container {
-      padding-bottom: 97px;
+      min-height: 853px;
     }
 
     &__toggle {
