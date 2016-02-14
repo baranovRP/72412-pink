@@ -1,5 +1,7 @@
 # Проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+##### Финальный результат [Pink](http://baranovrp.github.io/72412-pink/).
+
 * Студент: [Roman Baranov](https://htmlacademy.ru/profile/id72412).
 * Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
